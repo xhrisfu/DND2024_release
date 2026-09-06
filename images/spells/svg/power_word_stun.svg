@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="power_word_stun-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b0d24"/><stop offset="1" stop-color="#47163b"/>
+    </linearGradient>
+    <radialGradient id="power_word_stun-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <radialGradient id="power_word_stun-core" cx=".45" cy=".42" r=".9">
+      <stop offset="0" stop-color="#fff3c4"/><stop offset=".5" stop-color="#ff9bcb"/><stop offset="1" stop-color="#b3145f"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#power_word_stun-bg)"/>
+  <rect width="64" height="64" fill="url(#power_word_stun-vig)"/>
+  <circle cx="32" cy="32" r="20" fill="#ff5ca8" opacity=".14"/>
+  <path d="M32 6 L37 26 L58 22 L41 33 L54 50 L32 39 L10 50 L23 33 L6 22 L27 26 Z" fill="url(#power_word_stun-core)"/>
+  <path d="M32 16 L34.5 27 L32 26 L29.5 27 Z" fill="#fff" opacity=".55"/>
+  <path d="M20 28 C24 31 40 31 44 28 C40 36 24 36 20 28 Z" fill="#3a0a24" opacity=".35"/>
+  <path d="M23 30 A4 3 0 0 1 29 30 M35 30 A4 3 0 0 1 41 30" fill="none" stroke="#fff3c4" stroke-width="1.6"/>
+  <circle cx="32" cy="7" r="1.6" fill="#fff3c4"/>
+  <circle cx="9" cy="21" r="1.3" fill="#ffd0e8" opacity=".8"/>
+  <circle cx="55" cy="21" r="1.3" fill="#ffd0e8" opacity=".8"/>
+  <circle cx="52" cy="51" r="1.1" fill="#fff3c4" opacity=".7"/>
+</svg>

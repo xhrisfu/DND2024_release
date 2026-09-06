@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="conjure_fey-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#160c2c"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="conjure_fey-halo" cx=".5" cy=".44" r=".55">
+      <stop offset="0" stop-color="#5ce0a8" stop-opacity=".45"/><stop offset="1" stop-color="#5ce0a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="conjure_fey-body" cx=".5" cy=".32" r=".8">
+      <stop offset="0" stop-color="#e8fff0"/><stop offset=".45" stop-color="#5ce0a8"/><stop offset=".8" stop-color="#2a9a6a"/><stop offset="1" stop-color="#155a42"/>
+    </radialGradient>
+    <linearGradient id="conjure_fey-wing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8c0ff" stop-opacity=".85"/><stop offset=".6" stop-color="#9d5cff" stop-opacity=".45"/><stop offset="1" stop-color="#5ce0a8" stop-opacity=".15"/>
+    </linearGradient>
+    <radialGradient id="conjure_fey-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#conjure_fey-bg)"/>
+  <rect width="64" height="64" fill="url(#conjure_fey-halo)"/>
+  <circle cx="32" cy="30" r="19" fill="#5ce0a8" opacity=".13"/>
+  <path d="M28 30 C15 27 11 15 9 6 C20 13 25 21 30 27 Z" fill="url(#conjure_fey-wing)" transform="rotate(-4 28 30)"/>
+  <path d="M36 30 C49 27 53 15 55 6 C44 13 39 21 34 27 Z" fill="url(#conjure_fey-wing)" transform="rotate(4 36 30)"/>
+  <path d="M27 36 C18 40 14 48 13 55 C22 50 26 44 30 40 Z" fill="url(#conjure_fey-wing)" opacity=".7"/>
+  <path d="M37 36 C46 40 50 48 51 55 C42 50 38 44 34 40 Z" fill="url(#conjure_fey-wing)" opacity=".7"/>
+  <path d="M32 20 C28.5 22 27 27 28 34 C29 43 30.5 49 32 53 C33.5 49 35 43 36 34 C37 27 35.5 22 32 20 Z" fill="url(#conjure_fey-body)"/>
+  <circle cx="32" cy="16" r="4.6" fill="url(#conjure_fey-body)"/>
+  <path d="M28.5 13 C26.5 8.5 27.5 6 30.5 5 M35.5 13 C37.5 8.5 36.5 6 33.5 5" fill="none" stroke="#a8ffd0" stroke-width="1.2" opacity=".7"/>
+  <circle cx="30.5" cy="15.5" r="1" fill="#155a42"/>
+  <circle cx="33.5" cy="15.5" r="1" fill="#155a42"/>
+  <ellipse cx="30.5" cy="24" rx="1.8" ry="3.5" fill="#fff" opacity=".4"/>
+  <circle cx="14" cy="20" r="1.3" fill="#c8ffe8" opacity=".85"/>
+  <circle cx="50" cy="20" r="1.1" fill="#d8c0ff" opacity=".7"/>
+  <circle cx="24" cy="48" r="1" fill="#5ce0a8" opacity=".65"/>
+  <circle cx="42" cy="46" r=".9" fill="#a8ffd0" opacity=".7"/>
+  <circle cx="45" cy="30" r=".8" fill="#c8ffe8" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#conjure_fey-vig)"/>
+</svg>

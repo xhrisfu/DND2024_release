@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="find_traps-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241c08"/><stop offset="1" stop-color="#3d3010"/>
+    </linearGradient>
+    <radialGradient id="find_traps-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="find_traps-steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#b0850f"/>
+    </linearGradient>
+    <linearGradient id="find_traps-alert" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3c4"/><stop offset="1" stop-color="#ff9b2f"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#find_traps-bg)"/>
+  <rect width="64" height="64" fill="url(#find_traps-vig)"/>
+  <circle cx="32" cy="36" r="22" fill="#ffd54d" opacity=".1"/>
+  <ellipse cx="32" cy="44" rx="20" ry="5" fill="none" stroke="#c8920c" stroke-width="1.4" opacity=".5"/>
+  <path d="M12 44 C12 38 18 35 24 40 L26 44 M52 44 C52 38 46 35 40 40 L38 44" fill="none" stroke="url(#find_traps-steel)" stroke-width="3" stroke-linecap="round"/>
+  <g stroke="url(#find_traps-steel)" stroke-width="2.2" stroke-linecap="round">
+    <path d="M14 44 L18 34 M20 44 L23 33 M26 44 L27.5 32 M38 44 L36.5 32 M44 44 L41 33 M50 44 L46 34"/>
+  </g>
+  <ellipse cx="32" cy="45" rx="12" ry="4" fill="#3a2d08" opacity=".7"/>
+  <path d="M32 10 L38 26 H26 Z" fill="url(#find_traps-alert)" stroke="#fff9e0" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M32 16 V21" stroke="#5a3f0a" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="32" cy="23.5" r="1.2" fill="#5a3f0a"/>
+  <circle cx="14" cy="18" r="1.2" fill="#fff3c4"/>
+  <circle cx="52" cy="20" r="1" fill="#ffe08a" opacity=".8"/>
+</svg>

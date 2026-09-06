@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="mordenkainen_s_sword-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#160e2e"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="mordenkainen_s_sword-halo" cx=".5" cy=".44" r=".5">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".5"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mordenkainen_s_sword-blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4efff"/><stop offset=".5" stop-color="#c9b4ff"/><stop offset="1" stop-color="#7a5cd6"/>
+    </linearGradient>
+    <linearGradient id="mordenkainen_s_sword-hilt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9a8ff"/><stop offset="1" stop-color="#6a44b8"/>
+    </linearGradient>
+    <radialGradient id="mordenkainen_s_sword-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#mordenkainen_s_sword-bg)"/>
+  <rect width="64" height="64" fill="url(#mordenkainen_s_sword-halo)"/>
+  <polygon points="32,4 39,44 32,58 25,44" fill="#b98cff" opacity=".18"/>
+  <ellipse cx="32" cy="42" rx="13" ry="4.5" fill="#b98cff" opacity=".14"/>
+  <polygon points="32,6 35.5,42 32,50 28.5,42" fill="url(#mordenkainen_s_sword-blade)" stroke="#e6d9ff" stroke-width=".8"/>
+  <line x1="32" y1="10" x2="32" y2="46" stroke="#fff" stroke-width="1" opacity=".6"/>
+  <rect x="21" y="42" width="22" height="3.4" rx="1.5" fill="url(#mordenkainen_s_sword-hilt)"/>
+  <rect x="30.5" y="45" width="3" height="9" rx="1" fill="#7a5cd6"/>
+  <circle cx="32" cy="56" r="2.4" fill="#d9c6ff"/>
+  <circle cx="21.5" cy="43.7" r="1.6" fill="#e6d9ff"/>
+  <circle cx="42.5" cy="43.7" r="1.6" fill="#e6d9ff"/>
+  <ellipse cx="31" cy="14" rx="1.8" ry="3.4" fill="#fff" opacity=".55" transform="rotate(4 31 14)"/>
+  <circle cx="45" cy="24" r="1.2" fill="#c9a8ff" opacity=".8"/>
+  <circle cx="19" cy="28" r="1" fill="#d9c6ff" opacity=".7"/>
+  <circle cx="47" cy="46" r=".9" fill="#b98cff" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#mordenkainen_s_sword-vig)"/>
+</svg>

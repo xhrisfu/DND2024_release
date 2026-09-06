@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="sorcerous_burst-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#5c2109"/><stop offset=".5" stop-color="#2c0c05"/><stop offset="1" stop-color="#140503"/>
+    </radialGradient>
+    <radialGradient id="sorcerous_burst-halo" cx=".5" cy=".48" r=".55">
+      <stop offset="0" stop-color="#ffb04d" stop-opacity=".6"/><stop offset="1" stop-color="#ffb04d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sorcerous_burst-star" cx=".42" cy=".38" r=".8">
+      <stop offset="0" stop-color="#fff7d6"/><stop offset=".35" stop-color="#ffd67a"/><stop offset=".7" stop-color="#ff8a2c"/><stop offset="1" stop-color="#c22c05"/>
+    </radialGradient>
+    <radialGradient id="sorcerous_burst-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#sorcerous_burst-bg)"/>
+  <rect width="64" height="64" fill="url(#sorcerous_burst-halo)"/>
+  <circle cx="32" cy="32" r="16" fill="#ff8a2c" opacity=".18"/>
+  <g transform="rotate(45 32 32)">
+    <polygon points="32,17 34.4,29.6 47,32 34.4,34.4 32,47 29.6,34.4 17,32 29.6,29.6" fill="#ffb04d" opacity=".65"/>
+  </g>
+  <polygon points="32,7 35.4,28.6 57,32 35.4,35.4 32,57 28.6,35.4 7,32 28.6,28.6" fill="url(#sorcerous_burst-star)"/>
+  <polygon points="32,15 33.6,30.4 32,44 30.4,30.4" fill="#fff2c8" opacity=".8"/>
+  <circle cx="32" cy="32" r="4.2" fill="#fff7d6"/>
+  <ellipse cx="28" cy="27" rx="2.6" ry="1.6" fill="#fff" opacity=".65" transform="rotate(-35 28 27)"/>
+  <circle cx="15" cy="14" r="1.6" fill="#ffd67a" opacity=".9"/>
+  <circle cx="51" cy="49" r="1.4" fill="#ff9b3d" opacity=".85"/>
+  <circle cx="52" cy="14" r="1" fill="#ffe0a0" opacity=".8"/>
+  <circle cx="13" cy="49" r="1.1" fill="#ffab4d" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#sorcerous_burst-vig)"/>
+</svg>

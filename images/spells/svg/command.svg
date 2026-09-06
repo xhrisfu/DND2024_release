@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="command-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#4a1240"/><stop offset=".5" stop-color="#2a0c22"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="command-halo" cx=".5" cy=".44" r=".5">
+      <stop offset="0" stop-color="#ff5ca8" stop-opacity=".5"/><stop offset="1" stop-color="#ff5ca8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="command-bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0f7"/><stop offset=".5" stop-color="#ff77b8"/><stop offset="1" stop-color="#b3145f"/>
+    </linearGradient>
+    <radialGradient id="command-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#command-bg)"/>
+  <rect width="64" height="64" fill="url(#command-halo)"/>
+  <path d="M30 8 C38 8 44 12 44 16 L44 30 C44 34 38 38 30 38 L26 42 L26 38 C22 37 20 34 20 30 L20 16 C20 12 24 8 30 8 Z" fill="#ff5ca8" opacity=".16"/>
+  <path d="M12 30 C20 27 20 43 28 39 M8 20 C18 16 18 46 30 42" fill="none" stroke="#ff9bcb" stroke-width="1.3" stroke-linecap="round" opacity=".4"/>
+  <rect x="37" y="10" width="8" height="30" rx="4" fill="url(#command-bar)"/>
+  <circle cx="41" cy="50" r="4.6" fill="url(#command-bar)"/>
+  <ellipse cx="39.5" cy="15" rx="2" ry="5" fill="#fff" opacity=".55"/>
+  <circle cx="39.5" cy="49" r="1.6" fill="#fff" opacity=".55"/>
+  <path d="M37 39 A4 4 0 0 0 45 39 Z" fill="#7a0f3e" opacity=".4"/>
+  <path d="M22 18 C28 16 34 16 40 18" fill="none" stroke="#ffd0e8" stroke-width="1.2" opacity=".5"/>
+  <circle cx="14" cy="14" r="1.3" fill="#ffd0e8" opacity=".8"/>
+  <circle cx="52" cy="24" r="1" fill="#ff9bcb" opacity=".7"/>
+  <circle cx="16" cy="50" r=".9" fill="#ffd0e8" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#command-vig)"/>
+</svg>

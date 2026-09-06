@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="stinking_cloud-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#2f3a12"/><stop offset=".5" stop-color="#1a220a"/><stop offset="1" stop-color="#0a0f05"/>
+    </radialGradient>
+    <radialGradient id="stinking_cloud-halo" cx=".5" cy=".55" r=".55">
+      <stop offset="0" stop-color="#c4d84a" stop-opacity=".4"/><stop offset="1" stop-color="#c4d84a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="stinking_cloud-body" cx=".4" cy=".35" r=".9">
+      <stop offset="0" stop-color="#e2ec92"/><stop offset=".5" stop-color="#a6ba36"/><stop offset="1" stop-color="#5e6e1c"/>
+    </radialGradient>
+    <radialGradient id="stinking_cloud-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#stinking_cloud-bg)"/>
+  <rect width="64" height="64" fill="url(#stinking_cloud-halo)"/>
+  <path d="M30 20 C29 15 33 13 32 9 M38 24 C40 19 37 17 39 13 M22 26 C21 22 24 20 23 16" fill="none" stroke="#c4d84a" stroke-width="1.4" stroke-linecap="round" opacity=".5"/>
+  <path d="M15 46 C8 46 6 37 13 35 C11 27 21 24 25 30 C28 22 41 23 42 31 C50 28 56 37 49 42 C54 45 52 52 44 50 Z" fill="url(#stinking_cloud-body)"/>
+  <ellipse cx="25" cy="35" rx="6" ry="4" fill="#eef29e" opacity=".5"/>
+  <path d="M14 45 C24 49 42 49 49 44" fill="none" stroke="#4e5c16" stroke-width="1.3" opacity=".5"/>
+  <circle cx="24" cy="40" r="1.5" fill="#4e5c16" opacity=".7"/>
+  <circle cx="38" cy="42" r="1.7" fill="#4e5c16" opacity=".7"/>
+  <circle cx="32" cy="37" r="1.2" fill="#4e5c16" opacity=".6"/>
+  <ellipse cx="22" cy="32" rx="4" ry="2" fill="#fff" opacity=".35"/>
+  <circle cx="52" cy="24" r="1.3" fill="#c4d84a" opacity=".7"/>
+  <circle cx="13" cy="26" r="1" fill="#a6ba36" opacity=".6"/>
+  <circle cx="49" cy="52" r="1" fill="#c4d84a" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#stinking_cloud-vig)"/>
+</svg>

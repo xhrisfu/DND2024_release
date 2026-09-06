@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="creation-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#0a3a42"/><stop offset=".5" stop-color="#082a30"/><stop offset="1" stop-color="#05141a"/>
+    </radialGradient>
+    <radialGradient id="creation-halo" cx=".5" cy=".44" r=".5">
+      <stop offset="0" stop-color="#3ee6c4" stop-opacity=".5"/><stop offset="1" stop-color="#3ee6c4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="creation-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eafff9"/><stop offset="1" stop-color="#8ffbe4"/>
+    </linearGradient>
+    <linearGradient id="creation-left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3ee6c4"/><stop offset="1" stop-color="#0e5a4c"/>
+    </linearGradient>
+    <linearGradient id="creation-right" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2ad1b0"/><stop offset="1" stop-color="#0a3f36"/>
+    </linearGradient>
+    <radialGradient id="creation-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#creation-bg)"/>
+  <rect width="64" height="64" fill="url(#creation-halo)"/>
+  <ellipse cx="32" cy="28" rx="18" ry="16" fill="#3ee6c4" opacity=".14"/>
+  <path d="M32 11 L49 19.5 L32 28 L15 19.5 Z" fill="url(#creation-top)"/>
+  <path d="M15 19.5 L32 28 L32 46 L15 37.5 Z" fill="url(#creation-left)"/>
+  <path d="M49 19.5 L32 28 L32 46 L49 37.5 Z" fill="url(#creation-right)"/>
+  <path d="M32 28 L32 46" stroke="#06322c" stroke-width="1" opacity=".5"/>
+  <path d="M15 19.5 L32 28 L49 19.5" fill="none" stroke="#eafff9" stroke-width="1" opacity=".55"/>
+  <path d="M20 22 L28 25.6" stroke="#fff" stroke-width="1.2" opacity=".5"/>
+  <path d="M15 37.5 C13 43 11 47 9 53 M32 46 L32 54 M49 37.5 C51 43 53 47 55 53" fill="none" stroke="#3ee6c4" stroke-width="1.3" stroke-dasharray="2 3" opacity=".55"/>
+  <path d="M40 13 l1 2.4 2.4 1 -2.4 1 -1 2.4 -1-2.4 -2.4-1 2.4-1 Z" fill="#dffff7" opacity=".85"/>
+  <circle cx="14" cy="49" r="1.4" fill="#3ee6c4" opacity=".7"/>
+  <circle cx="32" cy="52" r="1.1" fill="#c8fff2" opacity=".65"/>
+  <circle cx="50" cy="49" r="1.3" fill="#3ee6c4" opacity=".7"/>
+  <circle cx="24" cy="15" r="1" fill="#eafff9" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#creation-vig)"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="dragon_s_breath-bg" cx=".38" cy=".42" r=".95">
+      <stop offset="0" stop-color="#5c2109"/><stop offset=".5" stop-color="#2c0c05"/><stop offset="1" stop-color="#140503"/>
+    </radialGradient>
+    <radialGradient id="dragon_s_breath-halo" cx=".65" cy=".46" r=".55">
+      <stop offset="0" stop-color="#ff8a2c" stop-opacity=".55"/><stop offset="1" stop-color="#ff8a2c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dragon_s_breath-fire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff7d6"/><stop offset=".35" stop-color="#ffd23d"/><stop offset=".7" stop-color="#ff6a1f"/><stop offset="1" stop-color="#e0430c" stop-opacity=".15"/>
+    </linearGradient>
+    <linearGradient id="dragon_s_breath-head" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c98a3e"/><stop offset=".6" stop-color="#8a5622"/><stop offset="1" stop-color="#4c2c0e"/>
+    </linearGradient>
+    <radialGradient id="dragon_s_breath-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#dragon_s_breath-bg)"/>
+  <rect width="64" height="64" fill="url(#dragon_s_breath-halo)"/>
+  <path d="M26 30 C38 22 54 22 64 30 C54 40 38 40 26 34 Z" fill="#ff7a33" opacity=".25"/>
+  <path d="M27 30 C40 23 55 24 64 29 C55 37 40 37 27 33 Z" fill="url(#dragon_s_breath-fire)"/>
+  <path d="M40 28 C47 26 54 26 60 28 M40 33 C47 32 54 32 59 33" fill="none" stroke="#fff7d6" stroke-width="1" opacity=".7"/>
+  <path d="M50 26 C53 27 56 27 58 28 C55 30 51 30 49 29 Z" fill="#fff7d6" opacity=".6"/>
+  <path d="M7 22 C4 16 8 11 13 13 L22 11 C31 12 35 19 32 28 C31 34 25 37 18 36 L9 39 C3 39 1 32 6 29 Z" fill="url(#dragon_s_breath-head)" stroke="#2c1806" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M13 13 C15 6 22 5 26 10 C21 10 18 12 16 16 Z" fill="#6e451c"/>
+  <path d="M8 26 C5 24 4 20 6 18" fill="none" stroke="#c98a3e" stroke-width="1" opacity=".6"/>
+  <circle cx="16" cy="21" r="2.6" fill="#ffd23d"/>
+  <circle cx="16" cy="21" r="1.1" fill="#4c1a04"/>
+  <ellipse cx="14.6" cy="20" rx="1" ry=".7" fill="#fff7d6" opacity=".8"/>
+  <path d="M18 34 l3 3 M12 36 l1 3" stroke="#ffe0b0" stroke-width="1.2" opacity=".7"/>
+  <circle cx="56" cy="20" r="1.5" fill="#ffe08a" opacity=".9"/>
+  <circle cx="50" cy="38" r="1.2" fill="#ffab4d" opacity=".7"/>
+  <circle cx="44" cy="26" r=".9" fill="#fff7d6" opacity=".75"/>
+  <rect width="64" height="64" fill="url(#dragon_s_breath-vig)"/>
+</svg>

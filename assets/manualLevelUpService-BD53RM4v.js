@@ -1,0 +1,1 @@
+import{u,bU as t,g as o}from"./main-Z_btXa0X.js";function i(){const e=u();if(!e.canLevelUp())return!1;const r=e.levelUp();return r?(t({kind:"player"},r),!0):!1}function s(e){const r=o();if(!r.canLevelUpMember(e))return!1;const n=r.findMemberById(e),a=r.buildMemberLevelUpInfo(e);return!n||!a?!1:(t({kind:"companion",memberId:n.id,memberName:n.name},a),!0)}export{s as a,i as q};

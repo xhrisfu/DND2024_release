@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="dominate_person-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#4a1240"/><stop offset=".5" stop-color="#2a0c22"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="dominate_person-halo" cx=".5" cy=".5" r=".52">
+      <stop offset="0" stop-color="#ff5ca8" stop-opacity=".5"/><stop offset="1" stop-color="#ff5ca8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dominate_person-bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe0ef"/><stop offset="1" stop-color="#c23a86"/>
+    </linearGradient>
+    <radialGradient id="dominate_person-body" cx=".42" cy=".32" r=".95">
+      <stop offset="0" stop-color="#ffd8ec"/><stop offset=".5" stop-color="#ff6faf"/><stop offset="1" stop-color="#8f1050"/>
+    </radialGradient>
+    <radialGradient id="dominate_person-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#dominate_person-bg)"/>
+  <rect width="64" height="64" fill="url(#dominate_person-halo)"/>
+  <rect x="16" y="9" width="32" height="4.6" rx="2" fill="#ff5ca8" opacity=".18"/>
+  <rect x="17" y="9.6" width="30" height="3.5" rx="1.7" fill="url(#dominate_person-bar)"/>
+  <line x1="21" y1="13" x2="19" y2="27" stroke="#ffd0e8" stroke-width="1.2" opacity=".7"/>
+  <line x1="43" y1="13" x2="45" y2="27" stroke="#ffd0e8" stroke-width="1.2" opacity=".7"/>
+  <line x1="32" y1="13" x2="32" y2="24" stroke="#ffd0e8" stroke-width="1.2" opacity=".7"/>
+  <circle cx="32" cy="34" r="15" fill="#ff5ca8" opacity=".15"/>
+  <circle cx="32" cy="31" r="6" fill="url(#dominate_person-body)"/>
+  <path d="M22 55 C22 44 27 39 32 39 C37 39 42 44 42 55 Z" fill="url(#dominate_person-body)"/>
+  <line x1="19" y1="27" x2="24" y2="43" stroke="#ff9bcb" stroke-width="1.2" opacity=".6"/>
+  <line x1="45" y1="27" x2="40" y2="43" stroke="#ff9bcb" stroke-width="1.2" opacity=".6"/>
+  <ellipse cx="29.6" cy="29" rx="2" ry="1.5" fill="#fff" opacity=".55"/>
+  <path d="M24 50 C27 53 37 53 40 50 A16 6 0 0 1 24 50 Z" fill="#5a1038" opacity=".35"/>
+  <circle cx="21" cy="13" r="1.4" fill="#ffd0e8"/>
+  <circle cx="43" cy="13" r="1.4" fill="#ffd0e8"/>
+  <circle cx="32" cy="13" r="1.1" fill="#ff9bcb" opacity=".8"/>
+  <circle cx="51" cy="46" r="1" fill="#ffd0e8" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#dominate_person-vig)"/>
+</svg>

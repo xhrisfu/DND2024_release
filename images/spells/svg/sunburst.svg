@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="sunburst-bg" cx=".5" cy=".45" r=".9">
+      <stop offset="0" stop-color="#43370f"/><stop offset=".5" stop-color="#221a08"/><stop offset="1" stop-color="#12100a"/>
+    </radialGradient>
+    <radialGradient id="sunburst-halo" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".65"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sunburst-core" cx=".42" cy=".38" r=".8">
+      <stop offset="0" stop-color="#fffef7"/><stop offset=".4" stop-color="#fff3c4"/><stop offset=".75" stop-color="#ffce3d"/><stop offset="1" stop-color="#f0900c"/>
+    </radialGradient>
+    <radialGradient id="sunburst-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#sunburst-bg)"/>
+  <rect width="64" height="64" fill="url(#sunburst-halo)"/>
+  <g fill="#fff3c4" opacity=".8">
+    <polygon points="32,32 32,2 27.5,16 36.5,16"/>
+    <polygon points="32,32 62,32 48,27.5 48,36.5"/>
+    <polygon points="32,32 32,62 36.5,48 27.5,48"/>
+    <polygon points="32,32 2,32 16,36.5 16,27.5"/>
+  </g>
+  <g fill="#ffdb7a" opacity=".75">
+    <polygon points="32,32 53,11 39,17 47,25"/>
+    <polygon points="32,32 53,53 47,39 39,47"/>
+    <polygon points="32,32 11,53 25,47 17,39"/>
+    <polygon points="32,32 11,11 17,25 25,17"/>
+  </g>
+  <circle cx="32" cy="32" r="14" fill="#ffe9a8" opacity=".3"/>
+  <circle cx="32" cy="32" r="10.5" fill="url(#sunburst-core)"/>
+  <ellipse cx="28.5" cy="28.5" rx="3" ry="2" fill="#fff" opacity=".75" transform="rotate(-30 28.5 28.5)"/>
+  <path d="M24 35 A10.5 10.5 0 0 0 40 35 A12 5 0 0 1 24 35 Z" fill="#c97810" opacity=".4"/>
+  <circle cx="52" cy="16" r="1.4" fill="#fff3c4"/>
+  <circle cx="13" cy="15" r="1.1" fill="#ffe9a8" opacity=".8"/>
+  <circle cx="50" cy="50" r="1" fill="#ffd97a" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#sunburst-vig)"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="chill_touch-bg" cx=".46" cy=".38" r=".9">
+      <stop offset="0" stop-color="#1c2c1e"/><stop offset=".5" stop-color="#0e1810"/><stop offset="1" stop-color="#060c06"/>
+    </radialGradient>
+    <radialGradient id="chill_touch-halo" cx=".5" cy=".44" r=".52">
+      <stop offset="0" stop-color="#8ef05a" stop-opacity=".5"/><stop offset="1" stop-color="#8ef05a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chill_touch-bone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2f0e2"/><stop offset=".5" stop-color="#c8cbaa"/><stop offset="1" stop-color="#7a8a5c"/>
+    </linearGradient>
+    <radialGradient id="chill_touch-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#chill_touch-bg)"/>
+  <rect width="64" height="64" fill="url(#chill_touch-halo)"/>
+  <path d="M30 55 C22 50 17 42 18 33 C20 34 22 34 24 33 C24 27 25 22 27 18 C29 20 29 24 29 28 C31 27 31 22 33 18 C35 20 34 25 34 29 C36 28 37 24 39 21 C40 24 39 29 38 32 C40 32 42 32 43 31 C44 40 40 49 33 55 Z" fill="#7ee23c" opacity=".22"/>
+  <path d="M31 54 C24 49 20 42 21 34 C22.6 35 24 35 25.4 34 C25 28 26 23 28 19.5 C29.6 21.5 29.4 25 29.4 28.5 C31 27.6 31.2 23 32.6 19.5 C34 21.5 33.4 26 33.4 29.5 C35 28.6 36 25 37.4 22.5 C38.4 25 37.6 30 36.6 32.5 C38.2 32.4 39.6 32 40.6 31 C41.6 39 38 47 32 53 Z" fill="url(#chill_touch-bone)"/>
+  <path d="M26 33 C25.4 37 25.6 42 27 47" fill="none" stroke="#5a6a3e" stroke-width="1" opacity=".5"/>
+  <path d="M31 32 C30.6 37 30.8 42 31.4 48" fill="none" stroke="#5a6a3e" stroke-width="1" opacity=".5"/>
+  <path d="M36 32 C36 37 35.4 42 34.4 47" fill="none" stroke="#5a6a3e" stroke-width="1" opacity=".5"/>
+  <ellipse cx="27" cy="24" rx="1.6" ry="3" fill="#fff" opacity=".55" transform="rotate(-8 27 24)"/>
+  <path d="M22 34 C26 40 38 40 41 34 C40 45 33 52 31 53 C28 50 22 44 22 34 Z" fill="#2c3a1e" opacity=".4"/>
+  <circle cx="45" cy="18" r="1.5" fill="#c8f79a"/>
+  <circle cx="18" cy="24" r="1.1" fill="#8ef05a" opacity=".8"/>
+  <circle cx="43" cy="44" r=".9" fill="#e0ffc0" opacity=".7"/>
+  <circle cx="24" cy="49" r=".8" fill="#9ef05a" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#chill_touch-vig)"/>
+</svg>

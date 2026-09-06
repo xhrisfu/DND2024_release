@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="summon_aberration-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#170e2f"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="summon_aberration-halo" cx=".5" cy=".5" r=".52">
+      <stop offset="0" stop-color="#9d5cff" stop-opacity=".45"/><stop offset="1" stop-color="#9d5cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="summon_aberration-body" cx=".45" cy=".38" r=".85">
+      <stop offset="0" stop-color="#8a54b8"/><stop offset=".55" stop-color="#4e2878"/><stop offset="1" stop-color="#26103c"/>
+    </radialGradient>
+    <radialGradient id="summon_aberration-eye" cx=".4" cy=".38" r=".7">
+      <stop offset="0" stop-color="#fff"/><stop offset=".4" stop-color="#b8ff5c"/><stop offset="1" stop-color="#3a6a10"/>
+    </radialGradient>
+    <radialGradient id="summon_aberration-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#summon_aberration-bg)"/>
+  <rect width="64" height="64" fill="url(#summon_aberration-halo)"/>
+  <path d="M32 46 C22 44 22 52 14 56 C20 48 22 46 26 42 Z" fill="#3a1a58" opacity=".85"/>
+  <path d="M32 46 C42 44 42 52 50 56 C44 48 42 46 38 42 Z" fill="#3a1a58" opacity=".85"/>
+  <path d="M22 41 C14 41 12 49 6 51 C14 45 16 43 22 39 Z" fill="#3a1a58" opacity=".7"/>
+  <path d="M42 41 C50 41 52 49 58 51 C50 45 48 43 42 39 Z" fill="#3a1a58" opacity=".7"/>
+  <ellipse cx="32" cy="34" rx="14" ry="15" fill="url(#summon_aberration-body)"/>
+  <path d="M20 30 C24 28 40 28 44 30" fill="none" stroke="#2a123e" stroke-width="1" opacity=".5"/>
+  <circle cx="32" cy="32" r="7.5" fill="url(#summon_aberration-eye)"/>
+  <circle cx="32" cy="32" r="3.2" fill="#160a24"/>
+  <circle cx="30.4" cy="30.4" r="1.2" fill="#fff" opacity=".9"/>
+  <path d="M28 18 C26 13 24 11 26 8 C28 12 30 14 31 17 Z" fill="url(#summon_aberration-body)"/>
+  <path d="M36 18 C38 13 40 11 38 8 C36 12 34 14 33 17 Z" fill="url(#summon_aberration-body)"/>
+  <circle cx="27" cy="9.5" r="1.5" fill="#b8ff5c"/>
+  <circle cx="37" cy="9.5" r="1.5" fill="#b8ff5c"/>
+  <ellipse cx="27" cy="27" rx="3" ry="2" fill="#fff" opacity=".25"/>
+  <circle cx="14" cy="22" r="1.1" fill="#b8ff5c" opacity=".7"/>
+  <circle cx="50" cy="22" r="1" fill="#c8a8ff" opacity=".6"/>
+  <circle cx="48" cy="46" r=".9" fill="#b8ff5c" opacity=".55"/>
+  <rect width="64" height="64" fill="url(#summon_aberration-vig)"/>
+</svg>

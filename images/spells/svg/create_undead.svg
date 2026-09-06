@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="create_undead-bg" cx=".5" cy=".38" r=".9">
+      <stop offset="0" stop-color="#16301a"/><stop offset=".5" stop-color="#0b1a0e"/><stop offset="1" stop-color="#050b05"/>
+    </radialGradient>
+    <radialGradient id="create_undead-halo" cx=".68" cy=".28" r=".5">
+      <stop offset="0" stop-color="#c8f0a0" stop-opacity=".5"/><stop offset="1" stop-color="#c8f0a0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="create_undead-moon" cx=".38" cy=".34" r=".85">
+      <stop offset="0" stop-color="#f4fbe0"/><stop offset=".55" stop-color="#c8e29a"/><stop offset="1" stop-color="#7a9c4a"/>
+    </radialGradient>
+    <linearGradient id="create_undead-arm" x1="0" y1="1" x2=".3" y2="0">
+      <stop offset="0" stop-color="#d0dcb4"/><stop offset=".6" stop-color="#8aa25a"/><stop offset="1" stop-color="#42602c"/>
+    </linearGradient>
+    <radialGradient id="create_undead-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#create_undead-bg)"/>
+  <rect width="64" height="64" fill="url(#create_undead-halo)"/>
+  <path d="M52 9 A11 11 0 1 0 52 29 A8.6 8.6 0 1 1 52 9 Z" fill="url(#create_undead-moon)"/>
+  <ellipse cx="32" cy="56" rx="16" ry="4" fill="#0a140a"/>
+  <path d="M20 54 C24 52 28 51 31 51 M44 54 C40 52 36 51 33 51" fill="none" stroke="#2a3a1e" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+  <path d="M26 56 C24 42 26 34 30 30 C31 34 31 40 30 56 Z" fill="#8aa25a" opacity=".25"/>
+  <path d="M26 56 C24.5 43 26.5 35 30 31 M38 56 C39.5 43 37.5 35 34 31" fill="none" stroke="url(#create_undead-arm)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26.5 33 L23 28 M27 38 L22.5 35 M37.5 33 L41 28 M37 38 L41.5 35" fill="none" stroke="url(#create_undead-arm)" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M28 40 C30 41.5 34 41.5 36 40" fill="none" stroke="#3a5024" stroke-width="1.2" opacity=".6"/>
+  <ellipse cx="47" cy="14" rx="2.4" ry="1.4" fill="#fff" opacity=".4" transform="rotate(-20 47 14)"/>
+  <circle cx="18" cy="46" r="1.4" fill="#c8f0a0" opacity=".8"/>
+  <circle cx="46" cy="42" r="1.2" fill="#a8de6a" opacity=".7"/>
+  <circle cx="15" cy="30" r="1" fill="#8ecb4a" opacity=".6"/>
+  <circle cx="30" cy="20" r=".9" fill="#c8f0a0" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#create_undead-vig)"/>
+</svg>

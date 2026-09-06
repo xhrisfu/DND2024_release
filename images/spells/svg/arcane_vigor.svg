@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="arcane_vigor-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#1d4a3f"/><stop offset=".5" stop-color="#0e2a2c"/><stop offset="1" stop-color="#07141a"/>
+    </radialGradient>
+    <radialGradient id="arcane_vigor-halo" cx=".5" cy=".44" r=".52">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".55"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="arcane_vigor-heart" cx=".4" cy=".32" r=".95">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset=".4" stop-color="#ffdf8a"/><stop offset=".8" stop-color="#e88f3c"/><stop offset="1" stop-color="#a85218"/>
+    </radialGradient>
+    <radialGradient id="arcane_vigor-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#arcane_vigor-bg)"/>
+  <rect width="64" height="64" fill="url(#arcane_vigor-halo)"/>
+  <path d="M12 33 C20 26 28 42 32 22 C36 42 44 26 52 33" fill="none" stroke="#ffd97a" stroke-width="1.4" opacity=".5"/>
+  <path d="M32 49 C21 40 15 33 17 26 C18.5 21 24 19.5 28 22 C30 23.3 31.4 25.4 32 27 C32.6 25.4 34 23.3 36 22 C40 19.5 45.5 21 47 26 C49 33 43 40 32 49 Z" fill="#ffcf6a" opacity=".22"/>
+  <path d="M32 47.5 C22 39 16.5 32.5 18.5 26.5 C20 22 24.5 20.8 28 23 C30 24.3 31.3 26 32 27.5 C32.7 26 34 24.3 36 23 C39.5 20.8 44 22 45.5 26.5 C47.5 32.5 42 39 32 47.5 Z" fill="url(#arcane_vigor-heart)"/>
+  <path d="M22 32 L28 32 L30 27 L33 37 L35 32 L42 32" fill="none" stroke="#fffdf0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="26" cy="28" rx="2.8" ry="1.8" fill="#fff" opacity=".6" transform="rotate(-25 26 28)"/>
+  <path d="M23 38 C27 43 37 43 41 38" fill="none" stroke="#a85218" stroke-width="1.4" opacity=".4"/>
+  <circle cx="15" cy="22" r="1.4" fill="#ffe9a8" opacity=".85"/>
+  <circle cx="49" cy="23" r="1" fill="#ffd97a" opacity=".7"/>
+  <circle cx="46" cy="44" r=".9" fill="#fff3c4" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#arcane_vigor-vig)"/>
+</svg>

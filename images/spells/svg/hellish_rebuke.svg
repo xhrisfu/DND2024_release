@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="hellish_rebuke-bg" cx=".5" cy=".62" r=".9">
+      <stop offset="0" stop-color="#5c2109"/><stop offset=".5" stop-color="#2c0c05"/><stop offset="1" stop-color="#140503"/>
+    </radialGradient>
+    <radialGradient id="hellish_rebuke-halo" cx=".5" cy=".62" r=".6">
+      <stop offset="0" stop-color="#ff6a2c" stop-opacity=".6"/><stop offset="1" stop-color="#ff6a2c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hellish_rebuke-fl" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#c22c05"/><stop offset=".45" stop-color="#ff7a1e"/><stop offset=".8" stop-color="#ffce55"/><stop offset="1" stop-color="#fff7d6"/>
+    </linearGradient>
+    <radialGradient id="hellish_rebuke-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#hellish_rebuke-bg)"/>
+  <rect width="64" height="64" fill="url(#hellish_rebuke-halo)"/>
+  <ellipse cx="32" cy="58" rx="28" ry="11" fill="#ff5a1f" opacity=".22"/>
+  <path d="M4 62 V42 C7 40 10 33 12 25 C14 34 18 31 20 22 C23 32 27 30 28 20 C30 30 34 30 36 20 C37 30 41 32 44 23 C46 32 50 35 52 26 C54 34 57 40 60 42 V62 Z" fill="#ff7a1e" opacity=".3"/>
+  <path d="M4 62 V50 C8 48 11 42 13 34 C15 42 19 40 21 32 C24 40 27 39 28 30 C30 39 34 39 36 30 C37 39 41 41 44 33 C46 41 50 43 52 35 C54 42 57 48 60 50 V62 Z" fill="url(#hellish_rebuke-fl)"/>
+  <path d="M14 46 C15 40 18 35 22 31 C21 37 22 42 24 46 Z" fill="#9d5cff" opacity=".55"/>
+  <path d="M44 45 C45 39 48 34 52 30 C51 36 52 41 54 45 Z" fill="#c06bff" opacity=".5"/>
+  <path d="M28 52 C26 46 28 40 32 36 C36 40 38 46 36 52 C35 48 33 47 32 48 C31 47 29 48 28 52 Z" fill="#ffe89a" opacity=".8"/>
+  <circle cx="20" cy="18" r="1.4" fill="#ffce55" opacity=".9"/>
+  <circle cx="34" cy="12" r="1.1" fill="#ff9b3d" opacity=".85"/>
+  <circle cx="47" cy="17" r="1.2" fill="#ffe0a0" opacity=".8"/>
+  <circle cx="10" cy="26" r=".9" fill="#ffab4d" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#hellish_rebuke-vig)"/>
+</svg>

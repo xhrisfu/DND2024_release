@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="false_life-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#16301a"/><stop offset=".5" stop-color="#0b1a0d"/><stop offset="1" stop-color="#060d05"/>
+    </radialGradient>
+    <radialGradient id="false_life-halo" cx=".5" cy=".44" r=".54">
+      <stop offset="0" stop-color="#8ef05a" stop-opacity=".5"/><stop offset="1" stop-color="#8ef05a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="false_life-heart" cx=".4" cy=".32" r="1">
+      <stop offset="0" stop-color="#d8ffc0"/><stop offset=".4" stop-color="#8ee23c"/><stop offset=".78" stop-color="#3c8a1e"/><stop offset="1" stop-color="#1c4a10"/>
+    </radialGradient>
+    <radialGradient id="false_life-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#false_life-bg)"/>
+  <rect width="64" height="64" fill="url(#false_life-halo)"/>
+  <path d="M32 51 C19 41 13 32.5 15.5 25 C17 20 23 18.5 27.5 21.2 C29.7 22.6 31.2 24.8 32 26.6 C32.8 24.8 34.3 22.6 36.5 21.2 C41 18.5 47 20 48.5 25 C51 32.5 45 41 32 51 Z" fill="#8ef05a" opacity=".2"/>
+  <path d="M32 48 C21 39 16 32 18 26 C19.4 21.6 24.6 20.4 28.4 22.8 C30.2 24 31.4 25.8 32 27.4 C32.6 25.8 33.8 24 35.6 22.8 C39.4 20.4 44.6 21.6 46 26 C48 32 43 39 32 48 Z" fill="none" stroke="#a8ff70" stroke-width="1.6" stroke-opacity=".85" stroke-dasharray="4.5 2.6"/>
+  <path d="M32 42 C24 35 20.5 30 22 26 C23 22.8 27 22 29.5 24 C30.5 24.8 31.4 26 32 27.2 C32.6 26 33.5 24.8 34.5 24 C37 22 41 22.8 42 26 C43.5 30 40 35 32 42 Z" fill="url(#false_life-heart)"/>
+  <path d="M26 30 C29 32 35 32 38 29.5" fill="none" stroke="#e0ffc0" stroke-width="1.2" opacity=".7"/>
+  <ellipse cx="27.5" cy="27" rx="2.2" ry="1.5" fill="#fff" opacity=".6" transform="rotate(-25 27.5 27)"/>
+  <path d="M49 12 l1 2.1 2.1 1 -2.1 1 -1 2.1 -1 -2.1 -2.1 -1 2.1 -1 Z" fill="#d8ffc0" opacity=".9"/>
+  <circle cx="13" cy="24" r="1.3" fill="#a8ff70" opacity=".8"/>
+  <circle cx="16" cy="46" r="1" fill="#8ef05a" opacity=".65"/>
+  <circle cx="49" cy="44" r="1.1" fill="#d8ffc0" opacity=".7"/>
+  <circle cx="46" cy="20" r=".8" fill="#c0ffa0" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#false_life-vig)"/>
+</svg>

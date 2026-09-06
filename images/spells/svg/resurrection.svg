@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="resurrection-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#1e3a20"/><stop offset=".5" stop-color="#0e2012"/><stop offset="1" stop-color="#060d05"/>
+    </radialGradient>
+    <radialGradient id="resurrection-halo" cx=".5" cy=".46" r=".55">
+      <stop offset="0" stop-color="#eafcc8" stop-opacity=".6"/><stop offset=".5" stop-color="#a8f06c" stop-opacity=".3"/><stop offset="1" stop-color="#a8f06c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="resurrection-ankh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbffe8"/><stop offset=".4" stop-color="#d8ffb0"/><stop offset=".8" stop-color="#8ed85a"/><stop offset="1" stop-color="#4a8a2a"/>
+    </linearGradient>
+    <radialGradient id="resurrection-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#resurrection-bg)"/>
+  <rect width="64" height="64" fill="url(#resurrection-halo)"/>
+  <path d="M32 6 L32 58 M6 32 L58 32 M14 14 L50 50 M50 14 L14 50" stroke="#d8ffb0" stroke-width="1" stroke-linecap="round" opacity=".3"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#a8f06c" stroke-width="1.1" opacity=".4"/>
+  <path d="M32 10 C25 10 21 15 21 21 C21 26 24 29 27 31 L21 31 C19.5 31 19.5 34 21 34 L27.5 34 L27.5 56 C27.5 57.5 30 57.5 30 56 L30 34 L34 34 L34 56 C34 57.5 36.5 57.5 36.5 56 L36.5 34 L43 34 C44.5 34 44.5 31 43 31 L37 31 C40 29 43 26 43 21 C43 15 39 10 32 10 Z" fill="#8ed85a" opacity=".22"/>
+  <path d="M32 12 C26 12 22.5 16 22.5 21 C22.5 26 26 29 29.5 31.5 L23 31.5 C21.8 31.5 21.8 34 23 34 L29 34 L29 55 C29 56.4 31 56.4 31 55 L31 34 L33 34 L33 55 C33 56.4 35 56.4 35 55 L35 34 L41 34 C42.2 34 42.2 31.5 41 31.5 L34.5 31.5 C38 29 41.5 26 41.5 21 C41.5 16 38 12 32 12 Z" fill="url(#resurrection-ankh)" stroke="#4a8a2a" stroke-width=".8"/>
+  <path d="M32 15 C28.5 15 26 17.5 26 21 C26 24 28.5 26.5 32 27" fill="none" stroke="#fbffe8" stroke-width="1.4" stroke-linecap="round" opacity=".7"/>
+  <ellipse cx="28" cy="18" rx="1.8" ry="1.1" fill="#fff" opacity=".7" transform="rotate(-30 28 18)"/>
+  <circle cx="49" cy="16" r="1.5" fill="#eafcc8" opacity=".9"/>
+  <circle cx="14" cy="46" r="1.3" fill="#a8f06c" opacity=".8"/>
+  <circle cx="50" cy="47" r="1.1" fill="#8ed85a" opacity=".7"/>
+  <circle cx="16" cy="18" r="1" fill="#d8ffb0" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#resurrection-vig)"/>
+</svg>

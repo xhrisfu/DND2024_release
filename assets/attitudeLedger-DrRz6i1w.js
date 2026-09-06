@@ -1,0 +1,1 @@
+const o={hostileAtMost:-3,friendlyAtLeast:3};function f(t){return t<=o.hostileAtMost?"hostile":t>=o.friendlyAtLeast?"friendly":"indifferent"}function a(t,n){const e=t+n,r=f(t),i=f(e);return{next:e,tierBefore:r,tierAfter:i,tierChanged:r!==i}}function s(t,n,e){return(n==="town"?t.reputation.town:t.reputation.faction)[e]??0}export{a,s as r,f as t};

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bestow_curse-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#1e1226"/><stop offset=".5" stop-color="#0f0813"/><stop offset="1" stop-color="#060309"/>
+    </radialGradient>
+    <radialGradient id="bestow_curse-halo" cx=".5" cy=".44" r=".54">
+      <stop offset="0" stop-color="#a03cff" stop-opacity=".5"/><stop offset="1" stop-color="#a03cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bestow_curse-skull" cx=".42" cy=".34" r=".9">
+      <stop offset="0" stop-color="#efe6c4"/><stop offset=".5" stop-color="#c0b48a"/><stop offset="1" stop-color="#6a5e40"/>
+    </radialGradient>
+    <radialGradient id="bestow_curse-eye" cx=".5" cy=".5" r=".8">
+      <stop offset="0" stop-color="#f0b0ff"/><stop offset=".5" stop-color="#a83cff"/><stop offset="1" stop-color="#3c0870"/>
+    </radialGradient>
+    <radialGradient id="bestow_curse-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#bestow_curse-bg)"/>
+  <rect width="64" height="64" fill="url(#bestow_curse-halo)"/>
+  <circle cx="32" cy="30" r="24" fill="none" stroke="#8a4cd0" stroke-width="1" opacity=".3"/>
+  <circle cx="32" cy="30" r="20" fill="none" stroke="#a86ce0" stroke-width=".8" opacity=".35"/>
+  <path d="M32 10 C22 10 15 17.5 15 28 C15 34.5 18 39 21.6 41.6 L21.6 47.5 C21.6 49 23 49.6 24.2 48.8 L26.2 47 L27.6 49 C28.2 50 29.6 50 30.2 49 L31.4 47.2 L32.6 49 L33.8 47.2 L35 49 C35.6 50 37 50 37.6 49 L39 47 L40.8 48.8 C42 49.6 43.4 49 43.4 47.5 L43.4 41.6 C47 39 50 34.5 50 28 C50 17.5 42 10 32 10 Z" fill="#a86cff" opacity=".2"/>
+  <path d="M32 12 C22.4 12 15.6 19 15.6 28.4 C15.6 34.4 18.4 38.6 21.8 41 L21.8 46.6 C21.8 48 23.2 48.6 24.4 47.8 L26.2 46 L27.6 48 C28.2 49 29.6 49 30.2 48 L31.4 46.4 L32.6 48 L33.8 46.4 L35 48 C35.6 49 37 49 37.6 48 L39 46 L40.6 47.8 C41.8 48.6 43.2 48 43.2 46.6 L43.2 41 C46.6 38.6 49.4 34.4 49.4 28.4 C49.4 19 42 12 32 12 Z" fill="url(#bestow_curse-skull)"/>
+  <ellipse cx="24" cy="29" rx="5" ry="6" fill="#2a2016"/>
+  <ellipse cx="40" cy="29" rx="5" ry="6" fill="#2a2016"/>
+  <circle cx="24" cy="29" r="2.4" fill="url(#bestow_curse-eye)"/>
+  <circle cx="40" cy="29" r="2.4" fill="url(#bestow_curse-eye)"/>
+  <path d="M32 34 L29 40 L35 40 Z" fill="#2a2016"/>
+  <path d="M20 22 C22 19 27 18 31 20" fill="none" stroke="#f2ecd0" stroke-width="1.2" stroke-linecap="round" opacity=".55"/>
+  <ellipse cx="23" cy="19" rx="2.4" ry="1.4" fill="#fff" opacity=".45" transform="rotate(-20 23 19)"/>
+  <circle cx="50" cy="14" r="1.5" fill="#d0a0ff"/>
+  <circle cx="13" cy="20" r="1.2" fill="#a86ce0" opacity=".85"/>
+  <circle cx="48" cy="44" r="1" fill="#e0c8ff" opacity=".7"/>
+  <circle cx="16" cy="45" r=".9" fill="#b98cff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#bestow_curse-vig)"/>
+</svg>

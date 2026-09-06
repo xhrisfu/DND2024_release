@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="feather_fall-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#3a2410"/><stop offset=".5" stop-color="#1f1408"/><stop offset="1" stop-color="#100a04"/>
+    </radialGradient>
+    <radialGradient id="feather_fall-halo" cx=".5" cy=".45" r=".5">
+      <stop offset="0" stop-color="#ffe0a8" stop-opacity=".5"/><stop offset="1" stop-color="#ffe0a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="feather_fall-feather" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffbe8"/><stop offset=".5" stop-color="#ffdc8a"/><stop offset="1" stop-color="#d99a2e"/>
+    </linearGradient>
+    <radialGradient id="feather_fall-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#feather_fall-bg)"/>
+  <rect width="64" height="64" fill="url(#feather_fall-halo)"/>
+  <path d="M12 8 C22 14 18 24 14 30 M50 12 C42 18 44 28 48 34 M31 4 C31 12 31 18 31 24" fill="none" stroke="#ffcf7a" stroke-width="1.2" opacity=".3" stroke-dasharray="2.5 4"/>
+  <path d="M47 11 C50 25 42 41 25 53 C23 46 26 40 30 37 C24 39 20 44 18 50 C18 35 30 18 47 11 Z" fill="#ffcf7a" opacity=".18"/>
+  <path d="M46 13 C48.5 25.5 41 40 27 50 C26 44 28 38.5 32 35.5 C26.5 37.5 22.5 42 20.5 47.5 C21.5 34.5 32 20 46 13 Z" fill="url(#feather_fall-feather)" stroke="#a9822f" stroke-width=".9" stroke-linejoin="round"/>
+  <path d="M46 13 C40.5 22.5 33 34 24 48" fill="none" stroke="#a9822f" stroke-width="1.2" opacity=".7"/>
+  <path d="M40 19 L34.5 22.5 M37 26 L30.5 30 M33.5 34 L27.5 38" stroke="#c9954a" stroke-width=".9" opacity=".6"/>
+  <ellipse cx="40" cy="20" rx="3" ry="1.4" fill="#fffbe8" opacity=".55" transform="rotate(-38 40 20)"/>
+  <circle cx="16" cy="14" r="1.4" fill="#fffbe8" opacity=".9"/>
+  <circle cx="52" cy="30" r="1.1" fill="#ffdc8a" opacity=".7"/>
+  <circle cx="19" cy="55" r="1" fill="#ffe0a8" opacity=".65"/>
+  <circle cx="50" cy="48" r=".9" fill="#ffdc8a" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#feather_fall-vig)"/>
+</svg>

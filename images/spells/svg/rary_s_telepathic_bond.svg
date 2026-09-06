@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="rary_s_telepathic_bond-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#3a2e0c"/><stop offset=".5" stop-color="#211809"/><stop offset="1" stop-color="#100b04"/>
+    </radialGradient>
+    <radialGradient id="rary_s_telepathic_bond-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".55"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rary_s_telepathic_bond-core" cx=".42" cy=".38" r=".8">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset=".45" stop-color="#ffd54d"/><stop offset="1" stop-color="#9c7418"/>
+    </radialGradient>
+    <radialGradient id="rary_s_telepathic_bond-node" cx=".4" cy=".35" r=".85">
+      <stop offset="0" stop-color="#fff6d6"/><stop offset=".6" stop-color="#ffd54d"/><stop offset="1" stop-color="#a67818"/>
+    </radialGradient>
+    <radialGradient id="rary_s_telepathic_bond-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#rary_s_telepathic_bond-bg)"/>
+  <rect width="64" height="64" fill="url(#rary_s_telepathic_bond-halo)"/>
+  <circle cx="32" cy="32" r="21" fill="none" stroke="#ffe08a" stroke-width="1" opacity=".3" stroke-dasharray="2 4"/>
+  <g stroke="#ffe08a" stroke-width="1.2" opacity=".5">
+    <path d="M32 32 L32 12 M32 32 L46.2 17.8 M32 32 L52 32 M32 32 L46.2 46.2 M32 32 L32 52 M32 32 L17.8 46.2 M32 32 L12 32 M32 32 L17.8 17.8"/>
+  </g>
+  <g fill="url(#rary_s_telepathic_bond-node)" stroke="#7a5210" stroke-width=".6">
+    <circle cx="32" cy="12" r="3.4"/><circle cx="46.2" cy="17.8" r="3.4"/>
+    <circle cx="52" cy="32" r="3.4"/><circle cx="46.2" cy="46.2" r="3.4"/>
+    <circle cx="32" cy="52" r="3.4"/><circle cx="17.8" cy="46.2" r="3.4"/>
+    <circle cx="12" cy="32" r="3.4"/><circle cx="17.8" cy="17.8" r="3.4"/>
+  </g>
+  <circle cx="32" cy="32" r="7" fill="url(#rary_s_telepathic_bond-core)"/>
+  <path d="M32 27 l1.2 3.4 3.4 1.2 -3.4 1.2 -1.2 3.4 -1.2-3.4 -3.4-1.2 3.4-1.2 Z" fill="#fffdf0" opacity=".85"/>
+  <ellipse cx="30" cy="30" rx="1.8" ry="1.2" fill="#fff" opacity=".8" transform="rotate(-30 30 30)"/>
+  <circle cx="49" cy="14" r="1" fill="#fff6d6" opacity=".8"/>
+  <circle cx="15" cy="50" r="1" fill="#ffd54d" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#rary_s_telepathic_bond-vig)"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="power_word_kill-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b0d24"/><stop offset="1" stop-color="#47163b"/>
+    </linearGradient>
+    <radialGradient id="power_word_kill-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+    <radialGradient id="power_word_kill-skull" cx=".45" cy=".4" r=".85">
+      <stop offset="0" stop-color="#ffe3f0"/><stop offset=".6" stop-color="#e79bc4"/><stop offset="1" stop-color="#8f1557"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#power_word_kill-bg)"/>
+  <rect width="64" height="64" fill="url(#power_word_kill-vig)"/>
+  <circle cx="32" cy="30" r="20" fill="#ff2e6a" opacity=".16"/>
+  <path d="M32 26 L36 12 M32 26 L48 18 M32 26 L52 34 M32 26 L16 18 M32 26 L12 34" stroke="#ff5ca8" stroke-width="1.4" opacity=".55" fill="none"/>
+  <path d="M18 27 C18 15 25 10 32 10 C39 10 46 15 46 27 C46 34 42 37 42 41 L40 47 L36 44 L32 47 L28 44 L24 47 L22 41 C22 37 18 34 18 27 Z" fill="url(#power_word_kill-skull)"/>
+  <ellipse cx="26" cy="28" rx="4.5" ry="5" fill="#2b0912"/>
+  <ellipse cx="38" cy="28" rx="4.5" ry="5" fill="#2b0912"/>
+  <path d="M32 34 L29 40 L35 40 Z" fill="#2b0912"/>
+  <ellipse cx="24.5" cy="26" rx="1.5" ry="1.8" fill="#ff9bcb" opacity=".8"/>
+  <circle cx="36" cy="10" r="1.5" fill="#ffd0e8"/>
+  <circle cx="14" cy="20" r="1.1" fill="#ff5ca8" opacity=".8"/>
+  <circle cx="50" cy="20" r="1.1" fill="#ff5ca8" opacity=".8"/>
+</svg>

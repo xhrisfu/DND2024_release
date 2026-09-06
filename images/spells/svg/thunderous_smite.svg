@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="thunderous_smite-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b0d08"/><stop offset="1" stop-color="#471810"/>
+    </linearGradient>
+    <radialGradient id="thunderous_smite-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="thunderous_smite-head" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9c9e2"/><stop offset="1" stop-color="#6e82a4"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#thunderous_smite-bg)"/>
+  <rect width="64" height="64" fill="url(#thunderous_smite-vig)"/>
+  <circle cx="25" cy="45" r="13" fill="#d8c8ff" opacity=".18"/>
+  <line x1="36.5" y1="29" x2="52" y2="8.5" stroke="#7a5a30" stroke-width="3.2"/>
+  <circle cx="52.5" cy="8" r="1.8" fill="#9a7840"/>
+  <g transform="rotate(-38 29 35)">
+    <rect x="22" y="29.5" width="14" height="10.5" rx="1.5" fill="url(#thunderous_smite-head)" stroke="#d8e2f2" stroke-width="1.2"/>
+  </g>
+  <path d="M14 49 A11 11 0 0 1 36 49" fill="none" stroke="#e4dcff" stroke-width="2.2" opacity=".9"/>
+  <path d="M8 52 A17 17 0 0 1 42 52" fill="none" stroke="#d8c8ff" stroke-width="1.8" opacity=".65"/>
+  <path d="M3 56 A22.5 22.5 0 0 1 48 56" fill="none" stroke="#c9bcf2" stroke-width="1.5" opacity=".4"/>
+  <polygon points="25,40.5 26.6,45.4 31.5,47 26.6,48.6 25,53.5 23.4,48.6 18.5,47 23.4,45.4" fill="#fff"/>
+  <polyline points="9,56 14,53.5 13.5,57.5" fill="none" stroke="#b9a8e8" stroke-width="1.3" opacity=".6"/>
+  <polyline points="37,57 42,54 41.5,58" fill="none" stroke="#b9a8e8" stroke-width="1.3" opacity=".6"/>
+  <polygon points="12,42 14.5,43 13.5,45.5 11,44.5" fill="#8fa6c8" opacity=".8"/>
+  <polygon points="39,39.5 41.5,40 41,42.5 38.5,42" fill="#8fa6c8" opacity=".7"/>
+  <circle cx="47" cy="30" r="1.1" fill="#e4dcff" opacity=".8"/>
+</svg>

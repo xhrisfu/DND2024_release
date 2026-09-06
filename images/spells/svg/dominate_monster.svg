@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="dominate_monster-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b0d24"/><stop offset="1" stop-color="#47163b"/>
+    </linearGradient>
+    <radialGradient id="dominate_monster-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="dominate_monster-bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd0e8"/><stop offset="1" stop-color="#c23a86"/>
+    </linearGradient>
+    <linearGradient id="dominate_monster-beast" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff8ec2"/><stop offset="1" stop-color="#8f1557"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#dominate_monster-bg)"/>
+  <rect width="64" height="64" fill="url(#dominate_monster-vig)"/>
+  <rect x="15" y="9" width="34" height="4.5" rx="2" fill="#ff5ca8" opacity=".16"/>
+  <rect x="16" y="9.5" width="32" height="3.5" rx="1.7" fill="url(#dominate_monster-bar)"/>
+  <line x1="20" y1="13" x2="18" y2="26" stroke="#ffd0e8" stroke-width="1.2" opacity=".7"/>
+  <line x1="44" y1="13" x2="46" y2="26" stroke="#ffd0e8" stroke-width="1.2" opacity=".7"/>
+  <line x1="32" y1="13" x2="32" y2="23" stroke="#ffd0e8" stroke-width="1.2" opacity=".7"/>
+  <path d="M20 30 L16 20 L24 27 M44 30 L48 20 L40 27" fill="url(#dominate_monster-beast)"/>
+  <circle cx="32" cy="34" r="10" fill="url(#dominate_monster-beast)"/>
+  <path d="M18 26 L26 40 M46 26 L38 40" stroke="#ff9bcb" stroke-width="1.2" opacity=".6"/>
+  <path d="M27 33 L31 37 M37 33 L33 37" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M28 42 C30 44 34 44 36 42" fill="none" stroke="#3a0a24" stroke-width="1.5"/>
+  <path d="M28 41 L27 43 M32 42 L32 44.5 M36 41 L37 43" stroke="#fff" stroke-width="1" opacity=".8"/>
+  <circle cx="20" cy="13" r="1.4" fill="#ffd0e8"/>
+  <circle cx="44" cy="13" r="1.4" fill="#ffd0e8"/>
+</svg>

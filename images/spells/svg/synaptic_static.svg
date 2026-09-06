@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="synaptic_static-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#3a1030"/><stop offset=".5" stop-color="#20091a"/><stop offset="1" stop-color="#140510"/>
+    </radialGradient>
+    <radialGradient id="synaptic_static-halo" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#c8a0ff" stop-opacity=".55"/><stop offset="1" stop-color="#c8a0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="synaptic_static-core" cx=".42" cy=".38" r=".95">
+      <stop offset="0" stop-color="#fbf2ff"/><stop offset=".45" stop-color="#c77dff"/><stop offset=".8" stop-color="#8a3ad4"/><stop offset="1" stop-color="#571f96"/>
+    </radialGradient>
+    <radialGradient id="synaptic_static-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#synaptic_static-bg)"/>
+  <rect width="64" height="64" fill="url(#synaptic_static-halo)"/>
+  <circle cx="32" cy="32" r="18" fill="#b06bff" opacity=".16"/>
+  <path d="M32 32 L30 12 M32 32 L52 22 M32 32 L54 40 M32 32 L38 54 M32 32 L14 50 M32 32 L10 34 M32 32 L18 15" stroke="#d8b0ff" stroke-width="1.6" opacity=".7" fill="none"/>
+  <circle cx="30" cy="12" r="2.3" fill="#e9d4ff"/>
+  <circle cx="52" cy="22" r="1.9" fill="#c77dff"/>
+  <circle cx="54" cy="40" r="1.6" fill="#c77dff" opacity=".85"/>
+  <circle cx="38" cy="54" r="2" fill="#e9d4ff"/>
+  <circle cx="14" cy="50" r="1.6" fill="#c77dff" opacity=".85"/>
+  <circle cx="10" cy="34" r="1.5" fill="#c77dff" opacity=".8"/>
+  <circle cx="18" cy="15" r="1.8" fill="#e9d4ff"/>
+  <circle cx="32" cy="32" r="9.5" fill="#c77dff" opacity=".28"/>
+  <circle cx="32" cy="32" r="7" fill="url(#synaptic_static-core)"/>
+  <path d="M34 27 L28.5 33 L33 33 L28 39" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+  <ellipse cx="29.5" cy="29.5" rx="2.1" ry="1.4" fill="#fff" opacity=".6" transform="rotate(-25 29.5 29.5)"/>
+  <rect width="64" height="64" fill="url(#synaptic_static-vig)"/>
+</svg>

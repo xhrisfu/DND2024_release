@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="illusory_script-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#0a3a42"/><stop offset=".5" stop-color="#0a222a"/><stop offset="1" stop-color="#05141a"/>
+    </radialGradient>
+    <radialGradient id="illusory_script-halo" cx=".5" cy=".46" r=".5">
+      <stop offset="0" stop-color="#3ee6c4" stop-opacity=".5"/><stop offset="1" stop-color="#3ee6c4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="illusory_script-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eafaf4"/><stop offset=".5" stop-color="#c4ddce"/><stop offset="1" stop-color="#7fa593"/>
+    </linearGradient>
+    <radialGradient id="illusory_script-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#illusory_script-bg)"/>
+  <rect width="64" height="64" fill="url(#illusory_script-halo)"/>
+  <g transform="rotate(-6 32 33)">
+    <rect x="20" y="11" width="24" height="42" rx="1.4" fill="#3ee6c4" opacity=".18"/>
+    <rect x="20.5" y="11.5" width="23" height="41" rx="1.4" fill="url(#illusory_script-paper)"/>
+    <path d="M20.5 11.5 h23 v6 l-11.5 3 -11.5 -3 Z" fill="#fff" opacity=".25"/>
+    <path d="M24 22 q4 -2 8 0 q4 2 8 0" fill="none" stroke="#0f6558" stroke-width="1.5" opacity=".85"/>
+    <path d="M24 30 q4 -2 8 0 q4 2 8 0" fill="none" stroke="#3ee6c4" stroke-width="4.4" opacity=".28"/>
+    <path d="M24 30 q4 -2 8 0 q4 2 8 0" fill="none" stroke="#178a76" stroke-width="1.9"/>
+    <path d="M25.5 28.6 q4 -2 8 0 q4 2 8 0" fill="none" stroke="#9ff5e4" stroke-width="1.3" opacity=".4"/>
+    <path d="M24 38 q4 -2 8 0 q4 2 8 0" fill="none" stroke="#0f6558" stroke-width="1.5" opacity=".8"/>
+    <path d="M24 46 q4 -2 6.4 0" fill="none" stroke="#0f6558" stroke-width="1.5" opacity=".5"/>
+  </g>
+  <path d="M46 18 l1 2.6 2.6 1 -2.6 1 -1 2.6 -1-2.6 -2.6-1 2.6-1 Z" fill="#c8fff0" opacity=".8"/>
+  <circle cx="51" cy="40" r="1.4" fill="#c8fff0" opacity=".8"/>
+  <circle cx="13" cy="22" r="1.1" fill="#9ff5e4" opacity=".7"/>
+  <circle cx="14" cy="50" r="1" fill="#3ee6c4" opacity=".6"/>
+  <circle cx="52" cy="14" r=".8" fill="#eafff9" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#illusory_script-vig)"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="mind_sliver-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#3a1030"/><stop offset=".5" stop-color="#22091c"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="mind_sliver-halo" cx=".5" cy=".46" r=".5">
+      <stop offset="0" stop-color="#c8a0ff" stop-opacity=".5"/><stop offset="1" stop-color="#c8a0ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mind_sliver-shard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbeaff"/><stop offset=".4" stop-color="#e0a0ff"/><stop offset=".75" stop-color="#b25cff"/><stop offset="1" stop-color="#6a2699"/>
+    </linearGradient>
+    <radialGradient id="mind_sliver-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#mind_sliver-bg)"/>
+  <rect width="64" height="64" fill="url(#mind_sliver-halo)"/>
+  <path d="M32 12 C24 20 20 28 20 40 A12 12 0 0 0 44 40 C44 28 40 20 32 12 Z" fill="#c8a0ff" opacity=".16"/>
+  <path d="M32 15 C25 22 22 29 22 39 A10 10 0 0 0 42 39 C42 29 39 22 32 15 Z" fill="none" stroke="#d8b8ff" stroke-width="1.2" opacity=".4"/>
+  <polygon points="35,50 43,20 33.5,40 37,42" fill="#b25cff" opacity=".25" transform="translate(1 1)"/>
+  <polygon points="34,51 43,17 32.5,40 36.5,42.5" fill="url(#mind_sliver-shard)"/>
+  <polyline points="41,20 33.5,39.5 36.2,41.5" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round" opacity=".75"/>
+  <ellipse cx="40" cy="24" rx="1.8" ry="3.4" fill="#fff" opacity=".6" transform="rotate(24 40 24)"/>
+  <polygon points="34,51 32.5,40 36.5,42.5" fill="#4a1a70" opacity=".45"/>
+  <circle cx="24" cy="27" r="1.5" fill="#e0c0ff" opacity=".85"/>
+  <circle cx="45" cy="45" r="1" fill="#c8a0ff" opacity=".7"/>
+  <circle cx="21" cy="46" r=".9" fill="#f0e0ff" opacity=".6"/>
+  <circle cx="43" cy="17" r="1.2" fill="#fff" opacity=".8"/>
+  <rect width="64" height="64" fill="url(#mind_sliver-vig)"/>
+</svg>

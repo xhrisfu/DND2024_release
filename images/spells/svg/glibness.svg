@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="glibness-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b0d24"/><stop offset="1" stop-color="#47163b"/>
+    </linearGradient>
+    <radialGradient id="glibness-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="glibness-lip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff8ec2"/><stop offset="1" stop-color="#b3145f"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#glibness-bg)"/>
+  <rect width="64" height="64" fill="url(#glibness-vig)"/>
+  <ellipse cx="30" cy="32" rx="22" ry="16" fill="#ff5ca8" opacity=".12"/>
+  <path d="M14 30 C22 22 38 22 46 30 C38 33 22 33 14 30 Z" fill="url(#glibness-lip)"/>
+  <path d="M14 30 C22 42 38 42 46 30 C38 33 22 33 14 30 Z" fill="url(#glibness-lip)"/>
+  <path d="M18 30 C24 27 36 27 42 30" fill="none" stroke="#fff" stroke-width="1.5" opacity=".7"/>
+  <path d="M20 30 L23 33 M27 31 L27 34.5 M34 31 L34 34.5 M40 30 L37 33" stroke="#fff" stroke-width="1.2" opacity=".6"/>
+  <ellipse cx="24" cy="27" rx="3" ry="1.5" fill="#fff" opacity=".5"/>
+  <path d="M50 16 L52 21 L57 22 L52 24 L50 30 L48 24 L43 22 L48 21 Z" fill="#ffe9a8"/>
+  <path d="M52 38 L53 41 L56 42 L53 43 L52 46 L51 43 L48 42 L51 41 Z" fill="#fff3c4" opacity=".9"/>
+  <circle cx="12" cy="20" r="1.2" fill="#ffd0e8" opacity=".8"/>
+  <circle cx="47" cy="48" r="1" fill="#ffe9a8" opacity=".7"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="flame_strike-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#5c2109"/><stop offset=".5" stop-color="#2c0c05"/><stop offset="1" stop-color="#140503"/>
+    </radialGradient>
+    <radialGradient id="flame_strike-halo" cx=".5" cy=".4" r=".5">
+      <stop offset="0" stop-color="#ff8a2c" stop-opacity=".55"/><stop offset="1" stop-color="#ff8a2c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="flame_strike-col" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff7d6"/><stop offset=".3" stop-color="#ffe07a"/><stop offset=".65" stop-color="#ff8a2c"/><stop offset="1" stop-color="#e0430c" stop-opacity=".2"/>
+    </linearGradient>
+    <radialGradient id="flame_strike-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".64"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#flame_strike-bg)"/>
+  <rect width="64" height="64" fill="url(#flame_strike-halo)"/>
+  <polygon points="24,4 40,4 44,58 20,58" fill="#ff8a2c" opacity=".2"/>
+  <path d="M26 6 C24 20 27 30 25 42 C24 50 27 55 32 57 C37 55 40 50 39 42 C37 30 40 20 38 6 C36 16 34 20 32 22 C30 20 28 16 26 6 Z" fill="url(#flame_strike-col)"/>
+  <path d="M29 20 C28 30 30 38 29 46 C28.5 51 30 54 32 55 C34 54 35.5 51 35 46 C34 38 36 30 35 20 C34 27 33 30 32 31 C31 30 30 27 29 20 Z" fill="#ffe07a" opacity=".75"/>
+  <path d="M31 34 C30.5 40 31 46 31.4 50 C31.6 52 32 53 32 53 C32 53 32.4 52 32.6 50 C33 46 33.5 40 33 34 C32.6 37 32.3 38 32 38.5 C31.7 38 31.4 37 31 34 Z" fill="#fff7d6" opacity=".85"/>
+  <ellipse cx="30" cy="16" rx="2" ry="3.4" fill="#fff" opacity=".55" transform="rotate(8 30 16)"/>
+  <circle cx="18" cy="14" r="1.5" fill="#ffd27a"/>
+  <circle cx="47" cy="20" r="1.2" fill="#ff9b3d" opacity=".85"/>
+  <circle cx="16" cy="40" r="1" fill="#ffab4d" opacity=".7"/>
+  <circle cx="49" cy="44" r="1.1" fill="#ffe0a0" opacity=".75"/>
+  <circle cx="45" cy="8" r=".9" fill="#fff1b0" opacity=".8"/>
+  <rect width="64" height="64" fill="url(#flame_strike-vig)"/>
+</svg>

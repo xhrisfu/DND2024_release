@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="shield_of_faith-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#123556"/><stop offset=".5" stop-color="#0b2039"/><stop offset="1" stop-color="#050d1a"/>
+    </radialGradient>
+    <radialGradient id="shield_of_faith-halo" cx=".5" cy=".42" r=".54">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".55"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shield_of_faith-shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3c4"/><stop offset=".5" stop-color="#3d78b4"/><stop offset="1" stop-color="#123356"/>
+    </linearGradient>
+    <radialGradient id="shield_of_faith-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#shield_of_faith-bg)"/>
+  <rect width="64" height="64" fill="url(#shield_of_faith-halo)"/>
+  <circle cx="32" cy="32" r="22" fill="#4da6ff" opacity=".12"/>
+  <circle cx="32" cy="32" r="21" fill="none" stroke="#ffe9a8" stroke-width="1.4" opacity=".6"/>
+  <circle cx="32" cy="32" r="17" fill="none" stroke="#7fc4ff" stroke-width="1" opacity=".35"/>
+  <path d="M32 12 L48 18 V32 C48 43 41 51 32 55 C23 51 16 43 16 32 V18 Z" fill="#4da6ff" opacity=".2"/>
+  <path d="M32 13.5 L46.5 19 V32 C46.5 42 40 49.5 32 53.2 C24 49.5 17.5 42 17.5 32 V19 Z" fill="url(#shield_of_faith-shield)" stroke="#ffe9a8" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M32 22 V42 M23 30 H41" stroke="#fff6d8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M32 22 V42 M23 30 H41" stroke="#e0b040" stroke-width="1" stroke-linecap="round" opacity=".5"/>
+  <ellipse cx="25" cy="21" rx="3.2" ry="1.5" fill="#fff" opacity=".5" transform="rotate(20 25 21)"/>
+  <circle cx="32" cy="10" r="1.4" fill="#fff3c4"/>
+  <circle cx="52" cy="24" r="1.1" fill="#ffe9a8" opacity=".85"/>
+  <circle cx="14" cy="42" r="1" fill="#aed8ff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#shield_of_faith-vig)"/>
+</svg>

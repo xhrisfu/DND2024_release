@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="zone_of_truth-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#4a1240"/><stop offset=".5" stop-color="#2a0c22"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="zone_of_truth-halo" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".45"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="zone_of_truth-dome" cx=".5" cy=".9" r=".85">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".45"/><stop offset=".7" stop-color="#ff77b8" stop-opacity=".12"/><stop offset="1" stop-color="#ff77b8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="zone_of_truth-eye" cx=".42" cy=".38" r=".85">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset=".45" stop-color="#ffe9a8"/><stop offset=".85" stop-color="#e0972e"/><stop offset="1" stop-color="#9c6414"/>
+    </radialGradient>
+    <radialGradient id="zone_of_truth-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#zone_of_truth-bg)"/>
+  <rect width="64" height="64" fill="url(#zone_of_truth-halo)"/>
+  <path d="M9 50 A23 23 0 0 1 55 50 Z" fill="url(#zone_of_truth-dome)"/>
+  <path d="M9 50 A23 23 0 0 1 55 50" fill="none" stroke="#ffd0e8" stroke-width="1.6" opacity=".8"/>
+  <path d="M15 50 A17 17 0 0 1 49 50" fill="none" stroke="#ff9bcb" stroke-width="1.1" opacity=".4"/>
+  <ellipse cx="32" cy="50" rx="23" ry="4" fill="none" stroke="#ffd0e8" stroke-width="1.1" opacity=".5"/>
+  <path d="M17 33 C24 25 40 25 47 33 C40 41 24 41 17 33 Z" fill="#160510" stroke="#ffe9a8" stroke-width="1.3"/>
+  <circle cx="32" cy="33" r="6.5" fill="url(#zone_of_truth-eye)"/>
+  <circle cx="32" cy="33" r="2.8" fill="#160510"/>
+  <circle cx="30.4" cy="31.4" r="1.1" fill="#fffdf0" opacity=".9"/>
+  <path d="M19 31 C25 26 39 26 45 31" fill="none" stroke="#fffdf0" stroke-width="1" opacity=".45"/>
+  <path d="M32 41 L32 47 M28 43 L28 47 M36 43 L36 47" stroke="#ffe9a8" stroke-width="1.2" stroke-linecap="round" opacity=".55"/>
+  <circle cx="14" cy="24" r="1.3" fill="#ffe9a8" opacity=".8"/>
+  <circle cx="50" cy="24" r="1" fill="#ffd0e8" opacity=".7"/>
+  <circle cx="49" cy="46" r=".9" fill="#ffe9a8" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#zone_of_truth-vig)"/>
+</svg>

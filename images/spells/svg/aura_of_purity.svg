@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="aura_of_purity-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#123556"/><stop offset=".5" stop-color="#0b2039"/><stop offset="1" stop-color="#050d1a"/>
+    </radialGradient>
+    <radialGradient id="aura_of_purity-halo" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#eafaff" stop-opacity=".6"/><stop offset=".7" stop-color="#7fc4ff" stop-opacity=".28"/><stop offset="1" stop-color="#7fc4ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura_of_purity-core" cx=".42" cy=".36" r=".9">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#dff0ff"/><stop offset=".85" stop-color="#7fc4ff"/><stop offset="1" stop-color="#2f74b8"/>
+    </radialGradient>
+    <radialGradient id="aura_of_purity-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#aura_of_purity-bg)"/>
+  <rect width="64" height="64" fill="url(#aura_of_purity-halo)"/>
+  <path d="M32 6 V17 M32 47 V58 M6 32 H17 M47 32 H58 M13 13 L21 21 M51 51 L43 43 M51 13 L43 21 M13 51 L21 43" stroke="#dff0ff" stroke-width="1.8" stroke-linecap="round" opacity=".55"/>
+  <circle cx="32" cy="32" r="18" fill="none" stroke="#7fc4ff" stroke-width="1.2" opacity=".4"/>
+  <circle cx="32" cy="32" r="13" fill="#7fc4ff" opacity=".2"/>
+  <circle cx="32" cy="32" r="11.5" fill="none" stroke="#aed8ff" stroke-width="1.6" opacity=".8"/>
+  <circle cx="32" cy="32" r="7.5" fill="url(#aura_of_purity-core)"/>
+  <path d="M26 32 A6 6 0 0 1 32 26" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".6"/>
+  <ellipse cx="29" cy="29" rx="2.4" ry="1.5" fill="#fff" opacity=".8" transform="rotate(-30 29 29)"/>
+  <circle cx="18" cy="18" r="1.4" fill="#eafaff" opacity=".85"/>
+  <circle cx="47" cy="46" r="1.2" fill="#aed8ff" opacity=".7"/>
+  <circle cx="46" cy="18" r="1" fill="#eafaff" opacity=".65"/>
+  <circle cx="18" cy="46" r=".8" fill="#7fc4ff" opacity=".55"/>
+  <rect width="64" height="64" fill="url(#aura_of_purity-vig)"/>
+</svg>

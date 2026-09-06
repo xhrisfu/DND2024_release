@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="fog_cloud-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#180e2c"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="fog_cloud-halo" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#cfc4ea" stop-opacity=".45"/><stop offset="1" stop-color="#cfc4ea" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fog_cloud-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2eefb"/><stop offset=".5" stop-color="#cabfe4"/><stop offset="1" stop-color="#8a7eb0"/>
+    </linearGradient>
+    <radialGradient id="fog_cloud-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#fog_cloud-bg)"/>
+  <rect width="64" height="64" fill="url(#fog_cloud-halo)"/>
+  <ellipse cx="32" cy="34" rx="26" ry="18" fill="#cabfe4" opacity=".14"/>
+  <path d="M13 44 C6 44 5 35 12 33 C10 26 19 22 24 27 C26 19 40 19 42 27 C50 24 57 32 50 38 C56 40 55 48 47 47 C44 51 36 51 32 48 C27 51 18 50 13 44 Z" fill="#b8abd6" opacity=".3"/>
+  <path d="M15 43 C9 43 8 35 14 33.5 C12.5 27 20 23.5 24.5 28 C26.5 21 39 21 41 28 C48 25.5 54.5 33 48.5 38 C53.5 40 52.5 47 45.5 46 C43 49.5 35 49.5 31.5 46.5 C27 49.5 19.5 48.5 15 43 Z" fill="url(#fog_cloud-body)"/>
+  <ellipse cx="24" cy="30" rx="7" ry="4" fill="#faf7ff" opacity=".55"/>
+  <path d="M17 44 C24 42 33 42 41 44" fill="none" stroke="#e4ddf5" stroke-width="1.3" opacity=".5"/>
+  <path d="M22 51 C29 49 37 49 44 51" fill="none" stroke="#b8abd6" stroke-width="1.2" opacity=".4"/>
+  <circle cx="50" cy="20" r="1.4" fill="#f2eefb" opacity=".8"/>
+  <circle cx="13" cy="22" r="1.1" fill="#cabfe4" opacity=".7"/>
+  <circle cx="53" cy="49" r="1" fill="#e4ddf5" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#fog_cloud-vig)"/>
+</svg>

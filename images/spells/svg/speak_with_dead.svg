@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="speak_with_dead-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101c0d"/><stop offset="1" stop-color="#1d3314"/>
+    </linearGradient>
+    <radialGradient id="speak_with_dead-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="speak_with_dead-bone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0eedc"/><stop offset="1" stop-color="#b0ac94"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#speak_with_dead-bg)"/>
+  <rect width="64" height="64" fill="url(#speak_with_dead-vig)"/>
+  <ellipse cx="27" cy="31" rx="18" ry="19" fill="#7ee23c" opacity=".13"/>
+  <path d="M27 12 C16.5 12 12 19.5 12 26.5 C12 31.5 14.5 35 18 37 L18 41.5 C18 43 19 44 20.5 44 L33.5 44 C35 44 36 43 36 41.5 L36 37 C39.5 35 42 31.5 42 26.5 C42 19.5 37.5 12 27 12 Z" fill="url(#speak_with_dead-bone)"/>
+  <circle cx="21.5" cy="26" r="3.8" fill="#12200e"/>
+  <circle cx="32.5" cy="26" r="3.8" fill="#12200e"/>
+  <circle cx="21.5" cy="26" r="1.2" fill="#7ee23c"/>
+  <circle cx="32.5" cy="26" r="1.2" fill="#7ee23c"/>
+  <path d="M27 30.5 L25.3 34.5 L28.7 34.5 Z" fill="#12200e"/>
+  <path d="M22.5 40 v3.6 M27 40.2 v3.5 M31.5 40 v3.6" stroke="#8a8670" stroke-width="1" fill="none" opacity=".8"/>
+  <path d="M20 47.5 L34 47.5 L34 49 C34 52.5 31 54.5 27 54.5 C23 54.5 20 52.5 20 49 Z" fill="url(#speak_with_dead-bone)"/>
+  <path d="M23.5 47.5 v2.6 M27 47.5 v3 M30.5 47.5 v2.6" stroke="#8a8670" stroke-width="1" fill="none" opacity=".8"/>
+  <path d="M40 44.5 C43 45.5 43 49.5 40 50.5" stroke="#a8ffb0" stroke-width="1.5" fill="none" opacity=".85"/>
+  <path d="M45 42.5 C49.5 44.5 49.5 50.5 45 52.5" stroke="#a8ffb0" stroke-width="1.5" fill="none" opacity=".55"/>
+  <path d="M50 40.5 C56 43.5 56 51.5 50 54.5" stroke="#a8ffb0" stroke-width="1.5" fill="none" opacity=".3"/>
+  <circle cx="49" cy="15" r="1.2" fill="#a8ff70" opacity=".7"/>
+  <circle cx="55" cy="26" r="1" fill="#7ee23c" opacity=".6"/>
+</svg>

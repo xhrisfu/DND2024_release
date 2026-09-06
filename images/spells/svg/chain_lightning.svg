@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="chain_lightning-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#232a5c"/><stop offset=".5" stop-color="#111436"/><stop offset="1" stop-color="#070816"/>
+    </radialGradient>
+    <radialGradient id="chain_lightning-halo" cx=".46" cy=".46" r=".5">
+      <stop offset="0" stop-color="#8fb8ff" stop-opacity=".5"/><stop offset="1" stop-color="#8fb8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chain_lightning-bolt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".4" stop-color="#ffe94d"/><stop offset="1" stop-color="#7fb0ff"/>
+    </linearGradient>
+    <radialGradient id="chain_lightning-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#chain_lightning-bg)"/>
+  <rect width="64" height="64" fill="url(#chain_lightning-halo)"/>
+  <polyline points="6,8 16,14 13,18 30,30" fill="none" stroke="#ffe94d" stroke-width="4.5" stroke-linejoin="round" opacity=".18"/>
+  <polyline points="6,8 16,14 13,18 30,30" fill="none" stroke="url(#chain_lightning-bolt)" stroke-width="2.6" stroke-linejoin="round"/>
+  <polyline points="30,30 40,25 37,21 51,13" fill="none" stroke="url(#chain_lightning-bolt)" stroke-width="2.2" stroke-linejoin="round"/>
+  <polyline points="30,30 39,37 35.5,40 47,50" fill="none" stroke="url(#chain_lightning-bolt)" stroke-width="2.2" stroke-linejoin="round"/>
+  <polyline points="30,30 22,38 25,41 17,52" fill="none" stroke="url(#chain_lightning-bolt)" stroke-width="1.8" stroke-linejoin="round" opacity=".9"/>
+  <polyline points="7,9 15.5,14.5 12.5,18.5 29,30" fill="none" stroke="#fffde0" stroke-width="1" opacity=".8"/>
+  <circle cx="30" cy="30" r="6" fill="#ffe94d" opacity=".28"/>
+  <circle cx="30" cy="30" r="2.6" fill="#fff"/>
+  <circle cx="51" cy="13" r="2.8" fill="#8fb8ff" opacity=".3"/>
+  <circle cx="51" cy="13" r="1.5" fill="#fffde0"/>
+  <circle cx="47" cy="50" r="2.6" fill="#ffe94d" opacity=".3"/>
+  <circle cx="47" cy="50" r="1.4" fill="#fff"/>
+  <circle cx="17" cy="52" r="2.2" fill="#8fb8ff" opacity=".3"/>
+  <circle cx="17" cy="52" r="1.2" fill="#fff"/>
+  <circle cx="57" cy="34" r="1.1" fill="#ffe94d" opacity=".7"/>
+  <circle cx="10" cy="35" r="1" fill="#8fb8ff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#chain_lightning-vig)"/>
+</svg>

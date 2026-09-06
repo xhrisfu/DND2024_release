@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="expeditious_retreat-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#3a2410"/><stop offset=".5" stop-color="#1f1408"/><stop offset="1" stop-color="#100a04"/>
+    </radialGradient>
+    <radialGradient id="expeditious_retreat-halo" cx=".58" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffcf7a" stop-opacity=".45"/><stop offset="1" stop-color="#ffcf7a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="expeditious_retreat-wing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3d6"/><stop offset=".5" stop-color="#ffcf7a"/><stop offset="1" stop-color="#e08a2c"/>
+    </linearGradient>
+    <radialGradient id="expeditious_retreat-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#expeditious_retreat-bg)"/>
+  <rect width="64" height="64" fill="url(#expeditious_retreat-halo)"/>
+  <g stroke="#ffb02e" stroke-linecap="round" opacity=".4">
+    <line x1="4" y1="22" x2="24" y2="22" stroke-width="2.4"/><line x1="2" y1="32" x2="20" y2="32" stroke-width="2.8"/><line x1="6" y1="42" x2="26" y2="42" stroke-width="2.2"/>
+  </g>
+  <path d="M46 20 C40 20 33 22 27 28 C25 31 28 34 31 33 C36 31 41 30 47 31 Z" fill="#ffb02e" opacity=".22"/>
+  <path d="M48 30 C39 24 30 26 24 34 C33 30 42 33 50 38 Z" fill="url(#expeditious_retreat-wing)" stroke="#c9822c" stroke-width=".9" stroke-linejoin="round"/>
+  <path d="M46 22 C38 18 30 20 25 27 C33 24 41 26 48 30 Z" fill="url(#expeditious_retreat-wing)" stroke="#c9822c" stroke-width=".9" stroke-linejoin="round"/>
+  <path d="M44 25 C38 23 32 24 28 29" fill="none" stroke="#fff3d6" stroke-width="1" opacity=".6"/>
+  <path d="M46 33 C39 30 33 31 28 35" fill="none" stroke="#fff3d6" stroke-width="1" opacity=".55"/>
+  <circle cx="33" cy="32" r="3.4" fill="#fff3d6"/>
+  <circle cx="33" cy="32" r="1.6" fill="#e08a2c"/>
+  <ellipse cx="41" cy="26" rx="3" ry="1.4" fill="#fffbe8" opacity=".6" transform="rotate(-22 41 26)"/>
+  <circle cx="52" cy="18" r="1.4" fill="#ffdca0" opacity=".85"/>
+  <circle cx="50" cy="46" r="1.1" fill="#ffcf7a" opacity=".7"/>
+  <circle cx="16" cy="50" r="1" fill="#ffcf7a" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#expeditious_retreat-vig)"/>
+</svg>

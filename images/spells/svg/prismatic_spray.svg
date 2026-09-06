@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="prismatic_spray-bg" cx=".22" cy=".78" r="1">
+      <stop offset="0" stop-color="#2a2440"/><stop offset=".5" stop-color="#161226"/><stop offset="1" stop-color="#080610"/>
+    </radialGradient>
+    <radialGradient id="prismatic_spray-halo" cx=".18" cy=".82" r=".55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="prismatic_spray-src" cx=".4" cy=".4" r=".7">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#fff3e0"/><stop offset="1" stop-color="#e0c8a0" stop-opacity=".2"/>
+    </radialGradient>
+    <radialGradient id="prismatic_spray-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#prismatic_spray-bg)"/>
+  <rect width="64" height="64" fill="url(#prismatic_spray-halo)"/>
+  <polygon points="10,54 3,60 21,18 27,23" fill="#ff4d4d" opacity=".92"/>
+  <polygon points="10,54 5,52 29,20 34,25" fill="#ff9b2f" opacity=".92"/>
+  <polygon points="10,54 7,50 36,24 40,29" fill="#ffe94d" opacity=".92"/>
+  <polygon points="10,54 8,49 42,28 45,33" fill="#5ce06a" opacity=".92"/>
+  <polygon points="11,55 9,50 47,32 49,38" fill="#4da6ff" opacity=".92"/>
+  <polygon points="11,55 10,51 50,38 52,44" fill="#9d5cff" opacity=".9"/>
+  <polygon points="13,56 11,53 52,45 53,51" fill="#ff5ca8" opacity=".88"/>
+  <polygon points="16,58 13,56 53,52 54,58" fill="#eef0ff" opacity=".88"/>
+  <circle cx="11" cy="53" r="7" fill="#fff" opacity=".22"/>
+  <circle cx="11" cy="53" r="4" fill="url(#prismatic_spray-src)"/>
+  <circle cx="9.5" cy="51.5" r="1.6" fill="#fff"/>
+  <circle cx="40" cy="26" r="1.2" fill="#ffe94d" opacity=".8"/>
+  <circle cx="46" cy="40" r="1" fill="#4da6ff" opacity=".8"/>
+  <circle cx="30" cy="24" r=".9" fill="#ff9b2f" opacity=".8"/>
+  <rect width="64" height="64" fill="url(#prismatic_spray-vig)"/>
+</svg>

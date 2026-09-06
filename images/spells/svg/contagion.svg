@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="contagion-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#1f3a14"/><stop offset=".5" stop-color="#122008"/><stop offset="1" stop-color="#080f05"/>
+    </radialGradient>
+    <radialGradient id="contagion-halo" cx=".5" cy=".46" r=".5">
+      <stop offset="0" stop-color="#7ee23c" stop-opacity=".45"/><stop offset="1" stop-color="#7ee23c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="contagion-skull" cx=".42" cy=".34" r=".85">
+      <stop offset="0" stop-color="#eaf6c8"/><stop offset=".5" stop-color="#a8c86a"/><stop offset=".85" stop-color="#5a7a30"/><stop offset="1" stop-color="#324818"/>
+    </radialGradient>
+    <radialGradient id="contagion-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#contagion-bg)"/>
+  <rect width="64" height="64" fill="url(#contagion-halo)"/>
+  <path d="M32 13 C42.5 13 49 20.5 49 31 C49 37.8 45.5 41.8 42.5 43.8 L42.5 50 C42.5 51.8 41 53 39 53 L25 53 C23 53 21.5 51.8 21.5 50 L21.5 43.8 C18.5 41.8 15 37.8 15 31 C15 20.5 21.5 13 32 13 Z" fill="#7ee23c" opacity=".2"/>
+  <path d="M32 14.5 C42 14.5 47.5 21.5 47.5 31 C47.5 37.5 44 41.5 41 43.5 L41 49.5 C41 51 39.5 52 38 52 L26 52 C24.5 52 23 51 23 49.5 L23 43.5 C20 41.5 16.5 37.5 16.5 31 C16.5 21.5 22 14.5 32 14.5 Z" fill="url(#contagion-skull)" stroke="#3a5a1c" stroke-width="1"/>
+  <ellipse cx="25.5" cy="31" rx="4.6" ry="5.6" fill="#16240c"/>
+  <ellipse cx="38.5" cy="31" rx="4.6" ry="5.6" fill="#16240c"/>
+  <circle cx="27" cy="29.5" r="1.7" fill="#adff4a" opacity=".85"/>
+  <circle cx="37" cy="29.5" r="1.7" fill="#adff4a" opacity=".85"/>
+  <path d="M32 37 L29.5 42.5 L34.5 42.5 Z" fill="#243a12"/>
+  <path d="M26 52 L26 47 M29.5 52 L29.5 46.5 M32 52.4 L32 46.5 M35 52 L35 46.5 M38 52 L38 47" stroke="#2a4014" stroke-width="1.2"/>
+  <ellipse cx="24.5" cy="22" rx="4" ry="2.4" fill="#fff" opacity=".38" transform="rotate(-24 24.5 22)"/>
+  <circle cx="20" cy="24" r="2" fill="#c8f06a" opacity=".55"/>
+  <circle cx="44" cy="26" r="1.7" fill="#adde4a" opacity=".5"/>
+  <circle cx="14" cy="14" r="1.5" fill="#c8f06a" opacity=".7"/>
+  <circle cx="50" cy="17" r="1.1" fill="#adff4a" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#contagion-vig)"/>
+</svg>

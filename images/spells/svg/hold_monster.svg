@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="hold_monster-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#4a1240"/><stop offset=".5" stop-color="#2a0c22"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="hold_monster-halo" cx=".5" cy=".46" r=".52">
+      <stop offset="0" stop-color="#ff5ca8" stop-opacity=".5"/><stop offset="1" stop-color="#ff5ca8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hold_monster-body" cx=".42" cy=".32" r=".95">
+      <stop offset="0" stop-color="#ffd8ec"/><stop offset=".5" stop-color="#ff6faf"/><stop offset="1" stop-color="#8f1050"/>
+    </radialGradient>
+    <linearGradient id="hold_monster-chain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe3f0"/><stop offset="1" stop-color="#c23a86"/>
+    </linearGradient>
+    <radialGradient id="hold_monster-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#hold_monster-bg)"/>
+  <rect width="64" height="64" fill="url(#hold_monster-halo)"/>
+  <circle cx="32" cy="30" r="16" fill="#ff5ca8" opacity=".16"/>
+  <circle cx="32" cy="21" r="6" fill="url(#hold_monster-body)"/>
+  <path d="M23 52 C23 41 27 36 32 36 C37 36 41 41 41 52 Z" fill="url(#hold_monster-body)"/>
+  <ellipse cx="29.6" cy="19.5" rx="2" ry="1.5" fill="#fff" opacity=".5"/>
+  <path d="M27 47 C29 49.5 35 49.5 37 47 A9 4 0 0 1 27 47 Z" fill="#5a1038" opacity=".3"/>
+  <ellipse cx="10" cy="22" rx="4" ry="3" fill="none" stroke="url(#hold_monster-chain)" stroke-width="2.4"/>
+  <ellipse cx="18" cy="30" rx="4" ry="3" fill="none" stroke="url(#hold_monster-chain)" stroke-width="2.4" transform="rotate(35 18 30)"/>
+  <ellipse cx="27" cy="37" rx="4" ry="3" fill="none" stroke="url(#hold_monster-chain)" stroke-width="2.4" transform="rotate(35 27 37)"/>
+  <ellipse cx="54" cy="22" rx="4" ry="3" fill="none" stroke="url(#hold_monster-chain)" stroke-width="2.4"/>
+  <ellipse cx="46" cy="30" rx="4" ry="3" fill="none" stroke="url(#hold_monster-chain)" stroke-width="2.4" transform="rotate(-35 46 30)"/>
+  <ellipse cx="37" cy="37" rx="4" ry="3" fill="none" stroke="url(#hold_monster-chain)" stroke-width="2.4" transform="rotate(-35 37 37)"/>
+  <circle cx="12" cy="14" r="1.3" fill="#ff9bcb" opacity=".8"/>
+  <circle cx="52" cy="14" r="1.1" fill="#ffd0e8" opacity=".7"/>
+  <circle cx="32" cy="53" r="1" fill="#ffd0e8" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#hold_monster-vig)"/>
+</svg>

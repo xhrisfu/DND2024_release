@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="ice_knife-bg" cx=".42" cy=".38" r=".9">
+      <stop offset="0" stop-color="#14384f"/><stop offset=".5" stop-color="#0a1f30"/><stop offset="1" stop-color="#050d18"/>
+    </radialGradient>
+    <radialGradient id="ice_knife-halo" cx=".68" cy=".28" r=".5">
+      <stop offset="0" stop-color="#7fd8ff" stop-opacity=".5"/><stop offset="1" stop-color="#7fd8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ice_knife-blade" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".4" stop-color="#bfeeff"/><stop offset=".75" stop-color="#7fd8ff"/><stop offset="1" stop-color="#2f8fce"/>
+    </linearGradient>
+    <linearGradient id="ice_knife-trail" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfeeff" stop-opacity=".85"/><stop offset="1" stop-color="#7fd8ff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="ice_knife-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#ice_knife-bg)"/>
+  <rect width="64" height="64" fill="url(#ice_knife-halo)"/>
+  <path d="M48 16 L22 42 L12 54 L18 44 Z" fill="url(#ice_knife-trail)"/>
+  <path d="M52 8 L55 20 L44 23 L24 43 L13 46 L16 35 Z" fill="#7fd8ff" opacity=".28"/>
+  <path d="M51 10 L53.5 20 L43.5 22.5 L24 42 L15 44.5 L17.5 35 Z" fill="url(#ice_knife-blade)"/>
+  <path d="M51 10 L24 42 L15 44.5 Z" fill="#eafaff" opacity=".55"/>
+  <path d="M51 10 L53.5 20 L43.5 22.5 Z" fill="#dff3ff"/>
+  <path d="M48 13 L20 41" stroke="#fff" stroke-width="1.1" opacity=".7"/>
+  <path d="M40 8 L44 12 M56 20 L52 24 M43 30 L39 26" stroke="#dff3ff" stroke-width="1" stroke-linecap="round" opacity=".6"/>
+  <circle cx="12" cy="50" r="1.4" fill="#bfeeff" opacity=".8"/>
+  <circle cx="52" cy="34" r="1.1" fill="#7fd8ff" opacity=".7"/>
+  <circle cx="22" cy="52" r=".9" fill="#dff3ff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#ice_knife-vig)"/>
+</svg>
