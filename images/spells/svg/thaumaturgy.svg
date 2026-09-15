@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="thaumaturgy-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#3a2410"/><stop offset=".5" stop-color="#1f1408"/><stop offset="1" stop-color="#100a04"/>
+    </radialGradient>
+    <radialGradient id="thaumaturgy-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffb02e" stop-opacity=".55"/><stop offset="1" stop-color="#ffb02e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="thaumaturgy-core" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#fff3d6"/><stop offset=".45" stop-color="#ffd27a"/><stop offset=".8" stop-color="#ff9b2c"/><stop offset="1" stop-color="#a35c00"/>
+    </radialGradient>
+    <radialGradient id="thaumaturgy-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#thaumaturgy-bg)"/>
+  <rect width="64" height="64" fill="url(#thaumaturgy-halo)"/>
+  <g stroke="#ffcf7a" stroke-width="1.6" stroke-linecap="round" opacity=".5">
+    <line x1="32" y1="6" x2="32" y2="14"/><line x1="32" y1="50" x2="32" y2="58"/>
+    <line x1="6" y1="32" x2="14" y2="32"/><line x1="50" y1="32" x2="58" y2="32"/>
+    <line x1="14" y1="14" x2="19" y2="19"/><line x1="45" y1="45" x2="50" y2="50"/>
+    <line x1="50" y1="14" x2="45" y2="19"/><line x1="19" y1="45" x2="14" y2="50"/>
+  </g>
+  <circle cx="32" cy="32" r="16" fill="#ffb02e" opacity=".18"/>
+  <circle cx="32" cy="32" r="13" fill="url(#thaumaturgy-core)"/>
+  <circle cx="32" cy="32" r="13" fill="none" stroke="#ffe0a0" stroke-width="1.2" opacity=".6"/>
+  <path d="M32 24 C33 27 35 29 32 32 C29 35 31 37 32 40 M26 30 C28 31 30 33 32 32 C34 31 36 33 38 34" fill="none" stroke="#fff3d6" stroke-width="1.4" stroke-linecap="round" opacity=".8"/>
+  <circle cx="32" cy="32" r="3" fill="#fffbe8"/>
+  <ellipse cx="27" cy="26" rx="3" ry="1.8" fill="#fff" opacity=".5" transform="rotate(-30 27 26)"/>
+  <path d="M22 41 A13 13 0 0 0 42 41 A15 8 0 0 1 22 41 Z" fill="#8a4c10" opacity=".4"/>
+  <circle cx="50" cy="20" r="1.5" fill="#ffe0a0" opacity=".85"/>
+  <circle cx="15" cy="46" r="1.1" fill="#ffcf7a" opacity=".7"/>
+  <circle cx="47" cy="47" r="1" fill="#fff3d6" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#thaumaturgy-vig)"/>
+</svg>

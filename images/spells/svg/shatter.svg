@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="shatter-bg" cx=".5" cy=".45" r=".9">
+      <stop offset="0" stop-color="#2a1440"/><stop offset=".5" stop-color="#170b26"/><stop offset="1" stop-color="#0c0618"/>
+    </radialGradient>
+    <radialGradient id="shatter-halo" cx=".5" cy=".48" r=".55">
+      <stop offset="0" stop-color="#d8c8ff" stop-opacity=".5"/><stop offset="1" stop-color="#d8c8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="shatter-core" cx=".42" cy=".38" r=".7">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#e0d0ff"/><stop offset=".8" stop-color="#a884ff"/><stop offset="1" stop-color="#6a3fd0"/>
+    </radialGradient>
+    <radialGradient id="shatter-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#shatter-bg)"/>
+  <rect width="64" height="64" fill="url(#shatter-halo)"/>
+  <circle cx="32" cy="32" r="25" fill="none" stroke="#c8b4ff" stroke-width="1.3" opacity=".18"/>
+  <circle cx="32" cy="32" r="19.5" fill="none" stroke="#d0c0ff" stroke-width="1.6" opacity=".32"/>
+  <circle cx="32" cy="32" r="14" fill="none" stroke="#e0d4ff" stroke-width="1.9" opacity=".5"/>
+  <polygon points="32,32 25,9 33.5,20" fill="#d8c8ff" opacity=".88"/>
+  <polygon points="32,32 53,19 44,29.5" fill="#c4acff" opacity=".82"/>
+  <polygon points="32,32 51,52 40.5,44" fill="#d8c8ff" opacity=".82"/>
+  <polygon points="32,32 15,53 24,42.5" fill="#c4acff" opacity=".76"/>
+  <polygon points="32,32 9,33.5 22,29.5" fill="#e0d4ff" opacity=".8"/>
+  <circle cx="32" cy="32" r="7" fill="url(#shatter-core)"/>
+  <ellipse cx="30" cy="30" rx="2.2" ry="1.5" fill="#fff" opacity=".7" transform="rotate(-30 30 30)"/>
+  <circle cx="12" cy="17" r="1.4" fill="#e0d4ff" opacity=".85"/>
+  <circle cx="53" cy="46" r="1.1" fill="#c8b4ff" opacity=".75"/>
+  <circle cx="49" cy="13" r=".9" fill="#efe6ff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#shatter-vig)"/>
+</svg>

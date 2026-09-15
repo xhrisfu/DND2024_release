@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="storm_of_vengeance-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#2a1440"/><stop offset=".5" stop-color="#160a26"/><stop offset="1" stop-color="#0c0618"/>
+    </radialGradient>
+    <radialGradient id="storm_of_vengeance-halo" cx=".5" cy=".28" r=".55">
+      <stop offset="0" stop-color="#d8c8ff" stop-opacity=".5"/><stop offset="1" stop-color="#d8c8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="storm_of_vengeance-cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8478a8"/><stop offset=".5" stop-color="#4e4270"/><stop offset="1" stop-color="#241a3c"/>
+    </linearGradient>
+    <linearGradient id="storm_of_vengeance-bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffbe0"/><stop offset=".5" stop-color="#ffe94d"/><stop offset="1" stop-color="#c8a0ff"/>
+    </linearGradient>
+    <radialGradient id="storm_of_vengeance-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#storm_of_vengeance-bg)"/>
+  <rect width="64" height="64" fill="url(#storm_of_vengeance-halo)"/>
+  <g fill="none" stroke="#d8c8ff" stroke-linecap="round">
+    <path d="M12 50 C18 54 46 54 52 50" stroke-width="1.6" opacity=".5"/>
+    <path d="M8 54 C16 59 48 59 56 54" stroke-width="1.4" opacity=".3"/>
+  </g>
+  <path d="M11 30 C7 30 5 25 9 21 C8 14 16 11 21 15 C24 8 36 8 39 16 C46 11 55 17 52 26 C58 26 60 33 53 35 Z" fill="url(#storm_of_vengeance-cloud)"/>
+  <path d="M13 27 C22 24 32 24 40 25 C46 25 51 27 52 29 C40 29 24 30 13 30 Z" fill="#3a3058" opacity=".7"/>
+  <path d="M11 22 C15 20 20 21 22 24" fill="none" stroke="#a89cd0" stroke-width="1.2" opacity=".55"/>
+  <path d="M31 30 L22 45 L28.5 45 L23 59 L39 41 L31.5 41 L37 30 Z" fill="url(#storm_of_vengeance-bolt)"/>
+  <path d="M31 30 L25 43 L30 43 L26.5 52 L34 41 L29 41 L33 30 Z" fill="#fffbe0" opacity=".8"/>
+  <path d="M46 33 l-3 6 3 -1 -2 6" fill="none" stroke="#c8a0ff" stroke-width="1.4" stroke-linecap="round" opacity=".8"/>
+  <ellipse cx="22" cy="18" rx="3" ry="1.6" fill="#fff" opacity=".35" transform="rotate(-10 22 18)"/>
+  <circle cx="17" cy="42" r="1.2" fill="#c8a0ff" opacity=".7"/>
+  <circle cx="49" cy="44" r="1.1" fill="#d8c8ff" opacity=".6"/>
+  <circle cx="13" cy="15" r="1.2" fill="#d8c8ff" opacity=".7"/>
+  <circle cx="53" cy="17" r="1" fill="#fffbe0" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#storm_of_vengeance-vig)"/>
+</svg>

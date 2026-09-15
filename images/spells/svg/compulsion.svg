@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="compulsion-bg" cx=".5" cy=".38" r=".9">
+      <stop offset="0" stop-color="#4a1240"/><stop offset=".5" stop-color="#2a0c22"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="compulsion-halo" cx=".78" cy=".22" r=".55">
+      <stop offset="0" stop-color="#ffd0e8" stop-opacity=".55"/><stop offset="1" stop-color="#ff5ca8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="compulsion-fig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe0ef"/><stop offset=".5" stop-color="#ff77b8"/><stop offset="1" stop-color="#a01a63"/>
+    </linearGradient>
+    <radialGradient id="compulsion-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#compulsion-bg)"/>
+  <rect width="64" height="64" fill="url(#compulsion-halo)"/>
+  <path d="M49 14 l1.9 5.1 5.1 1.9 -5.1 1.9 -1.9 5.1 -1.9-5.1 -5.1-1.9 5.1-1.9 Z" fill="#fff" opacity=".95"/>
+  <path d="M49 14 l1.9 5.1 5.1 1.9 -5.1 1.9 -1.9 5.1 -1.9-5.1 -5.1-1.9 5.1-1.9 Z" fill="#ffd0e8" opacity=".3" transform="scale(1.6) translate(-18.4 -8.3)"/>
+  <path d="M37 15 Q35.5 24 43 30" fill="none" stroke="#ffd0e8" stroke-width="1.6" opacity=".8"/>
+  <path d="M30 12 Q26.5 26 39 40" fill="none" stroke="#ff9bcb" stroke-width="1.4" opacity=".5"/>
+  <path d="M22 11 Q17 30 33 46" fill="none" stroke="#ff9bcb" stroke-width="1.3" opacity=".3"/>
+  <g opacity=".38">
+    <circle cx="13" cy="37" r="3.4" fill="#ff8cc0"/>
+    <path d="M13 41 L8.5 55 L17.5 55 Z" fill="#ff8cc0"/>
+  </g>
+  <g opacity=".62">
+    <circle cx="24" cy="34" r="4" fill="#ff8cc0"/>
+    <path d="M24 39 L19 56 L29 56 Z" fill="#ff8cc0"/>
+  </g>
+  <circle cx="37" cy="30" r="4.8" fill="url(#compulsion-fig)"/>
+  <path d="M37 36 L31 57 L43 57 Z" fill="url(#compulsion-fig)"/>
+  <ellipse cx="35" cy="28.5" rx="1.8" ry="1.3" fill="#fff" opacity=".55"/>
+  <path d="M32 52 A10 4 0 0 0 42 52" fill="#5a1038" opacity=".35"/>
+  <circle cx="10" cy="18" r="1.2" fill="#ff9bcb" opacity=".75"/>
+  <circle cx="55" cy="46" r="1.3" fill="#ffd0e8" opacity=".7"/>
+  <circle cx="52" cy="9" r=".9" fill="#fff" opacity=".8"/>
+  <rect width="64" height="64" fill="url(#compulsion-vig)"/>
+</svg>

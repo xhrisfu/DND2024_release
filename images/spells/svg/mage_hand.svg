@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="mage_hand-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#170e2c"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="mage_hand-halo" cx=".5" cy=".48" r=".5">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".5"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mage_hand-skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eadcff"/><stop offset=".5" stop-color="#b98cff"/><stop offset="1" stop-color="#6a3fb0"/>
+    </linearGradient>
+    <radialGradient id="mage_hand-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#mage_hand-bg)"/>
+  <rect width="64" height="64" fill="url(#mage_hand-halo)"/>
+  <ellipse cx="32" cy="52" rx="15" ry="4" fill="#b98cff" opacity=".2"/>
+  <path d="M22 50 C19 42 20 33 22 30 C23 28 25 29 25 31 L25.5 38 L26 24 C26 21.6 29 21.6 29 24 L29.4 37 L30 20 C30 17.6 33 17.6 33 20 L33.4 37 L34 22 C34 19.6 37 19.6 37 22 L37 39 C38 34 40 32 41.5 33 C43 34 42.5 36 41.5 39 C40 43 40 47 39 50 Z" fill="#b98cff" opacity=".25" transform="translate(0 1.5)"/>
+  <path d="M22 50 C19 42 20 33 22 30 C23 28 25 29 25 31 L25.5 38 L26 24 C26 21.6 29 21.6 29 24 L29.4 37 L30 20 C30 17.6 33 17.6 33 20 L33.4 37 L34 22 C34 19.6 37 19.6 37 22 L37 39 C38 34 40 32 41.5 33 C43 34 42.5 36 41.5 39 C40 43 40 47 39 50 Z" fill="url(#mage_hand-skin)"/>
+  <path d="M25 30 C24 34 24.5 42 26 48" fill="none" stroke="#f0e6ff" stroke-width="1.1" opacity=".5"/>
+  <ellipse cx="28" cy="27" rx="2.6" ry="1.4" fill="#fff" opacity=".55" transform="rotate(-70 28 27)"/>
+  <circle cx="46" cy="16" r="1.4" fill="#d8c4ff" opacity=".85"/>
+  <circle cx="16" cy="24" r="1.1" fill="#b98cff" opacity=".7"/>
+  <circle cx="49" cy="40" r=".9" fill="#eadcff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#mage_hand-vig)"/>
+</svg>

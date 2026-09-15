@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="thorn_whip-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#1e3a16"/><stop offset=".5" stop-color="#102008"/><stop offset="1" stop-color="#070f05"/>
+    </radialGradient>
+    <radialGradient id="thorn_whip-halo" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#7ecb5f" stop-opacity=".45"/><stop offset="1" stop-color="#7ecb5f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="thorn_whip-vine" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#3f6b28"/><stop offset=".55" stop-color="#7ecb5f"/><stop offset="1" stop-color="#b6e88a"/>
+    </linearGradient>
+    <radialGradient id="thorn_whip-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#thorn_whip-bg)"/>
+  <rect width="64" height="64" fill="url(#thorn_whip-halo)"/>
+  <path d="M6 56 C18 52 24 40 26 30 C28 20 36 12 54 7" fill="none" stroke="#7ecb5f" stroke-width="7" opacity=".16" stroke-linecap="round"/>
+  <path d="M6 56 C18 52 24 40 26 30 C28 20 36 12 54 7" fill="none" stroke="url(#thorn_whip-vine)" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M6 56 C16 52 22 42 25 32" fill="none" stroke="#d8ffa8" stroke-width="1" stroke-linecap="round" opacity=".55"/>
+  <path d="M13 51 l-5 4 6-1 Z" fill="#c6f593"/>
+  <path d="M24 38 l5-3 -1 6 Z" fill="#8fd45f"/>
+  <path d="M26 27 l-5-2 1.5 6 Z" fill="#8fd45f"/>
+  <path d="M31 20 l5-2.5 -2 6 Z" fill="#c6f593"/>
+  <path d="M41 12 l-4.5-3 0 6 Z" fill="#8fd45f"/>
+  <path d="M51 8 l4-5 1 6 Z" fill="#c6f593"/>
+  <ellipse cx="16" cy="47" rx="2.6" ry="1.4" fill="#5a9a3a" opacity=".7" transform="rotate(-42 16 47)"/>
+  <circle cx="54" cy="7" r="2" fill="#d8ffa8"/>
+  <circle cx="47" cy="30" r="1.3" fill="#c6f593" opacity=".8"/>
+  <circle cx="38" cy="45" r="1" fill="#8fd45f" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#thorn_whip-vig)"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="arcane_lock-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#123556"/><stop offset=".5" stop-color="#0b2039"/><stop offset="1" stop-color="#050d1a"/>
+    </radialGradient>
+    <radialGradient id="arcane_lock-halo" cx=".5" cy=".55" r=".5">
+      <stop offset="0" stop-color="#7fc4ff" stop-opacity=".5"/><stop offset="1" stop-color="#7fc4ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="arcane_lock-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe3ff"/><stop offset=".45" stop-color="#4d8ac4"/><stop offset="1" stop-color="#173a5e"/>
+    </linearGradient>
+    <linearGradient id="arcane_lock-shackle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dff0ff"/><stop offset="1" stop-color="#5a90c8"/>
+    </linearGradient>
+    <radialGradient id="arcane_lock-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#arcane_lock-bg)"/>
+  <rect width="64" height="64" fill="url(#arcane_lock-halo)"/>
+  <circle cx="32" cy="38" r="22" fill="none" stroke="#4da6ff" stroke-width="1.2" opacity=".35"/>
+  <circle cx="32" cy="38" r="17" fill="none" stroke="#7fc4ff" stroke-width="1" opacity=".25"/>
+  <path d="M22 32 V23 A10 10 0 0 1 42 23 V32" fill="none" stroke="#2a4763" stroke-width="6" stroke-linecap="round"/>
+  <path d="M22 32 V23 A10 10 0 0 1 42 23 V32" fill="none" stroke="url(#arcane_lock-shackle)" stroke-width="3.6" stroke-linecap="round"/>
+  <rect x="17" y="31" width="30" height="23" rx="4" fill="#4da6ff" opacity=".18"/>
+  <rect x="18.5" y="32.5" width="27" height="20" rx="3.4" fill="url(#arcane_lock-body)" stroke="#aed8ff" stroke-width="1.4"/>
+  <circle cx="32" cy="41" r="3.4" fill="#0e2036"/>
+  <path d="M32 44 L29.6 51 H34.4 Z" fill="#0e2036"/>
+  <circle cx="32" cy="41" r="1.4" fill="#7fc4ff"/>
+  <ellipse cx="24" cy="37" rx="3" ry="1.4" fill="#fff" opacity=".4"/>
+  <path d="M11 15 l1 2.6 2.6 1 -2.6 1 -1 2.6 -1-2.6 -2.6-1 2.6-1 Z" fill="#cfe8ff" opacity=".85"/>
+  <path d="M52 46 l.9 2.4 2.4 .9 -2.4 .9 -.9 2.4 -.9-2.4 -2.4-.9 2.4-.9 Z" fill="#7fc4ff" opacity=".7"/>
+  <circle cx="52" cy="18" r="1.1" fill="#aed8ff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#arcane_lock-vig)"/>
+</svg>

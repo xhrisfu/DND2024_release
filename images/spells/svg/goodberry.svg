@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="goodberry-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#1d4a3f"/><stop offset=".5" stop-color="#0e2a2c"/><stop offset="1" stop-color="#07141a"/>
+    </radialGradient>
+    <radialGradient id="goodberry-halo" cx=".5" cy=".52" r=".5">
+      <stop offset="0" stop-color="#ffe08a" stop-opacity=".5"/><stop offset="1" stop-color="#ffe08a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="goodberry-fruit" cx=".38" cy=".3" r=".9">
+      <stop offset="0" stop-color="#ff9ccb"/><stop offset=".4" stop-color="#e2447e"/><stop offset=".8" stop-color="#a01a52"/><stop offset="1" stop-color="#5e0e32"/>
+    </radialGradient>
+    <linearGradient id="goodberry-leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a8e07c"/><stop offset="1" stop-color="#3c7a2c"/>
+    </linearGradient>
+    <radialGradient id="goodberry-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#goodberry-bg)"/>
+  <rect width="64" height="64" fill="url(#goodberry-halo)"/>
+  <ellipse cx="32" cy="38" rx="20" ry="18" fill="#e2447e" opacity=".14"/>
+  <path d="M31 26 C25 17 15 15 11 19 C19 20 24 25 27 32 Z" fill="url(#goodberry-leaf)"/>
+  <path d="M33 26 C39 15 50 15 54 19 C45 20 40 26 37 33 Z" fill="url(#goodberry-leaf)"/>
+  <path d="M31 25 C31 19 33 14 34 12 C34 18 33 22 33 27 Z" fill="#5aa843"/>
+  <path d="M24 25 C24 30 30 32 27 40" fill="none" stroke="#6abf4e" stroke-width="1" opacity=".5"/>
+  <circle cx="23" cy="41" r="7.5" fill="url(#goodberry-fruit)"/>
+  <circle cx="40" cy="43" r="8.5" fill="url(#goodberry-fruit)"/>
+  <circle cx="33" cy="31" r="6" fill="url(#goodberry-fruit)"/>
+  <ellipse cx="20.5" cy="38" rx="2.4" ry="1.6" fill="#ffe0ef" opacity=".7"/>
+  <ellipse cx="37" cy="40" rx="2.8" ry="1.9" fill="#ffe0ef" opacity=".7"/>
+  <ellipse cx="31" cy="29" rx="2" ry="1.4" fill="#ffe0ef" opacity=".7"/>
+  <circle cx="50" cy="46" r="1.3" fill="#ff9ccb" opacity=".7"/>
+  <circle cx="14" cy="50" r="1.1" fill="#ffe08a" opacity=".6"/>
+  <circle cx="48" cy="24" r=".9" fill="#a8e07c" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#goodberry-vig)"/>
+</svg>

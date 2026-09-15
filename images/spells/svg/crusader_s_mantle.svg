@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="crusader_s_mantle-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#4a1808"/><stop offset=".5" stop-color="#280c05"/><stop offset="1" stop-color="#140503"/>
+    </radialGradient>
+    <radialGradient id="crusader_s_mantle-halo" cx=".5" cy=".42" r=".55">
+      <stop offset="0" stop-color="#ffab5c" stop-opacity=".5"/><stop offset="1" stop-color="#ff7a33" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="crusader_s_mantle-cloak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe0b0"/><stop offset=".5" stop-color="#ff9b3d"/><stop offset="1" stop-color="#c2521a"/>
+    </linearGradient>
+    <radialGradient id="crusader_s_mantle-gem" cx=".4" cy=".35" r=".8">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset=".6" stop-color="#ffd27a"/><stop offset="1" stop-color="#d98828"/>
+    </radialGradient>
+    <radialGradient id="crusader_s_mantle-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#crusader_s_mantle-bg)"/>
+  <rect width="64" height="64" fill="url(#crusader_s_mantle-halo)"/>
+  <circle cx="32" cy="28" r="24" fill="#ffab5c" opacity=".16"/>
+  <path d="M32 10 C23 10 17 15 15 24 L11 56 L23 50 L27.5 58 L32 50 L36.5 58 L41 50 L53 56 L49 24 C47 15 41 10 32 10 Z" fill="#ff8a2c" opacity=".2"/>
+  <path d="M32 12 C24 12 19 17 18 25 L15 53 L25 48 L28.5 55 L32 48 L35.5 55 L39 48 L49 53 L46 25 C45 17 40 12 32 12 Z" fill="url(#crusader_s_mantle-cloak)"/>
+  <path d="M32 13 C26 14 22 18 22 26 L21 51" fill="none" stroke="#fff2d8" stroke-width="1.2" opacity=".5"/>
+  <path d="M42 26 C42 18 38 14 32 13" fill="none" stroke="#c2521a" stroke-width="1.2" opacity=".5"/>
+  <path d="M32 20 L34 26 L40 26 L35 30 L37 36 L32 32 L27 36 L29 30 L24 26 L30 26 Z" fill="#fff2d8" opacity=".7"/>
+  <circle cx="32" cy="14" r="4.2" fill="url(#crusader_s_mantle-gem)"/>
+  <ellipse cx="30.5" cy="12.8" rx="1.6" ry="1" fill="#fff" opacity=".7"/>
+  <circle cx="18" cy="20" r="1.4" fill="#ffe0b0" opacity=".85"/>
+  <circle cx="47" cy="22" r="1.1" fill="#ffab5c" opacity=".8"/>
+  <circle cx="43" cy="45" r="1" fill="#ffe0b0" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#crusader_s_mantle-vig)"/>
+</svg>

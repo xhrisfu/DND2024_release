@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>剑湾地图 - Canvas底图 + SVG覆盖层</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #1a1a2e; display: flex; justify-content: center; padding: 20px; }
+  .map-wrap {
+    position: relative;
+    width: 960px;
+    max-width: 95vw;
+    aspect-ratio: 1920 / 2400;
+    filter: drop-shadow(0 4px 24px rgba(0,0,0,0.6));
+  }
+  .map-wrap img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 4px;
+  }
+  .map-wrap svg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  /* 让城市标记可交互 */
+  .city-group { pointer-events: all; cursor: pointer; }
+  .city-group:hover .city-ring { stroke: #ffd700; stroke-width: 3; }
+  .city-group:hover .city-label-bg { fill: rgba(30,20,10,0.85); }
+  .city-group:hover .city-label { fill: #ffd700; }
+
+  /* 工具提示 */
+  .tooltip {
+    position: absolute;
+    background: rgba(30,22,12,0.92);
+    border: 1px solid rgba(200,164,78,0.5);
+    color: #e8d8c0;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'Microsoft YaHei', sans-serif;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 10;
+    max-width: 220px;
+    line-height: 1.5;
+  }
+  .tooltip.show { opacity: 1; }
+  .tooltip .tt-name { color: #ffd700; font-size: 15px; font-weight: bold; margin-bottom: 4px; }
+  .tooltip .tt-type { color: #c8a050; font-size: 11px; }
+</style>
+</head>
+<body>
+
+<div class="map-wrap" id="mapWrap">
+  <!-- Canvas 纯地形底图 (无文字) -->
+  <img src="images/sword_coast_base.png" alt="剑湾地图底图" />
+
+  <!-- SVG 覆盖层 -->
+  <svg viewBox="0 0 1920 2400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- 文字描边滤镜 - 让文字在任何背景上都清晰 -->
+      <filter id="textOutline" x="-5%" y="-5%" width="110%" height="110%">
+        <feMorphology operator="dilate" radius="2" in="SourceAlpha" result="dilated"/>
+        <feFlood flood-color="rgba(30,20,10,0.7)" result="color"/>
+        <feComposite in="color" in2="dilated" operator="in" result="outline"/>
+        <feMerge>
+          <feMergeNode in="outline"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+      <!-- 光晕效果 -->
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="4" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <!-- 柔和阴影 -->
+      <filter id="softShadow">
+        <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.5)"/>
+      </filter>
+      <!-- 城市图标: 大城市 (城堡) -->
+      <symbol id="icon-castle" viewBox="0 0 40 40">
+        <rect x="8" y="18" width="24" height="18" rx="1" fill="#f5e6c8" stroke="#5a4020" stroke-width="2"/>
+        <rect x="5" y="12" width="8" height="10" rx="0.5" fill="#f5e6c8" stroke="#5a4020" stroke-width="1.5"/>
+        <rect x="27" y="12" width="8" height="10" rx="0.5" fill="#f5e6c8" stroke="#5a4020" stroke-width="1.5"/>
+        <rect x="15" y="8" width="10" height="14" rx="0.5" fill="#f5e6c8" stroke="#5a4020" stroke-width="1.5"/>
+        <!-- 塔顶 -->
+        <path d="M15 8 L20 2 L25 8" fill="#c8a050" stroke="#5a4020" stroke-width="1"/>
+        <path d="M5 12 L9 7 L13 12" fill="#c8a050" stroke="#5a4020" stroke-width="0.8"/>
+        <path d="M27 12 L31 7 L35 12" fill="#c8a050" stroke="#5a4020" stroke-width="0.8"/>
+        <!-- 城门 -->
+        <path d="M17 36 L17 28 Q20 25 23 28 L23 36" fill="#5a4020"/>
+        <!-- 窗户 -->
+        <rect x="11" y="22" width="3" height="4" rx="1" fill="#5a4020"/>
+        <rect x="26" y="22" width="3" height="4" rx="1" fill="#5a4020"/>
+      </symbol>
+      <!-- 城市图标: 中等城市 -->
+      <symbol id="icon-town" viewBox="0 0 32 32">
+        <rect x="6" y="14" width="20" height="16" rx="1" fill="#f5e6c8" stroke="#5a4020" stroke-width="1.8"/>
+        <rect x="12" y="8" width="8" height="10" rx="0.5" fill="#f5e6c8" stroke="#5a4020" stroke-width="1.5"/>
+        <path d="M12 8 L16 3 L20 8" fill="#c8a050" stroke="#5a4020" stroke-width="1"/>
+        <path d="M13 30 L13 24 Q16 22 19 24 L19 30" fill="#5a4020"/>
+      </symbol>
+      <!-- 城市图标: 小城镇 -->
+      <symbol id="icon-village" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8" fill="#f5e6c8" stroke="#5a4020" stroke-width="2"/>
+        <circle cx="12" cy="12" r="4" fill="#c8a050" stroke="#5a4020" stroke-width="1"/>
+      </symbol>
+      <!-- 城市图标: 要塞 -->
+      <symbol id="icon-fortress" viewBox="0 0 32 32">
+        <polygon points="16,2 28,12 24,30 8,30 4,12" fill="#f5e6c8" stroke="#5a4020" stroke-width="2"/>
+        <polygon points="16,8 22,14 20,24 12,24 10,14" fill="none" stroke="#5a4020" stroke-width="1"/>
+        <circle cx="16" cy="17" r="3" fill="#c8a050" stroke="#5a4020" stroke-width="0.8"/>
+      </symbol>
+    </defs>
+
+    <!-- ==================== 道路路径 ==================== -->
+    <g class="roads-overlay" opacity="0.6">
+      <!-- 高路 (路斯坎→无冬城→深水城) -->
+      <path d="M255 290 Q250 340 235 400 Q230 440 240 500 Q260 560 280 620 Q290 680 295 740 Q300 800 295 860 Q298 880 300 900"
+        fill="none" stroke="#d4a850" stroke-width="4" stroke-dasharray="16,8"
+        stroke-linecap="round" filter="url(#softShadow)"/>
+      <!-- 贸易之路 (深水城→匕首滩→博德之门) -->
+      <path d="M300 900 Q320 960 350 1030 Q380 1100 420 1170 Q480 1250 550 1340 Q630 1430 710 1520 Q790 1620 850 1700 Q880 1750 890 1780"
+        fill="none" stroke="#d4a850" stroke-width="4" stroke-dasharray="16,8"
+        stroke-linecap="round" filter="url(#softShadow)"/>
+      <!-- 长路 (深水城→崔波镇) -->
+      <path d="M300 900 Q380 870 470 830 Q560 800 650 770 Q690 755 720 740"
+        fill="none" stroke="#d4a850" stroke-width="3.5" stroke-dasharray="14,7"
+        stroke-linecap="round" filter="url(#softShadow)"/>
+      <!-- 崔波小径 (无冬城→凡德林→崔波镇) -->
+      <path d="M230 440 Q300 470 370 490 Q440 510 520 540 Q600 580 680 640 Q700 690 720 740"
+        fill="none" stroke="#b89040" stroke-width="2.5" stroke-dasharray="8,6"
+        stroke-linecap="round" opacity="0.5"/>
+      <!-- 长路东段 (崔波镇→银月城) -->
+      <path d="M720 740 Q800 700 880 650 Q960 600 1050 520 Q1120 450 1180 400"
+        fill="none" stroke="#d4a850" stroke-width="3.5" stroke-dasharray="14,7"
+        stroke-linecap="round" filter="url(#softShadow)"/>
+      <!-- 银月之路 -->
+      <path d="M1180 400 Q1260 420 1340 440"
+        fill="none" stroke="#b89040" stroke-width="2.5" stroke-dasharray="8,6"
+        stroke-linecap="round" opacity="0.5"/>
+      <!-- 矮人之路 -->
+      <path d="M1340 440 Q1420 380 1500 320 Q1540 295 1580 270"
+        fill="none" stroke="#b89040" stroke-width="2.5" stroke-dasharray="8,6"
+        stroke-linecap="round" opacity="0.5"/>
+      <!-- 烛堡之路 -->
+      <path d="M890 1780 Q880 1830 870 1900 Q860 1960 855 2020"
+        fill="none" stroke="#b89040" stroke-width="2.5" stroke-dasharray="8,6"
+        stroke-linecap="round" opacity="0.5"/>
+    </g>
+
+    <!-- 路径名称标注 -->
+    <g class="road-labels" filter="url(#textOutline)">
+      <text x="260" y="630" fill="#c8a050" font-size="22" font-style="italic" transform="rotate(-85,260,630)" font-family="'Microsoft YaHei',sans-serif" opacity="0.7">高 路</text>
+      <text x="530" y="1220" fill="#c8a050" font-size="22" font-style="italic" transform="rotate(-50,530,1220)" font-family="'Microsoft YaHei',sans-serif" opacity="0.7">贸 易 之 路</text>
+      <text x="520" y="820" fill="#c8a050" font-size="20" font-style="italic" transform="rotate(-10,520,820)" font-family="'Microsoft YaHei',sans-serif" opacity="0.6">长 路</text>
+    </g>
+
+    <!-- ==================== 区域名称 ==================== -->
+    <g class="region-labels" filter="url(#textOutline)">
+      <text x="1200" y="190" text-anchor="middle" fill="rgba(200,180,140,0.6)" font-size="42" font-family="'Cinzel','Microsoft YaHei',serif" font-style="italic" letter-spacing="16">银月诸境</text>
+      <text x="1250" y="1100" text-anchor="middle" fill="rgba(200,180,140,0.5)" font-size="38" font-family="'Cinzel','Microsoft YaHei',serif" font-style="italic" letter-spacing="12">北  地</text>
+      <text x="800" y="1650" text-anchor="middle" fill="rgba(200,180,140,0.5)" font-size="36" font-family="'Cinzel','Microsoft YaHei',serif" font-style="italic" letter-spacing="14">死亡原野</text>
+      <text x="600" y="950" text-anchor="middle" fill="rgba(200,180,140,0.45)" font-size="42" font-family="'Cinzel','Microsoft YaHei',serif" font-style="italic" letter-spacing="18">剑  湾</text>
+    </g>
+
+    <!-- ==================== 地形标注 ==================== -->
+    <g class="terrain-labels" filter="url(#textOutline)">
+      <!-- 山脉 -->
+      <text x="680" y="118" text-anchor="middle" fill="#a09070" font-size="24" font-family="'Microsoft YaHei',sans-serif" font-style="italic" letter-spacing="8">世 界 脊 柱 山 脉</text>
+      <text x="410" y="490" fill="#a09070" font-size="19" font-family="'Microsoft YaHei',sans-serif" font-style="italic">剑山脉</text>
+      <text x="410" y="830" fill="#a09070" font-size="19" font-family="'Microsoft YaHei',sans-serif" font-style="italic">剑山脉</text>
+      <text x="870" y="730" fill="#a09070" font-size="18" font-family="'Microsoft YaHei',sans-serif" font-style="italic">星峰山</text>
+      <!-- 森林 -->
+      <text x="395" y="460" fill="#4a7a4a" font-size="19" font-family="'Microsoft YaHei',sans-serif" font-style="italic">无冬森林</text>
+      <text x="530" y="260" fill="#4a7a4a" font-size="18" font-family="'Microsoft YaHei',sans-serif" font-style="italic">卢克森林</text>
+      <text x="960" y="620" fill="#4a7a4a" font-size="24" font-family="'Microsoft YaHei',sans-serif" font-style="italic">高 森 林</text>
+      <text x="540" y="1150" fill="#4a7a4a" font-size="18" font-family="'Microsoft YaHei',sans-serif" font-style="italic">迷雾森林</text>
+      <text x="620" y="1390" fill="#4a7a4a" font-size="17" font-family="'Microsoft YaHei',sans-serif" font-style="italic">巨魔树皮森林</text>
+      <text x="810" y="1990" fill="#4a7a4a" font-size="18" font-family="'Microsoft YaHei',sans-serif" font-style="italic">斗篷森林</text>
+      <!-- 沼泽 -->
+      <text x="265" y="690" fill="#6a8050" font-size="17" font-family="'Microsoft YaHei',sans-serif" font-style="italic">死人沼泽</text>
+      <text x="695" y="380" fill="#6a8050" font-size="17" font-family="'Microsoft YaHei',sans-serif" font-style="italic">永沼地</text>
+      <text x="780" y="1300" fill="#6a8050" font-size="19" font-family="'Microsoft YaHei',sans-serif" font-style="italic">高沼地</text>
+    </g>
+
+    <!-- ==================== 城市标记 (图标 + 醒目文字) ==================== -->
+    <!-- 路斯坎 -->
+    <g class="city-group" data-name="路斯坎" data-type="城市" data-desc="北端重要港口，海盗与商人并存的危险之地。">
+      <circle cx="255" cy="290" r="28" class="city-ring" fill="none" stroke="rgba(200,164,78,0.4)" stroke-width="2"/>
+      <use href="#icon-town" x="241" y="276" width="28" height="28"/>
+      <rect x="170" y="258" width="72" height="28" rx="4" class="city-label-bg" fill="rgba(30,20,10,0.65)"/>
+      <text x="206" y="278" text-anchor="middle" class="city-label" fill="#f0d890" font-size="22" font-weight="bold" font-family="'Microsoft YaHei',sans-serif">路斯坎</text>
+    </g>
+
+    <!-- 米拉巴 -->
+    <g class="city-group" data-name="米拉巴" data-type="城市" data-desc="世界脊柱山脉南麓的矿业重镇。">
+      <circle cx="340" cy="180" r="24" class="city-ring" fill="none" stroke="rgba(200,164,78,0.3)" stroke-width="1.5"/>
+      <use href="#icon-town" x="328" y="168" width="24" height="24"/>
+      <rect x="360" y="166" width="68" height="24" rx="3" class="city-label-bg" fill="rgba(30,20,10,0.6)"/>
+      <text x="394" y="184" text-anchor="middle" class="city-label" fill="#e8d0a0" font-size="20" font-family="'Microsoft YaHei',sans-serif">米拉巴</text>
+    </g>
+
+    <!-- 无冬城 -->
+    <g class="city-group" data-name="无冬城" data-type="大城市" data-desc="北地明珠，正在从火山灾难中重建。人口约23,000。">
+      <circle cx="230" cy="440" r="34" class="city-ring" fill="none" stroke="rgba(200,164,78,0.5)" stroke-width="2.5" filter="url(#glow)"/>
+      <use href="#icon-castle" x="210" y="420" width="40" height="40"/>
+      <rect x="108" y="412" width="96" height="32" rx="5" class="city-label-bg" fill="rgba(30,20,10,0.72)"/>
+      <text x="156" y="436" text-anchor="middle" class="city-label" fill="#ffd700" font-size="26" font-weight="bold" font-family="'Microsoft YaHei',sans-serif">无冬城</text>
+    </g>
+
+    <!-- 雷隆 -->
+    <g class="city-group" data-name="雷隆" data-type="城镇" data-desc="剑湾海岸浅滩边的小镇。">
+      <use href="#icon-village" x="270" y="580" width="20" height="20"/>
+      <rect x="295" y="582" width="48" height="20" rx="3" class="city-label-bg" fill="rgba(30,20,10,0.55)"/>
+      <text x="319" y="598" text-anchor="middle" class="city-label" fill="#d8c890" font-size="17" font-family="'Microsoft YaHei',sans-serif">雷隆</text>
+    </g>
+
+    <!-- 凡德林 -->
+    <g class="city-group" data-name="凡德林" data-type="城镇" data-desc="边境小镇，近年由移民重建。人口约400。">
+      <use href="#icon-village" x="430" y="500" width="20" height="20"/>
+      <rect x="454" y="500" width="62" height="22" rx="3" class="city-label-bg" fill="rgba(30,20,10,0.55)"/>
+      <text x="485" y="518" text-anchor="middle" class="city-label" fill="#d8c890" font-size="18" font-family="'Microsoft YaHei',sans-serif">凡德林</text>
+    </g>
+
+    <!-- 深水城 -->
+    <g class="city-group" data-name="深水城" data-type="大城市" data-desc="北方最繁华的城市，由隐匿领主统治。人口约130,000。">
+      <circle cx="300" cy="900" r="38" class="city-ring" fill="none" stroke="rgba(255,215,0,0.5)" stroke-width="3" filter="url(#glow)"/>
+      <use href="#icon-castle" x="280" y="880" width="40" height="40"/>
+      <rect x="168" y="868" width="100" height="34" rx="5" class="city-label-bg" fill="rgba(30,20,10,0.75)"/>
+      <text x="218" y="894" text-anchor="middle" class="city-label" fill="#ffd700" font-size="28" font-weight="bold" font-family="'Microsoft YaHei',sans-serif">深水城</text>
+    </g>
+
+    <!-- 匕首滩 -->
+    <g class="city-group" data-name="匕首滩" data-type="城镇" data-desc="迪林比尔河畔的要塞镇，商队必经之地。人口约1,200。">
+      <circle cx="365" cy="1060" r="26" class="city-ring" fill="none" stroke="rgba(200,164,78,0.35)" stroke-width="2"/>
+      <use href="#icon-town" x="353" y="1048" width="24" height="24"/>
+      <rect x="390" y="1046" width="72" height="24" rx="3" class="city-label-bg" fill="rgba(30,20,10,0.6)"/>
+      <text x="426" y="1065" text-anchor="middle" class="city-label" fill="#e8d0a0" font-size="20" font-family="'Microsoft YaHei',sans-serif">匕首滩</text>
+    </g>
+
+    <!-- 崔波镇 -->
+    <g class="city-group" data-name="崔波镇" data-type="城镇" data-desc="长路与埃弗沼路交会处的驿镇。人口约2,500。">
+      <circle cx="720" cy="740" r="26" class="city-ring" fill="none" stroke="rgba(200,164,78,0.35)" stroke-width="2"/>
+      <use href="#icon-town" x="708" y="728" width="24" height="24"/>
+      <rect x="748" y="724" width="72" height="24" rx="3" class="city-label-bg" fill="rgba(30,20,10,0.6)"/>
+      <text x="784" y="743" text-anchor="middle" class="city-label" fill="#e8d0a0" font-size="20" font-family="'Microsoft YaHei',sans-serif">崔波镇</text>
+    </g>
+
+    <!-- 博德之门 -->
+    <g class="city-group" data-name="博德之门" data-type="大城市" data-desc="剑湾最大的城市之一，繁忙的海港大都市。人口约125,000。">
+      <circle cx="890" cy="1780" r="38" class="city-ring" fill="none" stroke="rgba(255,215,0,0.5)" stroke-width="3" filter="url(#glow)"/>
+      <use href="#icon-castle" x="870" y="1760" width="40" height="40"/>
+      <rect x="918" y="1762" width="112" height="34" rx="5" class="city-label-bg" fill="rgba(30,20,10,0.75)"/>
+      <text x="974" y="1788" text-anchor="middle" class="city-label" fill="#ffd700" font-size="28" font-weight="bold" font-family="'Microsoft YaHei',sans-serif">博德之门</text>
+    </g>
+
+    <!-- 烛堡 -->
+    <g class="city-group" data-name="烛堡" data-type="要塞" data-desc="被遗忘国度最大的知识宝库。">
+      <circle cx="855" cy="2020" r="26" class="city-ring" fill="none" stroke="rgba(200,164,78,0.35)" stroke-width="2"/>
+      <use href="#icon-fortress" x="843" y="2006" width="24" height="24"/>
+      <rect x="880" y="2008" width="50" height="22" rx="3" class="city-label-bg" fill="rgba(30,20,10,0.6)"/>
+      <text x="905" y="2025" text-anchor="middle" class="city-label" fill="#e8d0a0" font-size="18" font-family="'Microsoft YaHei',sans-serif">烛堡</text>
+    </g>
+
+    <!-- 银月城 -->
+    <g class="city-group" data-name="银月城" data-type="大城市" data-desc="银月诸境的重要城邦，魔法与艺术之城。人口约37,000。">
+      <circle cx="1180" cy="400" r="34" class="city-ring" fill="none" stroke="rgba(200,164,78,0.5)" stroke-width="2.5" filter="url(#glow)"/>
+      <use href="#icon-castle" x="1160" y="380" width="40" height="40"/>
+      <rect x="1206" y="380" width="84" height="32" rx="5" class="city-label-bg" fill="rgba(30,20,10,0.72)"/>
+      <text x="1248" y="404" text-anchor="middle" class="city-label" fill="#ffd700" font-size="26" font-weight="bold" font-family="'Microsoft YaHei',sans-serif">银月城</text>
+    </g>
+
+    <!-- 艾佛伦德 -->
+    <g class="city-group" data-name="艾佛伦德" data-type="城市" data-desc="银月诸境大城之一，商旅汇聚之地。人口约21,000。">
+      <circle cx="1340" cy="440" r="26" class="city-ring" fill="none" stroke="rgba(200,164,78,0.35)" stroke-width="2"/>
+      <use href="#icon-town" x="1328" y="428" width="24" height="24"/>
+      <rect x="1365" y="425" width="85" height="24" rx="3" class="city-label-bg" fill="rgba(30,20,10,0.6)"/>
+      <text x="1408" y="444" text-anchor="middle" class="city-label" fill="#e8d0a0" font-size="20" font-family="'Microsoft YaHei',sans-serif">艾佛伦德</text>
+    </g>
+
+    <!-- 阿德巴要塞 -->
+    <g class="city-group" data-name="阿德巴要塞" data-type="要塞" data-desc="古老的盾矮人城堡。">
+      <circle cx="1580" cy="270" r="26" class="city-ring" fill="none" stroke="rgba(200,164,78,0.3)" stroke-width="1.5"/>
+      <use href="#icon-fortress" x="1568" y="256" width="24" height="24"/>
+      <rect x="1608" y="256" width="108" height="24" rx="3" class="city-label-bg" fill="rgba(30,20,10,0.6)"/>
+      <text x="1662" y="274" text-anchor="middle" class="city-label" fill="#e8d0a0" font-size="20" font-family="'Microsoft YaHei',sans-serif">阿德巴要塞</text>
+    </g>
+
+    <!-- ==================== 指南针 ==================== -->
+    <g transform="translate(160, 2180)">
+      <circle cx="0" cy="0" r="62" fill="rgba(235,220,190,0.75)" stroke="#5a4020" stroke-width="2.5"/>
+      <circle cx="0" cy="0" r="56" fill="none" stroke="#5a4020" stroke-width="1"/>
+      <!-- 刻度 -->
+      <g stroke="#5a4020">
+        <line x1="0" y1="-54" x2="0" y2="-48" stroke-width="2"/>
+        <line x1="0" y1="48" x2="0" y2="54" stroke-width="2"/>
+        <line x1="-54" y1="0" x2="-48" y2="0" stroke-width="2"/>
+        <line x1="48" y1="0" x2="54" y2="0" stroke-width="2"/>
+        <line x1="38" y1="-38" x2="34" y2="-34" stroke-width="1"/>
+        <line x1="38" y1="38" x2="34" y2="34" stroke-width="1"/>
+        <line x1="-38" y1="-38" x2="-34" y2="-34" stroke-width="1"/>
+        <line x1="-38" y1="38" x2="-34" y2="34" stroke-width="1"/>
+      </g>
+      <!-- N指针 (金色) -->
+      <polygon points="0,-42 8,0 0,-10 -8,0" fill="#c8a050" stroke="#8b6914" stroke-width="0.8"/>
+      <!-- S指针 -->
+      <polygon points="0,42 8,0 0,10 -8,0" fill="#5a4020" stroke="#3a2510" stroke-width="0.8"/>
+      <!-- E/W -->
+      <polygon points="34,0 0,-6 8,0 0,6" fill="#c8a050" stroke="#8b6914" stroke-width="0.5"/>
+      <polygon points="-34,0 0,-6 -8,0 0,6" fill="#5a4020" stroke="#3a2510" stroke-width="0.5"/>
+      <!-- 中心 -->
+      <circle cx="0" cy="0" r="5" fill="#c8a050" stroke="#5a4020" stroke-width="1"/>
+      <!-- 方向 -->
+      <text x="0" y="-68" text-anchor="middle" fill="#3a2510" font-size="20" font-weight="bold" font-family="'Cinzel','Microsoft YaHei',serif">N</text>
+      <text x="0" y="82" text-anchor="middle" fill="#8b7355" font-size="14" font-family="'Cinzel',serif">S</text>
+      <text x="72" y="6" text-anchor="middle" fill="#8b7355" font-size="14" font-family="'Cinzel',serif">E</text>
+      <text x="-72" y="6" text-anchor="middle" fill="#8b7355" font-size="14" font-family="'Cinzel',serif">W</text>
+    </g>
+
+    <!-- ==================== 比例尺 ==================== -->
+    <g transform="translate(100, 2320)">
+      <line x1="0" y1="0" x2="240" y2="0" stroke="#3a2510" stroke-width="2.5"/>
+      <line x1="0" y1="-8" x2="0" y2="8" stroke="#3a2510" stroke-width="1.5"/>
+      <line x1="60" y1="-6" x2="60" y2="6" stroke="#3a2510" stroke-width="1"/>
+      <line x1="120" y1="-6" x2="120" y2="6" stroke="#3a2510" stroke-width="1"/>
+      <line x1="180" y1="-6" x2="180" y2="6" stroke="#3a2510" stroke-width="1"/>
+      <line x1="240" y1="-8" x2="240" y2="8" stroke="#3a2510" stroke-width="1.5"/>
+      <!-- 交替黑白段 -->
+      <rect x="0" y="-3" width="60" height="6" fill="#3a2510"/>
+      <rect x="60" y="-3" width="60" height="6" fill="rgba(235,220,190,0.8)" stroke="#3a2510" stroke-width="0.5"/>
+      <rect x="120" y="-3" width="60" height="6" fill="#3a2510"/>
+      <rect x="180" y="-3" width="60" height="6" fill="rgba(235,220,190,0.8)" stroke="#3a2510" stroke-width="0.5"/>
+      <text x="0" y="22" text-anchor="middle" fill="#3a2510" font-size="14" font-family="'Microsoft YaHei',sans-serif">0</text>
+      <text x="60" y="22" text-anchor="middle" fill="#3a2510" font-size="14" font-family="'Microsoft YaHei',sans-serif">50</text>
+      <text x="120" y="22" text-anchor="middle" fill="#3a2510" font-size="14" font-family="'Microsoft YaHei',sans-serif">100</text>
+      <text x="180" y="22" text-anchor="middle" fill="#3a2510" font-size="14" font-family="'Microsoft YaHei',sans-serif">150</text>
+      <text x="240" y="22" text-anchor="middle" fill="#3a2510" font-size="14" font-family="'Microsoft YaHei',sans-serif">200</text>
+      <text x="120" y="40" text-anchor="middle" fill="#6a5540" font-size="13" font-style="italic" font-family="'Cinzel','Microsoft YaHei',serif">Miles</text>
+    </g>
+
+    <!-- ==================== 标题卷轴 ==================== -->
+    <g transform="translate(450, 880)">
+      <!-- 卷轴背景 -->
+      <rect x="-140" y="-48" width="280" height="96" rx="6" fill="rgba(235,220,190,0.88)" stroke="#5a4020" stroke-width="2.5"/>
+      <rect x="-132" y="-40" width="264" height="80" rx="4" fill="none" stroke="#8b7355" stroke-width="1"/>
+      <!-- 装饰线 -->
+      <line x1="-110" y1="-16" x2="110" y2="-16" stroke="#c8a050" stroke-width="1"/>
+      <line x1="-110" y1="22" x2="110" y2="22" stroke="#c8a050" stroke-width="1"/>
+      <!-- 角装饰 -->
+      <circle cx="-120" cy="-28" r="3" fill="#c8a050" stroke="#8b6914" stroke-width="0.5"/>
+      <circle cx="120" cy="-28" r="3" fill="#c8a050" stroke="#8b6914" stroke-width="0.5"/>
+      <circle cx="-120" cy="28" r="3" fill="#c8a050" stroke="#8b6914" stroke-width="0.5"/>
+      <circle cx="120" cy="28" r="3" fill="#c8a050" stroke="#8b6914" stroke-width="0.5"/>
+      <!-- 标题文字 -->
+      <text x="0" y="6" text-anchor="middle" fill="#3a2510" font-size="36" font-weight="bold" font-family="'Microsoft YaHei',sans-serif" letter-spacing="8">剑湾地区</text>
+      <text x="0" y="38" text-anchor="middle" fill="#6a5540" font-size="16" font-family="'Cinzel','Microsoft YaHei',serif" letter-spacing="3">THE SWORD COAST</text>
+      <!-- 上方装饰 -->
+      <path d="M-40,-32 L-30,-38 L-20,-32" fill="none" stroke="#c8a050" stroke-width="1.2"/>
+      <path d="M20,-32 L30,-38 L40,-32" fill="none" stroke="#c8a050" stroke-width="1.2"/>
+      <circle cx="0" cy="-36" r="2.5" fill="#c8a050"/>
+    </g>
+
+    <!-- ==================== 帆船装饰 ==================== -->
+    <g opacity="0.5">
+      <!-- 船1 -->
+      <g transform="translate(150,780)">
+        <path d="M-14,0 Q0,-5 14,0 Q0,3 -14,0Z" fill="#6a5540" stroke="#4a3520" stroke-width="0.8"/>
+        <line x1="0" y1="-2" x2="0" y2="-22" stroke="#4a3520" stroke-width="1"/>
+        <path d="M0,-20 Q12,-13 0,-5" fill="rgba(235,220,190,0.7)" stroke="#4a3520" stroke-width="0.6"/>
+      </g>
+      <!-- 船2 -->
+      <g transform="translate(90,1280)">
+        <path d="M-12,0 Q0,-4 12,0 Q0,2.5 -12,0Z" fill="#6a5540" stroke="#4a3520" stroke-width="0.7"/>
+        <line x1="0" y1="-1" x2="0" y2="-18" stroke="#4a3520" stroke-width="0.8"/>
+        <path d="M0,-16 Q10,-10 0,-4" fill="rgba(235,220,190,0.6)" stroke="#4a3520" stroke-width="0.5"/>
+      </g>
+      <!-- 船3 -->
+      <g transform="translate(180,2050)">
+        <path d="M-11,0 Q0,-3.5 11,0 Q0,2 -11,0Z" fill="#6a5540" stroke="#4a3520" stroke-width="0.6"/>
+        <line x1="0" y1="-1" x2="0" y2="-16" stroke="#4a3520" stroke-width="0.8"/>
+        <path d="M0,-14 Q9,-9 0,-3" fill="rgba(235,220,190,0.6)" stroke="#4a3520" stroke-width="0.5"/>
+      </g>
+    </g>
+
+    <!-- ==================== 海洋标签 ==================== -->
+    <text transform="translate(85,1700) rotate(-80)" text-anchor="middle" fill="rgba(160,190,215,0.28)" font-size="52" font-style="italic" font-family="'Cinzel',serif" letter-spacing="20">SEA OF SWORDS</text>
+    <text transform="translate(120,1650) rotate(-80)" text-anchor="middle" fill="rgba(160,190,215,0.22)" font-size="32" font-style="italic" font-family="'Microsoft YaHei',sans-serif" letter-spacing="14">剑  海</text>
+
+    <!-- ==================== 图例 ==================== -->
+    <g transform="translate(1680,2120)">
+      <rect x="-120" y="-20" width="240" height="145" rx="5" fill="rgba(235,220,190,0.82)" stroke="#5a4020" stroke-width="1.5"/>
+      <text x="0" y="4" text-anchor="middle" fill="#3a2510" font-size="18" font-weight="bold" font-family="'Microsoft YaHei',sans-serif">图  例</text>
+      <line x1="-100" y1="12" x2="100" y2="12" stroke="#c8a050" stroke-width="0.8"/>
+      <!-- 大城市 -->
+      <use href="#icon-castle" x="-105" y="18" width="22" height="22"/>
+      <text x="-75" y="34" fill="#3a2510" font-size="15" font-family="'Microsoft YaHei',sans-serif">大城市</text>
+      <!-- 城镇 -->
+      <use href="#icon-town" x="-105" y="44" width="20" height="20"/>
+      <text x="-75" y="60" fill="#3a2510" font-size="15" font-family="'Microsoft YaHei',sans-serif">城镇</text>
+      <!-- 要塞 -->
+      <use href="#icon-fortress" x="-105" y="70" width="20" height="20"/>
+      <text x="-75" y="86" fill="#3a2510" font-size="15" font-family="'Microsoft YaHei',sans-serif">要塞</text>
+      <!-- 主路 -->
+      <line x1="-100" y1="104" x2="-68" y2="104" stroke="#d4a850" stroke-width="3" stroke-dasharray="8,4"/>
+      <text x="-60" y="109" fill="#3a2510" font-size="15" font-family="'Microsoft YaHei',sans-serif">主要道路</text>
+      <!-- 小路 -->
+      <line x1="-100" y1="120" x2="-68" y2="120" stroke="#b89040" stroke-width="2" stroke-dasharray="5,4"/>
+      <text x="-60" y="125" fill="#3a2510" font-size="15" font-family="'Microsoft YaHei',sans-serif">小径</text>
+    </g>
+
+  </svg>
+
+  <!-- Tooltip -->
+  <div class="tooltip" id="tooltip">
+    <div class="tt-name"></div>
+    <div class="tt-type"></div>
+    <div class="tt-desc"></div>
+  </div>
+</div>
+
+<script>
+const tooltip = document.getElementById('tooltip');
+const mapWrap = document.getElementById('mapWrap');
+
+document.querySelectorAll('.city-group').forEach(g => {
+  g.addEventListener('mouseenter', e => {
+    const name = g.dataset.name;
+    const type = g.dataset.type;
+    const desc = g.dataset.desc;
+    tooltip.querySelector('.tt-name').textContent = name;
+    tooltip.querySelector('.tt-type').textContent = '[ ' + type + ' ]';
+    tooltip.querySelector('.tt-desc').textContent = desc;
+    tooltip.classList.add('show');
+  });
+  g.addEventListener('mousemove', e => {
+    const rect = mapWrap.getBoundingClientRect();
+    let x = e.clientX - rect.left + 15;
+    let y = e.clientY - rect.top - 10;
+    if (x + 230 > rect.width) x = e.clientX - rect.left - 240;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  });
+  g.addEventListener('mouseleave', () => {
+    tooltip.classList.remove('show');
+  });
+});
+</script>
+</body>
+</html>

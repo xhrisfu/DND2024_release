@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="wall_of_force-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#160e2e"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="wall_of_force-halo" cx=".5" cy=".48" r=".55">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".5"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wall_of_force-panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9c6ff" stop-opacity=".5"/><stop offset=".5" stop-color="#8a5cd6" stop-opacity=".4"/><stop offset="1" stop-color="#3a1f78" stop-opacity=".55"/>
+    </linearGradient>
+    <radialGradient id="wall_of_force-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#wall_of_force-bg)"/>
+  <rect width="64" height="64" fill="url(#wall_of_force-halo)"/>
+  <polygon points="18,12 46,17 46,52 18,57" fill="#b98cff" opacity=".16"/>
+  <polygon points="20,14 44,18.5 44,50 20,54.5" fill="url(#wall_of_force-panel)" stroke="#c9a8ff" stroke-width="1.4" stroke-linejoin="round"/>
+  <g stroke="#d9c6ff" stroke-width=".8" opacity=".4">
+    <line x1="28" y1="15" x2="28" y2="53.4"/>
+    <line x1="36" y1="16" x2="36" y2="52.2"/>
+    <line x1="20" y1="27" x2="44" y2="29"/>
+    <line x1="20" y1="41" x2="44" y2="40"/>
+  </g>
+  <polygon points="20,14 44,18.5 40,20 22,17" fill="#e6d4ff" opacity=".55"/>
+  <ellipse cx="27" cy="25" rx="3" ry="7" fill="#fff" opacity=".28" transform="rotate(6 27 25)"/>
+  <polygon points="30,30 34,34 30,38 26,34" fill="#eaddff" opacity=".9"/>
+  <circle cx="30" cy="34" r="1.3" fill="#fff"/>
+  <circle cx="52" cy="18" r="1.4" fill="#d9c6ff"/>
+  <circle cx="13" cy="24" r="1.1" fill="#c9a8ff" opacity=".8"/>
+  <circle cx="50" cy="46" r="1" fill="#b98cff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#wall_of_force-vig)"/>
+</svg>
