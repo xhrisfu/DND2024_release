@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="plane_shift-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#170e30"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="plane_shift-halo" cx=".5" cy=".46" r=".5">
+      <stop offset="0" stop-color="#9d5cff" stop-opacity=".5"/><stop offset="1" stop-color="#9d5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="plane_shift-rift" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6d0ff"/><stop offset=".5" stop-color="#9d5cff"/><stop offset="1" stop-color="#4a1d8e"/>
+    </linearGradient>
+    <linearGradient id="plane_shift-rod" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f4f6fc"/><stop offset=".5" stop-color="#c4ccdc"/><stop offset="1" stop-color="#7e88a0"/>
+    </linearGradient>
+    <radialGradient id="plane_shift-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#plane_shift-bg)"/>
+  <rect width="64" height="64" fill="url(#plane_shift-halo)"/>
+  <path d="M26 6 C34 22 30 42 34 58 C36 44 33 22 40 6 C33 16 33 48 26 6 Z" fill="#9d5cff" opacity=".22"/>
+  <path d="M30 6 C33 20 31 42 32.5 58 C34 42 32 20 35 6 C33.5 26 31.5 26 30 6 Z" fill="url(#plane_shift-rift)"/>
+  <path d="M32 8 L32 56" fill="none" stroke="#f4ecff" stroke-width="1" opacity=".55"/>
+  <rect x="30.9" y="30" width="2.2" height="26" fill="url(#plane_shift-rod)"/>
+  <path d="M32 32 C31.4 25 27 21 24 15" fill="none" stroke="#c4ccdc" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M32 32 C32.6 25 37 21 40 15" fill="none" stroke="#c4ccdc" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M32 32 C31.7 25 30 21 29 15" fill="none" stroke="#a8b0c4" stroke-width="1.8" stroke-linecap="round" opacity=".8"/>
+  <circle cx="24" cy="15" r="1.9" fill="#e6d0ff"/>
+  <circle cx="40" cy="15" r="1.9" fill="#e6d0ff"/>
+  <circle cx="29" cy="15" r="1.5" fill="#d6c0ff" opacity=".85"/>
+  <ellipse cx="31.4" cy="40" rx=".7" ry="8" fill="#fff" opacity=".4"/>
+  <circle cx="32" cy="32" r="2.4" fill="#f4ecff" opacity=".9"/>
+  <circle cx="14" cy="46" r="1.2" fill="#b98cff" opacity=".7"/>
+  <circle cx="50" cy="48" r="1" fill="#9d5cff" opacity=".65"/>
+  <circle cx="49" cy="20" r=".8" fill="#e6d0ff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#plane_shift-vig)"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="vampiric_touch-bg" cx=".46" cy=".38" r=".9">
+      <stop offset="0" stop-color="#16281a"/><stop offset=".5" stop-color="#0c1810"/><stop offset="1" stop-color="#060c06"/>
+    </radialGradient>
+    <radialGradient id="vampiric_touch-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7ee23c" stop-opacity=".42"/><stop offset="1" stop-color="#7ee23c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vampiric_touch-drain" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#ff5a5a" stop-opacity=".85"/><stop offset=".6" stop-color="#c41f2c" stop-opacity=".5"/><stop offset="1" stop-color="#c41f2c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vampiric_touch-hand" x1="0" y1="0" x2=".4" y2="1">
+      <stop offset="0" stop-color="#4a7a3c"/><stop offset=".5" stop-color="#284c22"/><stop offset="1" stop-color="#0f2410"/>
+    </linearGradient>
+    <radialGradient id="vampiric_touch-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#vampiric_touch-bg)"/>
+  <rect width="64" height="64" fill="url(#vampiric_touch-halo)"/>
+  <circle cx="41" cy="21" r="12" fill="url(#vampiric_touch-drain)"/>
+  <path d="M18 58 C16 44 20 36 26 33 L28 26 C28.4 24 31 24 31 26 L31 31 L33 24 C33.4 22 36 22.4 35.6 24.4 L34 31 L38 26 C39 24.4 41.4 25.8 40.2 27.4 L36 33 C40 35 41 42 40 58 Z" fill="#5aa048" opacity=".24"/>
+  <path d="M20 58 C18 45 22 37 27 34 L29 27 C29.4 25.2 31.6 25.4 31.6 27.2 L31.4 32 L33.2 25.6 C33.7 23.8 36 24.4 35.5 26.3 L34 32 L37.6 27.4 C38.7 26 40.7 27.4 39.6 28.8 L35.6 34 C39 36 40 43 39 58 Z" fill="url(#vampiric_touch-hand)" stroke="#6ec24a" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M24 36 C26.5 38 32 38.5 36 36.5" fill="none" stroke="#243c1e" stroke-width="1.2" opacity=".6"/>
+  <circle cx="41" cy="21" r="5.5" fill="#ff8a8a" opacity=".7"/>
+  <circle cx="41" cy="21" r="2.6" fill="#ffe0e0"/>
+  <path d="M39 30 C37 27 38 24 40.5 22" fill="none" stroke="#ff9a9a" stroke-width="1.8" stroke-linecap="round" opacity=".55"/>
+  <circle cx="52" cy="14" r="1.5" fill="#ffb0b0" opacity=".85"/>
+  <circle cx="30" cy="15" r="1.1" fill="#a6e86a" opacity=".7"/>
+  <circle cx="48" cy="30" r="1.3" fill="#ff8a8a" opacity=".6"/>
+  <circle cx="15" cy="40" r=".9" fill="#8ed85a" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#vampiric_touch-vig)"/>
+</svg>

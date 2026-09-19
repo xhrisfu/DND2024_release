@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="shillelagh-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#1e3a16"/><stop offset=".5" stop-color="#102008"/><stop offset="1" stop-color="#070f05"/>
+    </radialGradient>
+    <radialGradient id="shillelagh-halo" cx=".6" cy=".3" r=".55">
+      <stop offset="0" stop-color="#a6e26a" stop-opacity=".5"/><stop offset="1" stop-color="#a6e26a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shillelagh-wood" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#5c360f"/><stop offset=".5" stop-color="#8a5622"/><stop offset="1" stop-color="#b98a44"/>
+    </linearGradient>
+    <radialGradient id="shillelagh-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#shillelagh-bg)"/>
+  <rect width="64" height="64" fill="url(#shillelagh-halo)"/>
+  <path d="M15 55 L37 33 C33 26 37 15 46 9 C51 15 49 23 43 26 C47 32 44 39 37 40 Z" fill="#a6e26a" opacity=".2"/>
+  <path d="M17 53 L39 33 C35 27 39 16 46 11 C50 16 48 23 42 25 C46 31 43 38 37 38 L19 55 C17.5 56.5 15.5 54.5 17 53 Z" fill="url(#shillelagh-wood)" stroke="#3c2409" stroke-width="1.3" stroke-linejoin="round"/>
+  <path d="M40 20 C43 19 45 21 45 24" fill="none" stroke="#d6a860" stroke-width="1.1" opacity=".7"/>
+  <path d="M44 14 C41 17 39 22 40 27" fill="none" stroke="#4a2a0c" stroke-width="1.1" opacity=".6"/>
+  <path d="M43 12 C46 12 48 15 47 18 C45 15 43 14 41 15 Z" fill="#8fd45f" opacity=".95"/>
+  <path d="M47 22 C50 22 52 25 51 28 C49 26 48 25 46 25 Z" fill="#a6e26a" opacity=".9"/>
+  <ellipse cx="32" cy="38" rx="2.4" ry="1.3" fill="#e6c68a" opacity=".5" transform="rotate(-42 32 38)"/>
+  <circle cx="49" cy="10" r="1.5" fill="#d8ffa8" opacity=".9"/>
+  <circle cx="35" cy="42" r="1.1" fill="#a6e26a" opacity=".8"/>
+  <circle cx="18" cy="47" r="1" fill="#8fd45f" opacity=".65"/>
+  <circle cx="52" cy="30" r=".8" fill="#d8ffa8" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#shillelagh-vig)"/>
+</svg>

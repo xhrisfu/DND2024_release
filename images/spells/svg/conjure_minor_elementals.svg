@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="conjure_minor_elementals-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#170e2f"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="conjure_minor_elementals-halo" cx=".5" cy=".48" r=".55">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".45"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="conjure_minor_elementals-fire" cx=".5" cy=".6" r=".7">
+      <stop offset="0" stop-color="#fff2c0"/><stop offset=".6" stop-color="#ff8a2c"/><stop offset="1" stop-color="#b83a08"/>
+    </radialGradient>
+    <radialGradient id="conjure_minor_elementals-water" cx=".4" cy=".35" r=".8">
+      <stop offset="0" stop-color="#dff3ff"/><stop offset=".6" stop-color="#5cb0e6"/><stop offset="1" stop-color="#1a5a8e"/>
+    </radialGradient>
+    <radialGradient id="conjure_minor_elementals-air" cx=".4" cy=".35" r=".8">
+      <stop offset="0" stop-color="#f0eec8"/><stop offset=".6" stop-color="#c4d84a"/><stop offset="1" stop-color="#6e7a1e"/>
+    </radialGradient>
+    <radialGradient id="conjure_minor_elementals-earth" cx=".4" cy=".35" r=".8">
+      <stop offset="0" stop-color="#c8a878"/><stop offset=".6" stop-color="#8a5a2e"/><stop offset="1" stop-color="#4a2e14"/>
+    </radialGradient>
+    <radialGradient id="conjure_minor_elementals-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#conjure_minor_elementals-bg)"/>
+  <rect width="64" height="64" fill="url(#conjure_minor_elementals-halo)"/>
+  <circle cx="32" cy="32" r="19" fill="none" stroke="#9d5cff" stroke-width="1.2" opacity=".4"/>
+  <circle cx="32" cy="32" r="4" fill="#e0ccff" opacity=".5"/>
+  <circle cx="32" cy="32" r="1.8" fill="#fff"/>
+  <path d="M32 8 C29 13 30 17 32 20 C34 16 33 12 32 8 Z" fill="url(#conjure_minor_elementals-fire)"/>
+  <ellipse cx="32" cy="16" rx="1.4" ry="2.4" fill="#fff2c0" opacity=".7"/>
+  <circle cx="53" cy="32" r="5" fill="url(#conjure_minor_elementals-water)"/>
+  <ellipse cx="51.5" cy="30.5" rx="1.6" ry="1" fill="#fff" opacity=".6"/>
+  <path d="M27 50 L37 50 L34.5 46 L29.5 46 Z" fill="url(#conjure_minor_elementals-earth)"/>
+  <path d="M27 50 L37 50 L32 54.5 Z" fill="#6a4222"/>
+  <path d="M11 32 C13 29 17 29 18.5 32 C20 35 16 37.5 13.5 36 C11.5 35 10 33.5 11 32 Z" fill="url(#conjure_minor_elementals-air)"/>
+  <circle cx="32" cy="20" r="1.1" fill="#ffb347" opacity=".8"/>
+  <circle cx="47" cy="47" r="1.1" fill="#c8a0ff" opacity=".65"/>
+  <circle cx="17" cy="47" r="1" fill="#dff3ff" opacity=".6"/>
+  <circle cx="46" cy="17" r=".9" fill="#c4d84a" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#conjure_minor_elementals-vig)"/>
+</svg>

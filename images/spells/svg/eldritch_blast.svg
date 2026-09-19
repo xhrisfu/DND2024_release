@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="eldritch_blast-bg" cx=".42" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#180e2e"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="eldritch_blast-halo" cx=".3" cy=".68" r=".55">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".55"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="eldritch_blast-beam" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".4" stop-color="#c8a0ff"/><stop offset="1" stop-color="#7a3ce0" stop-opacity=".2"/>
+    </linearGradient>
+    <radialGradient id="eldritch_blast-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#eldritch_blast-bg)"/>
+  <rect width="64" height="64" fill="url(#eldritch_blast-halo)"/>
+  <circle cx="18" cy="46" r="14" fill="#9d5cff" opacity=".2"/>
+  <polygon points="53,7 58,11 22,50 15,48 13,42" fill="url(#eldritch_blast-beam)"/>
+  <polygon points="49,13 54,16 25,49 19,47" fill="url(#eldritch_blast-beam)" opacity=".7"/>
+  <polyline points="54,9 38,26 45,29 27,47" fill="none" stroke="#f2e8ff" stroke-width="1.3" opacity=".85"/>
+  <polyline points="48,15 34,30 40,33 24,48" fill="none" stroke="#e0ccff" stroke-width="1" opacity=".6"/>
+  <circle cx="19" cy="47" r="6.5" fill="#d8c0ff" opacity=".4"/>
+  <circle cx="19" cy="47" r="3" fill="#fff" opacity=".9"/>
+  <path d="M55 8 l1 3 3 1 -3 1 -1 3 -1-3 -3-1 3-1 z" fill="#e8d8ff" opacity=".9"/>
+  <circle cx="50" cy="34" r="1.4" fill="#c8a0ff" opacity=".85"/>
+  <circle cx="31" cy="19" r="1" fill="#f2e8ff" opacity=".8"/>
+  <circle cx="12" cy="34" r="1.1" fill="#b98cff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#eldritch_blast-vig)"/>
+</svg>

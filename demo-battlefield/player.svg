@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3a28"/>
+      <stop offset="100%" stop-color="#0a1810"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c9a0"/>
+      <stop offset="100%" stop-color="#c8a882"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="rgba(200,164,78,0.25)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="200" height="260" fill="url(#bg)"/>
+  <rect width="200" height="260" fill="url(#glow)"/>
+  <!-- cloak -->
+  <path d="M30 250 Q100 140 170 250 Z" fill="#2a5a38"/>
+  <path d="M45 250 Q100 155 155 250 Z" fill="#1e4a2a"/>
+  <!-- hair -->
+  <ellipse cx="100" cy="72" rx="52" ry="58" fill="#3a2818"/>
+  <path d="M55 80 Q100 30 145 80 Q130 110 100 105 Q70 110 55 80" fill="#4a3420"/>
+  <!-- face -->
+  <ellipse cx="100" cy="88" rx="38" ry="44" fill="url(#skin)"/>
+  <!-- eyes -->
+  <ellipse cx="86" cy="86" rx="5" ry="6" fill="#2a4a20"/>
+  <ellipse cx="114" cy="86" rx="5" ry="6" fill="#2a4a20"/>
+  <circle cx="87" cy="85" r="1.5" fill="#fff"/>
+  <circle cx="115" cy="85" r="1.5" fill="#fff"/>
+  <!-- elf ears -->
+  <path d="M58 82 Q42 70 48 58 Q58 68 62 78" fill="#c8a882"/>
+  <path d="M142 82 Q158 70 152 58 Q142 68 138 78" fill="#c8a882"/>
+  <!-- leather armor -->
+  <path d="M62 130 Q100 118 138 130 L148 250 L52 250 Z" fill="#5a4030"/>
+  <path d="M75 135 Q100 125 125 135 L130 250 L70 250 Z" fill="#6a5040"/>
+  <!-- bow hint -->
+  <path d="M155 100 Q175 130 155 170" stroke="#8a6d2b" stroke-width="3" fill="none"/>
+  <!-- gold trim -->
+  <rect x="0" y="248" width="200" height="12" fill="rgba(200,164,78,0.15)"/>
+</svg>

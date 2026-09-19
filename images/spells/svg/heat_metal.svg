@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="heat_metal-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#5c2109"/><stop offset=".5" stop-color="#2c0c05"/><stop offset="1" stop-color="#140503"/>
+    </radialGradient>
+    <radialGradient id="heat_metal-halo" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#ff8a2c" stop-opacity=".6"/><stop offset="1" stop-color="#ff8a2c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heat_metal-blade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7d6"/><stop offset=".4" stop-color="#ff8a2c"/><stop offset=".75" stop-color="#e0430c"/><stop offset="1" stop-color="#7a2a08"/>
+    </linearGradient>
+    <linearGradient id="heat_metal-hilt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c98a3c"/><stop offset="1" stop-color="#5c3410"/>
+    </linearGradient>
+    <radialGradient id="heat_metal-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".64"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#heat_metal-bg)"/>
+  <rect width="64" height="64" fill="url(#heat_metal-halo)"/>
+  <path d="M40 6 L46 12 L24 50 L17 51 L17 44 Z" fill="#ff8a2c" opacity=".22"/>
+  <path d="M40.5 9 L44 12.5 L23 47 L19 47.5 L19 43.5 Z" fill="url(#heat_metal-blade)"/>
+  <line x1="41" y1="11" x2="21.5" y2="45" stroke="#fff7d6" stroke-width="1.3" opacity=".75"/>
+  <path d="M18 46 L26 51 L21 56 L14 51 Z" fill="url(#heat_metal-hilt)" stroke="#3a2208" stroke-width="1"/>
+  <line x1="16.5" y1="52" x2="24" y2="57" stroke="#7a4a18" stroke-width="2.4" stroke-linecap="round"/>
+  <ellipse cx="34" cy="20" rx="2.6" ry="5" fill="#fff" opacity=".5" transform="rotate(30 34 20)"/>
+  <circle cx="47" cy="20" r="1.5" fill="#ffd27a"/>
+  <circle cx="52" cy="34" r="1.1" fill="#ff9b3d" opacity=".85"/>
+  <circle cx="38" cy="40" r="1.3" fill="#ffab4d" opacity=".7"/>
+  <circle cx="44" cy="50" r=".8" fill="#ffe0a0" opacity=".8"/>
+  <rect width="64" height="64" fill="url(#heat_metal-vig)"/>
+</svg>
