@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2848"/>
+      <stop offset="100%" stop-color="#0a1020"/>
+    </linearGradient>
+    <linearGradient id="skin2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4b896"/>
+      <stop offset="100%" stop-color="#b89878"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="22%" r="50%">
+      <stop offset="0%" stop-color="rgba(232,212,142,0.35)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="200" height="260" fill="url(#bg2)"/>
+  <rect width="200" height="260" fill="url(#halo)"/>
+  <!-- robe -->
+  <path d="M25 250 Q100 130 175 250 Z" fill="#2a3a6a"/>
+  <path d="M40 250 Q100 145 160 250 Z" fill="#1a2a58"/>
+  <!-- hair -->
+  <ellipse cx="100" cy="70" rx="48" ry="52" fill="#6a5a40"/>
+  <path d="M58 75 Q100 35 142 75 L138 100 Q100 90 62 100 Z" fill="#7a6a50"/>
+  <!-- face -->
+  <ellipse cx="100" cy="90" rx="36" ry="42" fill="url(#skin2)"/>
+  <!-- beard -->
+  <path d="M78 108 Q100 140 122 108 Q100 125 78 108" fill="#8a7a60"/>
+  <!-- eyes -->
+  <ellipse cx="87" cy="88" rx="4" ry="5" fill="#1a2848"/>
+  <ellipse cx="113" cy="88" rx="4" ry="5" fill="#1a2848"/>
+  <!-- holy symbol -->
+  <circle cx="100" cy="155" r="14" fill="none" stroke="#c8a44e" stroke-width="2.5"/>
+  <line x1="100" y1="145" x2="100" y2="165" stroke="#c8a44e" stroke-width="2"/>
+  <line x1="90" y1="155" x2="110" y2="155" stroke="#c8a44e" stroke-width="2"/>
+  <!-- staff top glow -->
+  <circle cx="158" cy="60" r="8" fill="rgba(232,212,142,0.5)"/>
+  <line x1="158" y1="68" x2="158" y2="200" stroke="#8a6d2b" stroke-width="3"/>
+  <rect x="0" y="248" width="200" height="12" fill="rgba(200,164,78,0.12)"/>
+</svg>

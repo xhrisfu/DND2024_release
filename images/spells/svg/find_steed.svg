@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="find_steed-bg" cx=".5" cy=".38" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#180e2c"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="find_steed-halo" cx=".5" cy=".42" r=".52">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".5"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="find_steed-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaddff"/><stop offset=".5" stop-color="#b98cff"/><stop offset="1" stop-color="#6a3fb0"/>
+    </linearGradient>
+    <radialGradient id="find_steed-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#find_steed-bg)"/>
+  <rect width="64" height="64" fill="url(#find_steed-halo)"/>
+  <ellipse cx="32" cy="53" rx="19" ry="5" fill="#b98cff" opacity=".2"/>
+  <ellipse cx="32" cy="53" rx="16" ry="3.6" fill="none" stroke="#b98cff" stroke-width="1.1" opacity=".5"/>
+  <path d="M40 14 L38 20 C44 22 47 28 46 35 L50 40 L45 41 L46 51 L41 51 L40.5 42 C36 44 28 44 23.5 41.5 L23 51 L18 51 L19 39 C18 32 20 26 26 24 C24 19 26 14 30 12 C29 16 30 19 33 21 C36 20 38 17 40 14 Z" fill="#b98cff" opacity=".2"/>
+  <path d="M40 15 L38 21 C43.5 23 46 28.5 45 35 L48.5 39.5 L44 40.5 L45 50 L41 50 L40.5 42 C36 44 28.5 44 24.5 41.5 L24 50 L20 50 L20.8 39 C20 32.5 22 27 27 25 C25 20 27 15 30.5 13 C29.5 17 30.5 20 33 22 C36 21 38 18 40 15 Z" fill="url(#find_steed-body)"/>
+  <path d="M40 15 L39 9 L43 13 Z" fill="#8a5cd0"/>
+  <path d="M30.5 13 L27 8 L31 11 Z" fill="#8a5cd0"/>
+  <path d="M27 25 C33 26 40 30 44 36" fill="none" stroke="#f0e6ff" stroke-width="1" opacity=".45"/>
+  <path d="M40 22 C36 30 34 40 34 48" fill="none" stroke="#d8c8ff" stroke-width="1.4" opacity=".55"/>
+  <circle cx="40" cy="29" r="1.5" fill="#1a0f2e"/>
+  <ellipse cx="34" cy="20" rx="2.6" ry="1.3" fill="#fff" opacity=".45" transform="rotate(30 34 20)"/>
+  <circle cx="50" cy="17" r="1.4" fill="#eaddff" opacity=".8"/>
+  <circle cx="14" cy="24" r="1.1" fill="#b98cff" opacity=".65"/>
+  <circle cx="52" cy="44" r=".9" fill="#eaddff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#find_steed-vig)"/>
+</svg>

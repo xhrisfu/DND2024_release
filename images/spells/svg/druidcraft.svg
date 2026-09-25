@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="druidcraft-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#1e3a16"/><stop offset=".5" stop-color="#102008"/><stop offset="1" stop-color="#070f05"/>
+    </radialGradient>
+    <radialGradient id="druidcraft-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7ecb5f" stop-opacity=".5"/><stop offset="1" stop-color="#7ecb5f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="druidcraft-stem" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#3f6b28"/><stop offset="1" stop-color="#a6e26a"/>
+    </linearGradient>
+    <radialGradient id="druidcraft-leaf" cx=".35" cy=".3" r=".9">
+      <stop offset="0" stop-color="#d8ffa8"/><stop offset=".45" stop-color="#8fd45f"/><stop offset=".8" stop-color="#4f9430"/><stop offset="1" stop-color="#2c5c1a"/>
+    </radialGradient>
+    <radialGradient id="druidcraft-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#druidcraft-bg)"/>
+  <rect width="64" height="64" fill="url(#druidcraft-halo)"/>
+  <path d="M32 56 C31 46 31 38 33 30" fill="none" stroke="url(#druidcraft-stem)" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M33 34 C24 34 17 30 15 22 C24 21 31 25 33 34 Z" fill="#7ecb5f" opacity=".22"/>
+  <path d="M33 34 C24 34 17 30 15 22 C24 21 31 25 33 34 Z" fill="url(#druidcraft-leaf)"/>
+  <path d="M32 32 C25 30 20 27 17 23" fill="none" stroke="#dfffb0" stroke-width="1" opacity=".55"/>
+  <path d="M33 26 C40 24 47 19 49 12 C41 12 34 17 33 26 Z" fill="#7ecb5f" opacity=".22"/>
+  <path d="M33 26 C40 24 47 19 49 12 C41 12 34 17 33 26 Z" fill="url(#druidcraft-leaf)"/>
+  <path d="M34 24 C40 21 44 18 47 14" fill="none" stroke="#dfffb0" stroke-width="1" opacity=".55"/>
+  <ellipse cx="22" cy="25" rx="2.6" ry="1.4" fill="#eaffcf" opacity=".6" transform="rotate(-24 22 25)"/>
+  <circle cx="49" cy="30" r="1.5" fill="#c6f593" opacity=".85"/>
+  <circle cx="15" cy="40" r="1.1" fill="#a6e26a" opacity=".7"/>
+  <circle cx="44" cy="44" r="1" fill="#dfffb0" opacity=".65"/>
+  <circle cx="20" cy="14" r=".8" fill="#c6f593" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#druidcraft-vig)"/>
+</svg>

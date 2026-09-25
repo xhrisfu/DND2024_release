@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="true_polymorph-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#231607"/><stop offset="1" stop-color="#3a2710"/>
+    </linearGradient>
+    <radialGradient id="true_polymorph-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="true_polymorph-a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe8bf"/><stop offset="1" stop-color="#b3781a"/>
+    </linearGradient>
+    <linearGradient id="true_polymorph-b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3d6"/><stop offset="1" stop-color="#d99a1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#true_polymorph-bg)"/>
+  <rect width="64" height="64" fill="url(#true_polymorph-vig)"/>
+  <circle cx="32" cy="31" r="21" fill="#ffb02e" opacity=".12"/>
+  <circle cx="16" cy="19" r="6.4" fill="url(#true_polymorph-a)"/>
+  <path d="M16 25.5 C9 25.5 6.5 34 6.5 46 L25.5 46 C25.5 34 23 25.5 16 25.5 Z" fill="url(#true_polymorph-a)"/>
+  <path d="M50 16 C46 12 43 15 45 19 C40 18 38 24 43 26 C38 30 42 36 47 33 C47 40 55 40 54 33 C60 32 59 24 53 25 C57 20 52 13 48 17 C49 13 48 13 50 16 Z" fill="url(#true_polymorph-b)"/>
+  <circle cx="49" cy="24" r="1.2" fill="#3a2710"/>
+  <g fill="none" stroke="#fff3d6" stroke-linecap="round" stroke-width="2" opacity=".9">
+    <path d="M27 30 C31 25 36 25 40 27"/>
+    <path d="M36 25 L41 27 L39 22"/>
+    <path d="M40 40 C36 45 31 45 27 43" opacity=".55"/>
+    <path d="M31 45 L26 43 L28 48" opacity=".55"/>
+  </g>
+  <circle cx="32" cy="12" r="1.3" fill="#fff3d6" opacity=".8"/>
+  <circle cx="13" cy="40" r="1.1" fill="#ffcf7a" opacity=".7"/>
+  <circle cx="55" cy="46" r="1" fill="#ffe8bf" opacity=".7"/>
+</svg>

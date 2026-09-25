@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="dispel_evil_and_good-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#123556"/><stop offset=".5" stop-color="#0b2039"/><stop offset="1" stop-color="#050d1a"/>
+    </radialGradient>
+    <radialGradient id="dispel_evil_and_good-halo" cx=".5" cy=".44" r=".52">
+      <stop offset="0" stop-color="#aee0ff" stop-opacity=".55"/><stop offset="1" stop-color="#aee0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dispel_evil_and_good-burst" cx=".42" cy=".38" r=".8">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".4" stop-color="#cfeaff"/><stop offset=".8" stop-color="#4da6ff"/><stop offset="1" stop-color="#1c5a99"/>
+    </radialGradient>
+    <radialGradient id="dispel_evil_and_good-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#dispel_evil_and_good-bg)"/>
+  <rect width="64" height="64" fill="url(#dispel_evil_and_good-halo)"/>
+  <path d="M32 4 L36 26 L58 22 L38 32 L58 42 L36 38 L32 60 L28 38 L6 42 L26 32 L6 22 L28 26 Z" fill="#4da6ff" opacity=".2"/>
+  <path d="M32 9 L34.5 27 L52 24 L36 32 L52 40 L34.5 37 L32 55 L29.5 37 L12 40 L28 32 L12 24 L29.5 27 Z" fill="url(#dispel_evil_and_good-burst)"/>
+  <circle cx="32" cy="32" r="9" fill="#eaf6ff" opacity=".28"/>
+  <circle cx="32" cy="32" r="6" fill="#fdfeff"/>
+  <circle cx="32" cy="32" r="6" fill="none" stroke="#7fc4ff" stroke-width="1.2" opacity=".55"/>
+  <ellipse cx="29.5" cy="29.5" rx="2.4" ry="1.6" fill="#fff" opacity=".8" transform="rotate(-30 29.5 29.5)"/>
+  <path d="M28 36 A6 6 0 0 0 37 34 A7 4 0 0 1 28 36 Z" fill="#2a6bb0" opacity=".4"/>
+  <circle cx="49" cy="16" r="1.4" fill="#dff0ff" opacity=".85"/>
+  <circle cx="15" cy="47" r="1.2" fill="#aee0ff" opacity=".7"/>
+  <circle cx="50" cy="48" r="1" fill="#bfe4ff" opacity=".6"/>
+  <circle cx="14" cy="17" r=".9" fill="#dff0ff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#dispel_evil_and_good-vig)"/>
+</svg>

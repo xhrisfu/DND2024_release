@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="animal_shapes-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#231607"/><stop offset="1" stop-color="#3a2710"/>
+    </linearGradient>
+    <radialGradient id="animal_shapes-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <radialGradient id="animal_shapes-core" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff3d6"/><stop offset=".55" stop-color="#ffb02e"/><stop offset="1" stop-color="#8a5510"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#animal_shapes-bg)"/>
+  <rect width="64" height="64" fill="url(#animal_shapes-vig)"/>
+  <circle cx="32" cy="34" r="23" fill="#ffb02e" opacity=".12"/>
+  <circle cx="32" cy="34" r="6.2" fill="url(#animal_shapes-core)"/>
+  <path d="M32 30 C30 32 30 36 32 38 C34 36 34 32 32 30 Z" fill="#fff6e0" opacity=".8"/>
+  <path d="M32 14 C27 8.5 19 8 14 12 C18 12.5 20 14 21.5 16.5 C25 15 29 14.5 32 16.5 C35 14.5 39 15 42.5 16.5 C44 14 46 12.5 50 12 C45 8 37 8.5 32 14 Z" fill="#ffcf6e"/>
+  <path d="M11 42 L11 51 C13.5 53.5 17 54.5 20 53.5 L26 49 C22 47.5 19 44.5 17.5 41 L14.5 45 Z" fill="#e0a038"/>
+  <path d="M11 42 L14.5 45 L13 41 Z" fill="#c07d1e"/>
+  <path d="M38 50 C42 46.5 48 46 52.5 48.5 L57 45 L56 50.5 L57 55.5 L52.5 52.5 C48 55 42 54.5 38 51.5 C37.5 51 37.5 50.5 38 50 Z" fill="#ffbe4a"/>
+  <circle cx="49" cy="49.6" r=".9" fill="#3a2710"/>
+  <circle cx="15.8" cy="44.6" r=".9" fill="#3a2710"/>
+  <path d="M43 26 A13 13 0 0 1 45 39" fill="none" stroke="#ffe8bf" stroke-width="1.4" opacity=".6"/>
+  <path d="M45 39 L47.5 36.5 L47.8 40.5 Z" fill="#ffe8bf" opacity=".75"/>
+  <path d="M21 42 A13 13 0 0 1 19 28" fill="none" stroke="#ffe8bf" stroke-width="1.4" opacity=".6"/>
+  <path d="M19 28 L16.2 30 L19.8 24.5 Z" fill="#ffe8bf" opacity=".75"/>
+  <circle cx="54" cy="24" r="1.1" fill="#ffd98a" opacity=".8"/>
+  <circle cx="10" cy="24" r="1" fill="#ffb02e" opacity=".7"/>
+</svg>

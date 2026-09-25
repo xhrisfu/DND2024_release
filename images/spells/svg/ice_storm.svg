@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="ice_storm-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b0d08"/><stop offset="1" stop-color="#471810"/>
+    </linearGradient>
+    <radialGradient id="ice_storm-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="ice_storm-cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dff2ff" stop-opacity=".7"/><stop offset="1" stop-color="#7fb4d8" stop-opacity=".4"/>
+    </linearGradient>
+    <linearGradient id="ice_storm-hail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaffff"/><stop offset="1" stop-color="#7fd8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#ice_storm-bg)"/>
+  <rect width="64" height="64" fill="url(#ice_storm-vig)"/>
+  <path d="M14 20 C12 12 24 8 30 12 C36 6 50 12 48 20 C56 20 56 30 46 30 L18 30 C10 30 8 20 14 20 Z" fill="url(#ice_storm-cloud)"/>
+  <g fill="url(#ice_storm-hail)">
+    <polygon points="20,34 23,40 20,46 17,40"/>
+    <polygon points="32,38 35,45 32,52 29,45"/>
+    <polygon points="44,34 47,40 44,46 41,40"/>
+    <polygon points="26,48 28,53 26,58 24,53"/>
+    <polygon points="39,48 41,53 39,58 37,53"/>
+  </g>
+  <line x1="20" y1="34" x2="20" y2="46" stroke="#fff" stroke-width=".8" opacity=".6"/>
+  <line x1="32" y1="38" x2="32" y2="52" stroke="#fff" stroke-width=".8" opacity=".6"/>
+  <circle cx="18" cy="18" r="1.2" fill="#eaffff" opacity=".85"/>
+  <circle cx="47" cy="24" r="1.1" fill="#dff2ff" opacity=".8"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="control_weather-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#231607"/><stop offset="1" stop-color="#3a2710"/>
+    </linearGradient>
+    <radialGradient id="control_weather-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <radialGradient id="control_weather-sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff6d6"/><stop offset=".6" stop-color="#ffd54d"/><stop offset="1" stop-color="#e09a20"/>
+    </radialGradient>
+    <radialGradient id="control_weather-cloud" gradientUnits="userSpaceOnUse" cx="34" cy="28" r="24">
+      <stop offset="0" stop-color="#f0f4f6"/><stop offset=".65" stop-color="#b4c6ce"/><stop offset="1" stop-color="#6e8490"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#control_weather-bg)"/>
+  <rect width="64" height="64" fill="url(#control_weather-vig)"/>
+  <ellipse cx="33" cy="31" rx="25" ry="13" fill="#b4c6ce" opacity=".14"/>
+  <circle cx="15" cy="17" r="7" fill="url(#control_weather-sun)"/>
+  <path d="M15 6.5 V2.5 M4.5 17 H.5 M7.5 9.5 L4.7 6.7 M7.5 24.5 L4.7 27.3 M22.5 9.5 L25.3 6.7" stroke="#ffd54d" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="21" cy="30" r="8" fill="url(#control_weather-cloud)"/>
+  <circle cx="44" cy="29" r="9" fill="url(#control_weather-cloud)"/>
+  <circle cx="32" cy="24" r="9.5" fill="url(#control_weather-cloud)"/>
+  <ellipse cx="33" cy="33" rx="19" ry="7" fill="url(#control_weather-cloud)"/>
+  <path d="M18 44 L15.5 51 M25 46 L22.5 53 M51 44 L48.5 51 M57 40 L55 46" stroke="#7fb8ff" stroke-width="1.9" stroke-linecap="round" opacity=".85"/>
+  <path d="M36 40 L42.5 40 L38.5 48 L43.5 48 L31.5 62 L36 50.5 L31 50.5 Z" fill="#ffe94d"/>
+  <path d="M36.7 41 L34 49.5" stroke="#fff8c0" stroke-width="1.2" opacity=".8"/>
+  <circle cx="58" cy="14" r="1.2" fill="#ffe8bf" opacity=".75"/>
+  <circle cx="8" cy="42" r="1" fill="#7fb8ff" opacity=".7"/>
+  <circle cx="53" cy="58" r="1" fill="#ffe94d" opacity=".6"/>
+</svg>

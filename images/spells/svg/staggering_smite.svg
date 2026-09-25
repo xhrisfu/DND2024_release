@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="staggering_smite-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#3a1030"/><stop offset=".5" stop-color="#22091b"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="staggering_smite-halo" cx=".5" cy=".46" r=".55">
+      <stop offset="0" stop-color="#c8a0ff" stop-opacity=".55"/><stop offset="1" stop-color="#c8a0ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="staggering_smite-blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4e6ff"/><stop offset=".5" stop-color="#c8a0ff"/><stop offset="1" stop-color="#7a3ad0"/>
+    </linearGradient>
+    <radialGradient id="staggering_smite-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#staggering_smite-bg)"/>
+  <rect width="64" height="64" fill="url(#staggering_smite-halo)"/>
+  <circle cx="32" cy="34" r="15" fill="#b06bff" opacity=".2"/>
+  <path d="M32 34 L45 15 L40 34 M32 34 L53 28 L37 37 M32 34 L19 15 L24 34 M32 34 L11 28 L27 37" fill="none" stroke="#c86cff" stroke-width="1.5" stroke-linecap="round" opacity=".6"/>
+  <g transform="rotate(18 32 34)">
+    <path d="M32 5 L35 41 L32 47 L29 41 Z" fill="url(#staggering_smite-blade)"/>
+    <path d="M32 5 L33 41 L32 45 L31 41 Z" fill="#fff0ff" opacity=".6"/>
+    <rect x="23" y="44.5" width="18" height="3.6" rx="1.5" fill="#ffd54d"/>
+    <rect x="30.2" y="48" width="3.6" height="9.5" rx="1.5" fill="#c88a2a"/>
+    <circle cx="32" cy="58.5" r="2.3" fill="#ffe9a8"/>
+  </g>
+  <ellipse cx="30" cy="16" rx="1.6" ry="3.4" fill="#fff" opacity=".55" transform="rotate(16 30 16)"/>
+  <path d="M18 45 L26 41 M46 45 L38 41" fill="none" stroke="#e0b0ff" stroke-width="1.6" stroke-linecap="round" opacity=".65"/>
+  <path d="M22 51 L27 47 M42 51 L37 47" fill="none" stroke="#e0b0ff" stroke-width="1.4" stroke-linecap="round" opacity=".5"/>
+  <circle cx="47" cy="16" r="1.4" fill="#e0b0ff" opacity=".85"/>
+  <circle cx="15" cy="18" r="1.1" fill="#c86cff" opacity=".7"/>
+  <circle cx="50" cy="42" r="1" fill="#e9d4ff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#staggering_smite-vig)"/>
+</svg>

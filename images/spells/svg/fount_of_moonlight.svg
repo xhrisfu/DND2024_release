@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="fount_of_moonlight-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b0d08"/><stop offset="1" stop-color="#471810"/>
+    </linearGradient>
+    <radialGradient id="fount_of_moonlight-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <radialGradient id="fount_of_moonlight-glow" cx=".5" cy=".55" r=".7">
+      <stop offset="0" stop-color="#eafaff" stop-opacity=".85"/><stop offset=".5" stop-color="#a8dcff" stop-opacity=".5"/><stop offset="1" stop-color="#5b9fd0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fount_of_moonlight-jet" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#cfeeff" stop-opacity=".2"/><stop offset="1" stop-color="#eafaff" stop-opacity=".9"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#fount_of_moonlight-bg)"/>
+  <rect width="64" height="64" fill="url(#fount_of_moonlight-vig)"/>
+  <circle cx="32" cy="30" r="24" fill="url(#fount_of_moonlight-glow)"/>
+  <path d="M32 8 C28 20 26 30 32 52 C38 30 36 20 32 8 Z" fill="url(#fount_of_moonlight-jet)"/>
+  <path d="M32 12 C24 22 20 28 16 26 C22 30 26 34 30 46" fill="none" stroke="#cfeeff" stroke-width="1.4" opacity=".55"/>
+  <path d="M32 12 C40 22 44 28 48 26 C42 30 38 34 34 46" fill="none" stroke="#cfeeff" stroke-width="1.4" opacity=".55"/>
+  <ellipse cx="32" cy="52" rx="16" ry="5" fill="none" stroke="#a8dcff" stroke-width="1.4" opacity=".45"/>
+  <circle cx="32" cy="12" r="4.5" fill="#eafaff"/>
+  <circle cx="32" cy="12" r="2.4" fill="#a8dcff"/>
+  <circle cx="24" cy="26" r="1.3" fill="#eafaff" opacity=".85"/>
+  <circle cx="41" cy="34" r="1.1" fill="#cfeeff" opacity=".8"/>
+  <circle cx="34" cy="44" r="1" fill="#eafaff" opacity=".7"/>
+</svg>

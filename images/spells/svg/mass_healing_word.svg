@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="mass_healing_word-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#1d4a3f"/><stop offset=".5" stop-color="#0e2a2c"/><stop offset="1" stop-color="#07141a"/>
+    </radialGradient>
+    <radialGradient id="mass_healing_word-halo" cx=".5" cy=".45" r=".55">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".55"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mass_healing_word-plus" cx=".42" cy=".36" r=".95">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset=".45" stop-color="#ffe08a"/><stop offset=".8" stop-color="#f0b23c"/><stop offset="1" stop-color="#b87818"/>
+    </radialGradient>
+    <radialGradient id="mass_healing_word-mote" cx=".4" cy=".35" r=".9">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset=".6" stop-color="#ffdc7a"/><stop offset="1" stop-color="#d69428"/>
+    </radialGradient>
+    <radialGradient id="mass_healing_word-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#mass_healing_word-bg)"/>
+  <rect width="64" height="64" fill="url(#mass_healing_word-halo)"/>
+  <circle cx="32" cy="30" r="15" fill="#ffe9a8" opacity=".2"/>
+  <path d="M27.5 20 H36.5 V27 H43.5 V36 H36.5 V45 H27.5 V36 H20.5 V27 H27.5 Z" fill="url(#mass_healing_word-plus)"/>
+  <path d="M29 22 H35 V29 H42 V31 H35 V43 H29 V31 H22 V29 H29 Z" fill="#fffdf0" opacity=".35"/>
+  <ellipse cx="29" cy="24" rx="2.4" ry="1.4" fill="#fff" opacity=".7" transform="rotate(-20 29 24)"/>
+  <path d="M20.5 34 H43.5 V36 H20.5 Z" fill="#8a5a12" opacity=".4"/>
+  <circle cx="14.5" cy="16" r="3.2" fill="url(#mass_healing_word-mote)"/>
+  <circle cx="50" cy="19" r="2.4" fill="url(#mass_healing_word-mote)"/>
+  <circle cx="48" cy="46" r="2.8" fill="url(#mass_healing_word-mote)"/>
+  <circle cx="15" cy="47" r="2" fill="url(#mass_healing_word-mote)" opacity=".85"/>
+  <circle cx="13.5" cy="15" r="1" fill="#fffdf0" opacity=".8"/>
+  <circle cx="49" cy="18" r=".7" fill="#fffdf0" opacity=".7"/>
+  <circle cx="54" cy="33" r="1.1" fill="#ffdc7a" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#mass_healing_word-vig)"/>
+</svg>

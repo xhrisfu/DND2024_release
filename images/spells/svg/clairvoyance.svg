@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="clairvoyance-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#3a2e0c"/><stop offset=".5" stop-color="#211809"/><stop offset="1" stop-color="#100b04"/>
+    </radialGradient>
+    <radialGradient id="clairvoyance-halo" cx=".5" cy=".46" r=".5">
+      <stop offset="0" stop-color="#ffd54d" stop-opacity=".5"/><stop offset="1" stop-color="#ffd54d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="clairvoyance-eye" cx=".42" cy=".36" r=".85">
+      <stop offset="0" stop-color="#eafaff"/><stop offset=".4" stop-color="#8fd8ff"/><stop offset=".8" stop-color="#2f74b8"/><stop offset="1" stop-color="#123a5a"/>
+    </radialGradient>
+    <radialGradient id="clairvoyance-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#clairvoyance-bg)"/>
+  <rect width="64" height="64" fill="url(#clairvoyance-halo)"/>
+  <circle cx="32" cy="32" r="21" fill="none" stroke="#ffe08a" stroke-width="1.2" opacity=".35"/>
+  <circle cx="32" cy="32" r="16.5" fill="none" stroke="#ffd54d" stroke-width=".9" opacity=".55" stroke-dasharray="2.5 3.5"/>
+  <path d="M11 32 C20 22 44 22 53 32 C44 42 20 42 11 32 Z" fill="#ffd54d" opacity=".2"/>
+  <path d="M13 32 C21 24 43 24 51 32 C43 40 21 40 13 32 Z" fill="#0c1f30"/>
+  <path d="M13 32 C21 24 43 24 51 32 C43 40 21 40 13 32 Z" fill="none" stroke="#ffe08a" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="8.5" fill="url(#clairvoyance-eye)"/>
+  <circle cx="32" cy="32" r="4" fill="#0a1622"/>
+  <ellipse cx="29.5" cy="29.5" rx="2.4" ry="1.6" fill="#fff" opacity=".8" transform="rotate(-30 29.5 29.5)"/>
+  <path d="M14 32 C21 25.5 43 25.5 50 32" fill="none" stroke="#fff" stroke-width="1" opacity=".4"/>
+  <circle cx="49" cy="17" r="1.4" fill="#ffe08a"/>
+  <circle cx="15" cy="46" r="1.1" fill="#8fd8ff" opacity=".8"/>
+  <circle cx="52" cy="45" r=".9" fill="#ffd54d" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#clairvoyance-vig)"/>
+</svg>

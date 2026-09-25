@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="armor_of_agathys-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#14384f"/><stop offset=".5" stop-color="#0a1f30"/><stop offset="1" stop-color="#050d18"/>
+    </radialGradient>
+    <radialGradient id="armor_of_agathys-halo" cx=".5" cy=".44" r=".5">
+      <stop offset="0" stop-color="#bfeeff" stop-opacity=".5"/><stop offset="1" stop-color="#bfeeff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="armor_of_agathys-plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eafaff"/><stop offset=".4" stop-color="#7fd0ec"/><stop offset="1" stop-color="#1d5470"/>
+    </linearGradient>
+    <linearGradient id="armor_of_agathys-ice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#8fdcff" stop-opacity=".3"/>
+    </linearGradient>
+    <radialGradient id="armor_of_agathys-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#armor_of_agathys-bg)"/>
+  <rect width="64" height="64" fill="url(#armor_of_agathys-halo)"/>
+  <g fill="url(#armor_of_agathys-ice)" opacity=".8">
+    <polygon points="16,10 18.5,20 14,17 12,26 10,15"/>
+    <polygon points="50,12 52,22 54,16 56,27 48,20"/>
+    <polygon points="12,40 14,48 10,45 8,53"/>
+    <polygon points="53,42 55,50 58,46 56,55"/>
+  </g>
+  <path d="M32 12 C26 16 19 17 15 16 C15 34 18 47 32 55 C46 47 49 34 49 16 C45 17 38 16 32 12 Z" fill="#bfeeff" opacity=".2"/>
+  <path d="M32 13.5 C27 17 21 18 17 17 C17 33 19.5 45 32 52.5 C44.5 45 47 33 47 17 C43 18 37 17 32 13.5 Z" fill="url(#armor_of_agathys-plate)" stroke="#dff5ff" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M32 15 L32 51" stroke="#2a6683" stroke-width="1.4" opacity=".5"/>
+  <path d="M20 24 C27 27 37 27 44 24" fill="none" stroke="#2a6683" stroke-width="1.3" opacity=".45"/>
+  <path d="M21 35 C28 38 36 38 43 35" fill="none" stroke="#2a6683" stroke-width="1.3" opacity=".4"/>
+  <polygon points="32,22 34.5,27 32,32 29.5,27" fill="#f0fbff" opacity=".9"/>
+  <ellipse cx="25" cy="21" rx="3.4" ry="1.6" fill="#fff" opacity=".55" transform="rotate(-24 25 21)"/>
+  <circle cx="45" cy="14" r="1.3" fill="#dff5ff" opacity=".85"/>
+  <circle cx="17" cy="46" r="1.1" fill="#bfeeff" opacity=".7"/>
+  <circle cx="49" cy="40" r=".9" fill="#8fdcff" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#armor_of_agathys-vig)"/>
+</svg>

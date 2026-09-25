@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="wall_of_fire-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b0d08"/><stop offset="1" stop-color="#471810"/>
+    </linearGradient>
+    <radialGradient id="wall_of_fire-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="wall_of_fire-flame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#cf3608"/><stop offset=".4" stop-color="#ff7a1f"/><stop offset=".8" stop-color="#ffd23d"/><stop offset="1" stop-color="#fff6c9"/>
+    </linearGradient>
+    <linearGradient id="wall_of_fire-inner" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff9b2f"/><stop offset="1" stop-color="#fff6c9"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#wall_of_fire-bg)"/>
+  <rect width="64" height="64" fill="url(#wall_of_fire-vig)"/>
+  <rect x="8" y="50" width="48" height="6" rx="2" fill="#5c2a10"/>
+  <path d="M10 54 C12 40 8 34 14 24 C16 34 20 30 22 20 C24 32 28 26 30 14 C33 28 36 24 40 16 C42 30 46 26 50 22 C54 34 52 40 54 54 Z" fill="url(#wall_of_fire-flame)"/>
+  <path d="M18 54 C20 44 16 38 22 30 C24 38 28 34 30 26 C33 38 36 34 40 28 C44 40 42 46 46 54 Z" fill="url(#wall_of_fire-inner)" opacity=".9"/>
+  <path d="M26 54 C27 46 25 42 30 36 C33 44 34 42 36 38 C39 46 37 48 38 54 Z" fill="#fff6c9" opacity=".8"/>
+  <circle cx="14" cy="16" r="1.3" fill="#ffd23d" opacity=".85"/>
+  <circle cx="50" cy="14" r="1.1" fill="#ff9b45" opacity=".8"/>
+  <circle cx="32" cy="10" r="1" fill="#ffe08a" opacity=".8"/>
+</svg>

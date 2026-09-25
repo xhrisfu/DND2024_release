@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="stoneskin-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#123556"/><stop offset=".5" stop-color="#0b2039"/><stop offset="1" stop-color="#050d1a"/>
+    </radialGradient>
+    <radialGradient id="stoneskin-halo" cx=".5" cy=".45" r=".55">
+      <stop offset="0" stop-color="#8aa0b8" stop-opacity=".45"/><stop offset="1" stop-color="#8aa0b8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="stoneskin-rock" cx=".42" cy=".32" r=".95">
+      <stop offset="0" stop-color="#c4d0dc"/><stop offset=".5" stop-color="#7d8b9a"/><stop offset="1" stop-color="#3c4650"/>
+    </radialGradient>
+    <radialGradient id="stoneskin-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#stoneskin-bg)"/>
+  <rect width="64" height="64" fill="url(#stoneskin-halo)"/>
+  <circle cx="32" cy="32" r="20" fill="#6b7d92" opacity=".16"/>
+  <path d="M32 10 C24 10 17 15 16 24 C12 26 10 31 12 37 C13 41 16 44 20 45 C22 51 27 55 32 55 C37 55 42 51 44 45 C48 44 51 41 52 37 C54 31 52 26 48 24 C47 15 40 10 32 10 Z" fill="url(#stoneskin-rock)" stroke="#c4d0dc" stroke-width="1.3"/>
+  <path d="M32 10 L26 24 L16 24 M26 24 L21 34 L12 37 M26 24 L34 30 M34 30 L21 34 M34 30 L48 24 M34 30 L38 43 M34 30 L44 45 M21 34 L20 45 M21 34 L38 43 M38 43 L32 55 M38 43 L52 37" fill="none" stroke="#2a333d" stroke-width="1.3" opacity=".85"/>
+  <polygon points="26,24 34,30 21,34" fill="#aeb9c6" opacity=".45"/>
+  <polygon points="34,30 48,24 44,45 38,43" fill="#4a545f" opacity=".4"/>
+  <path d="M34 30 L26 24 M34 30 L21 34" fill="none" stroke="#dbe4ec" stroke-width="1" opacity=".5"/>
+  <ellipse cx="25" cy="19" rx="4" ry="2" fill="#eef3f8" opacity=".45" transform="rotate(-18 25 19)"/>
+  <circle cx="15" cy="17" r="1.3" fill="#c4d0dc" opacity=".8"/>
+  <circle cx="49" cy="47" r="1.1" fill="#8aa0b8" opacity=".7"/>
+  <circle cx="49" cy="16" r=".9" fill="#dbe4ec" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#stoneskin-vig)"/>
+</svg>
