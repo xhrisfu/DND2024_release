@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="cure_wounds-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1b2e"/><stop offset="1" stop-color="#132c4a"/>
+    </linearGradient>
+    <radialGradient id="cure_wounds-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <radialGradient id="cure_wounds-orb" cx=".42" cy=".38" r=".95">
+      <stop offset="0" stop-color="#fffbe8"/><stop offset=".55" stop-color="#ffd97a"/><stop offset="1" stop-color="#d49a30"/>
+    </radialGradient>
+    <linearGradient id="cure_wounds-hand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8be74"/><stop offset="1" stop-color="#8a5a28"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#cure_wounds-bg)"/>
+  <rect width="64" height="64" fill="url(#cure_wounds-vig)"/>
+  <circle cx="32" cy="22" r="15" fill="#ffe9a8" opacity=".15"/>
+  <path d="M24 64 L24 50 C24 47 24.8 44.8 26.6 43.2 L22.6 36.4 C21.8 35 23.6 33.6 24.8 34.8 L29.6 40.6 L28.4 32.2 C28.2 30.6 30.4 30.2 30.9 31.7 L33 39.6 L35.2 31.9 C35.7 30.3 37.8 30.9 37.5 32.5 L36 40.8 L41.2 35.6 C42.4 34.4 44 36 43 37.4 L38.4 43.8 C39.6 45.4 40 47.4 40 50 L40 64 Z" fill="url(#cure_wounds-hand)"/>
+  <circle cx="32" cy="22" r="8.5" fill="url(#cure_wounds-orb)"/>
+  <path d="M32 15.5 L33.5 20.5 L38.5 22 L33.5 23.5 L32 28.5 L30.5 23.5 L25.5 22 L30.5 20.5 Z" fill="#fff" opacity=".95"/>
+  <ellipse cx="29" cy="19" rx="2.2" ry="1.6" fill="#fff" opacity=".6"/>
+  <circle cx="20" cy="14" r="1.2" fill="#ffe9a8" opacity=".8"/>
+  <circle cx="45" cy="12" r="1" fill="#ffe9a8" opacity=".7"/>
+  <circle cx="48" cy="26" r="1.1" fill="#ffd97a" opacity=".6"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="forcecage-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#160e2e"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="forcecage-halo" cx=".5" cy=".46" r=".55">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".5"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="forcecage-face" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9c6ff" stop-opacity=".42"/><stop offset="1" stop-color="#5b3ac0" stop-opacity=".14"/>
+    </linearGradient>
+    <radialGradient id="forcecage-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#forcecage-bg)"/>
+  <rect width="64" height="64" fill="url(#forcecage-halo)"/>
+  <polygon points="18,22 44,22 52,13 26,13" fill="url(#forcecage-face)"/>
+  <polygon points="18,22 18,48 44,48 44,22" fill="url(#forcecage-face)"/>
+  <polygon points="44,22 52,13 52,39 44,48" fill="#8a5cd6" opacity=".2"/>
+  <g stroke="#c9a8ff" stroke-width="1.6" fill="none" opacity=".9" stroke-linejoin="round">
+    <polygon points="18,22 44,22 44,48 18,48"/>
+    <polygon points="26,13 52,13 52,39 44,48"/>
+    <line x1="18" y1="22" x2="26" y2="13"/>
+    <line x1="44" y1="22" x2="52" y2="13"/>
+  </g>
+  <g stroke="#e6d9ff" stroke-width=".8" opacity=".4">
+    <line x1="31" y1="22" x2="31" y2="48"/>
+    <line x1="18" y1="35" x2="44" y2="35"/>
+    <line x1="35" y1="17.5" x2="35" y2="43"/>
+  </g>
+  <polygon points="20,23 26,14 27,15 21,24" fill="#fff" opacity=".3"/>
+  <circle cx="18" cy="22" r="1.6" fill="#e6d9ff"/>
+  <circle cx="52" cy="39" r="1.4" fill="#e6d9ff"/>
+  <circle cx="52" cy="13" r="1.2" fill="#c9a8ff" opacity=".85"/>
+  <circle cx="44" cy="48" r="1.1" fill="#b98cff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#forcecage-vig)"/>
+</svg>

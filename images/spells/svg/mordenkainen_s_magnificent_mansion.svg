@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="mordenkainen_s_magnificent_mansion-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#170e30"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="mordenkainen_s_magnificent_mansion-halo" cx=".5" cy=".55" r=".5">
+      <stop offset="0" stop-color="#ffd54d" stop-opacity=".5"/><stop offset="1" stop-color="#ffd54d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mordenkainen_s_magnificent_mansion-frame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c8a84c"/><stop offset=".5" stop-color="#9d7c34"/><stop offset="1" stop-color="#5c481c"/>
+    </linearGradient>
+    <linearGradient id="mordenkainen_s_magnificent_mansion-door" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff6d0"/><stop offset=".5" stop-color="#ffcf5c"/><stop offset="1" stop-color="#c98a2a"/>
+    </linearGradient>
+    <radialGradient id="mordenkainen_s_magnificent_mansion-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#mordenkainen_s_magnificent_mansion-bg)"/>
+  <rect width="64" height="64" fill="url(#mordenkainen_s_magnificent_mansion-halo)"/>
+  <ellipse cx="32" cy="34" rx="16" ry="24" fill="#ffd54d" opacity=".14"/>
+  <path d="M18 56 L18 20 C18 11 46 11 46 20 L46 56 Z" fill="url(#mordenkainen_s_magnificent_mansion-frame)"/>
+  <path d="M22 56 L22 21 C22 14 42 14 42 21 L42 56 Z" fill="#1a1230"/>
+  <path d="M23.5 56 L23.5 21.5 C23.5 15.5 40.5 15.5 40.5 21.5 L40.5 56 Z" fill="url(#mordenkainen_s_magnificent_mansion-door)"/>
+  <path d="M32 56 L32 15.5" fill="none" stroke="#c98a2a" stroke-width="1" opacity=".6"/>
+  <path d="M23.5 30 L40.5 30 M23.5 42 L40.5 42" stroke="#c98a2a" stroke-width="1" opacity=".5"/>
+  <path d="M25.5 24 C25.5 20 38.5 20 38.5 24" fill="none" stroke="#8a5e1e" stroke-width="1" opacity=".5"/>
+  <path d="M26 40 L26 23 C26 18.5 38 18.5 38 23 L38 40" fill="none" stroke="#fff6d0" stroke-width="1" opacity=".4"/>
+  <circle cx="35.5" cy="38" r="1.6" fill="#5c481c"/>
+  <circle cx="35" cy="37.5" r=".7" fill="#fff6d0" opacity=".7"/>
+  <path d="M32 9.5 L33 12 L35.5 13 L33 14 L32 16.5 L31 14 L28.5 13 L31 12 Z" fill="#fff6d0" opacity=".9"/>
+  <ellipse cx="28" cy="26" rx="2.2" ry="5" fill="#fff" opacity=".28" transform="rotate(6 28 26)"/>
+  <circle cx="13" cy="20" r="1.3" fill="#ffe9a8" opacity=".8"/>
+  <circle cx="52" cy="30" r="1" fill="#ffd54d" opacity=".65"/>
+  <circle cx="14" cy="46" r=".9" fill="#fff6d0" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#mordenkainen_s_magnificent_mansion-vig)"/>
+</svg>

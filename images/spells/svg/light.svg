@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="light-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#4a3410"/><stop offset=".5" stop-color="#2a1e08"/><stop offset="1" stop-color="#12100a"/>
+    </radialGradient>
+    <radialGradient id="light-halo" cx=".5" cy=".46" r=".55">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".7"/><stop offset=".6" stop-color="#ffcf5c" stop-opacity=".3"/><stop offset="1" stop-color="#ffcf5c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="light-orb" cx=".42" cy=".38" r=".85">
+      <stop offset="0" stop-color="#fffdf2"/><stop offset=".4" stop-color="#fff0b8"/><stop offset=".8" stop-color="#ffce55"/><stop offset="1" stop-color="#e0951c"/>
+    </radialGradient>
+    <radialGradient id="light-vig" cx=".5" cy=".46" r=".74">
+      <stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".56"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#light-bg)"/>
+  <rect width="64" height="64" fill="url(#light-halo)"/>
+  <g stroke="#ffe9a8" stroke-width="2" stroke-linecap="round" opacity=".55">
+    <line x1="32" y1="4" x2="32" y2="14"/><line x1="32" y1="50" x2="32" y2="60"/>
+    <line x1="4" y1="32" x2="14" y2="32"/><line x1="50" y1="32" x2="60" y2="32"/>
+    <line x1="12" y1="12" x2="19" y2="19"/><line x1="45" y1="45" x2="52" y2="52"/>
+    <line x1="52" y1="12" x2="45" y2="19"/><line x1="19" y1="45" x2="12" y2="52"/>
+  </g>
+  <circle cx="32" cy="32" r="16" fill="#ffcf5c" opacity=".2"/>
+  <circle cx="32" cy="32" r="12.5" fill="#ffe9a8" opacity=".28"/>
+  <circle cx="32" cy="32" r="10.5" fill="url(#light-orb)"/>
+  <path d="M32 22 l2.4 7.4 7.6 .1 -6.2 4.6 2.4 7.4 -6.2-4.6 -6.2 4.6 2.4-7.4 -6.2-4.6 7.6-.1 z" fill="#fffdf2" opacity=".9"/>
+  <ellipse cx="28" cy="28" rx="3" ry="2" fill="#fff" opacity=".7" transform="rotate(-30 28 28)"/>
+  <circle cx="48" cy="18" r="1.3" fill="#fff0b8" opacity=".85"/>
+  <circle cx="17" cy="46" r="1.1" fill="#ffce55" opacity=".75"/>
+  <circle cx="47" cy="47" r=".9" fill="#ffe9a8" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#light-vig)"/>
+</svg>

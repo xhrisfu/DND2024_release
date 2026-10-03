@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="summon_beast-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#180e2c"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="summon_beast-halo" cx=".5" cy=".46" r=".52">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".5"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="summon_beast-paw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaddff"/><stop offset=".5" stop-color="#b98cff"/><stop offset="1" stop-color="#6a3fb0"/>
+    </linearGradient>
+    <radialGradient id="summon_beast-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#summon_beast-bg)"/>
+  <rect width="64" height="64" fill="url(#summon_beast-halo)"/>
+  <ellipse cx="32" cy="52" rx="16" ry="4.5" fill="#b98cff" opacity=".2"/>
+  <ellipse cx="32" cy="52" rx="14" ry="3.6" fill="none" stroke="#b98cff" stroke-width="1.1" opacity=".5"/>
+  <ellipse cx="32" cy="40" rx="11" ry="9.5" fill="#b98cff" opacity=".22"/>
+  <ellipse cx="32" cy="40" rx="9.5" ry="8" fill="url(#summon_beast-paw)"/>
+  <ellipse cx="22" cy="27" rx="3.6" ry="5" fill="url(#summon_beast-paw)" transform="rotate(-16 22 27)"/>
+  <ellipse cx="30" cy="23" rx="3.8" ry="5.2" fill="url(#summon_beast-paw)"/>
+  <ellipse cx="39" cy="24" rx="3.8" ry="5" fill="url(#summon_beast-paw)" transform="rotate(14 39 24)"/>
+  <ellipse cx="46" cy="30" rx="3.4" ry="4.6" fill="url(#summon_beast-paw)" transform="rotate(28 46 30)"/>
+  <ellipse cx="29" cy="37" rx="3.4" ry="2.4" fill="#f0e6ff" opacity=".45"/>
+  <ellipse cx="30" cy="22" rx="1.4" ry="2" fill="#f0e6ff" opacity=".5"/>
+  <circle cx="50" cy="17" r="1.4" fill="#eaddff" opacity=".8"/>
+  <circle cx="14" cy="22" r="1.1" fill="#b98cff" opacity=".65"/>
+  <circle cx="49" cy="44" r=".9" fill="#eaddff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#summon_beast-vig)"/>
+</svg>

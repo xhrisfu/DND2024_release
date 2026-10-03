@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="spider_climb-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#3a2410"/><stop offset=".5" stop-color="#221507"/><stop offset="1" stop-color="#100a04"/>
+    </radialGradient>
+    <radialGradient id="spider_climb-halo" cx=".5" cy=".55" r=".5">
+      <stop offset="0" stop-color="#ffb02e" stop-opacity=".45"/><stop offset="1" stop-color="#ffb02e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spider_climb-body" cx=".4" cy=".32" r=".85">
+      <stop offset="0" stop-color="#9c6e34"/><stop offset=".55" stop-color="#4e2f12"/><stop offset="1" stop-color="#180d04"/>
+    </radialGradient>
+    <radialGradient id="spider_climb-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#spider_climb-bg)"/>
+  <rect width="64" height="64" fill="url(#spider_climb-halo)"/>
+  <line x1="32" y1="0" x2="32" y2="22" stroke="#d8b98a" stroke-width="1" opacity=".55"/>
+  <g stroke="#2a1809" stroke-width="2.6" fill="none" stroke-linecap="round">
+    <path d="M25 32 C16 28 12 21 9 13"/>
+    <path d="M25 36 C15 36 10 33 5 27"/>
+    <path d="M25 40 C16 44 11 48 9 56"/>
+    <path d="M26 42 C21 48 17 53 17 59"/>
+    <path d="M39 32 C48 28 52 21 55 13"/>
+    <path d="M39 36 C49 36 54 33 59 27"/>
+    <path d="M39 40 C48 44 53 48 55 56"/>
+    <path d="M38 42 C43 48 47 53 47 59"/>
+  </g>
+  <g stroke="#6e451c" stroke-width="1" fill="none" stroke-linecap="round" opacity=".5">
+    <path d="M25 32 C16 28 12 21 9 13"/><path d="M39 36 C49 36 54 33 59 27"/>
+  </g>
+  <ellipse cx="32" cy="25" rx="6" ry="5" fill="url(#spider_climb-body)"/>
+  <ellipse cx="32" cy="38" rx="8.5" ry="10" fill="url(#spider_climb-body)"/>
+  <ellipse cx="30" cy="35" rx="2.4" ry="3.5" fill="#c8934a" opacity=".4"/>
+  <circle cx="29.5" cy="24" r="1.4" fill="#ffb02e"/>
+  <circle cx="34.5" cy="24" r="1.4" fill="#ffb02e"/>
+  <circle cx="29.5" cy="24" r=".5" fill="#3a2408"/>
+  <circle cx="34.5" cy="24" r=".5" fill="#3a2408"/>
+  <rect width="64" height="64" fill="url(#spider_climb-vig)"/>
+</svg>

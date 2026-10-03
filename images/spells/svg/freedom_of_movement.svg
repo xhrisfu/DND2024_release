@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="freedom_of_movement-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#123556"/><stop offset=".5" stop-color="#0b2039"/><stop offset="1" stop-color="#050d1a"/>
+    </radialGradient>
+    <radialGradient id="freedom_of_movement-halo" cx=".5" cy=".45" r=".55">
+      <stop offset="0" stop-color="#6cb6ff" stop-opacity=".5"/><stop offset="1" stop-color="#6cb6ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="freedom_of_movement-link" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf6ff"/><stop offset=".5" stop-color="#7fc4ff"/><stop offset="1" stop-color="#2f74b8"/>
+    </linearGradient>
+    <radialGradient id="freedom_of_movement-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#freedom_of_movement-bg)"/>
+  <rect width="64" height="64" fill="url(#freedom_of_movement-halo)"/>
+  <circle cx="32" cy="32" r="18" fill="#4da6ff" opacity=".16"/>
+  <path d="M19 45 C13 39 13 31 19 25" fill="none" stroke="#aed8ff" stroke-width="1.4" opacity=".5"/>
+  <path d="M45 19 C51 25 51 33 45 39" fill="none" stroke="#aed8ff" stroke-width="1.4" opacity=".5"/>
+  <g stroke="url(#freedom_of_movement-link)" stroke-width="3.6" fill="none" stroke-linecap="round">
+    <ellipse cx="19" cy="45" rx="6.5" ry="9" transform="rotate(-42 19 45)"/>
+    <ellipse cx="45" cy="19" rx="6.5" ry="9" transform="rotate(-42 45 19)"/>
+  </g>
+  <path d="M26 38 l4.5 4.5 M33.5 30.5 l4.5 4.5" stroke="#0a1f30" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M28 39.5 C30.5 37 33 34.5 35.5 32" stroke="#03060c" stroke-width="1.8" opacity=".5"/>
+  <path d="M32 30 l3.5-7 M35 33 l7-3.5 M30 36 l-7 3.5 M33 37 l-3.5 7" stroke="#dff0ff" stroke-width="1.8" stroke-linecap="round" opacity=".9"/>
+  <ellipse cx="15" cy="40" rx="2.4" ry="1.4" fill="#fff" opacity=".5" transform="rotate(-42 15 40)"/>
+  <circle cx="48" cy="14" r="1.4" fill="#dff0ff" opacity=".85"/>
+  <circle cx="15" cy="49" r="1.1" fill="#7fc4ff" opacity=".7"/>
+  <circle cx="50" cy="46" r=".9" fill="#aed8ff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#freedom_of_movement-vig)"/>
+</svg>

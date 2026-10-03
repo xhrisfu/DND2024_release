@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="magic_mouth-bg" cx=".42" cy=".46" r=".9">
+      <stop offset="0" stop-color="#0a3a42"/><stop offset=".5" stop-color="#0a222a"/><stop offset="1" stop-color="#05141a"/>
+    </radialGradient>
+    <radialGradient id="magic_mouth-halo" cx=".38" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3ee6c4" stop-opacity=".5"/><stop offset="1" stop-color="#3ee6c4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="magic_mouth-lip" cx=".4" cy=".3" r=".9">
+      <stop offset="0" stop-color="#9ff5e4"/><stop offset=".5" stop-color="#3ee6c4"/><stop offset="1" stop-color="#127a68"/>
+    </radialGradient>
+    <radialGradient id="magic_mouth-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#magic_mouth-bg)"/>
+  <rect width="64" height="64" fill="url(#magic_mouth-halo)"/>
+  <ellipse cx="25" cy="32" rx="18" ry="13" fill="#3ee6c4" opacity=".18"/>
+  <path d="M10 32 C16 22 32 22 38 32 C32 43 16 43 10 32 Z" fill="url(#magic_mouth-lip)"/>
+  <path d="M13 32 C18 29 30 29 35 32 C30 35 18 35 13 32 Z" fill="#062024"/>
+  <path d="M15 31 C20 29.6 28 29.6 33 31 L33 32 C28 30.8 20 30.8 15 32 Z" fill="#eafff9" opacity=".92"/>
+  <path d="M16 33.2 C21 34.4 28 34.4 32 33.2 L32 34 C28 35 21 35 16 34 Z" fill="#c8fff0" opacity=".55"/>
+  <path d="M41 24 C45 28 45 36 41 40" fill="none" stroke="#3ee6c4" stroke-width="1.9" opacity=".85"/>
+  <path d="M47 20 C53 26 53 38 47 44" fill="none" stroke="#6fefd6" stroke-width="1.6" opacity=".6"/>
+  <path d="M53 16 C61 24 61 40 53 48" fill="none" stroke="#c8fff0" stroke-width="1.4" opacity=".4"/>
+  <ellipse cx="19" cy="28.5" rx="3" ry="1.5" fill="#fff" opacity=".5"/>
+  <circle cx="13" cy="18" r="1.4" fill="#c8fff0" opacity=".8"/>
+  <circle cx="55" cy="52" r="1.1" fill="#3ee6c4" opacity=".7"/>
+  <circle cx="46" cy="13" r="1" fill="#9ff5e4" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#magic_mouth-vig)"/>
+</svg>

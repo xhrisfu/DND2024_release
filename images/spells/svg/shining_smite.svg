@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="shining_smite-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#43370f"/><stop offset=".5" stop-color="#251c08"/><stop offset="1" stop-color="#12100a"/>
+    </radialGradient>
+    <radialGradient id="shining_smite-halo" cx=".5" cy=".42" r=".55">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".6"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shining_smite-blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset=".45" stop-color="#ffe9a8"/><stop offset=".8" stop-color="#e0b040"/><stop offset="1" stop-color="#a07818"/>
+    </linearGradient>
+    <radialGradient id="shining_smite-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#shining_smite-bg)"/>
+  <rect width="64" height="64" fill="url(#shining_smite-halo)"/>
+  <g stroke="#ffe9a8" stroke-width="1.4" stroke-linecap="round" opacity=".55">
+    <line x1="32" y1="4" x2="32" y2="13"/><line x1="14" y1="9" x2="19" y2="16"/><line x1="50" y1="9" x2="45" y2="16"/>
+    <line x1="8" y1="24" x2="15" y2="27"/><line x1="56" y1="24" x2="49" y2="27"/>
+  </g>
+  <path d="M32 6 L36 30 L32 34 L28 30 Z" fill="#fff7d6" opacity=".25"/>
+  <path d="M32 9 L34.6 30 L32 33 L29.4 30 Z" fill="url(#shining_smite-blade)"/>
+  <line x1="32" y1="12" x2="32" y2="31" stroke="#fffdf0" stroke-width="1.1" opacity=".8"/>
+  <rect x="24" y="33" width="16" height="3.4" rx="1.5" fill="#d8b048" stroke="#7a5814" stroke-width="1"/>
+  <rect x="30.4" y="36" width="3.2" height="15" rx="1.4" fill="#c8983c"/>
+  <circle cx="32" cy="53.5" r="3.2" fill="#e0b048" stroke="#7a5814" stroke-width="1"/>
+  <ellipse cx="30.5" cy="20" rx="1.4" ry="6" fill="#fff" opacity=".55"/>
+  <circle cx="48" cy="20" r="1.5" fill="#fff3c4"/>
+  <circle cx="15" cy="34" r="1.1" fill="#ffe9a8" opacity=".8"/>
+  <circle cx="50" cy="40" r="1" fill="#ffd97a" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#shining_smite-vig)"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="fire_storm-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#5c2109"/><stop offset=".5" stop-color="#2c0c05"/><stop offset="1" stop-color="#140503"/>
+    </radialGradient>
+    <radialGradient id="fire_storm-halo" cx=".5" cy=".55" r=".55">
+      <stop offset="0" stop-color="#ff8a2c" stop-opacity=".55"/><stop offset="1" stop-color="#ff8a2c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fire_storm-wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff7d6"/><stop offset=".35" stop-color="#ffe07a"/><stop offset=".7" stop-color="#ff8a2c"/><stop offset="1" stop-color="#c23606"/>
+    </linearGradient>
+    <radialGradient id="fire_storm-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".64"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#fire_storm-bg)"/>
+  <rect width="64" height="64" fill="url(#fire_storm-halo)"/>
+  <path d="M6 56 C7 44 10 37 13 30 C15 37 17 41 19 44 C21 34 26 25 30 18 C33 26 36 33 38 39 C40 32 44 24 48 17 C51 27 55 41 58 56 Z" fill="#ff8a2c" opacity=".2"/>
+  <path d="M8 56 C9 45 11.5 38 14 31 C16 37.5 18 41 20 43.5 C22 34 26.5 26 30.5 19.5 C33.5 27 36 33.5 37.5 39 C39.5 33 43 25.5 47 19 C50 28 53.5 41.5 56 56 Z" fill="url(#fire_storm-wall)"/>
+  <path d="M23 56 C24 47 27 40 30 34 C33 40 34.5 46 35.5 51 C34 54 30 56 23 56 Z" fill="#ffe07a" opacity=".75"/>
+  <path d="M13.5 34 C15 40 16.5 43 18 45.5 C15.5 44 13.8 39 13.5 34 Z" fill="#fff7d6" opacity=".7"/>
+  <path d="M47.5 22 C49 28 50.5 33 52 37 C49.5 35 47.8 29 47.5 22 Z" fill="#ffc24d" opacity=".6"/>
+  <path d="M30 24 C30.8 28 31.6 31 32.4 34" fill="none" stroke="#fff" stroke-width="1.1" opacity=".55"/>
+  <circle cx="15" cy="17" r="1.4" fill="#ffe08a"/>
+  <circle cx="38" cy="11" r="1.1" fill="#ff9b3d" opacity=".85"/>
+  <circle cx="55" cy="12" r="1" fill="#ffab4d" opacity=".75"/>
+  <circle cx="8" cy="26" r=".9" fill="#ffe0a0" opacity=".7"/>
+  <circle cx="59" cy="30" r="1" fill="#ffc24d" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#fire_storm-vig)"/>
+</svg>

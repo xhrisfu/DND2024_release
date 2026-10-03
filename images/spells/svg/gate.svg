@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="gate-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#170e30"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="gate-halo" cx=".5" cy=".45" r=".55">
+      <stop offset="0" stop-color="#9d5cff" stop-opacity=".55"/><stop offset="1" stop-color="#9d5cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gate-portal" cx=".5" cy=".45" r=".6">
+      <stop offset="0" stop-color="#fff7dc"/><stop offset=".35" stop-color="#e6d0ff"/><stop offset=".7" stop-color="#9d5cff"/><stop offset="1" stop-color="#2a123e"/>
+    </radialGradient>
+    <linearGradient id="gate-ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff2d0"/><stop offset=".5" stop-color="#ffd54d"/><stop offset="1" stop-color="#a87a2a"/>
+    </linearGradient>
+    <radialGradient id="gate-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#gate-bg)"/>
+  <rect width="64" height="64" fill="url(#gate-halo)"/>
+  <circle cx="32" cy="32" r="26" fill="#9d5cff" opacity=".16"/>
+  <circle cx="32" cy="32" r="21.5" fill="url(#gate-portal)"/>
+  <circle cx="32" cy="32" r="21.5" fill="none" stroke="url(#gate-ring)" stroke-width="3.2"/>
+  <circle cx="32" cy="32" r="25.5" fill="none" stroke="#a87a2a" stroke-width="1.2" opacity=".5"/>
+  <g stroke="#ffe9a8" stroke-width="1.8" stroke-linecap="round" opacity=".85">
+    <path d="M32 10.5 L32 6"/><path d="M53.5 32 L58 32"/><path d="M32 53.5 L32 58"/><path d="M10.5 32 L6 32"/>
+    <path d="M47.2 16.8 L50.4 13.6"/><path d="M16.8 47.2 L13.6 50.4"/><path d="M47.2 47.2 L50.4 50.4"/><path d="M16.8 16.8 L13.6 13.6"/>
+  </g>
+  <path d="M20 32 C24 25 40 25 44 32 C40 39 24 39 20 32 Z" fill="#fff7e0" opacity=".55"/>
+  <ellipse cx="26" cy="24" rx="4" ry="2.4" fill="#fff" opacity=".4" transform="rotate(-30 26 24)"/>
+  <circle cx="32" cy="32" r="3.6" fill="#fff" opacity=".9"/>
+  <circle cx="24" cy="23" r="1.4" fill="#e6d0ff" opacity=".8"/>
+  <circle cx="42" cy="40" r="1.2" fill="#fff7dc" opacity=".8"/>
+  <circle cx="41" cy="22" r="1" fill="#c8a8ff" opacity=".7"/>
+  <circle cx="22" cy="42" r=".9" fill="#ffd54d" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#gate-vig)"/>
+</svg>

@@ -1,0 +1,1 @@
+const c=[];function o(e){c.push({...e,timestamp:new Date().toISOString()}),c.length>200&&c.splice(0,c.length-200)}const s=()=>c.map(e=>({...e,localActions:e.localActions?[...e.localActions]:void 0,selectedActions:e.selectedActions?[...e.selectedActions]:void 0})),t=()=>JSON.stringify({schemaVersion:1,traces:s()},null,2);export{t as e,o as r};

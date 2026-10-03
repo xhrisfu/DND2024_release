@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="befuddlement-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#3a1030"/><stop offset=".5" stop-color="#20091a"/><stop offset="1" stop-color="#140510"/>
+    </radialGradient>
+    <radialGradient id="befuddlement-halo" cx=".48" cy=".46" r=".55">
+      <stop offset="0" stop-color="#c8a0ff" stop-opacity=".55"/><stop offset="1" stop-color="#c8a0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="befuddlement-head" cx=".42" cy=".38" r=".95">
+      <stop offset="0" stop-color="#f4e2ff"/><stop offset=".5" stop-color="#c77dff"/><stop offset=".85" stop-color="#8a3ad4"/><stop offset="1" stop-color="#571f96"/>
+    </radialGradient>
+    <radialGradient id="befuddlement-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#befuddlement-bg)"/>
+  <rect width="64" height="64" fill="url(#befuddlement-halo)"/>
+  <circle cx="30" cy="32" r="17" fill="#b06bff" opacity=".16"/>
+  <path d="M20 51 C12 44 13 26 25 20 C38 13 51 22 49 34 C48 42 43 46 40 47" fill="url(#befuddlement-head)"/>
+  <path d="M40 47 L46 44 L42 50 L48 49 L43 55 Z" fill="#571f96" opacity=".9"/>
+  <path d="M22 34 C25 28 29 32 27 37 C25 42 30 44 33 38 C36 32 41 35 39 41" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" opacity=".9"/>
+  <path d="M26 44 L30 41 M35 43 L38 46" stroke="#e9d4ff" stroke-width="1.4" stroke-linecap="round" opacity=".6"/>
+  <path d="M45 15 l1.3 3.4 3.4 1.3 -3.4 1.3 -1.3 3.4 -1.3-3.4 -3.4-1.3 3.4-1.3 Z" fill="#c77dff" opacity=".8"/>
+  <path d="M52 26 l.8 2 2 .8 -2 .8 -.8 2 -.8-2 -2-.8 2-.8 Z" fill="#e9d4ff" opacity=".85"/>
+  <ellipse cx="27" cy="25" rx="2.6" ry="1.7" fill="#fff" opacity=".5" transform="rotate(-24 27 25)"/>
+  <circle cx="17" cy="22" r="1.3" fill="#e9d4ff"/>
+  <circle cx="14" cy="40" r="1" fill="#c77dff" opacity=".8"/>
+  <circle cx="51" cy="45" r="1.1" fill="#e9d4ff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#befuddlement-vig)"/>
+</svg>

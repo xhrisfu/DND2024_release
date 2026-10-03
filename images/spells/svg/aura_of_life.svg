@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="aura_of_life-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#1d4a3f"/><stop offset=".5" stop-color="#0e2a2c"/><stop offset="1" stop-color="#07141a"/>
+    </radialGradient>
+    <radialGradient id="aura_of_life-halo" cx=".5" cy=".5" r=".6">
+      <stop offset="0" stop-color="#d6ffb0" stop-opacity=".5"/><stop offset=".65" stop-color="#7ecb5f" stop-opacity=".28"/><stop offset="1" stop-color="#7ecb5f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura_of_life-heart" cx=".42" cy=".34" r=".95">
+      <stop offset="0" stop-color="#f0ffd6"/><stop offset=".45" stop-color="#a6ee6c"/><stop offset=".8" stop-color="#5aab34"/><stop offset="1" stop-color="#2e6b1c"/>
+    </radialGradient>
+    <radialGradient id="aura_of_life-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#aura_of_life-bg)"/>
+  <rect width="64" height="64" fill="url(#aura_of_life-halo)"/>
+  <circle cx="32" cy="33" r="21" fill="none" stroke="#7ecb5f" stroke-width="1.8" opacity=".55"/>
+  <circle cx="32" cy="33" r="15.5" fill="none" stroke="#a6ee6c" stroke-width="1.1" opacity=".4"/>
+  <circle cx="32" cy="30" r="13" fill="#7ecb5f" opacity=".2"/>
+  <path d="M32 44 C22 36 17 30 19 24 C20.5 19.5 26 18.5 29.5 21 C31 22 31.6 23.5 32 24.8 C32.4 23.5 33 22 34.5 21 C38 18.5 43.5 19.5 45 24 C47 30 42 36 32 44 Z" fill="url(#aura_of_life-heart)"/>
+  <path d="M14 44 A19 19 0 0 0 50 44" fill="none" stroke="#eaffd6" stroke-width="1.3" opacity=".55"/>
+  <path d="M24 24 C23 27 24 30 26.5 32.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".5"/>
+  <ellipse cx="26" cy="24.5" rx="3" ry="1.8" fill="#fff" opacity=".5" transform="rotate(-25 26 24.5)"/>
+  <path d="M14 33 h5 M45 33 h5" stroke="#a6ee6c" stroke-width="1.8" stroke-linecap="round" opacity=".55"/>
+  <circle cx="18" cy="20" r="1.4" fill="#eaffd6" opacity=".8"/>
+  <circle cx="47" cy="47" r="1.2" fill="#a6ee6c" opacity=".7"/>
+  <circle cx="47" cy="19" r="1" fill="#eaffd6" opacity=".65"/>
+  <circle cx="16" cy="46" r=".8" fill="#7ecb5f" opacity=".55"/>
+  <rect width="64" height="64" fill="url(#aura_of_life-vig)"/>
+</svg>

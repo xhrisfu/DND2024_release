@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="fly-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#3a2410"/><stop offset=".5" stop-color="#221507"/><stop offset="1" stop-color="#100a04"/>
+    </radialGradient>
+    <radialGradient id="fly-halo" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#ffb02e" stop-opacity=".5"/><stop offset="1" stop-color="#ffb02e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fly-wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset=".5" stop-color="#ffe6a0"/><stop offset="1" stop-color="#c89a4c"/>
+    </linearGradient>
+    <linearGradient id="fly-boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8a04c"/><stop offset="1" stop-color="#7a4c1c"/>
+    </linearGradient>
+    <radialGradient id="fly-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#fly-bg)"/>
+  <rect width="64" height="64" fill="url(#fly-halo)"/>
+  <path d="M32 26 C22 16 12 14 5 18 C14 20 20 26 32 30 C44 26 50 20 59 18 C52 14 42 16 32 26 Z" fill="#ffe6a0" opacity=".16"/>
+  <path d="M31 26 C23 17 14 15 6 18 C13 18 17 21 20 25 C13 24 9 26 5 29 C13 28 18 29 23 32 C17 33 14 35 11 39 C19 35 25 34 31 35 Z" fill="url(#fly-wing)"/>
+  <path d="M33 26 C41 17 50 15 58 18 C51 18 47 21 44 25 C51 24 55 26 59 29 C51 28 46 29 41 32 C47 33 50 35 53 39 C45 35 39 34 33 35 Z" fill="url(#fly-wing)"/>
+  <path d="M27 36 L37 36 L36 48 C36 51 34 53 32 54 L30 54 C28 52 27 50 27 47 Z" fill="url(#fly-boot)" stroke="#4a2c0c" stroke-width="1"/>
+  <path d="M27 47 L24 49 L27 51 Z" fill="url(#fly-boot)"/>
+  <line x1="28" y1="39" x2="35" y2="39" stroke="#ffe6a0" stroke-width="1" opacity=".55"/>
+  <ellipse cx="14" cy="20" rx="3" ry="1.5" fill="#fff" opacity=".5" transform="rotate(-16 14 20)"/>
+  <circle cx="32" cy="22" r="1.3" fill="#fffdf0" opacity=".85"/>
+  <circle cx="52" cy="24" r="1" fill="#ffe6a0" opacity=".7"/>
+  <circle cx="16" cy="46" r=".9" fill="#ffd88a" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#fly-vig)"/>
+</svg>

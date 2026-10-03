@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="friends-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#4a1240"/><stop offset=".5" stop-color="#2a0c22"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="friends-halo" cx=".5" cy=".44" r=".5">
+      <stop offset="0" stop-color="#ff5ca8" stop-opacity=".5"/><stop offset="1" stop-color="#ff5ca8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="friends-handl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd0e8"/><stop offset=".5" stop-color="#ff77b8"/><stop offset="1" stop-color="#c0286f"/>
+    </linearGradient>
+    <linearGradient id="friends-handr" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0f7"/><stop offset=".5" stop-color="#ff9bcb"/><stop offset="1" stop-color="#d63b8a"/>
+    </linearGradient>
+    <radialGradient id="friends-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#friends-bg)"/>
+  <rect width="64" height="64" fill="url(#friends-halo)"/>
+  <path d="M32 20 C29 15 21 15 18.5 20 C16 25 20 31 32 40 C44 31 48 25 45.5 20 C43 15 35 15 32 20 Z" fill="#ff5ca8" opacity=".16" transform="translate(0 -4)"/>
+  <path d="M6 30 L19 30 L32 35 L25 44 L13 40.5 L6 40.5 Z" fill="url(#friends-handl)"/>
+  <path d="M58 30 L45 30 L32 35 L39 44 L51 40.5 L58 40.5 Z" fill="url(#friends-handr)"/>
+  <path d="M26 33.4 L38 37.8 M24.5 36.6 L36 40.6" fill="none" stroke="#8a1550" stroke-width="1.2" stroke-linecap="round" opacity=".55"/>
+  <path d="M8 31.5 L17 31.5" stroke="#fff0f7" stroke-width="1.3" opacity=".6"/>
+  <ellipse cx="14" cy="33" rx="4" ry="1.6" fill="#fff" opacity=".4" transform="rotate(6 14 33)"/>
+  <circle cx="32" cy="36.5" r="5.5" fill="#ffd0e8" opacity=".22"/>
+  <path d="M50 12 l1 2.6 2.6 1 -2.6 1 -1 2.6 -1-2.6 -2.6-1 2.6-1 Z" fill="#ffd0e8" opacity=".9"/>
+  <circle cx="15" cy="20" r="1.3" fill="#ff9bcb" opacity=".8"/>
+  <circle cx="49" cy="46" r="1" fill="#ffd0e8" opacity=".7"/>
+  <circle cx="32" cy="52" r=".9" fill="#ff9bcb" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#friends-vig)"/>
+</svg>

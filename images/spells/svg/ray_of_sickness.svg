@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="ray_of_sickness-bg" cx=".38" cy=".34" r=".95">
+      <stop offset="0" stop-color="#1f3a14"/><stop offset=".5" stop-color="#10200a"/><stop offset="1" stop-color="#080f05"/>
+    </radialGradient>
+    <radialGradient id="ray_of_sickness-halo" cx=".72" cy=".72" r=".55">
+      <stop offset="0" stop-color="#8ee23c" stop-opacity=".5"/><stop offset="1" stop-color="#8ee23c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ray_of_sickness-beam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eafcb0"/><stop offset=".45" stop-color="#a6e23c"/><stop offset="1" stop-color="#5a9c1c" stop-opacity=".2"/>
+    </linearGradient>
+    <radialGradient id="ray_of_sickness-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#ray_of_sickness-bg)"/>
+  <rect width="64" height="64" fill="url(#ray_of_sickness-halo)"/>
+  <circle cx="47" cy="47" r="13" fill="#8ee23c" opacity=".22"/>
+  <polygon points="10,8 15,6 54,46 47,52" fill="url(#ray_of_sickness-beam)"/>
+  <line x1="12" y1="9" x2="49" y2="48" stroke="#eafcb0" stroke-width="1.3" opacity=".8"/>
+  <path d="M20 12 C24 16 22 20 26 24 C30 28 28 32 32 36" fill="none" stroke="#d4f77a" stroke-width="1.1" opacity=".55"/>
+  <circle cx="48" cy="47" r="6" fill="#d4f77a" opacity=".35"/>
+  <circle cx="48" cy="47" r="3.2" fill="#eafcb0"/>
+  <path d="M42 53 C45 55.5 51 56 55 53" fill="none" stroke="#7aa82c" stroke-width="1.3" opacity=".55"/>
+  <polygon points="30,26 32,29 30,32 28,29" fill="#d4f77a" opacity=".85"/>
+  <ellipse cx="15" cy="10.5" rx="2.4" ry="1.4" fill="#f4ffcc" opacity=".7" transform="rotate(45 15 10.5)"/>
+  <circle cx="54" cy="38" r="1.5" fill="#a6e23c" opacity=".8"/>
+  <circle cx="57" cy="45" r="1.1" fill="#8ee23c" opacity=".65"/>
+  <circle cx="24" cy="20" r="1" fill="#d4f77a" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#ray_of_sickness-vig)"/>
+</svg>

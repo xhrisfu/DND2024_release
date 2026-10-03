@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="locate_animals_or_plants-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241c08"/><stop offset="1" stop-color="#3d3010"/>
+    </linearGradient>
+    <radialGradient id="locate_animals_or_plants-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <radialGradient id="locate_animals_or_plants-face" cx=".5" cy=".4" r=".6">
+      <stop offset="0" stop-color="#3d3010"/><stop offset="1" stop-color="#241c08"/>
+    </radialGradient>
+    <linearGradient id="locate_animals_or_plants-leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8f07a"/><stop offset="1" stop-color="#7ecb5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#locate_animals_or_plants-bg)"/>
+  <rect width="64" height="64" fill="url(#locate_animals_or_plants-vig)"/>
+  <circle cx="32" cy="32" r="23" fill="#ffd54d" opacity=".12"/>
+  <circle cx="32" cy="32" r="21" fill="url(#locate_animals_or_plants-face)" stroke="#ffe9a8" stroke-width="2"/>
+  <g stroke="#e0b840" stroke-width="1.4" stroke-linecap="round" opacity=".7">
+    <path d="M32 11 V16 M32 48 V53 M11 32 H16 M48 32 H53"/>
+  </g>
+  <path d="M32 32 L44 20 L36 32 Z" fill="#ffd23d" stroke="#fff3c4" stroke-width="1"/>
+  <path d="M32 32 L20 44 L28 32 Z" fill="#c8920c" opacity=".85"/>
+  <path d="M23 43 C23 38 27 34 32 34 C30 39 27 42 23 43 Z" fill="url(#locate_animals_or_plants-leaf)" stroke="#e8ffc0" stroke-width="1"/>
+  <path d="M27.5 40 C29 38 30.5 36.5 31.5 35.5" fill="none" stroke="#3a6b28" stroke-width="1" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="2.6" fill="#fff9e0"/>
+  <circle cx="14" cy="14" r="1.2" fill="#fff3c4"/>
+  <circle cx="49" cy="49" r="1" fill="#ffe08a" opacity=".7"/>
+</svg>

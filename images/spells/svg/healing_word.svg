@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="healing_word-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#1d4a3f"/><stop offset=".5" stop-color="#0e2a2c"/><stop offset="1" stop-color="#07141a"/>
+    </radialGradient>
+    <radialGradient id="healing_word-halo" cx=".5" cy=".42" r=".52">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".6"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="healing_word-rune" cx=".42" cy=".36" r=".95">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset=".45" stop-color="#ffe08a"/><stop offset=".8" stop-color="#f0b23c"/><stop offset="1" stop-color="#b87818"/>
+    </radialGradient>
+    <radialGradient id="healing_word-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#healing_word-bg)"/>
+  <rect width="64" height="64" fill="url(#healing_word-halo)"/>
+  <ellipse cx="32" cy="32" rx="22" ry="10" fill="none" stroke="#ffd97a" stroke-width="1.2" opacity=".35" transform="rotate(-14 32 32)"/>
+  <ellipse cx="32" cy="32" rx="15" ry="7" fill="none" stroke="#ffe9a8" stroke-width="1.1" opacity=".3" transform="rotate(-14 32 32)"/>
+  <circle cx="32" cy="30" r="15" fill="#ffe9a8" opacity=".2"/>
+  <circle cx="32" cy="30" r="12.4" fill="#ffcf6a" opacity=".22"/>
+  <circle cx="32" cy="30" r="11" fill="url(#healing_word-rune)"/>
+  <path d="M32 22.5 V37.5 M24.5 30 H39.5" stroke="#fffdf0" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M32 22.5 V37.5 M24.5 30 H39.5" stroke="#f0b23c" stroke-width="1.2" stroke-linecap="round" opacity=".55"/>
+  <ellipse cx="28" cy="26" rx="2.6" ry="1.7" fill="#fff" opacity=".7" transform="rotate(-25 28 26)"/>
+  <path d="M23.5 34 A11 11 0 0 0 40.5 34" fill="none" stroke="#a86818" stroke-width="1.6" opacity=".4"/>
+  <path d="M46 15 l1 2.6 2.6 1 -2.6 1 -1 2.6 -1-2.6 -2.6-1 2.6-1 Z" fill="#fff3c4" opacity=".9"/>
+  <circle cx="14" cy="42" r="1.5" fill="#ffe9a8" opacity=".85"/>
+  <circle cx="50" cy="42" r="1" fill="#ffd97a" opacity=".7"/>
+  <circle cx="17" cy="18" r=".9" fill="#fff3c4" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#healing_word-vig)"/>
+</svg>

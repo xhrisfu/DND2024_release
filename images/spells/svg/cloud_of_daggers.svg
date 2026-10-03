@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="cloud_of_daggers-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#180e2c"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="cloud_of_daggers-halo" cx=".5" cy=".5" r=".52">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".45"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cloud_of_daggers-steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f7fb"/><stop offset=".45" stop-color="#c0cad8"/><stop offset="1" stop-color="#68748a"/>
+    </linearGradient>
+    <radialGradient id="cloud_of_daggers-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#cloud_of_daggers-bg)"/>
+  <rect width="64" height="64" fill="url(#cloud_of_daggers-halo)"/>
+  <circle cx="32" cy="32" r="21" fill="#b98cff" opacity=".12"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#9d5cff" stroke-width="1.1" opacity=".3"/>
+  <g stroke="#5a4a3a" stroke-width="3" stroke-linecap="round">
+    <line x1="32" y1="32" x2="14" y2="46"/>
+    <line x1="32" y1="32" x2="50" y2="46"/>
+    <line x1="32" y1="32" x2="30" y2="8"/>
+  </g>
+  <g fill="url(#cloud_of_daggers-steel)" stroke="#3a4252" stroke-width=".5">
+    <polygon points="30,8 27,10 6,20 26,15 34,12 33,9"/>
+    <polygon points="14,46 12,49 8,58 18,50 20,47 17,45"/>
+    <polygon points="50,46 53,45 60,54 50,50 47,49 48,46"/>
+  </g>
+  <g stroke="#fff" stroke-width="1" opacity=".7" fill="none">
+    <path d="M31 10 L14 17"/>
+    <path d="M15 47 L10 55"/>
+    <path d="M49 47 L56 53"/>
+  </g>
+  <circle cx="32" cy="32" r="3" fill="#e8dcff" opacity=".85"/>
+  <circle cx="32" cy="32" r="6" fill="none" stroke="#c8b6ff" stroke-width="1" opacity=".5"/>
+  <circle cx="50" cy="16" r="1.3" fill="#e8dcff" opacity=".7"/>
+  <circle cx="14" cy="30" r="1.1" fill="#c8b6ff" opacity=".65"/>
+  <circle cx="46" cy="52" r=".9" fill="#e8dcff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#cloud_of_daggers-vig)"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="blade_barrier-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#160e2e"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="blade_barrier-halo" cx=".5" cy=".46" r=".55">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".5"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="blade_barrier-blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2eeff"/><stop offset=".5" stop-color="#c2a8ff"/><stop offset="1" stop-color="#6a4ac8"/>
+    </linearGradient>
+    <radialGradient id="blade_barrier-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#blade_barrier-bg)"/>
+  <rect width="64" height="64" fill="url(#blade_barrier-halo)"/>
+  <path d="M8 46 A24 8 0 0 0 56 46" fill="none" stroke="#c9a8ff" stroke-width="1" opacity=".3"/>
+  <polygon points="32,7 35,13 34,44 30,44 29,13" fill="url(#blade_barrier-blade)" stroke="#e6d9ff" stroke-width="1"/>
+  <line x1="32" y1="11" x2="32" y2="42" stroke="#fff" stroke-width="1.1" opacity=".65"/>
+  <polygon points="18,13 20.8,18 20 44 16.6 44 16 18" fill="url(#blade_barrier-blade)" stroke="#e6d9ff" stroke-width=".9" opacity=".9"/>
+  <line x1="18.3" y1="16" x2="18" y2="42" stroke="#fff" stroke-width="1" opacity=".5"/>
+  <polygon points="46,13 49.4,18 48.8,44 45.2,44 44.6,18" fill="url(#blade_barrier-blade)" stroke="#e6d9ff" stroke-width=".9" opacity=".9"/>
+  <line x1="46.7" y1="16" x2="47" y2="42" stroke="#fff" stroke-width="1" opacity=".5"/>
+  <g stroke="#b9a0e8" stroke-width="2.4" stroke-linecap="round">
+    <line x1="15.5" y1="45" x2="20.5" y2="45"/>
+    <line x1="29" y1="45" x2="35" y2="45"/>
+    <line x1="44.5" y1="45" x2="49.5" y2="45"/>
+  </g>
+  <path d="M11 47 A22 7 0 0 0 53 47" fill="none" stroke="#d9c6ff" stroke-width="1.3" opacity=".5"/>
+  <circle cx="12" cy="10" r="1.4" fill="#e6d9ff"/>
+  <circle cx="53" cy="11" r="1.1" fill="#c9a8ff" opacity=".8"/>
+  <circle cx="50" cy="52" r="1" fill="#b98cff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#blade_barrier-vig)"/>
+</svg>

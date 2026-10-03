@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="vicious_mockery-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#3a1030"/><stop offset=".5" stop-color="#22091c"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="vicious_mockery-halo" cx=".5" cy=".46" r=".52">
+      <stop offset="0" stop-color="#ff77b8" stop-opacity=".5"/><stop offset="1" stop-color="#ff77b8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vicious_mockery-bub" cx=".4" cy=".33" r=".9">
+      <stop offset="0" stop-color="#ffe4f2"/><stop offset=".45" stop-color="#ff8fc6"/><stop offset=".8" stop-color="#d63b8a"/><stop offset="1" stop-color="#8a1a55"/>
+    </radialGradient>
+    <radialGradient id="vicious_mockery-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#vicious_mockery-bg)"/>
+  <rect width="64" height="64" fill="url(#vicious_mockery-halo)"/>
+  <path d="M14 22 C14 15 21 11 31 11 C43 11 51 16 51 24 C51 32 43 37 31 37 C28 37 25 36.7 22.5 36 L13 42 L16 33 C14.5 30 14 26 14 22 Z" fill="#ff77b8" opacity=".18"/>
+  <path d="M15.5 22 C15.5 16 22 12.5 31 12.5 C42 12.5 49 17 49 24 C49 31 42 35.5 31 35.5 C28 35.5 25.2 35.2 23 34.5 L15.5 39.5 L18 32.5 C16.3 29.6 15.5 26 15.5 22 Z" fill="url(#vicious_mockery-bub)"/>
+  <path d="M22 20 L30 24 M22 27 L34 24 M22 24 L27 24" fill="none" stroke="#4a0f2e" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+  <polygon points="37,18 40,20.5 37,23 34,20.5" fill="#fff3f9" opacity=".85"/>
+  <ellipse cx="24" cy="17" rx="4" ry="2" fill="#fff" opacity=".5" transform="rotate(-14 24 17)"/>
+  <path d="M17 30 C24 33 38 33 46 30 A17 12 0 0 1 17 30 Z" fill="#7a1148" opacity=".4"/>
+  <circle cx="50" cy="40" r="2.4" fill="url(#vicious_mockery-bub)" opacity=".9"/>
+  <circle cx="55" cy="48" r="1.4" fill="#ff8fc6" opacity=".7"/>
+  <circle cx="13" cy="15" r="1.2" fill="#ffd0e8" opacity=".8"/>
+  <circle cx="52" cy="17" r="1" fill="#ff9bcb" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#vicious_mockery-vig)"/>
+</svg>

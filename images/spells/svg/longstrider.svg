@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="longstrider-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#3a2410"/><stop offset=".5" stop-color="#1f1408"/><stop offset="1" stop-color="#100a04"/>
+    </radialGradient>
+    <radialGradient id="longstrider-halo" cx=".52" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffcf7a" stop-opacity=".45"/><stop offset="1" stop-color="#ffcf7a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="longstrider-boot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d29a4e"/><stop offset=".55" stop-color="#8a5622"/><stop offset="1" stop-color="#4c2c0e"/>
+    </linearGradient>
+    <linearGradient id="longstrider-wing" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#fffbe8"/><stop offset="1" stop-color="#ffcf7a"/>
+    </linearGradient>
+    <radialGradient id="longstrider-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#longstrider-bg)"/>
+  <rect width="64" height="64" fill="url(#longstrider-halo)"/>
+  <g stroke="#ffb02e" stroke-linecap="round" opacity=".38">
+    <line x1="3" y1="24" x2="21" y2="24" stroke-width="2.4"/><line x1="1" y1="34" x2="17" y2="34" stroke-width="2.6"/><line x1="5" y1="44" x2="22" y2="44" stroke-width="2.2"/>
+  </g>
+  <path d="M30 18 L36 21 C32 28 30 38 31 46 L46 46 C48 52 43 56 34 56 C25 56 19 52 21 46 L27 30 Z" fill="#ffb02e" opacity=".18"/>
+  <path d="M31 20 L35 22 C31.5 29 30 38 31 45 L44.5 45 C46.5 50 42 53.5 34 53.5 C26 53.5 21 50 23 45 L28.5 31 Z" fill="url(#longstrider-boot)" stroke="#3c2409" stroke-width="1.2" stroke-linejoin="round"/>
+  <rect x="21.5" y="51.5" width="24" height="4" rx="1.6" fill="#4a2c0c"/>
+  <path d="M30 27 C32 33 30.5 39 31 45" fill="none" stroke="#e6b877" stroke-width="1" opacity=".5"/>
+  <path d="M32 22 C25 19 18 21 12 26 C20 23 27 25 34 27 Z" fill="#ffcf7a" opacity=".22"/>
+  <path d="M31.5 23 C25 20.5 19 22.5 14 27 C21 24.5 27 26 33 28 Z" fill="url(#longstrider-wing)" stroke="#c9954a" stroke-width=".8"/>
+  <path d="M30.5 29 C25 27 20 28.5 16 32 C22 30 27 31 32 33 Z" fill="#fff3d6" opacity=".8"/>
+  <circle cx="9" cy="19" r="1.3" fill="#fffbe8" opacity=".8"/>
+  <circle cx="48" cy="18" r="1.1" fill="#ffcf7a" opacity=".7"/>
+  <circle cx="49" cy="42" r="1" fill="#ffdc8a" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#longstrider-vig)"/>
+</svg>

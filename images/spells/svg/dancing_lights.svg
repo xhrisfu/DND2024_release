@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="dancing_lights-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#0a3a42"/><stop offset=".5" stop-color="#0a222a"/><stop offset="1" stop-color="#05141a"/>
+    </radialGradient>
+    <radialGradient id="dancing_lights-halo" cx=".5" cy=".45" r=".55">
+      <stop offset="0" stop-color="#5cf0d8" stop-opacity=".5"/><stop offset="1" stop-color="#5cf0d8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dancing_lights-orbA" cx=".4" cy=".35" r=".9">
+      <stop offset="0" stop-color="#f2fffb"/><stop offset=".4" stop-color="#9ff5e4"/><stop offset=".8" stop-color="#3ee6c4"/><stop offset="1" stop-color="#149c86"/>
+    </radialGradient>
+    <radialGradient id="dancing_lights-orbB" cx=".4" cy=".35" r=".9">
+      <stop offset="0" stop-color="#eafff9"/><stop offset=".5" stop-color="#6fefd6"/><stop offset="1" stop-color="#178a76"/>
+    </radialGradient>
+    <radialGradient id="dancing_lights-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#dancing_lights-bg)"/>
+  <rect width="64" height="64" fill="url(#dancing_lights-halo)"/>
+  <path d="M18 42 C24 34 40 30 47 20" fill="none" stroke="#5cf0d8" stroke-width="1.2" opacity=".3"/>
+  <circle cx="21" cy="40" r="9" fill="#3ee6c4" opacity=".22"/>
+  <circle cx="21" cy="40" r="6.5" fill="url(#dancing_lights-orbA)"/>
+  <ellipse cx="19" cy="37.5" rx="2" ry="1.3" fill="#fff" opacity=".7" transform="rotate(-28 19 37.5)"/>
+  <circle cx="44" cy="21" r="7.5" fill="#3ee6c4" opacity=".22"/>
+  <circle cx="44" cy="21" r="5.4" fill="url(#dancing_lights-orbA)"/>
+  <ellipse cx="42.3" cy="19" rx="1.7" ry="1.1" fill="#fff" opacity=".65" transform="rotate(-28 42.3 19)"/>
+  <circle cx="42" cy="43" r="5" fill="#3ee6c4" opacity=".2"/>
+  <circle cx="42" cy="43" r="3.6" fill="url(#dancing_lights-orbB)"/>
+  <ellipse cx="41" cy="41.6" rx="1.2" ry=".8" fill="#fff" opacity=".6" transform="rotate(-28 41 41.6)"/>
+  <circle cx="25" cy="19" r="4.2" fill="#3ee6c4" opacity=".2"/>
+  <circle cx="25" cy="19" r="3" fill="url(#dancing_lights-orbB)"/>
+  <ellipse cx="24.2" cy="17.9" rx="1" ry=".7" fill="#fff" opacity=".6" transform="rotate(-28 24.2 17.9)"/>
+  <circle cx="52" cy="38" r="1.4" fill="#c8fff0" opacity=".85"/>
+  <circle cx="13" cy="26" r="1.1" fill="#9ff5e4" opacity=".7"/>
+  <circle cx="33" cy="52" r="1" fill="#6fefd6" opacity=".6"/>
+  <circle cx="54" cy="10" r=".8" fill="#eafff9" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#dancing_lights-vig)"/>
+</svg>

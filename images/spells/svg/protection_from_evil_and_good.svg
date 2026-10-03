@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="protection_from_evil_and_good-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#123556"/><stop offset=".5" stop-color="#0b2039"/><stop offset="1" stop-color="#050d1a"/>
+    </radialGradient>
+    <radialGradient id="protection_from_evil_and_good-halo" cx=".5" cy=".44" r=".52">
+      <stop offset="0" stop-color="#7fc4ff" stop-opacity=".5"/><stop offset="1" stop-color="#7fc4ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="protection_from_evil_and_good-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf5ff"/><stop offset=".5" stop-color="#4da6ff"/><stop offset="1" stop-color="#1d4a7a"/>
+    </linearGradient>
+    <radialGradient id="protection_from_evil_and_good-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#protection_from_evil_and_good-bg)"/>
+  <rect width="64" height="64" fill="url(#protection_from_evil_and_good-halo)"/>
+  <circle cx="32" cy="32" r="22" fill="#4da6ff" opacity=".14"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="url(#protection_from_evil_and_good-ring)" stroke-width="3.4"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#dff0ff" stroke-width="1" opacity=".5"/>
+  <circle cx="32" cy="32" r="15" fill="none" stroke="#7fc4ff" stroke-width="1.2" opacity=".45"/>
+  <g stroke="#dff0ff" stroke-width="1.4" opacity=".6">
+    <line x1="32" y1="12" x2="32" y2="19"/><line x1="32" y1="45" x2="32" y2="52"/>
+    <line x1="12" y1="32" x2="19" y2="32"/><line x1="45" y1="32" x2="52" y2="32"/>
+  </g>
+  <path d="M32 20 L36 28 L44 30 L36 32.5 L34.5 41 L32 33 L29.5 41 L28 32.5 L20 30 L28 28 Z" fill="#cfe8ff"/>
+  <path d="M32 20 L36 28 L44 30 L36 32.5 L32 33 Z" fill="#fff" opacity=".55"/>
+  <circle cx="32" cy="30.5" r="2.4" fill="#fff"/>
+  <ellipse cx="24" cy="20" rx="3.2" ry="1.5" fill="#fff" opacity=".4" transform="rotate(-38 24 20)"/>
+  <circle cx="32" cy="12" r="1.4" fill="#dff0ff"/>
+  <circle cx="52" cy="32" r="1.1" fill="#7fc4ff" opacity=".8"/>
+  <circle cx="14" cy="44" r="1" fill="#aed8ff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#protection_from_evil_and_good-vig)"/>
+</svg>

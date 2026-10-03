@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="wrathful_smite-bg" cx=".44" cy=".4" r=".9">
+      <stop offset="0" stop-color="#1e1226"/><stop offset=".5" stop-color="#0f0813"/><stop offset="1" stop-color="#060309"/>
+    </radialGradient>
+    <radialGradient id="wrathful_smite-halo" cx=".5" cy=".46" r=".54">
+      <stop offset="0" stop-color="#9a3cff" stop-opacity=".5"/><stop offset="1" stop-color="#9a3cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wrathful_smite-blade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0e6fa"/><stop offset=".5" stop-color="#b8a8d0"/><stop offset="1" stop-color="#5c4c78"/>
+    </linearGradient>
+    <linearGradient id="wrathful_smite-flame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#6a1eb0" stop-opacity="0"/><stop offset="1" stop-color="#c46cff" stop-opacity=".9"/>
+    </linearGradient>
+    <radialGradient id="wrathful_smite-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#wrathful_smite-bg)"/>
+  <rect width="64" height="64" fill="url(#wrathful_smite-halo)"/>
+  <path d="M18 52 C14 44 16 34 24 24 C22 34 24 40 28 44 C30 38 30 32 34 26 C34 36 38 42 40 50 C36 54 24 56 18 52 Z" fill="url(#wrathful_smite-flame)" opacity=".55"/>
+  <path d="M46 8 L50 12 L26 40 L21 41 L20 40 L24 36 Z" fill="#9a3cff" opacity=".2"/>
+  <path d="M45 9.5 L48.5 13 L27 38 L23 39 L22 38 L23.5 34 Z" fill="url(#wrathful_smite-blade)"/>
+  <path d="M44.5 10.5 L47 13 L26 37 L24.5 36 Z" fill="#fff" opacity=".4"/>
+  <path d="M46 6 L54 8 L52 16 L44 14 Z" fill="#7a5cc0"/>
+  <rect x="19" y="37" width="9" height="4" rx="1" fill="#8a6cd0" transform="rotate(45 23 39)"/>
+  <path d="M18 44 C16 40 17 34 22 28 C21 34 22 38 25 41 C22 44 20 45 18 44 Z" fill="#e0c8ff" opacity=".6"/>
+  <ellipse cx="35" cy="21" rx="1.4" ry="3" fill="#fff" opacity=".55" transform="rotate(45 35 21)"/>
+  <circle cx="50" cy="10" r="1.4" fill="#d0b0ff"/>
+  <circle cx="16" cy="30" r="1.2" fill="#c46cff" opacity=".85"/>
+  <circle cx="40" cy="46" r="1" fill="#e0c8ff" opacity=".7"/>
+  <circle cx="26" cy="52" r=".9" fill="#b98cff" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#wrathful_smite-vig)"/>
+</svg>
