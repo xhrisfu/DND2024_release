@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bless-bg" cx=".5" cy=".38" r=".9">
+      <stop offset="0" stop-color="#4a1240"/><stop offset=".5" stop-color="#2a0c22"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="bless-halo" cx=".5" cy=".42" r=".55">
+      <stop offset="0" stop-color="#ffcf7a" stop-opacity=".55"/><stop offset="1" stop-color="#ffcf7a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bless-star" cx=".42" cy=".36" r=".9">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset=".4" stop-color="#ffe9a8"/><stop offset=".8" stop-color="#ffb64d"/><stop offset="1" stop-color="#c07a1e"/>
+    </radialGradient>
+    <radialGradient id="bless-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#bless-bg)"/>
+  <rect width="64" height="64" fill="url(#bless-halo)"/>
+  <path d="M32 8 L34.5 26 L52 30 L34.5 33 L32 8 Z M32 8 L29.5 26 L12 30 L29.5 33 Z" fill="#ffe9a8" opacity=".18"/>
+  <path d="M32 10 L34 28.5 L50 31 L34 33.5 L32 52 L30 33.5 L14 31 L30 28.5 Z" fill="url(#bless-star)"/>
+  <polyline points="32,12 33.4,28.8 47,31" fill="none" stroke="#fffdf0" stroke-width="1.1" opacity=".7"/>
+  <ellipse cx="27" cy="24" rx="2.2" ry="4" fill="#fff" opacity=".55" transform="rotate(30 27 24)"/>
+  <path d="M18 46 C24 41 40 41 46 46 C40 44.5 24 44.5 18 46 Z" fill="#ffe9a8" opacity=".7"/>
+  <path d="M23 51 C28 47 36 47 41 51 C36 49.5 28 49.5 23 51 Z" fill="#ffcf5a" opacity=".5"/>
+  <circle cx="32" cy="31" r="2.2" fill="#fffdf0"/>
+  <circle cx="15" cy="16" r="1.3" fill="#fff3c4" opacity=".85"/>
+  <circle cx="50" cy="15" r="1" fill="#ffe9a8" opacity=".7"/>
+  <circle cx="48" cy="41" r=".9" fill="#ffcf5a" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#bless-vig)"/>
+</svg>

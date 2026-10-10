@@ -1,0 +1,1 @@
+const e=3,l=[{value:"挚友",label:"挚友",description:"生死与共的朋友"},{value:"伙伴",label:"伙伴",description:"一起冒险的同伴"},{value:"雇佣",label:"雇佣",description:"雇佣关系"},{value:"师徒",label:"师徒",description:"师傅或徒弟"},{value:"血亲",label:"血亲",description:"家人或亲戚"},{value:"恋人",label:"恋人",description:"恋爱关系"},{value:"其他",label:"其他",description:"其他关系"}];export{l as C,e as M};

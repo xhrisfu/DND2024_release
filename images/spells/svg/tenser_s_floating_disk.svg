@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="tenser_s_floating_disk-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#180e2c"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="tenser_s_floating_disk-halo" cx=".5" cy=".46" r=".52">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".5"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tenser_s_floating_disk-top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e2d4ff"/><stop offset=".5" stop-color="#b98cff"/><stop offset="1" stop-color="#7a4fd6"/>
+    </linearGradient>
+    <radialGradient id="tenser_s_floating_disk-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#tenser_s_floating_disk-bg)"/>
+  <rect width="64" height="64" fill="url(#tenser_s_floating_disk-halo)"/>
+  <ellipse cx="32" cy="52" rx="18" ry="5" fill="#000" opacity=".32"/>
+  <ellipse cx="32" cy="45" rx="23" ry="7.5" fill="#b98cff" opacity=".2"/>
+  <path d="M9 30 L55 30 L48 37 L16 37 Z" fill="#5a3aa8"/>
+  <ellipse cx="32" cy="30" rx="23" ry="7.5" fill="url(#tenser_s_floating_disk-top)"/>
+  <ellipse cx="32" cy="30" rx="23" ry="7.5" fill="none" stroke="#e8dcff" stroke-width="1.2" opacity=".7"/>
+  <ellipse cx="32" cy="30" rx="14" ry="4.2" fill="none" stroke="#f0e6ff" stroke-width="1" opacity=".5"/>
+  <ellipse cx="32" cy="30" rx="6" ry="1.8" fill="none" stroke="#faf5ff" stroke-width=".9" opacity=".45"/>
+  <ellipse cx="25" cy="27" rx="5.5" ry="1.9" fill="#fff" opacity=".45" transform="rotate(-6 25 27)"/>
+  <circle cx="32" cy="30" r="1.8" fill="#fff" opacity=".85"/>
+  <circle cx="50" cy="18" r="1.4" fill="#e8dcff" opacity=".8"/>
+  <circle cx="14" cy="20" r="1.1" fill="#b98cff" opacity=".7"/>
+  <circle cx="52" cy="43" r=".9" fill="#e8dcff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#tenser_s_floating_disk-vig)"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="power_word_fortify-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#123556"/><stop offset=".5" stop-color="#0b2039"/><stop offset="1" stop-color="#050d1a"/>
+    </radialGradient>
+    <radialGradient id="power_word_fortify-halo" cx=".5" cy=".46" r=".52">
+      <stop offset="0" stop-color="#4da6ff" stop-opacity=".5"/><stop offset="1" stop-color="#4da6ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="power_word_fortify-shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ad4ff" stop-opacity=".55"/><stop offset=".5" stop-color="#2f74b8" stop-opacity=".55"/><stop offset="1" stop-color="#0e3358" stop-opacity=".72"/>
+    </linearGradient>
+    <radialGradient id="power_word_fortify-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#power_word_fortify-bg)"/>
+  <rect width="64" height="64" fill="url(#power_word_fortify-halo)"/>
+  <path d="M32 9 L51 15.5 V31 C51 43.5 43 52.5 32 56.5 C21 52.5 13 43.5 13 31 V15.5 Z" fill="#4da6ff" opacity=".18"/>
+  <path d="M32 11 L49 16.8 V31 C49 42 42 50 32 54 C22 50 15 42 15 31 V16.8 Z" fill="url(#power_word_fortify-shield)" stroke="#7fc4ff" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M17 26 C25 29 39 29 47 26" fill="none" stroke="#aed8ff" stroke-width="1.2" opacity=".45"/>
+  <path d="M26 31 L31 37 L40 24" fill="none" stroke="#eaf6ff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26 31 L31 37 L40 24" fill="none" stroke="#4da6ff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" opacity=".25" transform="translate(0 1.2)"/>
+  <ellipse cx="24" cy="19" rx="3.4" ry="1.6" fill="#fff" opacity=".4" transform="rotate(20 24 19)"/>
+  <path d="M28 6 L36 6 M32 2 L32 10" stroke="#9ad4ff" stroke-width="1.3" stroke-linecap="round" opacity=".7"/>
+  <circle cx="32" cy="8" r="2.1" fill="#cfe8ff"/>
+  <circle cx="18" cy="16" r="1.2" fill="#cfe8ff" opacity=".8"/>
+  <circle cx="46" cy="49" r="1" fill="#aed8ff" opacity=".7"/>
+  <circle cx="49" cy="20" r="1.1" fill="#7fc4ff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#power_word_fortify-vig)"/>
+</svg>

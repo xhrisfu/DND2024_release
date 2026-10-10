@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="invisibility-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#0a3a42"/><stop offset=".5" stop-color="#0a222a"/><stop offset="1" stop-color="#05141a"/>
+    </radialGradient>
+    <radialGradient id="invisibility-halo" cx=".5" cy=".46" r=".5">
+      <stop offset="0" stop-color="#3ee6c4" stop-opacity=".45"/><stop offset="1" stop-color="#3ee6c4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="invisibility-ghost" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ff5e4" stop-opacity=".4"/><stop offset="1" stop-color="#178a76" stop-opacity=".05"/>
+    </linearGradient>
+    <radialGradient id="invisibility-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#invisibility-bg)"/>
+  <rect width="64" height="64" fill="url(#invisibility-halo)"/>
+  <path d="M32 19 C26 19 22 24 22 30 C22 35 24 38 24 42 L24 52 L40 52 L40 42 C40 38 42 35 42 30 C42 24 38 19 32 19 Z" fill="url(#invisibility-ghost)"/>
+  <ellipse cx="32" cy="16" rx="5.4" ry="5.7" fill="url(#invisibility-ghost)"/>
+  <path d="M32 19 C26 19 22 24 22 30 C22 35 24 38 24 42 L24 52 L40 52 L40 42 C40 38 42 35 42 30 C42 24 38 19 32 19 Z" fill="none" stroke="#9ff5e4" stroke-width="1.6" stroke-dasharray="3 3.6" opacity=".9"/>
+  <ellipse cx="32" cy="16" rx="5.4" ry="5.7" fill="none" stroke="#9ff5e4" stroke-width="1.6" stroke-dasharray="3 3.6" opacity=".9"/>
+  <path d="M45 25 C49 28 50 34 48 39" fill="none" stroke="#c8fff0" stroke-width="1.3" stroke-dasharray="2 3.2" opacity=".6"/>
+  <path d="M19 25 C15 28 14 34 16 39" fill="none" stroke="#c8fff0" stroke-width="1.3" stroke-dasharray="2 3.2" opacity=".45"/>
+  <ellipse cx="29.5" cy="14.5" rx="2" ry="1.4" fill="#fff" opacity=".4" transform="rotate(-22 29.5 14.5)"/>
+  <circle cx="14" cy="20" r="1.4" fill="#c8fff0" opacity=".8"/>
+  <circle cx="50" cy="46" r="1.1" fill="#3ee6c4" opacity=".7"/>
+  <circle cx="49" cy="15" r="1" fill="#9ff5e4" opacity=".6"/>
+  <circle cx="15" cy="47" r=".8" fill="#6fefd6" opacity=".55"/>
+  <rect width="64" height="64" fill="url(#invisibility-vig)"/>
+</svg>

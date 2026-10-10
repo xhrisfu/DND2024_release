@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="dissonant_whispers-bg" cx=".38" cy=".5" r=".92">
+      <stop offset="0" stop-color="#3a1030"/><stop offset=".5" stop-color="#22091c"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="dissonant_whispers-halo" cx=".26" cy=".5" r=".5">
+      <stop offset="0" stop-color="#c8a0ff" stop-opacity=".5"/><stop offset="1" stop-color="#c8a0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dissonant_whispers-src" cx=".42" cy=".4" r=".9">
+      <stop offset="0" stop-color="#fbeaff"/><stop offset=".4" stop-color="#e0a0ff"/><stop offset=".8" stop-color="#a84fe0"/><stop offset="1" stop-color="#5e2088"/>
+    </radialGradient>
+    <radialGradient id="dissonant_whispers-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#dissonant_whispers-bg)"/>
+  <rect width="64" height="64" fill="url(#dissonant_whispers-halo)"/>
+  <path d="M18 32 C25 22 25 42 32 30 C38 20 39 44 46 30" fill="none" stroke="#c8a0ff" stroke-width="5" stroke-linecap="round" opacity=".16"/>
+  <path d="M15 40 C18 33 21 33 23 39 C25 45 28 45 30 39" fill="none" stroke="#e0b8ff" stroke-width="1.4" stroke-linecap="round" opacity=".4"/>
+  <path d="M17 34 C24 23 26 41 33 29 C39 19 41 43 49 28" fill="none" stroke="#b25cff" stroke-width="2.8" stroke-linecap="round" opacity=".35"/>
+  <path d="M17 34 C24 23 26 41 33 29 C39 19 41 43 49 28" fill="none" stroke="url(#dissonant_whispers-src)" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M40 20 C46 17 52 20 54 26" fill="none" stroke="#d8b8ff" stroke-width="1.2" stroke-linecap="round" opacity=".55"/>
+  <path d="M44 44 C50 46 56 43 57 37" fill="none" stroke="#d8b8ff" stroke-width="1.1" stroke-linecap="round" opacity=".45"/>
+  <circle cx="15" cy="34" r="4" fill="url(#dissonant_whispers-src)"/>
+  <circle cx="13.6" cy="32.6" r="1.4" fill="#fff" opacity=".8"/>
+  <polygon points="50,15 52,18 50,21 48,18" fill="#f0e0ff" opacity=".85"/>
+  <circle cx="55" cy="45" r="1.4" fill="#c8a0ff" opacity=".7"/>
+  <circle cx="24" cy="18" r="1.1" fill="#e0c0ff" opacity=".75"/>
+  <circle cx="52" cy="30" r=".9" fill="#fff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#dissonant_whispers-vig)"/>
+</svg>

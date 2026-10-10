@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="compelled_duel-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#4a1240"/><stop offset=".5" stop-color="#2a0c22"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="compelled_duel-halo" cx=".5" cy=".45" r=".5">
+      <stop offset="0" stop-color="#ff5ca8" stop-opacity=".45"/><stop offset="1" stop-color="#ff5ca8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="compelled_duel-blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0f7"/><stop offset=".5" stop-color="#ff9bcb"/><stop offset="1" stop-color="#c0286f"/>
+    </linearGradient>
+    <radialGradient id="compelled_duel-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#compelled_duel-bg)"/>
+  <rect width="64" height="64" fill="url(#compelled_duel-halo)"/>
+  <circle cx="32" cy="33" r="21" fill="none" stroke="#ff5ca8" stroke-width="7" opacity=".12"/>
+  <circle cx="32" cy="33" r="21" fill="none" stroke="#ff9bcb" stroke-width="1.6" stroke-dasharray="1 5" stroke-linecap="round" opacity=".7"/>
+  <g transform="rotate(45 32 33)">
+    <rect x="30.4" y="8" width="3.2" height="34" rx="1.4" fill="url(#compelled_duel-blade)"/>
+    <polygon points="32,6 33.6,9 32,42 30.4,9" fill="#fff0f7" opacity=".6"/>
+    <rect x="24" y="41" width="16" height="3" rx="1.4" fill="#ffcf5a"/>
+    <rect x="30.4" y="44" width="3.2" height="9" rx="1.4" fill="#c88a2a"/>
+    <circle cx="32" cy="54" r="2.4" fill="#ffcf5a"/>
+  </g>
+  <g transform="rotate(-45 32 33)">
+    <rect x="30.4" y="8" width="3.2" height="34" rx="1.4" fill="url(#compelled_duel-blade)" opacity=".92"/>
+    <rect x="24" y="41" width="16" height="3" rx="1.4" fill="#d6a83c"/>
+    <rect x="30.4" y="44" width="3.2" height="9" rx="1.4" fill="#a8721e"/>
+  </g>
+  <circle cx="32" cy="33" r="2.6" fill="#fff0f7"/>
+  <circle cx="53" cy="14" r="1.3" fill="#ffd0e8" opacity=".8"/>
+  <circle cx="12" cy="49" r="1" fill="#ff9bcb" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#compelled_duel-vig)"/>
+</svg>

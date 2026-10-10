@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="elementalism-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#3a2410"/><stop offset=".5" stop-color="#1f1408"/><stop offset="1" stop-color="#100a04"/>
+    </radialGradient>
+    <radialGradient id="elementalism-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffb02e" stop-opacity=".4"/><stop offset="1" stop-color="#ffb02e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="elementalism-core" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#fff3d6"/><stop offset=".6" stop-color="#ffcf7a" stop-opacity=".8"/><stop offset="1" stop-color="#ffb02e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="elementalism-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#elementalism-bg)"/>
+  <rect width="64" height="64" fill="url(#elementalism-halo)"/>
+  <circle cx="32" cy="32" r="19" fill="#ffb02e" opacity=".14"/>
+  <path d="M32 32 L32 13 A19 19 0 0 1 51 32 Z" fill="#ff7a33"/>
+  <path d="M32 32 L51 32 A19 19 0 0 1 32 51 Z" fill="#5fb0d8"/>
+  <path d="M32 32 L32 51 A19 19 0 0 1 13 32 Z" fill="#8a6a3c"/>
+  <path d="M32 32 L13 32 A19 19 0 0 1 32 13 Z" fill="#cfe0ff"/>
+  <path d="M38 20 C42 22 43 26 41 29 C43 27 46 28 46 31 C43 26 42 22 38 20 Z" fill="#ffe08a" opacity=".8"/>
+  <path d="M40 40 C43 41 45 39 44.5 37 C46 39 44 42 41 42 Z" fill="#dff3ff" opacity=".7"/>
+  <circle cx="24" cy="42" r="2" fill="#c69a5a" opacity=".8"/>
+  <path d="M22 24 C26 22 30 23 27 26 C30 25 30 27 28 28" fill="none" stroke="#fff" stroke-width="1.1" stroke-linecap="round" opacity=".55"/>
+  <circle cx="32" cy="32" r="19" fill="none" stroke="#ffdca0" stroke-width="1.2" opacity=".5"/>
+  <circle cx="32" cy="32" r="4" fill="url(#elementalism-core)"/>
+  <circle cx="49" cy="18" r="1.4" fill="#ffe0a0" opacity=".85"/>
+  <circle cx="16" cy="47" r="1.1" fill="#ffcf7a" opacity=".7"/>
+  <circle cx="47" cy="47" r=".9" fill="#dff3ff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#elementalism-vig)"/>
+</svg>

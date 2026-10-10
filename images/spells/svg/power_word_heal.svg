@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="power_word_heal-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b0d24"/><stop offset="1" stop-color="#47163b"/>
+    </linearGradient>
+    <radialGradient id="power_word_heal-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <radialGradient id="power_word_heal-core" cx=".45" cy=".4" r=".9">
+      <stop offset="0" stop-color="#f4fff0"/><stop offset=".5" stop-color="#9ff29a"/><stop offset="1" stop-color="#2f9e4a"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#power_word_heal-bg)"/>
+  <rect width="64" height="64" fill="url(#power_word_heal-vig)"/>
+  <circle cx="32" cy="32" r="21" fill="#7ee23c" opacity=".13"/>
+  <circle cx="32" cy="32" r="17" fill="none" stroke="#c8ffb0" stroke-width="1.4" opacity=".45"/>
+  <circle cx="32" cy="32" r="12.5" fill="url(#power_word_heal-core)"/>
+  <path d="M28 21 H36 V28 H43 V36 H36 V43 H28 V36 H21 V28 H28 Z" fill="#f4fff0"/>
+  <path d="M14 32 C22 35 42 35 50 32" fill="none" stroke="#c8ffb0" stroke-width="1.2" opacity=".5"/>
+  <path d="M32 8 A24 24 0 0 1 47 14" fill="none" stroke="#e8ffd0" stroke-width="1.3" opacity=".55"/>
+  <ellipse cx="27" cy="26" rx="2.5" ry="1.8" fill="#fff" opacity=".55"/>
+  <circle cx="32" cy="9" r="1.6" fill="#e8ffd0"/>
+  <circle cx="13" cy="24" r="1.2" fill="#c8ffb0" opacity=".8"/>
+  <circle cx="50" cy="46" r="1.1" fill="#e8ffd0" opacity=".7"/>
+</svg>

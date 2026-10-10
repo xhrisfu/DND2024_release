@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="geas-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#4a1240"/><stop offset=".5" stop-color="#2a0c22"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="geas-halo" cx=".5" cy=".5" r=".52">
+      <stop offset="0" stop-color="#ff5ca8" stop-opacity=".5"/><stop offset="1" stop-color="#ff5ca8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="geas-ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe0ef"/><stop offset=".5" stop-color="#ff6faf"/><stop offset="1" stop-color="#8f1050"/>
+    </linearGradient>
+    <radialGradient id="geas-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#geas-bg)"/>
+  <rect width="64" height="64" fill="url(#geas-halo)"/>
+  <circle cx="32" cy="32" r="20" fill="#ff5ca8" opacity=".16"/>
+  <circle cx="32" cy="32" r="17.5" fill="none" stroke="url(#geas-ring)" stroke-width="4.6"/>
+  <circle cx="32" cy="32" r="19.6" fill="none" stroke="#ffd0e8" stroke-width="1" opacity=".4"/>
+  <path d="M32 20 L34.5 27 L41.5 27 L36 31 L38 38 L32 33.7 L26 38 L28 31 L22.5 27 L29.5 27 Z" fill="#ffe0ef" opacity=".95"/>
+  <path d="M32 20 L34.5 27 L41.5 27 L36 31 L38 38 L32 33.7 L26 38 L28 31 L22.5 27 L29.5 27 Z" fill="#ff5ca8" opacity=".25" transform="translate(0 1)"/>
+  <path d="M22 16 A17.5 17.5 0 0 1 44 15" fill="none" stroke="#fff" stroke-width="1.4" opacity=".55"/>
+  <path d="M18.5 19.5 A17.5 17.5 0 0 0 16 30" fill="none" stroke="#ffd0e8" stroke-width="2.6" stroke-linecap="round" opacity=".5"/>
+  <circle cx="32" cy="14.5" r="2.4" fill="#ffe0ef"/>
+  <circle cx="14.5" cy="32" r="1.9" fill="#ff9bcb"/>
+  <circle cx="49.5" cy="32" r="1.6" fill="#ff9bcb" opacity=".85"/>
+  <circle cx="32" cy="49.5" r="1.4" fill="#ffd0e8" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#geas-vig)"/>
+</svg>

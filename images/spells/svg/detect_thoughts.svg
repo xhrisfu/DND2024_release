@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="detect_thoughts-bg" cx=".46" cy=".4" r=".9">
+      <stop offset="0" stop-color="#3a2e0c"/><stop offset=".5" stop-color="#201806"/><stop offset="1" stop-color="#100b04"/>
+    </radialGradient>
+    <radialGradient id="detect_thoughts-halo" cx=".44" cy=".42" r=".5">
+      <stop offset="0" stop-color="#ffd54d" stop-opacity=".5"/><stop offset="1" stop-color="#ffd54d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="detect_thoughts-head" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0b45a"/><stop offset="1" stop-color="#7a5216"/>
+    </linearGradient>
+    <radialGradient id="detect_thoughts-brain" cx=".42" cy=".36" r=".8">
+      <stop offset="0" stop-color="#fffbe6"/><stop offset=".5" stop-color="#ffe694"/><stop offset="1" stop-color="#d99a1c"/>
+    </radialGradient>
+    <radialGradient id="detect_thoughts-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#detect_thoughts-bg)"/>
+  <rect width="64" height="64" fill="url(#detect_thoughts-halo)"/>
+  <path d="M40 55 L40 45 C47 41 49 30 44 22 C38 13 24 12 17 19 C11 25 12 34 17 39 L17 55 Z" fill="url(#detect_thoughts-head)" stroke="#ffe694" stroke-width="1.3"/>
+  <ellipse cx="29" cy="27" rx="9.5" ry="8.5" fill="url(#detect_thoughts-brain)"/>
+  <path d="M23 27 C25 23 27 30 30 26 C32 23 34 30 36 26 M24 31 C27 28 30 33 34 29" fill="none" stroke="#a9780f" stroke-width="1.3" stroke-linecap="round"/>
+  <ellipse cx="25.5" cy="23.5" rx="2.4" ry="1.5" fill="#fff" opacity=".5" transform="rotate(-20 25.5 23.5)"/>
+  <g fill="none" stroke="#ffe694" stroke-linecap="round">
+    <path d="M46 14 A16 16 0 0 1 46 42" stroke-width="1.8" opacity=".7"/>
+    <path d="M51 10 A22 22 0 0 1 51 46" stroke-width="1.6" opacity=".42"/>
+  </g>
+  <circle cx="57" cy="28" r="1.6" fill="#fffbe6" opacity=".9"/>
+  <circle cx="52" cy="52" r="1.1" fill="#ffd54d" opacity=".7"/>
+  <circle cx="14" cy="14" r="1.1" fill="#ffe694" opacity=".75"/>
+  <rect width="64" height="64" fill="url(#detect_thoughts-vig)"/>
+</svg>

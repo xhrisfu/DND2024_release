@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="heal-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#1d4a3f"/><stop offset=".5" stop-color="#0e2a2c"/><stop offset="1" stop-color="#07141a"/>
+    </radialGradient>
+    <radialGradient id="heal-halo" cx=".5" cy=".44" r=".55">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".6"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heal-orb" cx=".42" cy=".36" r=".9">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset=".45" stop-color="#ffe08a"/><stop offset=".8" stop-color="#f0b23c"/><stop offset="1" stop-color="#b87818"/>
+    </radialGradient>
+    <linearGradient id="heal-cross" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset="1" stop-color="#ffcf6a"/>
+    </linearGradient>
+    <radialGradient id="heal-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#heal-bg)"/>
+  <rect width="64" height="64" fill="url(#heal-halo)"/>
+  <g stroke="#fff3c4" stroke-width="1.2" stroke-linecap="round" opacity=".5">
+    <path d="M32 6 L32 12 M32 52 L32 58 M6 32 L12 32 M52 32 L58 32 M14 14 L18 18 M46 46 L50 50 M50 14 L46 18 M14 50 L18 46"/>
+  </g>
+  <circle cx="32" cy="32" r="16" fill="#ffe9a8" opacity=".22"/>
+  <circle cx="32" cy="32" r="13" fill="url(#heal-orb)"/>
+  <path d="M29 20 L35 20 L35 29 L44 29 L44 35 L35 35 L35 44 L29 44 L29 35 L20 35 L20 29 L29 29 Z" fill="url(#heal-cross)"/>
+  <path d="M30 21 L34 21 L34 30 L30 30 Z" fill="#fffdf0" opacity=".6"/>
+  <ellipse cx="27" cy="26" rx="2.6" ry="1.7" fill="#fff" opacity=".7" transform="rotate(-30 27 26)"/>
+  <path d="M22 40 A13 13 0 0 0 42 40 A15 8 0 0 1 22 40 Z" fill="#a86a14" opacity=".4"/>
+  <circle cx="48" cy="15" r="1.4" fill="#ffe9a8" opacity=".85"/>
+  <circle cx="15" cy="47" r="1.1" fill="#fff3c4" opacity=".7"/>
+  <circle cx="50" cy="46" r="1" fill="#ffd97a" opacity=".6"/>
+  <circle cx="16" cy="18" r=".9" fill="#ffe9a8" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#heal-vig)"/>
+</svg>

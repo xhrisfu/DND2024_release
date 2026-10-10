@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="inflict_wounds-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#1c1224"/><stop offset=".5" stop-color="#0e0812"/><stop offset="1" stop-color="#060309"/>
+    </radialGradient>
+    <radialGradient id="inflict_wounds-halo" cx=".5" cy=".46" r=".54">
+      <stop offset="0" stop-color="#9a3cff" stop-opacity=".5"/><stop offset="1" stop-color="#9a3cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="inflict_wounds-burst" cx=".46" cy=".42" r=".72">
+      <stop offset="0" stop-color="#f0d0ff"/><stop offset=".35" stop-color="#b46cff"/><stop offset=".7" stop-color="#6a1eb0"/><stop offset="1" stop-color="#2c0850"/>
+    </radialGradient>
+    <radialGradient id="inflict_wounds-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#inflict_wounds-bg)"/>
+  <rect width="64" height="64" fill="url(#inflict_wounds-halo)"/>
+  <path d="M32 6 L37 24 L54 15 L41 30 L59 32 L41 34 L54 49 L37 40 L32 58 L27 40 L10 49 L23 34 L5 32 L23 30 L10 15 L27 24 Z" fill="#9a3cff" opacity=".2"/>
+  <path d="M32 13 L35.4 26 L47 20 L37.6 30.6 L51 32 L37.6 33.4 L47 44 L35.4 38 L32 51 L28.6 38 L17 44 L26.4 33.4 L13 32 L26.4 30.6 L17 20 L28.6 26 Z" fill="url(#inflict_wounds-burst)"/>
+  <path d="M32 18 C34 26 34 38 32 46 C30 38 30 26 32 18 Z" fill="#2a0648" opacity=".7"/>
+  <path d="M28 27 C30 31 30 33 28 37 C33 34 35 30 32 26 Z" fill="#e6c0ff" opacity=".85"/>
+  <ellipse cx="29" cy="24" rx="2.4" ry="1.4" fill="#fff" opacity=".6" transform="rotate(-30 29 24)"/>
+  <circle cx="32" cy="32" r="2.2" fill="#f4e0ff"/>
+  <circle cx="49" cy="14" r="1.5" fill="#d0a0ff"/>
+  <circle cx="15" cy="46" r="1.2" fill="#b46cff" opacity=".85"/>
+  <circle cx="50" cy="46" r="1" fill="#e6c0ff" opacity=".7"/>
+  <circle cx="14" cy="18" r=".9" fill="#c090ff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#inflict_wounds-vig)"/>
+</svg>

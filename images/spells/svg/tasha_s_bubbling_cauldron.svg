@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="tasha_s_bubbling_cauldron-bg" cx=".5" cy=".38" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#170e30"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="tasha_s_bubbling_cauldron-halo" cx=".5" cy=".4" r=".5">
+      <stop offset="0" stop-color="#8ee63c" stop-opacity=".45"/><stop offset="1" stop-color="#8ee63c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tasha_s_bubbling_cauldron-brew" cx=".45" cy=".3" r=".9">
+      <stop offset="0" stop-color="#eaffce"/><stop offset=".4" stop-color="#9ff04c"/><stop offset=".78" stop-color="#4bb85c"/><stop offset="1" stop-color="#1c5a3a"/>
+    </radialGradient>
+    <linearGradient id="tasha_s_bubbling_cauldron-pot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4e4668"/><stop offset=".5" stop-color="#2a2438"/><stop offset="1" stop-color="#100c1a"/>
+    </linearGradient>
+    <radialGradient id="tasha_s_bubbling_cauldron-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#tasha_s_bubbling_cauldron-bg)"/>
+  <rect width="64" height="64" fill="url(#tasha_s_bubbling_cauldron-halo)"/>
+  <ellipse cx="32" cy="27" rx="18" ry="9" fill="#8ee63c" opacity=".18"/>
+  <path d="M15 31 C15 44 21 53 32 53 C43 53 49 44 49 31 Z" fill="url(#tasha_s_bubbling_cauldron-pot)"/>
+  <path d="M13 29.5 C13 33 20 35.5 32 35.5 C44 35.5 51 33 51 29.5 C51 26.5 44 24.5 32 24.5 C20 24.5 13 26.5 13 29.5 Z" fill="#3c3652"/>
+  <ellipse cx="32" cy="29" rx="16" ry="6" fill="url(#tasha_s_bubbling_cauldron-brew)"/>
+  <ellipse cx="27" cy="27" rx="6" ry="2.2" fill="#eaffce" opacity=".55"/>
+  <circle cx="26" cy="23.5" r="2.4" fill="#c4ff8a" opacity=".9"/>
+  <circle cx="34" cy="22.5" r="1.7" fill="#eaffce" opacity=".85"/>
+  <circle cx="39" cy="25.5" r="1.2" fill="#b0f26e" opacity=".8"/>
+  <circle cx="22" cy="25.5" r="1" fill="#eaffce" opacity=".8"/>
+  <path d="M12.5 29.5 C9.5 29.5 8.5 33 11 35" fill="none" stroke="#3c3652" stroke-width="3"/>
+  <path d="M51.5 29.5 C54.5 29.5 55.5 33 53 35" fill="none" stroke="#3c3652" stroke-width="3"/>
+  <path d="M20 53 L17 59 M32 53 L32 60 M44 53 L47 59" stroke="#2a2438" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M18 40 C19 45 23 49 28 51" fill="none" stroke="#fff" stroke-width="1.4" opacity=".14"/>
+  <circle cx="30" cy="14" r="1.4" fill="#d6ffb0" opacity=".85"/>
+  <circle cx="45" cy="19" r="1" fill="#8ee63c" opacity=".7"/>
+  <circle cx="16" cy="19" r=".8" fill="#b0f26e" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#tasha_s_bubbling_cauldron-vig)"/>
+</svg>

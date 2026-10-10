@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="wind_wall-bg" cx=".5" cy=".45" r=".9">
+      <stop offset="0" stop-color="#4a1808"/><stop offset=".5" stop-color="#280c05"/><stop offset="1" stop-color="#140503"/>
+    </radialGradient>
+    <radialGradient id="wind_wall-halo" cx=".5" cy=".45" r=".55">
+      <stop offset="0" stop-color="#ffc8a0" stop-opacity=".42"/><stop offset="1" stop-color="#ff7a33" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wind_wall-panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe0c8" stop-opacity=".4"/><stop offset=".5" stop-color="#e8a878" stop-opacity=".18"/><stop offset="1" stop-color="#c26a34" stop-opacity=".3"/>
+    </linearGradient>
+    <radialGradient id="wind_wall-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#wind_wall-bg)"/>
+  <rect width="64" height="64" fill="url(#wind_wall-halo)"/>
+  <path d="M14 8 C10 20 22 24 12 34 C22 30 26 40 16 50 C24 46 28 54 22 58" fill="url(#wind_wall-panel)" stroke="none"/>
+  <path d="M50 8 C54 20 42 24 52 34 C42 30 38 40 48 50 C40 46 36 54 42 58" fill="url(#wind_wall-panel)" stroke="none"/>
+  <path d="M8 15 C24 11 40 11 56 15" stroke="#ffe0c8" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".8"/>
+  <path d="M8 15 C22 18 24 22 22 26 C20.6 28.8 16.6 28.6 15.6 26 C14.9 24 16.5 22.4 18.5 22.8" fill="none" stroke="#ffe0c8" stroke-width="1.8" stroke-linecap="round" opacity=".7"/>
+  <path d="M6 27 C22 23 42 23 58 27" stroke="#ffcaa8" stroke-width="2.6" fill="none" stroke-linecap="round" opacity=".72"/>
+  <path d="M58 27 C44 30 42 34 44 38 C45.4 40.8 49.4 40.6 50.4 38 C51.1 36 49.5 34.4 47.5 34.8" fill="none" stroke="#ffcaa8" stroke-width="1.8" stroke-linecap="round" opacity=".62"/>
+  <path d="M8 39 C24 35 40 35 56 39" stroke="#ffe0c8" stroke-width="2.2" fill="none" stroke-linecap="round" opacity=".65"/>
+  <path d="M10 50 C26 46 38 50 54 46" stroke="#ffcaa8" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".52"/>
+  <circle cx="30" cy="20" r="1.2" fill="#fff2e6" opacity=".8"/>
+  <circle cx="40" cy="44" r="1" fill="#ffcaa8" opacity=".7"/>
+  <circle cx="18" cy="45" r=".9" fill="#ffe0c8" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#wind_wall-vig)"/>
+</svg>

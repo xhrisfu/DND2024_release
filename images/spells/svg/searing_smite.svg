@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="searing_smite-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b0d08"/><stop offset="1" stop-color="#471810"/>
+    </linearGradient>
+    <radialGradient id="searing_smite-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="searing_smite-blade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff6d8"/><stop offset=".55" stop-color="#ff8a3c"/><stop offset="1" stop-color="#d43a10"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#searing_smite-bg)"/>
+  <rect width="64" height="64" fill="url(#searing_smite-vig)"/>
+  <ellipse cx="33" cy="31" rx="22" ry="10" fill="#ff7a33" opacity=".15" transform="rotate(45 33 31)"/>
+  <polygon points="17.5,13.5 22.5,10.5 50.5,45.5 51.5,51.5 46.5,48.5" fill="url(#searing_smite-blade)"/>
+  <line x1="21" y1="13.5" x2="48.5" y2="48" stroke="#fff" stroke-width="1.2" opacity=".7"/>
+  <line x1="14" y1="19.5" x2="24.5" y2="9" stroke="#c9822e" stroke-width="2.6"/>
+  <line x1="17.5" y1="12.5" x2="10.5" y2="5.5" stroke="#6e4a20" stroke-width="3"/>
+  <circle cx="9.5" cy="4.5" r="1.9" fill="#d9a94e"/>
+  <path d="M26 24 C25 19.5 26.5 16.5 29.5 15 C28.5 18 29 20.5 31 22.5 C29.3 22.2 27.5 22.8 26 24 Z" fill="#ffc23d" opacity=".9"/>
+  <path d="M34 33 C33 28 34.5 24.5 38 23 C36.8 26.5 37.3 29.3 39.5 31.5 C37.6 31 35.7 31.7 34 33 Z" fill="#ff8a3c" opacity=".9"/>
+  <path d="M42 42 C41.2 38 42.5 35 45.5 33.5 C44.5 36.5 45 39 47 41 C45.3 40.6 43.6 41.1 42 42 Z" fill="#ff7a1f" opacity=".85"/>
+  <path d="M23 17 C32 27 41 38 49 49" fill="none" stroke="#ff9b2f" stroke-width="1.4" opacity=".5"/>
+  <circle cx="30" cy="42" r="1.2" fill="#ffc23d"/>
+  <circle cx="52" cy="24" r="1" fill="#ffe08a" opacity=".8"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="spare_the_dying-bg" cx=".5" cy=".38" r=".9">
+      <stop offset="0" stop-color="#16301a"/><stop offset=".5" stop-color="#0b1a0d"/><stop offset="1" stop-color="#060d05"/>
+    </radialGradient>
+    <radialGradient id="spare_the_dying-halo" cx=".5" cy=".42" r=".54">
+      <stop offset="0" stop-color="#a8ff70" stop-opacity=".55"/><stop offset="1" stop-color="#a8ff70" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spare_the_dying-orb" cx=".42" cy=".36" r=".95">
+      <stop offset="0" stop-color="#f4fff0"/><stop offset=".45" stop-color="#c0ffa0"/><stop offset=".8" stop-color="#6ac838"/><stop offset="1" stop-color="#2c6a18"/>
+    </radialGradient>
+    <radialGradient id="spare_the_dying-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#spare_the_dying-bg)"/>
+  <rect width="64" height="64" fill="url(#spare_the_dying-halo)"/>
+  <path d="M4 34 L20 34 L24 34 L27 24 L31 44 L34 30 L37 37 L40 34 L60 34" fill="none" stroke="#8ef05a" stroke-width="1.4" opacity=".28"/>
+  <path d="M4 34 L20 34 L24 34 L27 24 L31 44 L34 30 L37 37 L40 34 L60 34" fill="none" stroke="#c0ffa0" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity=".85"/>
+  <circle cx="32" cy="34" r="11" fill="#a8ff70" opacity=".2"/>
+  <circle cx="32" cy="34" r="8.5" fill="url(#spare_the_dying-orb)"/>
+  <path d="M32 28 C29 30.5 27 33 28.5 36.5 C25 34.5 24.5 30 27.5 27.5 C30 25.5 31 26.5 32 28 Z" fill="#e6ffcc" opacity=".85"/>
+  <ellipse cx="28.5" cy="31" rx="2.3" ry="1.5" fill="#fff" opacity=".7" transform="rotate(-30 28.5 31)"/>
+  <path d="M25 40 A8.5 8.5 0 0 0 39 40 A10 5 0 0 1 25 40 Z" fill="#2c6a18" opacity=".4"/>
+  <circle cx="14" cy="24" r="1.4" fill="#c0ffa0" opacity=".85"/>
+  <circle cx="50" cy="22" r="1.1" fill="#a8ff70" opacity=".8"/>
+  <circle cx="48" cy="44" r=".9" fill="#e6ffcc" opacity=".7"/>
+  <circle cx="16" cy="44" r=".8" fill="#8ef05a" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#spare_the_dying-vig)"/>
+</svg>

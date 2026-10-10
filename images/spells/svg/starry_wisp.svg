@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="starry_wisp-bg" cx=".56" cy=".3" r=".92">
+      <stop offset="0" stop-color="#4a3810"/><stop offset=".5" stop-color="#241a08"/><stop offset="1" stop-color="#0e0c14"/>
+    </radialGradient>
+    <radialGradient id="starry_wisp-halo" cx=".64" cy=".28" r=".5">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".7"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="starry_wisp-trail" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity="0"/><stop offset="1" stop-color="#fffdf2" stop-opacity=".95"/>
+    </linearGradient>
+    <radialGradient id="starry_wisp-star" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fffdf2"/><stop offset=".5" stop-color="#fff0b8"/><stop offset="1" stop-color="#ffce55"/>
+    </radialGradient>
+    <radialGradient id="starry_wisp-vig" cx=".5" cy=".45" r=".74">
+      <stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#starry_wisp-bg)"/>
+  <rect width="64" height="64" fill="url(#starry_wisp-halo)"/>
+  <circle cx="44" cy="20" r="14" fill="#ffe9a8" opacity=".18"/>
+  <path d="M10 55 C20 48 30 39 39 26" fill="none" stroke="url(#starry_wisp-trail)" stroke-width="4.5" stroke-linecap="round" opacity=".4"/>
+  <path d="M10 55 C20.5 48 30.5 39 39.5 25.5" fill="none" stroke="url(#starry_wisp-trail)" stroke-width="1.8" stroke-linecap="round" opacity=".95"/>
+  <polygon points="44,6 46.6,16.8 57,20 46.6,23.2 44,34 41.4,23.2 31,20 41.4,16.8" fill="url(#starry_wisp-star)"/>
+  <line x1="38.5" y1="14.5" x2="49.5" y2="25.5" stroke="#fffdf2" stroke-width="1" opacity=".55"/>
+  <line x1="49.5" y1="14.5" x2="38.5" y2="25.5" stroke="#fffdf2" stroke-width="1" opacity=".55"/>
+  <circle cx="44" cy="20" r="2.6" fill="#fff"/>
+  <polygon points="24,37 25.2,40.4 28.5,41.5 25.2,42.6 24,46 22.8,42.6 19.5,41.5 22.8,40.4" fill="#fff2c8" opacity=".85"/>
+  <circle cx="16" cy="50" r="1.4" fill="#ffe9a8" opacity=".85"/>
+  <circle cx="52" cy="34" r="1" fill="#fff0b8" opacity=".75"/>
+  <circle cx="33" cy="12" r=".9" fill="#fffdf2" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#starry_wisp-vig)"/>
+</svg>
