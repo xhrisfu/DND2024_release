@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="burning_hands-bg" cx=".5" cy=".58" r=".9">
+      <stop offset="0" stop-color="#5c2109"/><stop offset=".5" stop-color="#2c0c05"/><stop offset="1" stop-color="#140503"/>
+    </radialGradient>
+    <radialGradient id="burning_hands-halo" cx=".5" cy=".38" r=".6">
+      <stop offset="0" stop-color="#ff8a2c" stop-opacity=".6"/><stop offset="1" stop-color="#ff8a2c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="burning_hands-fl" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#c22c05"/><stop offset=".4" stop-color="#ff7a1e"/><stop offset=".75" stop-color="#ffce55"/><stop offset="1" stop-color="#fff7d6"/>
+    </linearGradient>
+    <linearGradient id="burning_hands-palm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a83a12"/><stop offset="1" stop-color="#5c1c06"/>
+    </linearGradient>
+    <radialGradient id="burning_hands-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#burning_hands-bg)"/>
+  <rect width="64" height="64" fill="url(#burning_hands-halo)"/>
+  <path d="M32 60 C18 54 10 40 12 24 C16 34 20 30 22 22 C25 32 28 30 29 21 C31 31 33 31 35 21 C36 30 39 32 42 22 C44 30 48 34 52 24 C54 40 46 54 32 60 Z" fill="#ff7a1e" opacity=".25"/>
+  <path d="M32 57 C21 52 15 41 16.5 28 C20 36 23.5 33 25 25.5 C27.5 34 30 33 31 24.5 C32.5 33 34.5 33 36 24.5 C37.5 33 40.5 35 42.5 27.5 C44 33 48 37 51 27 C52.5 41 44 52 32 57 Z" fill="url(#burning_hands-fl)"/>
+  <path d="M32 52 C26 48 23 41 24 33 C26 38 28 37 29 32 C30.5 38 33.5 38 35 32 C36 37 38 38 40 33 C41 41 38 48 32 52 Z" fill="#ffe89a" opacity=".8"/>
+  <ellipse cx="28" cy="34" rx="1.7" ry="4.5" fill="#fff" opacity=".55"/>
+  <path d="M22 62 C22 55 26 51 32 51 C38 51 42 55 42 62 Z" fill="url(#burning_hands-palm)" stroke="#ff8a3c" stroke-width="1"/>
+  <path d="M28 62 L28 54 M32 62 L32 52.5 M36 62 L36 54" stroke="#c25518" stroke-width="1" opacity=".7"/>
+  <circle cx="14" cy="16" r="1.4" fill="#ffce55" opacity=".9"/>
+  <circle cx="50" cy="15" r="1.2" fill="#ff9b3d" opacity=".85"/>
+  <circle cx="32" cy="10" r="1" fill="#ffe0a0" opacity=".8"/>
+  <circle cx="46" cy="43" r=".9" fill="#ffab4d" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#burning_hands-vig)"/>
+</svg>

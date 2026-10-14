@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="conjure_animals-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#170e2f"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="conjure_animals-halo" cx=".5" cy=".44" r=".52">
+      <stop offset="0" stop-color="#9d5cff" stop-opacity=".5"/><stop offset="1" stop-color="#9d5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="conjure_animals-beast" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0ccff"/><stop offset=".45" stop-color="#a970ff"/><stop offset="1" stop-color="#5a2ba0"/>
+    </linearGradient>
+    <radialGradient id="conjure_animals-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#conjure_animals-bg)"/>
+  <rect width="64" height="64" fill="url(#conjure_animals-halo)"/>
+  <path d="M32 54 C20 46 15 34 20 22 C22 27 26 28 28 25 C27 18 31 13 33 10 C34 15 38 17 40 15 C40 24 46 27 46 36 C46 46 40 50 32 54 Z" fill="#9d5cff" opacity=".22"/>
+  <path d="M32 53 C22 46 17 35 21 24 C23 28 27 29 28.5 26 C27.5 19 31 15 33 12 C34 16 37.5 18 39.5 16 C39.5 25 44.5 28 44.5 36 C44.5 45 39 49 32 53 Z" fill="url(#conjure_animals-beast)"/>
+  <path d="M25 27 C22 30 22 35 25 39" fill="none" stroke="#e0ccff" stroke-width="1.4" opacity=".5"/>
+  <path d="M39 28 C42 31 42 36 39 40" fill="none" stroke="#5a2ba0" stroke-width="1.4" opacity=".5"/>
+  <ellipse cx="27.5" cy="24" rx="1.6" ry="2.2" fill="#fff" opacity=".9"/>
+  <ellipse cx="36.5" cy="24" rx="1.6" ry="2.2" fill="#fff" opacity=".9"/>
+  <path d="M30 33 C31 35 33 35 34 33" fill="none" stroke="#3a1a70" stroke-width="1.3" stroke-linecap="round" opacity=".7"/>
+  <ellipse cx="26" cy="16" rx="2.6" ry="1.4" fill="#fff" opacity=".4" transform="rotate(-40 26 16)"/>
+  <circle cx="15" cy="20" r="1.4" fill="#c8a0ff" opacity=".8"/>
+  <circle cx="49" cy="26" r="1.1" fill="#e0ccff" opacity=".7"/>
+  <circle cx="46" cy="47" r=".9" fill="#a970ff" opacity=".6"/>
+  <circle cx="18" cy="45" r=".8" fill="#c8a0ff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#conjure_animals-vig)"/>
+</svg>

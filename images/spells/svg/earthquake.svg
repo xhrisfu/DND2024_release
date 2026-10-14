@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="earthquake-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#231607"/><stop offset="1" stop-color="#3a2710"/>
+    </linearGradient>
+    <radialGradient id="earthquake-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="earthquake-ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a5a30"/><stop offset="1" stop-color="#3d2c15"/>
+    </linearGradient>
+    <linearGradient id="earthquake-crack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd54d"/><stop offset="1" stop-color="#c94a10"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#earthquake-bg)"/>
+  <rect width="64" height="64" fill="url(#earthquake-vig)"/>
+  <path d="M4 26 L60 22 L58 58 L6 58 Z" fill="url(#earthquake-ground)"/>
+  <path d="M4 26 L60 22" stroke="#a67c40" stroke-width="1.4" opacity=".6"/>
+  <path d="M30 22 L26 34 L34 40 L28 50 L33 58 L36 58 L31 49 L38 39 L30 34 L34 24 Z" fill="url(#earthquake-crack)"/>
+  <path d="M26 34 L16 38 L10 34 M34 40 L46 42 L52 36 M28 50 L18 52" fill="none" stroke="url(#earthquake-crack)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M30 22 L31 49" stroke="#fff3d6" stroke-width=".8" opacity=".6"/>
+  <path d="M14 30 L20 32 M44 28 L40 31 M48 50 L44 48" stroke="#5a4020" stroke-width="1" opacity=".6"/>
+  <circle cx="16" cy="18" r="1.6" fill="#c9a24a" opacity=".7"/>
+  <circle cx="48" cy="16" r="1.2" fill="#a67c40" opacity=".7"/>
+  <circle cx="52" cy="48" r="1.3" fill="#ffb45a" opacity=".7"/>
+</svg>

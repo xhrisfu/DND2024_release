@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="locate_object-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241c08"/><stop offset="1" stop-color="#3d3010"/>
+    </linearGradient>
+    <radialGradient id="locate_object-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <radialGradient id="locate_object-face" cx=".42" cy=".36" r=".8">
+      <stop offset="0" stop-color="#fff3c4"/><stop offset=".6" stop-color="#f4c534"/><stop offset="1" stop-color="#9a7414"/>
+    </radialGradient>
+    <linearGradient id="locate_object-needle" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe27a"/><stop offset="1" stop-color="#c96a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#locate_object-bg)"/>
+  <rect width="64" height="64" fill="url(#locate_object-vig)"/>
+  <circle cx="32" cy="33" r="23" fill="#ffd54d" opacity=".13"/>
+  <circle cx="32" cy="33" r="19.5" fill="url(#locate_object-face)"/>
+  <circle cx="32" cy="33" r="19.5" fill="none" stroke="#7a5c12" stroke-width="1.6"/>
+  <circle cx="32" cy="33" r="15.5" fill="none" stroke="#8a6a18" stroke-width="1" opacity=".7"/>
+  <path d="M32 15 l0 4 M50 33 l-4 0 M32 51 l0-4 M14 33 l4 0" stroke="#5c4610" stroke-width="1.4" stroke-linecap="round"/>
+  <polygon points="32,33 27,38 32,17 37,38" fill="url(#locate_object-needle)"/>
+  <polygon points="32,33 28,30 32,49 36,30" fill="#8a5010" opacity=".85"/>
+  <circle cx="32" cy="33" r="2.4" fill="#fff3c4"/>
+  <path d="M50 15 l1.4 3 3 1.4 -3 1.4 -1.4 3 -1.4-3 -3-1.4 3-1.4 Z" fill="#fff3c4" opacity=".9"/>
+  <circle cx="15" cy="20" r="1.1" fill="#ffe27a" opacity=".8"/>
+  <circle cx="48" cy="49" r="1" fill="#ffd54d" opacity=".7"/>
+</svg>

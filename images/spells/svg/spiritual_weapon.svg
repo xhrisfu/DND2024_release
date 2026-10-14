@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="spiritual_weapon-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#150e2e"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="spiritual_weapon-halo" cx=".5" cy=".42" r=".5">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".5"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spiritual_weapon-head" cx=".4" cy=".35" r=".85">
+      <stop offset="0" stop-color="#f0eaff"/><stop offset=".45" stop-color="#c8b0ff"/><stop offset=".8" stop-color="#9160e8"/><stop offset="1" stop-color="#5c30a8"/>
+    </radialGradient>
+    <linearGradient id="spiritual_weapon-haft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8c8ff"/><stop offset="1" stop-color="#7a5cc8" stop-opacity=".4"/>
+    </linearGradient>
+    <radialGradient id="spiritual_weapon-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#spiritual_weapon-bg)"/>
+  <rect width="64" height="64" fill="url(#spiritual_weapon-halo)"/>
+  <ellipse cx="32" cy="52" rx="15" ry="4.5" fill="#8a5cff" opacity=".16"/>
+  <circle cx="32" cy="20" r="15" fill="#b98cff" opacity=".18"/>
+  <path d="M32 43 L34 52 L30 52 Z" fill="url(#spiritual_weapon-haft)"/>
+  <polygon points="32,6 36,10 32,14 28,10" fill="#c8b0ff" opacity=".9"/>
+  <polygon points="24,20 28,16 28,24" fill="#a884f0" opacity=".85"/>
+  <polygon points="40,20 36,16 36,24" fill="#a884f0" opacity=".85"/>
+  <polygon points="32,10 44,20 32,32 20,20" fill="url(#spiritual_weapon-head)"/>
+  <polygon points="32,10 44,20 32,20" fill="#e0d4ff" opacity=".35"/>
+  <ellipse cx="27.5" cy="16.5" rx="2.4" ry="1.5" fill="#fff" opacity=".7" transform="rotate(-38 27.5 16.5)"/>
+  <path d="M22 24 A13 13 0 0 0 42 24" fill="none" stroke="#4a2a90" stroke-width="1.4" opacity=".5"/>
+  <circle cx="32" cy="20" r="2" fill="#fff" opacity=".85"/>
+  <circle cx="46" cy="14" r="1.4" fill="#d8c8ff" opacity=".85"/>
+  <circle cx="17" cy="30" r="1.1" fill="#b98cff" opacity=".75"/>
+  <circle cx="44" cy="38" r="1" fill="#c8b0ff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#spiritual_weapon-vig)"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="speak_with_animals-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#3a2e0c"/><stop offset=".5" stop-color="#201806"/><stop offset="1" stop-color="#100b04"/>
+    </radialGradient>
+    <radialGradient id="speak_with_animals-halo" cx=".5" cy=".44" r=".5">
+      <stop offset="0" stop-color="#ffd54d" stop-opacity=".5"/><stop offset="1" stop-color="#ffd54d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="speak_with_animals-bub" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff4d0"/><stop offset=".5" stop-color="#f0d78a"/><stop offset="1" stop-color="#c19a34"/>
+    </linearGradient>
+    <radialGradient id="speak_with_animals-pad" cx=".5" cy=".38" r=".7">
+      <stop offset="0" stop-color="#e0a82e"/><stop offset="1" stop-color="#8a5f1c"/>
+    </radialGradient>
+    <radialGradient id="speak_with_animals-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#speak_with_animals-bg)"/>
+  <rect width="64" height="64" fill="url(#speak_with_animals-halo)"/>
+  <path d="M13 12 H51 A6 6 0 0 1 57 18 V33 A6 6 0 0 1 51 39 H30 L20 49 L21.5 39 H13 A6 6 0 0 1 7 33 V18 A6 6 0 0 1 13 12 Z" fill="#ffd54d" opacity=".18"/>
+  <path d="M14 13 H50 A5.5 5.5 0 0 1 55.5 18.5 V32.5 A5.5 5.5 0 0 1 50 38 H29.5 L21 46.5 L22 38 H14 A5.5 5.5 0 0 1 8.5 32.5 V18.5 A5.5 5.5 0 0 1 14 13 Z" fill="url(#speak_with_animals-bub)"/>
+  <ellipse cx="32" cy="29" rx="7.5" ry="6" fill="url(#speak_with_animals-pad)"/>
+  <ellipse cx="24.5" cy="20.5" rx="2.6" ry="3.8" fill="url(#speak_with_animals-pad)"/>
+  <ellipse cx="32" cy="18" rx="2.6" ry="4" fill="url(#speak_with_animals-pad)"/>
+  <ellipse cx="39.5" cy="20.5" rx="2.6" ry="3.8" fill="url(#speak_with_animals-pad)"/>
+  <ellipse cx="29" cy="26.5" rx="2" ry="1.3" fill="#ffe694" opacity=".5"/>
+  <circle cx="49" cy="47" r="2.4" fill="#ffd54d" opacity=".5"/>
+  <circle cx="55" cy="53" r="1.4" fill="#ffe694" opacity=".45"/>
+  <circle cx="50" cy="16" r="1.3" fill="#fff4d0" opacity=".85"/>
+  <circle cx="13" cy="46" r="1" fill="#ffd54d" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#speak_with_animals-vig)"/>
+</svg>

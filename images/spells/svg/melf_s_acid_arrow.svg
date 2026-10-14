@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="melf_s_acid_arrow-bg" cx=".42" cy=".42" r=".9">
+      <stop offset="0" stop-color="#23401a"/><stop offset=".5" stop-color="#122009"/><stop offset="1" stop-color="#0a1508"/>
+    </radialGradient>
+    <radialGradient id="melf_s_acid_arrow-halo" cx=".72" cy=".22" r=".55">
+      <stop offset="0" stop-color="#c8ff5c" stop-opacity=".5"/><stop offset="1" stop-color="#c8ff5c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="melf_s_acid_arrow-shaft" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#6f9c1e"/><stop offset=".5" stop-color="#b8e03c"/><stop offset="1" stop-color="#e6ff8a"/>
+    </linearGradient>
+    <radialGradient id="melf_s_acid_arrow-tip" cx=".4" cy=".4" r=".8">
+      <stop offset="0" stop-color="#f4ffcf"/><stop offset=".5" stop-color="#d0ff4d"/><stop offset="1" stop-color="#7ea81e"/>
+    </radialGradient>
+    <radialGradient id="melf_s_acid_arrow-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#melf_s_acid_arrow-bg)"/>
+  <rect width="64" height="64" fill="url(#melf_s_acid_arrow-halo)"/>
+  <path d="M10 54 L52 12" stroke="#b8e03c" stroke-width="8" opacity=".14" stroke-linecap="round"/>
+  <path d="M13 51 L47 17" stroke="url(#melf_s_acid_arrow-shaft)" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M13.5 50.5 L46.5 17.5" stroke="#f4ffcf" stroke-width="1" opacity=".55"/>
+  <polygon points="55,9 44,13.5 50.5,20" fill="url(#melf_s_acid_arrow-tip)"/>
+  <polygon points="53,11 47,13.5 50,16.5" fill="#f4ffcf" opacity=".7"/>
+  <polygon points="13,51 6.5,49 11,44.5" fill="#8fbf2f"/>
+  <polygon points="18.5,45.5 12.5,43.5 17,39" fill="#7ea81e" opacity=".85"/>
+  <path d="M29 37 C30.6 39.9 31.3 41.8 29 43 C26.7 41.8 27.4 39.9 29 37 Z" fill="#b8e03c"/>
+  <path d="M40 27 C41.4 29.4 42 31 40 32 C38 31 38.6 29.4 40 27 Z" fill="#d0ff4d" opacity=".9"/>
+  <path d="M21 46 C22.2 48 22.7 49.4 21 50.2 C19.3 49.4 19.8 48 21 46 Z" fill="#8fbf2f" opacity=".85"/>
+  <circle cx="56" cy="22" r="1.3" fill="#e6ff8a" opacity=".85"/>
+  <circle cx="44" cy="7" r="1" fill="#b8e03c" opacity=".7"/>
+  <circle cx="22" cy="54" r=".9" fill="#c8ff5c" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#melf_s_acid_arrow-vig)"/>
+</svg>

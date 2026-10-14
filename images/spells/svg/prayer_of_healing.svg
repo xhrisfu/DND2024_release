@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="prayer_of_healing-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#1d4a3f"/><stop offset=".5" stop-color="#0e2a2c"/><stop offset="1" stop-color="#07141a"/>
+    </radialGradient>
+    <radialGradient id="prayer_of_healing-halo" cx=".5" cy=".3" r=".6">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".6"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="prayer_of_healing-hands" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9c0"/><stop offset=".5" stop-color="#f0c884"/><stop offset="1" stop-color="#9a6a34"/>
+    </linearGradient>
+    <radialGradient id="prayer_of_healing-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#prayer_of_healing-bg)"/>
+  <rect width="64" height="64" fill="url(#prayer_of_healing-halo)"/>
+  <g stroke="#ffe9a8" stroke-linecap="round" opacity=".6">
+    <line x1="32" y1="7" x2="32" y2="15" stroke-width="1.6"/>
+    <line x1="22" y1="10" x2="25" y2="17" stroke-width="1.4"/>
+    <line x1="42" y1="10" x2="39" y2="17" stroke-width="1.4"/>
+    <line x1="14" y1="17" x2="19" y2="22" stroke-width="1.2"/>
+    <line x1="50" y1="17" x2="45" y2="22" stroke-width="1.2"/>
+  </g>
+  <circle cx="32" cy="21" r="10" fill="#ffe9a8" opacity=".2"/>
+  <path d="M32 15 l1.2 3.4 3.4 1.2 -3.4 1.2 -1.2 3.4 -1.2-3.4 -3.4-1.2 3.4-1.2 Z" fill="#fff6d8"/>
+  <path d="M30 52 C22 47 18 40 20 32 C21 28 24.5 27.5 26 31 C27 33.5 27.5 39 29 43 L29 30 C29 27 32 27 32 30 L32 42" fill="url(#prayer_of_healing-hands)" stroke="#8a5a2c" stroke-width=".8" stroke-linejoin="round"/>
+  <path d="M34 52 C42 47 46 40 44 32 C43 28 39.5 27.5 38 31 C37 33.5 36.5 39 35 43 L35 30 C35 27 32 27 32 30 L32 42" fill="url(#prayer_of_healing-hands)" stroke="#8a5a2c" stroke-width=".8" stroke-linejoin="round"/>
+  <path d="M32 30 V52" stroke="#7a4e22" stroke-width="1" opacity=".5"/>
+  <path d="M26 33 C25 38 26 44 28 48" fill="none" stroke="#ffe9c0" stroke-width="1" opacity=".5"/>
+  <circle cx="17" cy="30" r="1.4" fill="#ffe9a8" opacity=".85"/>
+  <circle cx="47" cy="30" r="1.1" fill="#fff3c4" opacity=".7"/>
+  <circle cx="43" cy="46" r=".9" fill="#ffd97a" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#prayer_of_healing-vig)"/>
+</svg>

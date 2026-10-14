@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="prismatic_wall-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#160d2c"/><stop offset="1" stop-color="#080512"/>
+    </radialGradient>
+    <radialGradient id="prismatic_wall-halo" cx=".5" cy=".46" r=".55">
+      <stop offset="0" stop-color="#c8a0ff" stop-opacity=".45"/><stop offset="1" stop-color="#c8a0ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="prismatic_wall-sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".3" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="prismatic_wall-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#prismatic_wall-bg)"/>
+  <rect width="64" height="64" fill="url(#prismatic_wall-halo)"/>
+  <rect x="9" y="6" width="46" height="52" rx="2" fill="#fff" opacity=".08"/>
+  <g>
+    <rect x="13" y="8" width="5.4" height="48" fill="#ff4444"/>
+    <rect x="18.4" y="8" width="5.4" height="48" fill="#ff9a33"/>
+    <rect x="23.8" y="8" width="5.4" height="48" fill="#ffe94d"/>
+    <rect x="29.2" y="8" width="5.4" height="48" fill="#5fd15f"/>
+    <rect x="34.6" y="8" width="5.4" height="48" fill="#4da6ff"/>
+    <rect x="40" y="8" width="5.4" height="48" fill="#7a6bff"/>
+    <rect x="45.4" y="8" width="5.6" height="48" fill="#c46bff"/>
+  </g>
+  <rect x="13" y="8" width="38" height="48" fill="url(#prismatic_wall-sheen)"/>
+  <rect x="13" y="8" width="38" height="48" fill="none" stroke="#eaf0ff" stroke-width="1.5" opacity=".85"/>
+  <rect x="15" y="10" width="34" height="4" fill="#fff" opacity=".4"/>
+  <line x1="13" y1="32" x2="51" y2="32" stroke="#fff" stroke-width="1" opacity=".25"/>
+  <circle cx="8" cy="14" r="1.4" fill="#ff9a33" opacity=".9"/>
+  <circle cx="56" cy="26" r="1.2" fill="#4da6ff" opacity=".9"/>
+  <circle cx="7" cy="44" r="1.1" fill="#c46bff" opacity=".85"/>
+  <circle cx="57" cy="48" r="1" fill="#5fd15f" opacity=".85"/>
+  <circle cx="8" cy="30" r=".8" fill="#ffe94d" opacity=".75"/>
+  <rect width="64" height="64" fill="url(#prismatic_wall-vig)"/>
+</svg>

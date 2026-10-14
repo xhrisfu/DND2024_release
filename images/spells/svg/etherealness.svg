@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="etherealness-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#170e30"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="etherealness-halo" cx=".44" cy=".4" r=".5">
+      <stop offset="0" stop-color="#b8a0ff" stop-opacity=".5"/><stop offset="1" stop-color="#b8a0ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="etherealness-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/><stop offset=".45" stop-color="#c8b8ff" stop-opacity=".8"/><stop offset="1" stop-color="#9d7cff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="etherealness-head" cx=".42" cy=".35" r=".8">
+      <stop offset="0" stop-color="#f4f6ff"/><stop offset=".6" stop-color="#d4e0ff"/><stop offset="1" stop-color="#a8b8ee"/>
+    </radialGradient>
+    <radialGradient id="etherealness-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#etherealness-bg)"/>
+  <rect width="64" height="64" fill="url(#etherealness-halo)"/>
+  <path d="M12 5 C18 17 8 29 14 41 C18 51 12 57 14 62" fill="none" stroke="#8f78d8" stroke-width="1.5" opacity=".3"/>
+  <path d="M53 3 C47 15 57 27 51 39 C47 49 53 57 51 62" fill="none" stroke="#8f78d8" stroke-width="1.5" opacity=".26"/>
+  <ellipse cx="29" cy="32" rx="15" ry="20" fill="#c8b8ff" opacity=".18"/>
+  <path d="M29 25 C21 29 17 38 17.5 52 L40 52 C41.5 43 39.5 32 32 27 Z" fill="url(#etherealness-body)"/>
+  <path d="M22 40 C31 37 40 40 49 36" fill="none" stroke="#efe6ff" stroke-width="1.2" opacity=".4"/>
+  <circle cx="27" cy="20" r="7" fill="url(#etherealness-head)"/>
+  <path d="M20.5 22 C20 26 22 30 25 33" fill="none" stroke="#eef2ff" stroke-width="1.6" stroke-linecap="round" opacity=".4"/>
+  <ellipse cx="24.5" cy="17.5" rx="2.2" ry="1.5" fill="#fff" opacity=".7" transform="rotate(-22 24.5 17.5)"/>
+  <circle cx="42" cy="34" r="3" fill="#b8a0ff" opacity=".65"/>
+  <circle cx="47" cy="27" r="2.2" fill="#c8b0ff" opacity=".55"/>
+  <circle cx="50.5" cy="37" r="1.7" fill="#cfc0ff" opacity=".45"/>
+  <circle cx="45" cy="45" r="1.4" fill="#b8a0ff" opacity=".4"/>
+  <circle cx="52.5" cy="21" r="1.2" fill="#d4c8ff" opacity=".5"/>
+  <circle cx="14" cy="30" r="1" fill="#c8b8ff" opacity=".5"/>
+  <rect width="64" height="64" fill="url(#etherealness-vig)"/>
+</svg>

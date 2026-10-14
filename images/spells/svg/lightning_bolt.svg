@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="lightning_bolt-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b0d08"/><stop offset="1" stop-color="#471810"/>
+    </linearGradient>
+    <radialGradient id="lightning_bolt-vig" cx=".5" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
+    </radialGradient>
+    <linearGradient id="lightning_bolt-bolt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffde0"/><stop offset=".5" stop-color="#ffe94d"/><stop offset="1" stop-color="#8fb8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#lightning_bolt-bg)"/>
+  <rect width="64" height="64" fill="url(#lightning_bolt-vig)"/>
+  <polygon points="40,4 20,32 30,32 22,60 48,26 36,26 48,6" fill="#ffe94d" opacity=".16"/>
+  <polygon points="40,6 22,32 31,32 24,58 46,28 35,28 45,8" fill="url(#lightning_bolt-bolt)"/>
+  <polyline points="40,8 25,31 33,31 26,53" fill="none" stroke="#fffde0" stroke-width="1.2" opacity=".7"/>
+  <polygon points="46,20 54,15 50,24" fill="#9fc4ff" opacity=".8"/>
+  <polygon points="18,42 11,47 16,38" fill="#ffe94d" opacity=".7"/>
+  <circle cx="14" cy="14" r="1.2" fill="#fffde0" opacity=".85"/>
+  <circle cx="52" cy="40" r="1.1" fill="#8fb8ff" opacity=".8"/>
+  <circle cx="49" cy="52" r="1" fill="#ffe94d" opacity=".7"/>
+</svg>

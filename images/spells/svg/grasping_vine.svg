@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="grasping_vine-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#1e3a16"/><stop offset=".5" stop-color="#0f1f0b"/><stop offset="1" stop-color="#070f05"/>
+    </radialGradient>
+    <radialGradient id="grasping_vine-halo" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#7ecb5f" stop-opacity=".4"/><stop offset="1" stop-color="#7ecb5f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grasping_vine-stem" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#2a5418"/><stop offset=".5" stop-color="#5aa843"/><stop offset="1" stop-color="#9fe07a"/>
+    </linearGradient>
+    <radialGradient id="grasping_vine-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#grasping_vine-bg)"/>
+  <rect width="64" height="64" fill="url(#grasping_vine-halo)"/>
+  <path d="M30 56 C28 47 39 43 33 34 C27 25 39 20 35 11 C43 17 38 26 40 34 C42 44 31 47 33 56 Z" fill="#7ecb5f" opacity=".22"/>
+  <path d="M31 56 C29 47 39 43 34 34 C29 25 39 20 36 12 C42 18 38 26 40 34 C42 43 32 47 33 56 Z" fill="url(#grasping_vine-stem)" stroke="#264e16" stroke-width="1"/>
+  <path d="M35 33 C38 32 38 38 35 37" fill="none" stroke="#d0f0a8" stroke-width="1" opacity=".5"/>
+  <path d="M36 15 C40 12 45 13 46 18 C42 16 39 17 37 20 Z" fill="#8ed86f"/>
+  <path d="M40 30 C44 28 48 30 48 35 C45 32 41 33 39 36 Z" fill="#7ecb5f"/>
+  <path d="M33 44 C29 42 24 44 24 49 C28 46 31 47 33 50 Z" fill="#7ecb5f"/>
+  <path d="M35 12 l1.5 -3.4 1.5 3.4 -1.5 1 Z" fill="#4e8e34"/>
+  <path d="M41 32 l3.2 -1 -1 3.2 -2.2 -1 Z" fill="#4e8e34"/>
+  <path d="M26 48 l-3.2 -1 1 3.2 2.2 -1 Z" fill="#4e8e34"/>
+  <ellipse cx="38" cy="17" rx="2" ry="1" fill="#fff" opacity=".4" transform="rotate(-40 38 17)"/>
+  <circle cx="36" cy="10" r="1.3" fill="#c8ffa8" opacity=".8"/>
+  <circle cx="49" cy="34" r="1" fill="#9fe07a" opacity=".6"/>
+  <circle cx="22" cy="49" r=".9" fill="#7ecb5f" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#grasping_vine-vig)"/>
+</svg>

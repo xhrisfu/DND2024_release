@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="mordenkainen_s_private_sanctum-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#123556"/><stop offset=".5" stop-color="#0b2039"/><stop offset="1" stop-color="#050d1a"/>
+    </radialGradient>
+    <radialGradient id="mordenkainen_s_private_sanctum-halo" cx=".5" cy=".7" r=".6">
+      <stop offset="0" stop-color="#6cb6ff" stop-opacity=".5"/><stop offset="1" stop-color="#6cb6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mordenkainen_s_private_sanctum-dome" cx=".5" cy=".92" r=".85">
+      <stop offset="0" stop-color="#aed8ff" stop-opacity=".5"/><stop offset=".6" stop-color="#2f74b8" stop-opacity=".38"/><stop offset="1" stop-color="#0e3358" stop-opacity=".2"/>
+    </radialGradient>
+    <radialGradient id="mordenkainen_s_private_sanctum-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#mordenkainen_s_private_sanctum-bg)"/>
+  <rect width="64" height="64" fill="url(#mordenkainen_s_private_sanctum-halo)"/>
+  <path d="M9 48 A23 23 0 0 1 55 48 Z" fill="#4da6ff" opacity=".14"/>
+  <path d="M11 48 A21 21 0 0 1 53 48 Z" fill="url(#mordenkainen_s_private_sanctum-dome)"/>
+  <path d="M11 48 A21 21 0 0 1 53 48" fill="none" stroke="#8fd0ff" stroke-width="2.2"/>
+  <path d="M18 48 A14 21 0 0 1 46 48" fill="none" stroke="#cfe8ff" stroke-width="1.1" opacity=".4"/>
+  <path d="M27 48 A5 21 0 0 1 37 48" fill="none" stroke="#cfe8ff" stroke-width="1" opacity=".35"/>
+  <path d="M13 40 C24 43 40 43 51 40" fill="none" stroke="#cfe8ff" stroke-width="1" opacity=".35"/>
+  <path d="M17 31 C25 33 39 33 47 31" fill="none" stroke="#cfe8ff" stroke-width="1" opacity=".3"/>
+  <rect x="9" y="46.8" width="46" height="2.4" rx="1" fill="#8fd0ff"/>
+  <polygon points="32,23 34,28.5 39.5,28.5 35,32 36.8,37.5 32,34 27.2,37.5 29,32 24.5,28.5 30,28.5" fill="#eaf6ff" opacity=".95"/>
+  <polygon points="32,26 33,29 30.5,29 Z" fill="#fff" opacity=".6"/>
+  <path d="M14 42 A18 18 0 0 1 24 30" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".4"/>
+  <circle cx="14" cy="24" r="1.4" fill="#dff0ff" opacity=".85"/>
+  <circle cx="50" cy="26" r="1.1" fill="#8fd0ff" opacity=".7"/>
+  <circle cx="45" cy="44" r=".9" fill="#cfe8ff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#mordenkainen_s_private_sanctum-vig)"/>
+</svg>

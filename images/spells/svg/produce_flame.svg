@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="produce_flame-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#5c2109"/><stop offset=".5" stop-color="#2c0c05"/><stop offset="1" stop-color="#140503"/>
+    </radialGradient>
+    <radialGradient id="produce_flame-halo" cx=".5" cy=".38" r=".5">
+      <stop offset="0" stop-color="#ff8a2c" stop-opacity=".6"/><stop offset="1" stop-color="#ff8a2c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="produce_flame-fire" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#e0430c"/><stop offset=".4" stop-color="#ff8a2c"/><stop offset=".8" stop-color="#ffe07a"/><stop offset="1" stop-color="#fff7d6"/>
+    </linearGradient>
+    <linearGradient id="produce_flame-palm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c98a4e"/><stop offset="1" stop-color="#5a3418"/>
+    </linearGradient>
+    <radialGradient id="produce_flame-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#produce_flame-bg)"/>
+  <rect width="64" height="64" fill="url(#produce_flame-halo)"/>
+  <path d="M14 46 C18 50 26 52 32 52 C38 52 46 50 50 46 C48 51 41 55 32 55 C23 55 16 51 14 46 Z" fill="url(#produce_flame-palm)"/>
+  <path d="M17 46 C22 48 42 48 47 46" fill="none" stroke="#e0b078" stroke-width="1" opacity=".4"/>
+  <path d="M32 44 C25 40 22 33 26 25 C27 29 29 30 30 30 C28 22 32 14 34 10 C34 18 40 21 41 29 C42 35 39 41 32 44 Z" fill="#ff8a2c" opacity=".28"/>
+  <path d="M32 43 C27 40 24.5 34 27.5 27.5 C28.5 30.5 30 31.5 31 31.5 C29.5 24.5 32.5 17 34 13.5 C34 20 39 23 39.5 29.5 C40 35 37 40.5 32 43 Z" fill="url(#produce_flame-fire)"/>
+  <path d="M32 40 C29 38 28 34.5 29.5 30.5 C30.5 32.5 31.5 33 32.5 33 C31.5 28.5 33 24 34 22 C34 26 36.5 28 37 32 C37.2 35.5 35 39 32 40 Z" fill="#fff3c4" opacity=".8"/>
+  <ellipse cx="32" cy="35" rx="1.8" ry="3.2" fill="#fff" opacity=".55"/>
+  <circle cx="46" cy="20" r="1.5" fill="#ffd27a"/>
+  <circle cx="18" cy="26" r="1.1" fill="#ff9b3d" opacity=".8"/>
+  <circle cx="42" cy="14" r="1" fill="#ffe0a0" opacity=".7"/>
+  <circle cx="24" cy="17" r=".8" fill="#ffab4d" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#produce_flame-vig)"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="giant_insect-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#170e2f"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="giant_insect-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#9d5cff" stop-opacity=".4"/><stop offset="1" stop-color="#9d5cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="giant_insect-body" cx=".42" cy=".32" r=".9">
+      <stop offset="0" stop-color="#8a6a3a"/><stop offset=".55" stop-color="#4a3018"/><stop offset="1" stop-color="#1e1108"/>
+    </radialGradient>
+    <radialGradient id="giant_insect-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#giant_insect-bg)"/>
+  <rect width="64" height="64" fill="url(#giant_insect-halo)"/>
+  <path d="M31 30 C18 24 12 30 6 26 C13 33 20 32 30 34 Z" fill="#241408"/>
+  <path d="M33 30 C46 24 52 30 58 26 C51 33 44 32 34 34 Z" fill="#241408"/>
+  <path d="M30 40 C20 42 14 50 8 52 C16 47 24 45 31 42 Z" fill="#241408"/>
+  <path d="M34 40 C44 42 50 50 56 52 C48 47 40 45 33 42 Z" fill="#241408"/>
+  <path d="M30 46 C22 50 18 56 12 59 C20 53 26 49 32 48 Z" fill="#2e1810"/>
+  <path d="M34 46 C42 50 46 56 52 59 C44 53 38 49 32 48 Z" fill="#2e1810"/>
+  <ellipse cx="32" cy="40" rx="8" ry="13" fill="url(#giant_insect-body)"/>
+  <path d="M28 34 C30 40 30 46 28 51 M36 34 C34 40 34 46 36 51" fill="none" stroke="#1a0e06" stroke-width="1" opacity=".6"/>
+  <ellipse cx="32" cy="25" rx="6.2" ry="5.6" fill="url(#giant_insect-body)"/>
+  <path d="M29 21 C27 16 25 14 23 12 C27 14 29 16 31 19 Z" fill="#241408"/>
+  <path d="M35 21 C37 16 39 14 41 12 C37 14 35 16 33 19 Z" fill="#241408"/>
+  <circle cx="29.5" cy="24" r="1.7" fill="#ff5c5c"/>
+  <circle cx="34.5" cy="24" r="1.7" fill="#ff5c5c"/>
+  <ellipse cx="29" cy="34" rx="2.2" ry="3.2" fill="#a8824c" opacity=".55"/>
+  <circle cx="14" cy="20" r="1.2" fill="#c8a0ff" opacity=".7"/>
+  <circle cx="50" cy="20" r="1" fill="#c8a0ff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#giant_insect-vig)"/>
+</svg>

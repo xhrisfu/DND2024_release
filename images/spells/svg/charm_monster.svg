@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="charm_monster-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#4a1240"/><stop offset=".5" stop-color="#2a0c22"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="charm_monster-halo" cx=".5" cy=".42" r=".52">
+      <stop offset="0" stop-color="#ff5ca8" stop-opacity=".5"/><stop offset="1" stop-color="#ff5ca8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="charm_monster-heart" cx=".4" cy=".3" r="1">
+      <stop offset="0" stop-color="#ffe0ef"/><stop offset=".4" stop-color="#ff77b8"/><stop offset=".8" stop-color="#e21f78"/><stop offset="1" stop-color="#8f1050"/>
+    </radialGradient>
+    <linearGradient id="charm_monster-horn" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#5a2a7a"/><stop offset="1" stop-color="#c8a0ff"/>
+    </linearGradient>
+    <radialGradient id="charm_monster-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#charm_monster-bg)"/>
+  <rect width="64" height="64" fill="url(#charm_monster-halo)"/>
+  <path d="M25 23 C20.5 20 17.5 15 17 9 C21.8 12 25.5 17 27.2 22.2 Z" fill="url(#charm_monster-horn)" opacity=".92"/>
+  <path d="M39 23 C43.5 20 46.5 15 47 9 C42.2 12 38.5 17 36.8 22.2 Z" fill="url(#charm_monster-horn)" opacity=".92"/>
+  <path d="M32 48 C21 39 15.5 32 17.5 25 C19 20.3 24 19 27.6 21.4 C29.6 22.7 31 24.7 32 26.3 C33 24.7 34.4 22.7 36.4 21.4 C40 19 45 20.3 46.5 25 C48.5 32 43 39 32 48 Z" fill="#ff5ca8" opacity=".22" transform="translate(0 1.6)"/>
+  <path d="M32 48 C21 39 15.5 32 17.5 25 C19 20.3 24 19 27.6 21.4 C29.6 22.7 31 24.7 32 26.3 C33 24.7 34.4 22.7 36.4 21.4 C40 19 45 20.3 46.5 25 C48.5 32 43 39 32 48 Z" fill="url(#charm_monster-heart)"/>
+  <ellipse cx="32" cy="33" rx="6" ry="4.3" fill="#ffe0ef"/>
+  <ellipse cx="32" cy="33" rx="1.6" ry="3.4" fill="#3a0a24"/>
+  <path d="M24 28 C23 31 24.5 34 27 36.5" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" opacity=".5"/>
+  <ellipse cx="25.5" cy="27" rx="2.8" ry="1.9" fill="#fff" opacity=".55" transform="rotate(-24 25.5 27)"/>
+  <path d="M18 40 C24 45 40 45 46 40 A20 7 0 0 1 18 40 Z" fill="#8f1050" opacity=".4"/>
+  <path d="M47 45 l1.1 3 3 1.1 -3 1.1 -1.1 3 -1.1-3 -3-1.1 3-1.1 Z" fill="#ffd0e8" opacity=".9"/>
+  <circle cx="13" cy="37" r="1.4" fill="#ff9bcb" opacity=".8"/>
+  <circle cx="51" cy="34" r="1" fill="#ffd0e8" opacity=".7"/>
+  <circle cx="32" cy="54" r=".9" fill="#ff9bcb" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#charm_monster-vig)"/>
+</svg>

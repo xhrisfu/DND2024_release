@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="otto_s_irresistible_dance-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#4a1240"/><stop offset=".5" stop-color="#2a0c22"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="otto_s_irresistible_dance-halo" cx=".44" cy=".48" r=".55">
+      <stop offset="0" stop-color="#ff5ca8" stop-opacity=".5"/><stop offset="1" stop-color="#ff5ca8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="otto_s_irresistible_dance-fig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe0ef"/><stop offset=".5" stop-color="#ff77b8"/><stop offset="1" stop-color="#a01a63"/>
+    </linearGradient>
+    <radialGradient id="otto_s_irresistible_dance-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#otto_s_irresistible_dance-bg)"/>
+  <rect width="64" height="64" fill="url(#otto_s_irresistible_dance-halo)"/>
+  <ellipse cx="29" cy="34" rx="22" ry="20" fill="#ff5ca8" opacity=".13"/>
+  <path d="M17 24 C20 20 24 20 27 24" fill="none" stroke="#ff9bcb" stroke-width="1.3" opacity=".5"/>
+  <path d="M28 20 C24 24 22 30 24 38" stroke="url(#otto_s_irresistible_dance-fig)" stroke-width="4.6" fill="none" stroke-linecap="round"/>
+  <circle cx="28" cy="14.5" r="5.4" fill="url(#otto_s_irresistible_dance-fig)"/>
+  <path d="M27 25 L14 20" stroke="url(#otto_s_irresistible_dance-fig)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M27 26 L41 22" stroke="url(#otto_s_irresistible_dance-fig)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M24 37 L16 50" stroke="url(#otto_s_irresistible_dance-fig)" stroke-width="4.6" fill="none" stroke-linecap="round"/>
+  <path d="M24 37 L34 49" stroke="url(#otto_s_irresistible_dance-fig)" stroke-width="4.6" fill="none" stroke-linecap="round"/>
+  <ellipse cx="26" cy="13" rx="1.8" ry="1.3" fill="#fff" opacity=".55"/>
+  <circle cx="47" cy="43" r="4.2" fill="#ffd8ec"/>
+  <rect x="50" y="26" width="2.4" height="17" fill="#ffd8ec"/>
+  <path d="M50 26 L57 23 L57 28 L50 31 Z" fill="#ffd8ec"/>
+  <circle cx="52" cy="16" r="1.5" fill="#ff9bcb" opacity=".8"/>
+  <circle cx="11" cy="36" r="1.2" fill="#ffd0e8" opacity=".7"/>
+  <circle cx="19" cy="52" r="1" fill="#ff9bcb" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#otto_s_irresistible_dance-vig)"/>
+</svg>

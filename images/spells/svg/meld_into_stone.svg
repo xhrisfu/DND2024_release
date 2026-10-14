@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="meld_into_stone-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#3a2410"/><stop offset=".5" stop-color="#221507"/><stop offset="1" stop-color="#100a04"/>
+    </radialGradient>
+    <radialGradient id="meld_into_stone-halo" cx=".5" cy=".45" r=".55">
+      <stop offset="0" stop-color="#ffb02e" stop-opacity=".35"/><stop offset="1" stop-color="#ffb02e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="meld_into_stone-wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9c9282"/><stop offset=".5" stop-color="#6b6150"/><stop offset="1" stop-color="#3d3628"/>
+    </linearGradient>
+    <linearGradient id="meld_into_stone-fig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c4b9a2"/><stop offset=".5" stop-color="#8a7f68"/><stop offset="1" stop-color="#544c3a"/>
+    </linearGradient>
+    <radialGradient id="meld_into_stone-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#meld_into_stone-bg)"/>
+  <rect width="64" height="64" fill="url(#meld_into_stone-halo)"/>
+  <rect x="11" y="8" width="42" height="48" rx="2.5" fill="url(#meld_into_stone-wall)"/>
+  <path d="M22 8 L20 27 L26 44 L22 56 M42 8 L44 24 L38 41 L42 56 M11 31 L53 28 M13 19 L31 22" stroke="#2e281c" stroke-width="1.2" opacity=".6" fill="none"/>
+  <circle cx="32" cy="22" r="6" fill="url(#meld_into_stone-fig)"/>
+  <path d="M32 28 C25 28 22 35 22 46 C22 50 24 54 26 55 L38 55 C40 54 42 50 42 46 C42 35 39 28 32 28 Z" fill="url(#meld_into_stone-fig)"/>
+  <path d="M26 20 L22 18 M38 20 L42 18 M28 36 L24 38 M36 36 L40 38" stroke="#6b6150" stroke-width="1.4" opacity=".55" stroke-linecap="round"/>
+  <ellipse cx="29" cy="20" rx="2.2" ry="1.5" fill="#e0d6c0" opacity=".5"/>
+  <path d="M14 12 L18 14 M50 50 L46 48" stroke="#b3a892" stroke-width="1" opacity=".4" stroke-linecap="round"/>
+  <circle cx="17" cy="48" r="1.1" fill="#a89c86" opacity=".7"/>
+  <circle cx="47" cy="14" r="1" fill="#c4b9a2" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#meld_into_stone-vig)"/>
+</svg>

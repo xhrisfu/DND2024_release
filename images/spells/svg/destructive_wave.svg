@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="destructive_wave-bg" cx=".5" cy=".5" r=".9">
+      <stop offset="0" stop-color="#2a1440"/><stop offset=".5" stop-color="#180a2a"/><stop offset="1" stop-color="#0c0618"/>
+    </radialGradient>
+    <radialGradient id="destructive_wave-halo" cx=".5" cy=".5" r=".55">
+      <stop offset="0" stop-color="#d8c8ff" stop-opacity=".55"/><stop offset="1" stop-color="#d8c8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="destructive_wave-core" cx=".42" cy=".38" r=".7">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".4" stop-color="#e6dcff"/><stop offset=".8" stop-color="#a888e6"/><stop offset="1" stop-color="#6a4aa8"/>
+    </radialGradient>
+    <radialGradient id="destructive_wave-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#destructive_wave-bg)"/>
+  <rect width="64" height="64" fill="url(#destructive_wave-halo)"/>
+  <circle cx="32" cy="33" r="26" fill="none" stroke="#b8a0ff" stroke-width="1" opacity=".25"/>
+  <circle cx="32" cy="33" r="24" fill="none" stroke="#d8c8ff" stroke-width="2.4" opacity=".45"/>
+  <circle cx="32" cy="33" r="17" fill="none" stroke="#e6dcff" stroke-width="2.8" opacity=".65"/>
+  <circle cx="32" cy="33" r="10" fill="none" stroke="#f4efff" stroke-width="2.6" opacity=".85"/>
+  <circle cx="32" cy="33" r="6.5" fill="url(#destructive_wave-core)"/>
+  <ellipse cx="29.5" cy="30.5" rx="2.4" ry="1.6" fill="#fff" opacity=".8" transform="rotate(-30 29.5 30.5)"/>
+  <path d="M25.5 36 A6.5 6.5 0 0 0 38.5 36 A8 4 0 0 1 25.5 36 Z" fill="#5a3a9a" opacity=".45"/>
+  <circle cx="52" cy="19" r="1.5" fill="#e6dcff"/>
+  <circle cx="14" cy="22" r="1.1" fill="#c9b4ff" opacity=".8"/>
+  <circle cx="48" cy="48" r="1.2" fill="#d8c8ff" opacity=".75"/>
+  <circle cx="15" cy="47" r=".9" fill="#b8a0ff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#destructive_wave-vig)"/>
+</svg>

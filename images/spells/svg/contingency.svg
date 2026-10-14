@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="contingency-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#123556"/><stop offset=".5" stop-color="#0b2039"/><stop offset="1" stop-color="#050d1a"/>
+    </radialGradient>
+    <radialGradient id="contingency-halo" cx=".5" cy=".46" r=".5">
+      <stop offset="0" stop-color="#7fc4ff" stop-opacity=".5"/><stop offset="1" stop-color="#7fc4ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="contingency-glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf6ff" stop-opacity=".7"/><stop offset=".5" stop-color="#4da6ff" stop-opacity=".4"/><stop offset="1" stop-color="#123a66" stop-opacity=".7"/>
+    </linearGradient>
+    <linearGradient id="contingency-sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3c4"/><stop offset="1" stop-color="#ffcf6a"/>
+    </linearGradient>
+    <radialGradient id="contingency-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#contingency-bg)"/>
+  <rect width="64" height="64" fill="url(#contingency-halo)"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#4da6ff" stroke-width="1.1" opacity=".3"/>
+  <rect x="18" y="10" width="28" height="4" rx="1" fill="#cfe8ff"/>
+  <rect x="18" y="50" width="28" height="4" rx="1" fill="#cfe8ff"/>
+  <path d="M21 14 L43 14 L34 32 L43 50 L21 50 L30 32 Z" fill="url(#contingency-glass)" stroke="#8fc9ff" stroke-width="1.3" stroke-linejoin="round"/>
+  <path d="M23 16 L41 16 L33 30 Z" fill="url(#contingency-sand)" opacity=".85"/>
+  <path d="M32 33 L37 47 L27 47 Z" fill="url(#contingency-sand)"/>
+  <path d="M31.4 33 L32 44 L32.6 33 Z" fill="#ffe08a"/>
+  <circle cx="32" cy="32" r="1.5" fill="#fff3c4"/>
+  <path d="M25 17 L30 26" stroke="#eaf6ff" stroke-width="1.2" stroke-linecap="round" opacity=".55"/>
+  <circle cx="49" cy="16" r="1.3" fill="#cfe8ff" opacity=".85"/>
+  <circle cx="15" cy="47" r="1.1" fill="#8fc9ff" opacity=".7"/>
+  <circle cx="50" cy="46" r=".9" fill="#ffe08a" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#contingency-vig)"/>
+</svg>

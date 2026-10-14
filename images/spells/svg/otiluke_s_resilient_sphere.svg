@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="otiluke_s_resilient_sphere-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#123556"/><stop offset=".5" stop-color="#0b2039"/><stop offset="1" stop-color="#050d1a"/>
+    </radialGradient>
+    <radialGradient id="otiluke_s_resilient_sphere-halo" cx=".5" cy=".48" r=".55">
+      <stop offset="0" stop-color="#6cb6ff" stop-opacity=".5"/><stop offset="1" stop-color="#6cb6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="otiluke_s_resilient_sphere-orb" cx=".4" cy=".34" r=".8">
+      <stop offset="0" stop-color="#eaf6ff" stop-opacity=".6"/><stop offset=".55" stop-color="#4da6ff" stop-opacity=".3"/><stop offset="1" stop-color="#0e3358" stop-opacity=".55"/>
+    </radialGradient>
+    <radialGradient id="otiluke_s_resilient_sphere-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#otiluke_s_resilient_sphere-bg)"/>
+  <rect width="64" height="64" fill="url(#otiluke_s_resilient_sphere-halo)"/>
+  <circle cx="32" cy="33" r="22" fill="#4da6ff" opacity=".14"/>
+  <circle cx="32" cy="33" r="21" fill="url(#otiluke_s_resilient_sphere-orb)"/>
+  <path d="M31 27 C28 27 26 29.5 26 32.5 C26 34.5 27 36 28.5 37 L28 43 C28 45 34 45 34 43 L33.5 37 C35 36 36 34.5 36 32.5 C36 29.5 34 27 31 27 Z" fill="#cfe8ff" opacity=".9"/>
+  <circle cx="31" cy="24" r="3.4" fill="#cfe8ff" opacity=".9"/>
+  <circle cx="32" cy="33" r="21" fill="none" stroke="#8fd0ff" stroke-width="1.8"/>
+  <circle cx="32" cy="33" r="21" fill="none" stroke="#dff0ff" stroke-width=".8" opacity=".4" stroke-dasharray="2 6"/>
+  <path d="M18 24 C13 30 12.5 42 19 49" fill="none" stroke="#eaf6ff" stroke-width="1.6" stroke-linecap="round" opacity=".6"/>
+  <ellipse cx="24" cy="23" rx="6" ry="3.2" fill="#fff" opacity=".45" transform="rotate(-34 24 23)"/>
+  <circle cx="46" cy="18" r="1.4" fill="#dff0ff" opacity=".85"/>
+  <circle cx="16" cy="49" r="1.1" fill="#8fd0ff" opacity=".7"/>
+  <circle cx="49" cy="47" r=".9" fill="#cfe8ff" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#otiluke_s_resilient_sphere-vig)"/>
+</svg>

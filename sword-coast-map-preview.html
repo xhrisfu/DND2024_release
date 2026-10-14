@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>剑湾地区 - 手绘风格地图</title>
+<style>
+  body { margin: 0; background: #1a1a2e; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+  svg { max-width: 95vw; max-height: 95vh; filter: drop-shadow(0 4px 20px rgba(0,0,0,0.5)); }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 900 680" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', serif;">
+  <defs>
+    <!-- 羊皮纸背景 -->
+    <radialGradient id="parchment" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0%" stop-color="#f5e6c8"/>
+      <stop offset="40%" stop-color="#ecdbb0"/>
+      <stop offset="70%" stop-color="#dcc89a"/>
+      <stop offset="100%" stop-color="#c4a86e"/>
+    </radialGradient>
+    <!-- 海洋渐变 -->
+    <radialGradient id="ocean" cx="0.2" cy="0.5" r="0.7">
+      <stop offset="0%" stop-color="#5b96b8"/>
+      <stop offset="40%" stop-color="#4a8099"/>
+      <stop offset="70%" stop-color="#3a6a82"/>
+      <stop offset="100%" stop-color="#2a4f65"/>
+    </radialGradient>
+    <!-- 山脉填充 -->
+    <linearGradient id="mtnFill" x1="0" y1="1" x2="0.3" y2="0">
+      <stop offset="0%" stop-color="#8b7355"/>
+      <stop offset="50%" stop-color="#a89070"/>
+      <stop offset="85%" stop-color="#c8b090"/>
+      <stop offset="100%" stop-color="#e8d8c0"/>
+    </linearGradient>
+    <!-- 山脉阴影面 -->
+    <linearGradient id="mtnShade" x1="1" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#6a5540"/>
+      <stop offset="100%" stop-color="#8b7355"/>
+    </linearGradient>
+    <!-- 森林渐变 -->
+    <linearGradient id="treeFill" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#2d5a2d"/>
+      <stop offset="100%" stop-color="#4a7a4a"/>
+    </linearGradient>
+    <linearGradient id="treeDark" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1e3e1e"/>
+      <stop offset="100%" stop-color="#356835"/>
+    </linearGradient>
+    <!-- 沼泽 -->
+    <radialGradient id="swampFill" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="#5a6a48"/>
+      <stop offset="100%" stop-color="#3e4e30"/>
+    </radialGradient>
+    <!-- 波浪纹 -->
+    <pattern id="waves" width="40" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(-5)">
+      <path d="M0 6 Q10 2 20 6 T40 6" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+    </pattern>
+    <!-- 纸纹理 -->
+    <filter id="paperNoise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="4" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+      <feBlend in="SourceGraphic" in2="gray" mode="multiply" result="blend"/>
+      <feComponentTransfer in="blend">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+    </filter>
+    <!-- 文字阴影 -->
+    <filter id="textShadow">
+      <feDropShadow dx="0.5" dy="0.5" stdDeviation="0.5" flood-color="#c4a86e" flood-opacity="0.8"/>
+    </filter>
+    <!-- 城市光晕 -->
+    <filter id="cityGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- 边框装饰图案 -->
+    <pattern id="borderPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none"/>
+      <circle cx="10" cy="10" r="2" fill="rgba(139,115,85,0.15)"/>
+    </pattern>
+  </defs>
+
+  <!-- ==================== 底层背景 ==================== -->
+  <!-- 羊皮纸底 -->
+  <rect width="900" height="680" fill="url(#parchment)"/>
+  <rect width="900" height="680" fill="url(#paperNoise)" opacity="0.03"/>
+
+  <!-- ==================== 装饰边框 ==================== -->
+  <g class="border-frame">
+    <!-- 外框 -->
+    <rect x="8" y="8" width="884" height="664" fill="none" stroke="#8b7355" stroke-width="3" rx="2"/>
+    <!-- 内框 -->
+    <rect x="18" y="18" width="864" height="644" fill="none" stroke="#8b7355" stroke-width="1.5" rx="1"/>
+    <!-- 四角装饰 -->
+    <g transform="translate(18,18)">
+      <path d="M0 30 Q0 0 30 0" fill="none" stroke="#8b7355" stroke-width="2.5"/>
+      <circle cx="3" cy="3" r="4" fill="#c8a050" stroke="#8b7355" stroke-width="1"/>
+      <path d="M8 0 L8 8 M0 8 L8 8" fill="none" stroke="#a08060" stroke-width="0.8"/>
+    </g>
+    <g transform="translate(882,18) scale(-1,1)">
+      <path d="M0 30 Q0 0 30 0" fill="none" stroke="#8b7355" stroke-width="2.5"/>
+      <circle cx="3" cy="3" r="4" fill="#c8a050" stroke="#8b7355" stroke-width="1"/>
+      <path d="M8 0 L8 8 M0 8 L8 8" fill="none" stroke="#a08060" stroke-width="0.8"/>
+    </g>
+    <g transform="translate(18,662) scale(1,-1)">
+      <path d="M0 30 Q0 0 30 0" fill="none" stroke="#8b7355" stroke-width="2.5"/>
+      <circle cx="3" cy="3" r="4" fill="#c8a050" stroke="#8b7355" stroke-width="1"/>
+      <path d="M8 0 L8 8 M0 8 L8 8" fill="none" stroke="#a08060" stroke-width="0.8"/>
+    </g>
+    <g transform="translate(882,662) scale(-1,-1)">
+      <path d="M0 30 Q0 0 30 0" fill="none" stroke="#8b7355" stroke-width="2.5"/>
+      <circle cx="3" cy="3" r="4" fill="#c8a050" stroke="#8b7355" stroke-width="1"/>
+      <path d="M8 0 L8 8 M0 8 L8 8" fill="none" stroke="#a08060" stroke-width="0.8"/>
+    </g>
+  </g>
+
+  <!-- ==================== 海洋 ==================== -->
+  <clipPath id="mapClip"><rect x="20" y="20" width="860" height="640"/></clipPath>
+  <g clip-path="url(#mapClip)">
+
+  <!-- 海洋底色 -->
+  <path d="
+    M20 20 L20 660
+    L260 660 Q240 620 235 580 Q225 540 220 510
+    Q210 470 215 440 Q220 410 210 380
+    Q195 350 190 320 Q188 290 195 260
+    Q200 230 195 200 Q185 170 180 140
+    Q175 110 170 80 Q168 55 175 30 L175 20 Z
+  " fill="url(#ocean)"/>
+  <path d="
+    M20 20 L20 660
+    L260 660 Q240 620 235 580 Q225 540 220 510
+    Q210 470 215 440 Q220 410 210 380
+    Q195 350 190 320 Q188 290 195 260
+    Q200 230 195 200 Q185 170 180 140
+    Q175 110 170 80 Q168 55 175 30 L175 20 Z
+  " fill="url(#waves)" opacity="0.6"/>
+
+  <!-- 海洋波浪细节 -->
+  <g opacity="0.08" stroke="#fff" stroke-width="0.6" fill="none">
+    <path d="M30 100 Q50 95 70 100 T110 100"/>
+    <path d="M40 200 Q65 194 90 200 T140 200"/>
+    <path d="M50 300 Q75 294 100 300 T150 300"/>
+    <path d="M35 400 Q60 393 85 400 T135 400"/>
+    <path d="M55 500 Q80 494 105 500 T155 500"/>
+    <path d="M30 550 Q55 544 80 550 T130 550"/>
+    <path d="M60 150 Q80 146 100 150 T140 150"/>
+    <path d="M45 350 Q70 345 95 350 T140 350"/>
+    <path d="M70 450 Q95 445 120 450 T170 450"/>
+  </g>
+
+  <!-- ==================== 陆地 ==================== -->
+  <!-- 陆地主体 -->
+  <path d="
+    M175 20 Q168 55 170 80 Q175 110 180 140
+    Q185 170 195 200 Q200 230 195 260
+    Q188 290 190 320 Q195 350 210 380
+    Q220 410 215 440 Q210 470 220 510
+    Q225 540 235 580 Q240 620 260 660
+    L880 660 L880 20 Z
+  " fill="#d4c4a0"/>
+  <!-- 陆地略暗的纹理 -->
+  <path d="
+    M175 20 Q168 55 170 80 Q175 110 180 140
+    Q185 170 195 200 Q200 230 195 260
+    Q188 290 190 320 Q195 350 210 380
+    Q220 410 215 440 Q210 470 220 510
+    Q225 540 235 580 Q240 620 260 660
+    L880 660 L880 20 Z
+  " fill="url(#parchment)" opacity="0.4"/>
+
+  <!-- 海岸线 - 主线 -->
+  <path d="
+    M175 20 Q168 55 170 80 Q175 110 180 140
+    Q185 170 195 200 Q200 230 195 260
+    Q188 290 190 320 Q195 350 210 380
+    Q220 410 215 440 Q210 470 220 510
+    Q225 540 235 580 Q240 620 260 660
+  " fill="none" stroke="#7a6550" stroke-width="2.5"/>
+  <!-- 海岸线 - 淡影 -->
+  <path d="
+    M177 20 Q170 55 172 80 Q177 110 182 140
+    Q187 170 197 200 Q202 230 197 260
+    Q190 290 192 320 Q197 350 212 380
+    Q222 410 217 440 Q212 470 222 510
+    Q227 540 237 580 Q242 620 262 660
+  " fill="none" stroke="rgba(90,140,180,0.25)" stroke-width="5"/>
+
+  <!-- 小海湾/入海口细节 -->
+  <path d="M192 258 Q185 262 188 270 Q193 275 198 268 Q195 260 192 258Z" fill="url(#ocean)" stroke="#7a6550" stroke-width="0.8"/>
+  <path d="M214 438 Q208 444 212 452 Q218 456 222 448 Q218 440 214 438Z" fill="url(#ocean)" stroke="#7a6550" stroke-width="0.8"/>
+
+  <!-- ==================== 世界脊柱山脉 (北方大山脉) ==================== -->
+  <g class="spine-of-world">
+    <!-- 一组精致的山峰 -->
+    <!-- 山峰1 -->
+    <path d="M270 55 L255 80 L285 80Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M270 55 L278 80 L285 80Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <path d="M270 55 L266 63" fill="none" stroke="#e8d8c0" stroke-width="0.5" opacity="0.7"/>
+    <!-- 山峰2 (大) -->
+    <path d="M300 40 L280 82 L320 82Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M300 40 L312 82 L320 82Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <path d="M300 40 L295 52 M300 40 L303 50" fill="none" stroke="#e8d8c0" stroke-width="0.6" opacity="0.7"/>
+    <!-- 山峰3 -->
+    <path d="M335 48 L318 80 L352 80Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M335 48 L345 80 L352 80Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <path d="M335 48 L331 58" fill="none" stroke="#e8d8c0" stroke-width="0.5" opacity="0.7"/>
+    <!-- 山峰4 (大) -->
+    <path d="M370 35 L348 82 L392 82Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M370 35 L383 82 L392 82Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <path d="M370 35 L365 48 M370 35 L374 46" fill="none" stroke="#e8d8c0" stroke-width="0.6" opacity="0.7"/>
+    <!-- 山峰5 -->
+    <path d="M410 50 L395 80 L425 80Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M410 50 L420 80 L425 80Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <!-- 山峰6 (大) -->
+    <path d="M450 38 L428 82 L472 82Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M450 38 L463 82 L472 82Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <path d="M450 38 L445 50 M450 38 L454 48" fill="none" stroke="#e8d8c0" stroke-width="0.6" opacity="0.7"/>
+    <!-- 山峰7 -->
+    <path d="M490 52 L475 80 L505 80Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M490 52 L500 80 L505 80Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <!-- 山峰8 (大) -->
+    <path d="M535 42 L515 82 L555 82Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M535 42 L548 82 L555 82Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <path d="M535 42 L530 54" fill="none" stroke="#e8d8c0" stroke-width="0.5" opacity="0.7"/>
+    <!-- 山峰9 -->
+    <path d="M575 55 L560 80 L590 80Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M575 55 L585 80 L590 80Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <!-- 山峰10 -->
+    <path d="M615 50 L598 80 L632 80Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M615 50 L626 80 L632 80Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <!-- 后排小山 -->
+    <path d="M285 65 L275 82 L295 82Z" fill="#a89070" opacity="0.5"/>
+    <path d="M355 60 L345 78 L365 78Z" fill="#a89070" opacity="0.5"/>
+    <path d="M430 62 L420 80 L440 80Z" fill="#a89070" opacity="0.5"/>
+    <path d="M510 60 L500 78 L520 78Z" fill="#a89070" opacity="0.5"/>
+    <path d="M595 62 L585 80 L605 80Z" fill="#a89070" opacity="0.5"/>
+    <!-- 标签 -->
+    <text x="430" y="30" text-anchor="middle" fill="#6a5540" font-size="11" font-style="italic" letter-spacing="6">世 界 脊 柱 山 脉</text>
+  </g>
+
+  <!-- ==================== 剑山脉 (中部山脉) ==================== -->
+  <g class="sword-mountains">
+    <path d="M270 195 L255 225 L285 225Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M270 195 L280 225 L285 225Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <path d="M270 195 L267 205" fill="none" stroke="#e8d8c0" stroke-width="0.5" opacity="0.6"/>
+    <path d="M300 188 L282 228 L318 228Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M300 188 L312 228 L318 228Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <path d="M300 188 L296 200 M300 188 L304 198" fill="none" stroke="#e8d8c0" stroke-width="0.6" opacity="0.6"/>
+    <path d="M332 198 L318 225 L346 225Z" fill="url(#mtnFill)" stroke="#6a5540" stroke-width="0.8"/>
+    <path d="M332 198 L341 225 L346 225Z" fill="url(#mtnShade)" opacity="0.4"/>
+    <path d="M290 210 L280 228 L300 228Z" fill="#a89070" opacity="0.4"/>
+    <path d="M320 208 L310 225 L330 225Z" fill="#a89070" opacity="0.4"/>
+    <text x="300" y="248" text-anchor="middle" fill="#6a5540" font-size="9" font-style="italic" letter-spacing="3">剑 山 脉</text>
+  </g>
+
+  <!-- ==================== 森林群 ==================== -->
+  <!-- 无冬森林 -->
+  <g class="neverwinter-wood" opacity="0.85">
+    <path d="M235 125 L242 105 L249 125Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M250 130 L258 108 L266 130Z" fill="url(#treeDark)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M225 135 L233 112 L241 135Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M260 120 L267 102 L274 120Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M240 140 L247 122 L254 140Z" fill="url(#treeDark)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M218 128 L224 112 L230 128Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M255 140 L261 125 L267 140Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <text x="245" y="158" text-anchor="middle" fill="#2d4a2d" font-size="8" font-style="italic">无冬森林</text>
+  </g>
+
+  <!-- 高森林 -->
+  <g class="high-forest" opacity="0.85">
+    <path d="M530 230 L540 205 L550 230Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M550 240 L562 212 L574 240Z" fill="url(#treeDark)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M515 245 L527 218 L539 245Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M565 235 L575 214 L585 235Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M540 252 L550 230 L560 252Z" fill="url(#treeDark)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M570 250 L580 228 L590 250Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M525 258 L535 238 L545 258Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M555 260 L563 242 L571 260Z" fill="url(#treeDark)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M580 245 L588 228 L596 245Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <text x="555" y="278" text-anchor="middle" fill="#2d4a2d" font-size="9.5" font-style="italic">高森林</text>
+  </g>
+
+  <!-- 斗篷森林 -->
+  <g class="cloak-wood" opacity="0.85">
+    <path d="M275 530 L283 512 L291 530Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M290 538 L299 518 L308 538Z" fill="url(#treeDark)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M265 540 L274 520 L283 540Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M305 535 L313 518 L321 535Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <path d="M280 548 L288 532 L296 548Z" fill="url(#treeDark)" stroke="#1e3e1e" stroke-width="0.5"/>
+    <text x="288" y="562" text-anchor="middle" fill="#2d4a2d" font-size="8" font-style="italic">斗篷森林</text>
+  </g>
+
+  <!-- 卢克伍德（小森林） -->
+  <g class="lurkwood" opacity="0.7">
+    <path d="M360 115 L367 100 L374 115Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.4"/>
+    <path d="M375 120 L382 104 L389 120Z" fill="url(#treeDark)" stroke="#1e3e1e" stroke-width="0.4"/>
+    <path d="M350 122 L358 107 L366 122Z" fill="url(#treeFill)" stroke="#1e3e1e" stroke-width="0.4"/>
+    <text x="368" y="135" text-anchor="middle" fill="#2d4a2d" font-size="7" font-style="italic">卢克森林</text>
+  </g>
+
+  <!-- ==================== 沼泽 ==================== -->
+  <!-- 死人沼泽 -->
+  <g class="mere-of-dead-men" opacity="0.6">
+    <ellipse cx="210" cy="310" rx="22" ry="18" fill="url(#swampFill)"/>
+    <path d="M195 305 Q198 298 202 305" fill="none" stroke="#3a4a30" stroke-width="0.6"/>
+    <path d="M205 308 Q208 301 211 308" fill="none" stroke="#3a4a30" stroke-width="0.6"/>
+    <path d="M215 303 Q218 297 221 303" fill="none" stroke="#3a4a30" stroke-width="0.6"/>
+    <path d="M200 315 Q203 309 206 315" fill="none" stroke="#3a4a30" stroke-width="0.6"/>
+    <path d="M212 318 Q215 312 218 318" fill="none" stroke="#3a4a30" stroke-width="0.6"/>
+    <text x="210" y="340" text-anchor="middle" fill="#3e4e30" font-size="7.5" font-style="italic">死人沼泽</text>
+  </g>
+
+  <!-- 高沼地 -->
+  <g class="high-moor" opacity="0.5">
+    <ellipse cx="320" cy="480" rx="35" ry="22" fill="#7a6a50" opacity="0.35"/>
+    <path d="M305 475 Q308 469 311 475" fill="none" stroke="#5a4a30" stroke-width="0.5"/>
+    <path d="M320 480 Q323 474 326 480" fill="none" stroke="#5a4a30" stroke-width="0.5"/>
+    <path d="M335 478 Q338 472 341 478" fill="none" stroke="#5a4a30" stroke-width="0.5"/>
+    <text x="320" y="510" text-anchor="middle" fill="#5a4a30" font-size="8" font-style="italic">高沼地</text>
+  </g>
+
+  <!-- ==================== 河流 ==================== -->
+  <g class="rivers" fill="none" stroke="#4a7090" stroke-linecap="round">
+    <!-- 德萨林河 (主河流) -->
+    <path d="M460 85 Q440 130 420 180 Q400 230 380 280 Q360 330 340 380 Q320 420 300 450"
+          stroke-width="2.5" opacity="0.6"/>
+    <!-- 分支 -->
+    <path d="M380 280 Q360 270 340 280 Q310 295 290 310"
+          stroke-width="1.5" opacity="0.5"/>
+    <!-- 无冬河 -->
+    <path d="M260 140 Q230 150 200 158"
+          stroke-width="1.8" opacity="0.55"/>
+    <!-- 迪林比尔河 -->
+    <path d="M300 450 Q270 460 240 465 Q225 470 215 480"
+          stroke-width="2" opacity="0.55"/>
+    <!-- 奇昂提河 -->
+    <path d="M520 90 Q500 110 480 130 Q460 145 440 155"
+          stroke-width="1.5" opacity="0.45"/>
+    <!-- 南方河流 -->
+    <path d="M420 560 Q380 570 340 575 Q300 580 270 590"
+          stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <!-- ==================== 道路 ==================== -->
+  <g class="roads" fill="none" stroke-linecap="round">
+    <!-- 高路 (路斯坎-无冬城) -->
+    <path d="M195 115 Q200 140 205 165 Q208 180 210 195"
+          stroke="#8b7355" stroke-width="2.5" stroke-dasharray="8,4" opacity="0.5"/>
+    <!-- 高路续 (无冬城-雷隆-深水城) -->
+    <path d="M210 195 Q210 230 215 270 Q218 300 215 330 Q210 360 215 390"
+          stroke="#8b7355" stroke-width="2.5" stroke-dasharray="8,4" opacity="0.5"/>
+    <!-- 贸易之路 (深水城-匕首滩-博德之门) -->
+    <path d="M215 390 Q218 420 222 450 Q225 480 230 510 Q235 540 240 570 Q245 590 255 610"
+          stroke="#8b7355" stroke-width="2.5" stroke-dasharray="8,4" opacity="0.5"/>
+    <!-- 长路 (深水城-崔波镇) -->
+    <path d="M215 390 Q260 370 310 350 Q350 335 390 310"
+          stroke="#8b7355" stroke-width="2" stroke-dasharray="6,3" opacity="0.45"/>
+    <!-- 三野猪小径 (无冬城-凡德林) -->
+    <path d="M210 195 Q230 210 250 225 Q265 235 275 245"
+          stroke="#7a6a55" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.35"/>
+    <!-- 崔波小径 (凡德林-崔波镇) -->
+    <path d="M275 245 Q310 260 340 280 Q370 295 390 310"
+          stroke="#7a6a55" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.35"/>
+    <!-- 长路东段 (崔波镇-银月城) -->
+    <path d="M390 310 Q430 290 470 270 Q510 250 540 230"
+          stroke="#8b7355" stroke-width="2" stroke-dasharray="6,3" opacity="0.4"/>
+    <!-- 银月之路 -->
+    <path d="M540 230 Q570 240 600 252 Q630 260 650 270"
+          stroke="#7a6a55" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.35"/>
+    <!-- 矮人之路 -->
+    <path d="M650 270 Q680 250 700 225 Q720 205 735 185"
+          stroke="#7a6a55" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.3"/>
+    <!-- 烛堡之路 -->
+    <path d="M240 570 Q235 590 230 610 Q228 630 228 645"
+          stroke="#7a6a55" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.3"/>
+  </g>
+
+  <!-- ==================== 城市标记 ==================== -->
+  <!-- 路斯坎 -->
+  <g class="city" filter="url(#cityGlow)">
+    <circle cx="195" cy="115" r="6" fill="#f5e6c8" stroke="#8b6914" stroke-width="1.5"/>
+    <circle cx="195" cy="115" r="3" fill="#c8a050"/>
+    <rect x="191" y="108" width="8" height="5" fill="none" stroke="#8b6914" stroke-width="0.6" rx="0.5"/>
+    <text x="207" y="119" fill="#4a3520" font-size="11" font-weight="bold">路斯坎</text>
+  </g>
+
+  <!-- 无冬城 -->
+  <g class="city" filter="url(#cityGlow)">
+    <circle cx="210" cy="195" r="7" fill="#f5e6c8" stroke="#8b6914" stroke-width="1.8"/>
+    <circle cx="210" cy="195" r="3.5" fill="#c8a050"/>
+    <rect x="205" y="187" width="10" height="6" fill="none" stroke="#8b6914" stroke-width="0.7" rx="0.5"/>
+    <path d="M208 187 L210 183 L212 187" fill="#c8a050" stroke="#8b6914" stroke-width="0.5"/>
+    <text x="223" y="199" fill="#4a3520" font-size="11.5" font-weight="bold">无冬城</text>
+  </g>
+
+  <!-- 雷隆 -->
+  <g class="city">
+    <circle cx="215" cy="270" r="4.5" fill="#f5e6c8" stroke="#8b6914" stroke-width="1.2"/>
+    <circle cx="215" cy="270" r="2.2" fill="#c8a050"/>
+    <text x="225" y="274" fill="#4a3520" font-size="9">雷隆</text>
+  </g>
+
+  <!-- 凡德林 -->
+  <g class="city">
+    <circle cx="275" cy="245" r="4.5" fill="#f5e6c8" stroke="#8b6914" stroke-width="1.2"/>
+    <circle cx="275" cy="245" r="2.2" fill="#c8a050"/>
+    <text x="285" y="249" fill="#4a3520" font-size="9">凡德林</text>
+  </g>
+
+  <!-- 深水城 (大城市) -->
+  <g class="city" filter="url(#cityGlow)">
+    <circle cx="215" cy="390" r="8" fill="#f5e6c8" stroke="#a07818" stroke-width="2"/>
+    <circle cx="215" cy="390" r="4" fill="#c8a050"/>
+    <rect x="210" y="381" width="10" height="7" fill="none" stroke="#a07818" stroke-width="0.8" rx="0.5"/>
+    <path d="M212 381 L215 376 L218 381" fill="#c8a050" stroke="#a07818" stroke-width="0.5"/>
+    <path d="M209 381 L209 377 M221 381 L221 377" fill="none" stroke="#a07818" stroke-width="0.5"/>
+    <text x="229" y="395" fill="#3a2510" font-size="13" font-weight="bold">深水城</text>
+  </g>
+
+  <!-- 匕首滩 -->
+  <g class="city">
+    <circle cx="222" cy="455" r="5" fill="#f5e6c8" stroke="#8b6914" stroke-width="1.3"/>
+    <circle cx="222" cy="455" r="2.5" fill="#c8a050"/>
+    <text x="232" y="459" fill="#4a3520" font-size="9.5">匕首滩</text>
+  </g>
+
+  <!-- 崔波镇 -->
+  <g class="city">
+    <circle cx="390" cy="310" r="5" fill="#f5e6c8" stroke="#8b6914" stroke-width="1.3"/>
+    <circle cx="390" cy="310" r="2.5" fill="#c8a050"/>
+    <text x="400" y="314" fill="#4a3520" font-size="9.5">崔波镇</text>
+  </g>
+
+  <!-- 博德之门 (大城市) -->
+  <g class="city" filter="url(#cityGlow)">
+    <circle cx="240" cy="570" r="8" fill="#f5e6c8" stroke="#a07818" stroke-width="2"/>
+    <circle cx="240" cy="570" r="4" fill="#c8a050"/>
+    <rect x="235" y="561" width="10" height="7" fill="none" stroke="#a07818" stroke-width="0.8" rx="0.5"/>
+    <path d="M237 561 L240 556 L243 561" fill="#c8a050" stroke="#a07818" stroke-width="0.5"/>
+    <path d="M234 561 L234 557 M246 561 L246 557" fill="none" stroke="#a07818" stroke-width="0.5"/>
+    <text x="254" y="575" fill="#3a2510" font-size="13" font-weight="bold">博德之门</text>
+  </g>
+
+  <!-- 烛堡 -->
+  <g class="city">
+    <circle cx="228" cy="645" r="5" fill="#f5e6c8" stroke="#8b6914" stroke-width="1.3"/>
+    <circle cx="228" cy="645" r="2.5" fill="#c8a050"/>
+    <rect x="224" y="638" width="8" height="5" fill="none" stroke="#8b6914" stroke-width="0.6" rx="0.5"/>
+    <text x="238" y="649" fill="#4a3520" font-size="9.5">烛堡</text>
+  </g>
+
+  <!-- 银月城 -->
+  <g class="city" filter="url(#cityGlow)">
+    <circle cx="540" cy="230" r="7" fill="#f5e6c8" stroke="#8b6914" stroke-width="1.8"/>
+    <circle cx="540" cy="230" r="3.5" fill="#c8a050"/>
+    <path d="M537 224 Q540 220 543 224" fill="none" stroke="#c8a050" stroke-width="1"/>
+    <text x="553" y="234" fill="#4a3520" font-size="11" font-weight="bold">银月城</text>
+  </g>
+
+  <!-- 艾佛伦德 -->
+  <g class="city">
+    <circle cx="650" cy="270" r="5.5" fill="#f5e6c8" stroke="#8b6914" stroke-width="1.3"/>
+    <circle cx="650" cy="270" r="2.8" fill="#c8a050"/>
+    <text x="661" y="274" fill="#4a3520" font-size="9.5">艾佛伦德</text>
+  </g>
+
+  <!-- 阿德巴要塞 -->
+  <g class="city">
+    <circle cx="735" cy="185" r="5" fill="#f5e6c8" stroke="#8b6914" stroke-width="1.3"/>
+    <circle cx="735" cy="185" r="2.5" fill="#c8a050"/>
+    <rect x="731" y="178" width="8" height="5" fill="none" stroke="#8b6914" stroke-width="0.6" rx="0.5"/>
+    <text x="745" y="189" fill="#4a3520" font-size="9">阿德巴要塞</text>
+  </g>
+
+  <!-- ==================== 区域标签 ==================== -->
+  <text x="700" y="120" text-anchor="middle" fill="#6a5540" font-size="14" font-style="italic" letter-spacing="8" opacity="0.6">银 月 诸 境</text>
+  <text x="680" y="400" text-anchor="middle" fill="#6a5540" font-size="13" font-style="italic" letter-spacing="6" opacity="0.5">北  地</text>
+  <text x="450" y="540" text-anchor="middle" fill="#6a5540" font-size="14" font-style="italic" letter-spacing="8" opacity="0.5">剑    湾</text>
+
+  <!-- 海洋标签 -->
+  <text transform="translate(90,420) rotate(-75)" text-anchor="middle" fill="rgba(200,220,240,0.35)" font-size="20" font-style="italic" letter-spacing="12">剑    海</text>
+
+  <!-- ==================== 帆船装饰 ==================== -->
+  <g class="ship" transform="translate(100,250)" opacity="0.4">
+    <path d="M-8 0 Q0 -3 8 0 Q0 2 -8 0Z" fill="#6a5540" stroke="#4a3520" stroke-width="0.5"/>
+    <line x1="0" y1="-1" x2="0" y2="-12" stroke="#4a3520" stroke-width="0.6"/>
+    <path d="M0 -12 Q6 -8 0 -4" fill="#d4c4a0" stroke="#4a3520" stroke-width="0.4"/>
+  </g>
+  <g class="ship" transform="translate(70,460)" opacity="0.35">
+    <path d="M-6 0 Q0 -2 6 0 Q0 1.5 -6 0Z" fill="#6a5540" stroke="#4a3520" stroke-width="0.4"/>
+    <line x1="0" y1="-1" x2="0" y2="-9" stroke="#4a3520" stroke-width="0.5"/>
+    <path d="M0 -9 Q5 -6 0 -3" fill="#d4c4a0" stroke="#4a3520" stroke-width="0.3"/>
+  </g>
+  <g class="ship" transform="translate(130,580)" opacity="0.3">
+    <path d="M-7 0 Q0 -2.5 7 0 Q0 1.8 -7 0Z" fill="#6a5540" stroke="#4a3520" stroke-width="0.4"/>
+    <line x1="0" y1="-1" x2="0" y2="-10" stroke="#4a3520" stroke-width="0.5"/>
+    <path d="M0 -10 Q5 -7 0 -4" fill="#d4c4a0" stroke="#4a3520" stroke-width="0.3"/>
+  </g>
+
+  <!-- 海怪 (装饰) -->
+  <g transform="translate(55,350)" opacity="0.2">
+    <path d="M0 0 Q8 -8 16 -3 Q24 2 20 10 Q16 8 12 10 Q8 12 4 8 Q0 5 0 0Z" fill="none" stroke="#4a3520" stroke-width="1"/>
+    <circle cx="6" cy="2" r="1" fill="#4a3520"/>
+  </g>
+
+  <!-- ==================== 指南针 ==================== -->
+  <g class="compass" transform="translate(120,110)">
+    <!-- 外圈 -->
+    <circle cx="0" cy="0" r="28" fill="rgba(212,196,160,0.7)" stroke="#8b7355" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#8b7355" stroke-width="0.5"/>
+    <!-- 刻度 -->
+    <line x1="0" y1="-24" x2="0" y2="-21" stroke="#8b7355" stroke-width="1"/>
+    <line x1="0" y1="21" x2="0" y2="24" stroke="#8b7355" stroke-width="1"/>
+    <line x1="-24" y1="0" x2="-21" y2="0" stroke="#8b7355" stroke-width="1"/>
+    <line x1="21" y1="0" x2="24" y2="0" stroke="#8b7355" stroke-width="1"/>
+    <!-- 小刻度 -->
+    <line x1="17" y1="-17" x2="15" y2="-15" stroke="#8b7355" stroke-width="0.5"/>
+    <line x1="17" y1="17" x2="15" y2="15" stroke="#8b7355" stroke-width="0.5"/>
+    <line x1="-17" y1="-17" x2="-15" y2="-15" stroke="#8b7355" stroke-width="0.5"/>
+    <line x1="-17" y1="17" x2="-15" y2="15" stroke="#8b7355" stroke-width="0.5"/>
+    <!-- 指针 - 北 (金色) -->
+    <path d="M0 -18 L4 0 L0 -5 L-4 0 Z" fill="#c8a050" stroke="#8b6914" stroke-width="0.5"/>
+    <!-- 指针 - 南 (暗色) -->
+    <path d="M0 18 L4 0 L0 5 L-4 0 Z" fill="#6a5540" stroke="#4a3520" stroke-width="0.5"/>
+    <!-- 指针 - 东 -->
+    <path d="M18 0 L0 3 L5 0 L0 -3 Z" fill="#a08060" stroke="#8b6914" stroke-width="0.3"/>
+    <!-- 指针 - 西 -->
+    <path d="M-18 0 L0 3 L-5 0 L0 -3 Z" fill="#8b7355" stroke="#4a3520" stroke-width="0.3"/>
+    <!-- 中心 -->
+    <circle cx="0" cy="0" r="2.5" fill="#c8a050" stroke="#8b6914" stroke-width="0.8"/>
+    <!-- 方向标签 -->
+    <text x="0" y="-30" text-anchor="middle" fill="#4a3520" font-size="8" font-weight="bold">北</text>
+    <text x="0" y="37" text-anchor="middle" fill="#6a5540" font-size="6">南</text>
+    <text x="33" y="3" text-anchor="middle" fill="#6a5540" font-size="6">东</text>
+    <text x="-33" y="3" text-anchor="middle" fill="#6a5540" font-size="6">西</text>
+  </g>
+
+  </g><!-- end mapClip -->
+
+  <!-- ==================== 标题栏 ==================== -->
+  <g class="title-cartouche" transform="translate(570, 560)">
+    <!-- 卷轴背景 -->
+    <rect x="-120" y="-25" width="240" height="55" rx="3" fill="rgba(212,196,160,0.85)" stroke="#8b7355" stroke-width="1.5"/>
+    <rect x="-115" y="-21" width="230" height="47" rx="2" fill="none" stroke="#8b7355" stroke-width="0.6"/>
+    <!-- 装饰线 -->
+    <line x1="-100" y1="-10" x2="100" y2="-10" stroke="#c8a050" stroke-width="0.5"/>
+    <line x1="-100" y1="18" x2="100" y2="18" stroke="#c8a050" stroke-width="0.5"/>
+    <!-- 标题 -->
+    <text x="0" y="8" text-anchor="middle" fill="#3a2510" font-size="16" font-weight="bold" letter-spacing="6">剑 湾 地 区</text>
+    <text x="0" y="26" text-anchor="middle" fill="#6a5540" font-size="7.5" letter-spacing="1">THE SWORD COAST</text>
+    <!-- 小装饰 -->
+    <path d="M-50 -15 L-45 -18 L-40 -15" fill="none" stroke="#c8a050" stroke-width="0.6"/>
+    <path d="M40 -15 L45 -18 L50 -15" fill="none" stroke="#c8a050" stroke-width="0.6"/>
+  </g>
+
+  <!-- ==================== 图例 ==================== -->
+  <g class="legend" transform="translate(770, 450)">
+    <rect x="-45" y="-10" width="100" height="85" rx="2" fill="rgba(212,196,160,0.7)" stroke="#8b7355" stroke-width="0.8"/>
+    <text x="5" y="5" text-anchor="middle" fill="#4a3520" font-size="7.5" font-weight="bold">图 例</text>
+    <!-- 大城市 -->
+    <circle cx="-30" cy="18" r="4" fill="#f5e6c8" stroke="#a07818" stroke-width="1.2"/>
+    <circle cx="-30" cy="18" r="2" fill="#c8a050"/>
+    <text x="-20" y="21" fill="#4a3520" font-size="6.5">大城市</text>
+    <!-- 城镇 -->
+    <circle cx="-30" cy="33" r="3" fill="#f5e6c8" stroke="#8b6914" stroke-width="1"/>
+    <circle cx="-30" cy="33" r="1.5" fill="#c8a050"/>
+    <text x="-20" y="36" fill="#4a3520" font-size="6.5">城镇</text>
+    <!-- 主路 -->
+    <line x1="-38" y1="48" x2="-22" y2="48" stroke="#8b7355" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <text x="-20" y="51" fill="#4a3520" font-size="6.5">主要道路</text>
+    <!-- 小路 -->
+    <line x1="-38" y1="63" x2="-22" y2="63" stroke="#7a6a55" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="-20" y="66" fill="#4a3520" font-size="6.5">小径</text>
+  </g>
+
+</svg>
+</body>
+</html>

@@ -1,0 +1,2 @@
+const i=`
+`;function h(){const r=new Map,n=new Map,s=e=>e.sort((t,o)=>t-o).map(t=>r.get(t)??"").filter(t=>t.trim().length>0).join(i),c=e=>s([...n.entries()].filter(([,t])=>t===e).map(([t])=>t)),a=()=>s([...r.keys()].filter(e=>!n.has(e)));return{append(e,t){r.set(e,(r.get(e)??"")+t);const o=n.get(e);return o===void 0?{anchorRound:null,text:a()}:{anchorRound:o,text:c(o)}},claim(e){n.has(e)||n.set(e,e);for(const t of r.keys())t<=e&&!n.has(t)&&n.set(t,e);return c(e)},unclaimedText(){return a()}}}export{h as c};

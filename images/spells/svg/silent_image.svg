@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="silent_image-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#0a3a42"/><stop offset=".5" stop-color="#0a222a"/><stop offset="1" stop-color="#05141a"/>
+    </radialGradient>
+    <radialGradient id="silent_image-halo" cx=".5" cy=".46" r=".5">
+      <stop offset="0" stop-color="#3ee6c4" stop-opacity=".5"/><stop offset="1" stop-color="#3ee6c4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="silent_image-frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2fb7a0"/><stop offset="1" stop-color="#0d4b48"/>
+    </linearGradient>
+    <radialGradient id="silent_image-fig" cx=".5" cy=".32" r=".8">
+      <stop offset="0" stop-color="#eafff9"/><stop offset=".5" stop-color="#6fefd6"/><stop offset="1" stop-color="#178a76"/>
+    </radialGradient>
+    <radialGradient id="silent_image-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#silent_image-bg)"/>
+  <rect width="64" height="64" fill="url(#silent_image-halo)"/>
+  <rect x="13.5" y="9.5" width="37" height="45" rx="2" fill="url(#silent_image-frame)"/>
+  <rect x="17.5" y="13.5" width="29" height="37" rx="1" fill="#062a2e"/>
+  <ellipse cx="32" cy="33" rx="12" ry="16" fill="#3ee6c4" opacity=".2"/>
+  <path d="M32 21 C27.5 21 25 25 25 29.5 C25 33 27 35 27 38.5 L27 48 L37 48 L37 38.5 C37 35 39 33 39 29.5 C39 25 36.5 21 32 21 Z" fill="url(#silent_image-fig)" opacity=".88"/>
+  <ellipse cx="32" cy="18.5" rx="4.4" ry="4.7" fill="url(#silent_image-fig)" opacity=".88"/>
+  <path d="M32 21 C36.5 21 39 25 39 29.5 C39 33 37 35 37 38.5 L37 48 L32 48 Z" fill="#0f5e52" opacity=".4"/>
+  <ellipse cx="29.5" cy="27" rx="2" ry="2.8" fill="#eafff9" opacity=".55"/>
+  <rect x="17.5" y="13.5" width="29" height="4" fill="#c8fff0" opacity=".1"/>
+  <circle cx="51" cy="18" r="1.4" fill="#c8fff0" opacity=".8"/>
+  <circle cx="12" cy="46" r="1.1" fill="#3ee6c4" opacity=".7"/>
+  <circle cx="53" cy="50" r="1" fill="#6fefd6" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#silent_image-vig)"/>
+</svg>

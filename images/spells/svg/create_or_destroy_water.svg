@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="create_or_destroy_water-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#123a44"/><stop offset=".5" stop-color="#0a222b"/><stop offset="1" stop-color="#05141a"/>
+    </radialGradient>
+    <radialGradient id="create_or_destroy_water-halo" cx=".5" cy=".48" r=".5">
+      <stop offset="0" stop-color="#7fe0ff" stop-opacity=".5"/><stop offset="1" stop-color="#7fe0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="create_or_destroy_water-drop" cx=".4" cy=".62" r=".75">
+      <stop offset="0" stop-color="#eafaff"/><stop offset=".4" stop-color="#9fe4ff"/><stop offset=".78" stop-color="#3a9fd6"/><stop offset="1" stop-color="#155c8a"/>
+    </radialGradient>
+    <radialGradient id="create_or_destroy_water-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#create_or_destroy_water-bg)"/>
+  <rect width="64" height="64" fill="url(#create_or_destroy_water-halo)"/>
+  <path d="M32 8 C41 25 49 34 49 43 C49 52 42 58 32 58 C22 58 15 52 15 43 C15 34 23 25 32 8 Z" fill="#7fe0ff" opacity=".18"/>
+  <path d="M32 12 C40 27 46 35 46 43 C46 51 40 56 32 56 C24 56 18 51 18 43 C18 35 24 27 32 12 Z" fill="url(#create_or_destroy_water-drop)"/>
+  <path d="M26 46 C26 40 29 35 33 31" fill="none" stroke="#eafaff" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+  <ellipse cx="26" cy="36" rx="3.2" ry="5" fill="#eafaff" opacity=".45" transform="rotate(-16 26 36)"/>
+  <path d="M23 47 A9 9 0 0 0 41 47" fill="none" stroke="#155c8a" stroke-width="1.6" opacity=".5"/>
+  <path d="M22 30 C26 32 30 32 34 30" fill="none" stroke="#cceeff" stroke-width="1" opacity=".5"/>
+  <circle cx="47" cy="18" r="2.3" fill="#7fe0ff" opacity=".8"/>
+  <circle cx="15" cy="22" r="1.7" fill="#cceeff" opacity=".8"/>
+  <circle cx="50" cy="32" r="1.2" fill="#cceeff" opacity=".7"/>
+  <circle cx="13" cy="38" r="1.1" fill="#7fe0ff" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#create_or_destroy_water-vig)"/>
+</svg>

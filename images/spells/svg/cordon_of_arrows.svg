@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="cordon_of_arrows-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#3a2410"/><stop offset=".5" stop-color="#1f1408"/><stop offset="1" stop-color="#100a04"/>
+    </radialGradient>
+    <radialGradient id="cordon_of_arrows-halo" cx=".5" cy=".55" r=".5">
+      <stop offset="0" stop-color="#ffcf7a" stop-opacity=".4"/><stop offset="1" stop-color="#ffcf7a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cordon_of_arrows-shaft" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#7a5a30"/><stop offset=".5" stop-color="#b89058"/><stop offset="1" stop-color="#e6d0a4"/>
+    </linearGradient>
+    <radialGradient id="cordon_of_arrows-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#cordon_of_arrows-bg)"/>
+  <rect width="64" height="64" fill="url(#cordon_of_arrows-halo)"/>
+  <ellipse cx="32" cy="52" rx="25" ry="6" fill="#ffb02e" opacity=".16"/>
+  <path d="M6 52 C18 47 46 47 58 52" fill="none" stroke="#4a2c0c" stroke-width="2" opacity=".7"/>
+  <g stroke="url(#cordon_of_arrows-shaft)" stroke-width="2.2" stroke-linecap="round">
+    <line x1="15" y1="51" x2="11" y2="18"/>
+    <line x1="24" y1="53" x2="23" y2="12"/>
+    <line x1="40" y1="53" x2="41" y2="12"/>
+    <line x1="49" y1="51" x2="53" y2="18"/>
+  </g>
+  <polygon points="11,18 8,25 14,25" fill="#dfeaf4"/>
+  <polygon points="23,12 19.5,19.5 26.5,19.5" fill="#eef4fa"/>
+  <polygon points="41,12 37.5,19.5 44.5,19.5" fill="#eef4fa"/>
+  <polygon points="53,18 50,25 56,25" fill="#dfeaf4"/>
+  <path d="M11 18 l-3 4.5 3-1 3 1 Z" fill="#d4783f"/>
+  <path d="M23 12 l-3.5 5 3.5-1 3.5 1 Z" fill="#e08a44"/>
+  <path d="M41 12 l-3.5 5 3.5-1 3.5 1 Z" fill="#e08a44"/>
+  <path d="M53 18 l-3 4.5 3-1 3 1 Z" fill="#d4783f"/>
+  <line x1="23" y1="14" x2="23" y2="50" stroke="#fff3d6" stroke-width=".6" opacity=".4"/>
+  <circle cx="24" cy="10" r="1.4" fill="#ffe0a0" opacity=".85"/>
+  <circle cx="41" cy="10" r="1.1" fill="#ffcf7a" opacity=".7"/>
+  <circle cx="10" cy="44" r="1" fill="#ffcf7a" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#cordon_of_arrows-vig)"/>
+</svg>

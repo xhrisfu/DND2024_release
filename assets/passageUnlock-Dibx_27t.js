@@ -1,0 +1,1 @@
+import{lo as u}from"./eventTargetElement-iztgG40S.js";const s="__passage_unlocked__:";function o(e,n){return`${s}${e}->${n}`}function l(e,n,r){if(!e)return!1;const a=n?e[o(n,r)]:void 0,i=n?e[o(r,n)]:void 0;return!!(a||i||e[`${s}->${r}`])}function c(e,n){return n?e.unlockCondition&&u(e.unlockCondition,n)?!0:l(n.flags,e.fromLocationId,e.toLocationId):!1}export{c as i,l as p};

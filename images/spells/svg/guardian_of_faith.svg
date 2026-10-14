@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="guardian_of_faith-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#43370f"/><stop offset=".5" stop-color="#241c08"/><stop offset="1" stop-color="#12100a"/>
+    </radialGradient>
+    <radialGradient id="guardian_of_faith-halo" cx=".5" cy=".28" r=".5">
+      <stop offset="0" stop-color="#fff3c4" stop-opacity=".6"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="guardian_of_faith-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf2"/><stop offset=".45" stop-color="#ffe28a"/><stop offset="1" stop-color="#d09a2e"/>
+    </linearGradient>
+    <radialGradient id="guardian_of_faith-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".58"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#guardian_of_faith-bg)"/>
+  <rect width="64" height="64" fill="url(#guardian_of_faith-halo)"/>
+  <ellipse cx="32" cy="46" rx="20" ry="8" fill="#ffe9a8" opacity=".12"/>
+  <path d="M32 13 C25 13 21 18 21 25 C21 34 23 46 25 55 L39 55 C41 46 43 34 43 25 C43 18 39 13 32 13 Z" fill="#ffe9a8" opacity=".2"/>
+  <path d="M32 15 C26 15 23 19 23 25 C23 34 25 45 26.5 53 L37.5 53 C39 45 41 34 41 25 C41 19 38 15 32 15 Z" fill="url(#guardian_of_faith-body)"/>
+  <circle cx="32" cy="17" r="5.2" fill="url(#guardian_of_faith-body)"/>
+  <path d="M32 23 C29 25 27.5 29 27.5 35 C31 33 33 33 36.5 35 C36.5 29 35 25 32 23 Z" fill="#fffbe8" opacity=".65"/>
+  <path d="M26 31 L20 28 M38 31 L44 28" stroke="#fff3c4" stroke-width="1.5" opacity=".5" stroke-linecap="round"/>
+  <circle cx="32" cy="9" r="3.6" fill="none" stroke="#fff3c4" stroke-width="1.6" opacity=".85"/>
+  <ellipse cx="30" cy="15.5" rx="2" ry="1.2" fill="#fff" opacity=".6" transform="rotate(-25 30 15.5)"/>
+  <circle cx="32" cy="43" r="1.6" fill="#fff"/>
+  <circle cx="16" cy="18" r="1.2" fill="#fff3c4" opacity=".8"/>
+  <circle cx="48" cy="20" r="1.1" fill="#ffe9a8" opacity=".75"/>
+  <circle cx="46" cy="47" r=".9" fill="#ffd54d" opacity=".6"/>
+  <circle cx="17" cy="46" r=".8" fill="#ffe9a8" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#guardian_of_faith-vig)"/>
+</svg>

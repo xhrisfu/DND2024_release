@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="nystul_s_magic_aura-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#0a3a42"/><stop offset=".5" stop-color="#0a222a"/><stop offset="1" stop-color="#05141a"/>
+    </radialGradient>
+    <radialGradient id="nystul_s_magic_aura-halo" cx=".5" cy=".46" r=".5">
+      <stop offset="0" stop-color="#3ee6c4" stop-opacity=".5"/><stop offset="1" stop-color="#3ee6c4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nystul_s_magic_aura-orb" cx=".4" cy=".34" r=".9">
+      <stop offset="0" stop-color="#eafff9"/><stop offset=".5" stop-color="#5cead0"/><stop offset="1" stop-color="#127a68"/>
+    </radialGradient>
+    <radialGradient id="nystul_s_magic_aura-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#nystul_s_magic_aura-bg)"/>
+  <rect width="64" height="64" fill="url(#nystul_s_magic_aura-halo)"/>
+  <circle cx="32" cy="32" r="24" fill="none" stroke="#3ee6c4" stroke-width="1.2" opacity=".28" stroke-dasharray="2.5 4"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#6fefd6" stroke-width="1.3" opacity=".5" stroke-dasharray="6 4"/>
+  <circle cx="32" cy="32" r="14.5" fill="none" stroke="#3ee6c4" stroke-width="2" opacity=".65"/>
+  <g fill="none" stroke="#9ff5e4" stroke-width="1.2" opacity=".55">
+    <path d="M32 8 L32 12"/><path d="M32 52 L32 56"/><path d="M8 32 L12 32"/><path d="M52 32 L56 32"/>
+    <path d="M15 15 L18 18"/><path d="M49 49 L46 46"/><path d="M15 49 L18 46"/><path d="M49 15 L46 18"/>
+  </g>
+  <circle cx="32" cy="32" r="10" fill="#3ee6c4" opacity=".2"/>
+  <circle cx="32" cy="32" r="7.5" fill="url(#nystul_s_magic_aura-orb)"/>
+  <path d="M32 26.5 l1.4 3 3.3.5 -2.4 2.3 .6 3.3 -2.9-1.6 -2.9 1.6 .6-3.3 -2.4-2.3 3.3-.5 Z" fill="#eafff9" opacity=".85"/>
+  <ellipse cx="29.5" cy="29.5" rx="2.4" ry="1.6" fill="#fff" opacity=".55" transform="rotate(-25 29.5 29.5)"/>
+  <circle cx="52" cy="18" r="1.4" fill="#c8fff0" opacity=".8"/>
+  <circle cx="13" cy="46" r="1.1" fill="#3ee6c4" opacity=".7"/>
+  <circle cx="49" cy="49" r="1" fill="#6fefd6" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#nystul_s_magic_aura-vig)"/>
+</svg>

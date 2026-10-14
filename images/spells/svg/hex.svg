@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="hex-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#16281a"/><stop offset=".5" stop-color="#0d1a10"/><stop offset="1" stop-color="#060c06"/>
+    </radialGradient>
+    <radialGradient id="hex-halo" cx=".5" cy=".46" r=".5">
+      <stop offset="0" stop-color="#7ee23c" stop-opacity=".4"/><stop offset="1" stop-color="#7ee23c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hex-eye" cx=".5" cy=".42" r=".7">
+      <stop offset="0" stop-color="#d6ffb0"/><stop offset=".45" stop-color="#7ee23c"/><stop offset=".85" stop-color="#2f7018"/><stop offset="1" stop-color="#123008"/>
+    </radialGradient>
+    <radialGradient id="hex-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#hex-bg)"/>
+  <rect width="64" height="64" fill="url(#hex-halo)"/>
+  <polygon points="32,7 53,19 53,45 32,57 11,45 11,19" fill="#2a4a1c" opacity=".4"/>
+  <polygon points="32,9 51,20 51,44 32,55 13,44 13,20" fill="none" stroke="#5aa832" stroke-width="1.3" opacity=".55"/>
+  <polygon points="32,12 48,32 32,52 16,32" fill="none" stroke="#7ee23c" stroke-width="1.2" opacity=".7"/>
+  <polygon points="32,16 44,32 32,48 20,32" fill="#0e2408" opacity=".85"/>
+  <path d="M17 32 C23 25 41 25 47 32 C41 39 23 39 17 32 Z" fill="url(#hex-eye)"/>
+  <circle cx="32" cy="32" r="5.5" fill="#0a1a04"/>
+  <path d="M32 26.5 L32 37.5 M32 32 L34.6 29.4" stroke="#0a1a04" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="2.6" fill="#aef066"/>
+  <circle cx="30.8" cy="30.8" r="1" fill="#eaffd6" opacity=".85"/>
+  <path d="M19 30 C25 26 39 26 45 30" fill="none" stroke="#d6ffb0" stroke-width="1" opacity=".4"/>
+  <circle cx="32" cy="9" r="1.4" fill="#9cf05c" opacity=".9"/>
+  <circle cx="51" cy="44" r="1" fill="#7ee23c" opacity=".7"/>
+  <circle cx="13" cy="44" r=".9" fill="#5aa832" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#hex-vig)"/>
+</svg>

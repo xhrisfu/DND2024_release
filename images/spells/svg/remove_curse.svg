@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="remove_curse-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#123556"/><stop offset=".5" stop-color="#0b2039"/><stop offset="1" stop-color="#050d1a"/>
+    </radialGradient>
+    <radialGradient id="remove_curse-halo" cx=".5" cy=".45" r=".55">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity=".55"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="remove_curse-link" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dff0ff"/><stop offset=".5" stop-color="#7fc4ff"/><stop offset="1" stop-color="#2f6ea8"/>
+    </linearGradient>
+    <linearGradient id="remove_curse-bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf0"/><stop offset="1" stop-color="#ffce4d"/>
+    </linearGradient>
+    <radialGradient id="remove_curse-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#remove_curse-bg)"/>
+  <rect width="64" height="64" fill="url(#remove_curse-halo)"/>
+  <circle cx="32" cy="32" r="15" fill="#ffe9a8" opacity=".18"/>
+  <ellipse cx="17" cy="17" rx="7.5" ry="4.8" fill="none" stroke="url(#remove_curse-link)" stroke-width="3.6" transform="rotate(45 17 17)"/>
+  <ellipse cx="47" cy="47" rx="7.5" ry="4.8" fill="none" stroke="url(#remove_curse-link)" stroke-width="3.6" transform="rotate(45 47 47)"/>
+  <path d="M24 24 L28 29 L23.5 31 L28 34" fill="none" stroke="#5a7ea8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 40 L36 35 L40.5 33 L36 30" fill="none" stroke="#5a7ea8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35 18 L27 33 L33 33 L29 47 L43 29 L36 29 Z" fill="url(#remove_curse-bolt)"/>
+  <path d="M34 21 L30 32 L34.5 32 Z" fill="#fff" opacity=".5"/>
+  <path d="M20 40 L23 43 M44 24 L41 21" stroke="#cfe8ff" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+  <ellipse cx="14" cy="15" rx="2.6" ry="1.4" fill="#fff" opacity=".55" transform="rotate(45 14 15)"/>
+  <circle cx="47" cy="15" r="1.3" fill="#fffdf0" opacity=".85"/>
+  <circle cx="15" cy="47" r="1.1" fill="#7fc4ff" opacity=".7"/>
+  <circle cx="50" cy="30" r=".9" fill="#ffe9a8" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#remove_curse-vig)"/>
+</svg>

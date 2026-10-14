@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="arcane_gate-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#160c2c"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="arcane_gate-halo" cx=".5" cy=".46" r=".6">
+      <stop offset="0" stop-color="#b98cff" stop-opacity=".45"/><stop offset="1" stop-color="#b98cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="arcane_gate-portal" cx=".5" cy=".45" r=".6">
+      <stop offset="0" stop-color="#f0e6ff"/><stop offset=".45" stop-color="#b98cff"/><stop offset=".8" stop-color="#6a2fb8"/><stop offset="1" stop-color="#3a1a58"/>
+    </radialGradient>
+    <radialGradient id="arcane_gate-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#arcane_gate-bg)"/>
+  <rect width="64" height="64" fill="url(#arcane_gate-halo)"/>
+  <ellipse cx="18" cy="33" rx="13" ry="16" fill="#9d5cff" opacity=".16"/>
+  <ellipse cx="47" cy="33" rx="12" ry="15" fill="#9d5cff" opacity=".12"/>
+  <path d="M8 46 C8 26 12 17 18 17 C24 17 28 26 28 46 Z" fill="url(#arcane_gate-portal)"/>
+  <path d="M8 46 C8 26 12 17 18 17 C24 17 28 26 28 46" fill="none" stroke="#e6d6ff" stroke-width="1.6" opacity=".85"/>
+  <path d="M11.5 46 C11.5 30 14.5 22 18 22 C21.5 22 24.5 30 24.5 46" fill="none" stroke="#c8a8ff" stroke-width="1" opacity=".5"/>
+  <ellipse cx="16" cy="28" rx="2.4" ry="3.5" fill="#fff" opacity=".4"/>
+  <path d="M37 47 C37 29 40.5 21 46 21 C51.5 21 55 29 55 47 Z" fill="url(#arcane_gate-portal)" opacity=".85"/>
+  <path d="M37 47 C37 29 40.5 21 46 21 C51.5 21 55 29 55 47" fill="none" stroke="#e6d6ff" stroke-width="1.4" opacity=".7"/>
+  <ellipse cx="44" cy="31" rx="2" ry="2.8" fill="#fff" opacity=".35"/>
+  <path d="M27 36 C33 32 38 37 43 34" stroke="#e6d6ff" stroke-width="1" opacity=".55" fill="none" stroke-dasharray="2 3"/>
+  <circle cx="18" cy="30" r="1.8" fill="#fff" opacity=".8"/>
+  <circle cx="46" cy="34" r="1.5" fill="#fff" opacity=".7"/>
+  <circle cx="32" cy="13" r="1.3" fill="#e6d6ff" opacity=".8"/>
+  <circle cx="33" cy="52" r="1.1" fill="#c8a8ff" opacity=".65"/>
+  <circle cx="52" cy="18" r="1" fill="#b98cff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#arcane_gate-vig)"/>
+</svg>

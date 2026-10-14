@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="magic_jar-bg" cx=".5" cy=".44" r=".9">
+      <stop offset="0" stop-color="#16301a"/><stop offset=".5" stop-color="#0c1c10"/><stop offset="1" stop-color="#060d05"/>
+    </radialGradient>
+    <radialGradient id="magic_jar-halo" cx=".5" cy=".54" r=".48">
+      <stop offset="0" stop-color="#8bff5c" stop-opacity=".45"/><stop offset="1" stop-color="#8bff5c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="magic_jar-glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b0f088" stop-opacity=".4"/><stop offset=".5" stop-color="#4a7a34" stop-opacity=".4"/><stop offset="1" stop-color="#122814" stop-opacity=".6"/>
+    </linearGradient>
+    <radialGradient id="magic_jar-soul" cx=".5" cy=".42" r=".6">
+      <stop offset="0" stop-color="#fbffe8"/><stop offset=".4" stop-color="#c8ff8a"/><stop offset=".75" stop-color="#7ee23c"/><stop offset="1" stop-color="#2f7a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="magic_jar-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#magic_jar-bg)"/>
+  <rect width="64" height="64" fill="url(#magic_jar-halo)"/>
+  <rect x="25" y="9" width="14" height="7" rx="1.6" fill="#4a6630" stroke="#7ea84a" stroke-width="1"/>
+  <path d="M22 34 C21 46 24 55 32 55 C40 55 43 46 42 34 L40 19 C40 16.5 37 16.5 35 16.5 L29 16.5 C27 16.5 24 16.5 24 19 Z" fill="#7ee23c" opacity=".18"/>
+  <path d="M23 20 C23 17 26 17 28 17 L36 17 C38 17 41 17 41 20 L43 34 C44 46 41 54.5 32 54.5 C23 54.5 20 46 21 34 Z" fill="url(#magic_jar-glass)" stroke="#a6e85c" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M32 24 C29.5 30 34 33 32.5 39 C31 44 35 47 32 50.5 C29 47 32.5 44 31 39 C29.5 33 34.5 30 32 24 Z" fill="url(#magic_jar-soul)"/>
+  <circle cx="32" cy="26.5" r="3.4" fill="#fbffe8"/>
+  <circle cx="32" cy="26.5" r="1.6" fill="#fff"/>
+  <path d="M25.5 24 C24.5 33 25 43 27.5 50" fill="none" stroke="#d8ffb0" stroke-width="1.2" opacity=".4"/>
+  <circle cx="46" cy="18" r="1.4" fill="#c8ff8a" opacity=".8"/>
+  <circle cx="17" cy="42" r="1.2" fill="#8bff5c" opacity=".7"/>
+  <circle cx="45" cy="46" r="1" fill="#eaffd0" opacity=".65"/>
+  <circle cx="19" cy="24" r=".9" fill="#a8de6a" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#magic_jar-vig)"/>
+</svg>

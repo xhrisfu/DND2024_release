@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="insect_plague-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#2a1a4a"/><stop offset=".5" stop-color="#160c2c"/><stop offset="1" stop-color="#0a0618"/>
+    </radialGradient>
+    <radialGradient id="insect_plague-halo" cx=".5" cy=".46" r=".55">
+      <stop offset="0" stop-color="#a89a4a" stop-opacity=".45"/><stop offset="1" stop-color="#a89a4a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="insect_plague-swarm" cx=".45" cy=".38" r=".9">
+      <stop offset="0" stop-color="#5a4c1a" stop-opacity=".7"/><stop offset=".6" stop-color="#3a3010" stop-opacity=".5"/><stop offset="1" stop-color="#1a1608" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="insect_plague-hull" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8e07a"/><stop offset=".5" stop-color="#b8a838"/><stop offset="1" stop-color="#6a5c14"/>
+    </linearGradient>
+    <radialGradient id="insect_plague-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#insect_plague-bg)"/>
+  <rect width="64" height="64" fill="url(#insect_plague-halo)"/>
+  <ellipse cx="32" cy="33" rx="24" ry="20" fill="url(#insect_plague-swarm)"/>
+  <ellipse cx="30" cy="33" rx="15" ry="12" fill="#c8b040" opacity=".14"/>
+  <ellipse cx="31" cy="33" rx="11" ry="4.6" fill="url(#insect_plague-hull)" transform="rotate(-12 31 33)"/>
+  <path d="M22 30 C26 26 36 26 40 30" fill="none" stroke="#e8e07a" stroke-width="1.1" opacity=".5"/>
+  <path d="M26 29.5 C27 32 27 34.5 26 37 M31 29 C32 31.5 32 34.5 31 37 M36 29.5 C37 32 37 34.5 36 37" fill="none" stroke="#5a4c14" stroke-width=".9" opacity=".6"/>
+  <ellipse cx="31" cy="30" rx="8" ry="1.6" fill="#fff" opacity=".45" transform="rotate(-12 31 30)"/>
+  <circle cx="20" cy="30" r="3.6" fill="#c8b040"/>
+  <circle cx="18.8" cy="29" r="1.1" fill="#2a2408"/>
+  <path d="M18.5 27 C16 23.5 13.5 21.5 10.5 21" M20.8 27 C19.2 23.3 17.5 21 15 19" fill="none" stroke="#c8b040" stroke-width="1.1"/>
+  <line x1="23" y1="36" x2="20.5" y2="41.5" stroke="#8a7a20" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="28" y1="37.5" x2="26.5" y2="43" stroke="#8a7a20" stroke-width="1.5" stroke-linecap="round"/>
+  <ellipse cx="46" cy="16" rx="2.3" ry="1.2" fill="#d8c04a" transform="rotate(-24 46 16)"/>
+  <ellipse cx="52" cy="26" rx="2" ry="1.1" fill="#b8a838" transform="rotate(16 52 26)"/>
+  <ellipse cx="13" cy="45" rx="2" ry="1.1" fill="#b8a838" transform="rotate(-30 13 45)"/>
+  <circle cx="51" cy="46" r="1" fill="#c8b040" opacity=".8"/>
+  <circle cx="18" cy="13" r="1" fill="#d8c04a" opacity=".7"/>
+  <circle cx="47" cy="39" r=".8" fill="#e8e07a" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#insect_plague-vig)"/>
+</svg>

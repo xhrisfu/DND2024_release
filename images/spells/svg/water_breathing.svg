@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="water_breathing-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#123a44"/><stop offset=".5" stop-color="#0a2430"/><stop offset="1" stop-color="#05141a"/>
+    </radialGradient>
+    <radialGradient id="water_breathing-halo" cx=".38" cy=".6" r=".55">
+      <stop offset="0" stop-color="#7fe0ff" stop-opacity=".5"/><stop offset="1" stop-color="#7fe0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="water_breathing-bub" cx=".38" cy=".3" r=".85">
+      <stop offset="0" stop-color="#eafcff"/><stop offset=".5" stop-color="#7fe0ff"/><stop offset=".85" stop-color="#2a86bf"/><stop offset="1" stop-color="#124055" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="water_breathing-vig" cx=".5" cy=".44" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#water_breathing-bg)"/>
+  <rect width="64" height="64" fill="url(#water_breathing-halo)"/>
+  <ellipse cx="32" cy="34" rx="19" ry="21" fill="#7fe0ff" opacity=".1"/>
+  <g fill="none" stroke="#9fe8ff" stroke-width="1.8" stroke-linecap="round" opacity=".65">
+    <path d="M41 27 C47 27 48 31 45 34"/>
+    <path d="M41 34 C48 34 50 38 46 41"/>
+    <path d="M41 41 C47 41 48 45 45 48"/>
+  </g>
+  <circle cx="24" cy="43" r="10" fill="url(#water_breathing-bub)"/>
+  <circle cx="34" cy="24" r="5.2" fill="url(#water_breathing-bub)"/>
+  <circle cx="42" cy="14" r="3.2" fill="url(#water_breathing-bub)"/>
+  <circle cx="47" cy="7" r="2" fill="url(#water_breathing-bub)"/>
+  <ellipse cx="20.5" cy="39" rx="3.2" ry="2.2" fill="#fff" opacity=".7"/>
+  <ellipse cx="32" cy="22" rx="1.7" ry="1.2" fill="#fff" opacity=".75"/>
+  <circle cx="14" cy="24" r="1.1" fill="#9fe8ff" opacity=".7"/>
+  <circle cx="52" cy="34" r="1" fill="#eafcff" opacity=".7"/>
+  <rect width="64" height="64" fill="url(#water_breathing-vig)"/>
+</svg>

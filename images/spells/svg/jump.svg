@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="jump-bg" cx=".5" cy=".42" r=".9">
+      <stop offset="0" stop-color="#3a2410"/><stop offset=".5" stop-color="#1f1408"/><stop offset="1" stop-color="#100a04"/>
+    </radialGradient>
+    <radialGradient id="jump-halo" cx=".52" cy=".4" r=".5">
+      <stop offset="0" stop-color="#ffcf7a" stop-opacity=".45"/><stop offset="1" stop-color="#ffcf7a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="jump-arc" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffb02e" stop-opacity=".2"/><stop offset=".5" stop-color="#ffdc8a"/><stop offset="1" stop-color="#fff3d6"/>
+    </linearGradient>
+    <radialGradient id="jump-boot" cx=".4" cy=".35" r=".9">
+      <stop offset="0" stop-color="#ffe6b0"/><stop offset=".5" stop-color="#ffb02e"/><stop offset="1" stop-color="#a35c00"/>
+    </radialGradient>
+    <radialGradient id="jump-vig" cx=".5" cy=".46" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#jump-bg)"/>
+  <rect width="64" height="64" fill="url(#jump-halo)"/>
+  <path d="M8 54 C16 30 34 16 58 12" fill="none" stroke="#ffb02e" stroke-width="6" opacity=".14" stroke-linecap="round"/>
+  <path d="M8 54 C16 30 34 16 58 12" fill="none" stroke="url(#jump-arc)" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M8 54 C15 33 30 20 48 14" fill="none" stroke="#fff3d6" stroke-width="1" opacity=".5" stroke-dasharray="1.5 4"/>
+  <path d="M28 18 C22 24 22 32 27 37 C25 33 26 28 30 25 C29 30 32 34 37 34 C33 33 31 29 32 24 C35 27 39 27 41 23 C37 25 33 23 32 18 Z" fill="#ffb02e" opacity=".24"/>
+  <path d="M43 25 C36 20 27 22 25 30 C24 34 27 37 31 36 C29 33 30 29 34 28 C31 31 32 36 37 37 L46 33 Z" fill="url(#jump-boot)" stroke="#a35c00" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M46 33 L49 30 L48 27 L45 30 Z" fill="#a35c00"/>
+  <path d="M28 30 C31 28 35 28 38 30" fill="none" stroke="#fff3d6" stroke-width="1" opacity=".55"/>
+  <ellipse cx="38" cy="26" rx="2.6" ry="1.3" fill="#fffbe8" opacity=".6" transform="rotate(-24 38 26)"/>
+  <circle cx="56" cy="10" r="1.5" fill="#fff3d6" opacity=".9"/>
+  <circle cx="12" cy="48" r="1.2" fill="#ffcf7a" opacity=".7"/>
+  <circle cx="47" cy="44" r="1" fill="#ffdc8a" opacity=".65"/>
+  <rect width="64" height="64" fill="url(#jump-vig)"/>
+</svg>

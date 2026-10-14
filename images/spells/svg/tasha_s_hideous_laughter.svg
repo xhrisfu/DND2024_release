@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="tasha_s_hideous_laughter-bg" cx=".5" cy=".4" r=".9">
+      <stop offset="0" stop-color="#4a1240"/><stop offset=".5" stop-color="#2a0c22"/><stop offset="1" stop-color="#160511"/>
+    </radialGradient>
+    <radialGradient id="tasha_s_hideous_laughter-halo" cx=".5" cy=".46" r=".5">
+      <stop offset="0" stop-color="#ff5ca8" stop-opacity=".5"/><stop offset="1" stop-color="#ff5ca8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tasha_s_hideous_laughter-mask" cx=".42" cy=".32" r=".95">
+      <stop offset="0" stop-color="#ffe4f2"/><stop offset=".45" stop-color="#ff8fc6"/><stop offset=".82" stop-color="#d63b8a"/><stop offset="1" stop-color="#8a1050"/>
+    </radialGradient>
+    <radialGradient id="tasha_s_hideous_laughter-vig" cx=".5" cy=".45" r=".72">
+      <stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" fill="url(#tasha_s_hideous_laughter-bg)"/>
+  <rect width="64" height="64" fill="url(#tasha_s_hideous_laughter-halo)"/>
+  <path d="M20 8 L22 18 M44 8 L42 18 M8 28 L17 29 M56 28 L47 29" fill="none" stroke="#ff9bcb" stroke-width="1.4" stroke-linecap="round" opacity=".5"/>
+  <path d="M16 21 C16 13 48 13 48 21 C48 45 40 57 32 57 C24 57 16 45 16 21 Z" fill="#ff5ca8" opacity=".16"/>
+  <path d="M18 21 C18 14 46 14 46 21 C46 43 38 54 32 54 C26 54 18 43 18 21 Z" fill="url(#tasha_s_hideous_laughter-mask)"/>
+  <path d="M21 27 C24 22 29 23 30.5 28 C27.5 25.5 24 25.5 21 27 Z" fill="#3a0a24"/>
+  <path d="M43 27 C40 22 35 23 33.5 28 C36.5 25.5 40 25.5 43 27 Z" fill="#3a0a24"/>
+  <path d="M22 37 C26 50 38 50 42 37 C36 41 28 41 22 37 Z" fill="#2a0618"/>
+  <path d="M24 38.5 C28 41.5 36 41.5 40 38.5 L38 43.5 L34.5 40.5 L32 45 L29.5 40.5 L26 43.5 Z" fill="#fff0f7" opacity=".92"/>
+  <ellipse cx="26" cy="24" rx="3.5" ry="2.2" fill="#fff" opacity=".5" transform="rotate(-20 26 24)"/>
+  <path d="M20 20 C28 16 36 16 44 20" fill="none" stroke="#fff0f7" stroke-width="1" opacity=".45"/>
+  <circle cx="12" cy="18" r="1.3" fill="#ff9bcb" opacity=".85"/>
+  <circle cx="52" cy="20" r="1.1" fill="#ffd0e8" opacity=".7"/>
+  <circle cx="50" cy="46" r=".9" fill="#ff8fc6" opacity=".6"/>
+  <rect width="64" height="64" fill="url(#tasha_s_hideous_laughter-vig)"/>
+</svg>
